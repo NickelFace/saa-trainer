@@ -135,10 +135,10 @@ blueprint, not by the bank.
 
 Domain counts in `meta.json` are recomputed by the pipeline, never edited by hand.
 
-Audit: 25 corrected keys, 22 disputed, no low-confidence questions left, 3 source-PDF
-defects, 7 questions with exhibits. Written walkthroughs: 645 of 1019 questions — every
+Audit: 25 corrected keys, 23 disputed, no low-confidence questions left, 3 source-PDF
+defects, 7 questions with exhibits. Written walkthroughs: 682 of 1019 questions — every
 corrected key, every disputed question, and the IAM, encryption/KMS, Route 53,
-perimeter-security, cost-optimization, hybrid-network, file-storage, data-transfer, EBS and Aurora
+perimeter-security, cost-optimization, hybrid-network, file-storage, data-transfer, EBS, Aurora and CloudFront/edge
 chapters in full.
 
 Russian version of this document: [README.ru.md](README.ru.md).
