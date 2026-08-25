@@ -1,6 +1,6 @@
 # SAA-C03 audit log (1019 вопросов, 100%)
 
-## Исправленные ошибки ключа (24)
+## Исправленные ошибки ключа (25)
 
 - **#110**: BD -> **CD**. examtopics t1 q110 community consensus
 - **#239**: A -> **B**. examtopics t1 q239 — Lambda function URL with AWS_IAM is the single-function microservice path; API Gateway adds a service that is not required
@@ -30,6 +30,8 @@
 - **#961**: A → **C**. Найдено при разборе главы perimeter-security: AWS WAF нельзя привязать к Global Accelerator — web ACL создаётся на ALB за акселератором
 
 - **#599**: ACE → **ACF**. Найдено при разборе главы hybrid-network: в модели разделённой ответственности AWS Outposts физическое обслуживание компонентов стойки (E) выполняет AWS, а на заказчике лежит запас ёмкости на случай отказа сервера (F)
+
+- **#702**: D → **B**. Найдено при разборе главы file-storage: задания импорта AWS Snow Family выгружают данные только в Amazon S3, прямого импорта в FSx for Lustre не существует — файловая система связывается с бакетом как data repository
 
 ## Спорные, ключ сохранён (21)
 

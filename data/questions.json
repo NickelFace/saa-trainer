@@ -23130,7 +23130,9 @@
     "t": "Create an Amazon FSx for Lustre file system. Import the data directly into the FSx for Lustre file system. Access the FSx for Lustre file system from the HPC cluster instances."
    }
   ],
-  "answer": "D",
+  "answer": "B",
+  "answer_original": "D",
+  "fix_note": "задания импорта AWS Snow Family выгружают данные только в Amazon S3 — прямого импорта в файловую систему FSx for Lustre не существует; штатный путь это бакет S3, связанный с FSx for Lustre как data repository",
   "dom": "PERF",
   "svc": [
    "S3",

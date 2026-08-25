@@ -141,6 +141,10 @@
     "disputed_alt": "A",
     "disputed_note": "\"MOST high-performing\" это latency routing policy (A); geolocation маршрутизирует по географии пользователя, а не по фактической задержке"
   },
+  "702": {
+    "answer": "B",
+    "fix_note": "задания импорта AWS Snow Family выгружают данные только в Amazon S3 — прямого импорта в файловую систему FSx for Lustre не существует; штатный путь это бакет S3, связанный с FSx for Lustre как data repository"
+  },
   "744": {
     "answer": "A",
     "answer_original": "C",
