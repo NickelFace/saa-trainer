@@ -11,15 +11,6 @@ import re
 OUT = "web/data"
 os.makedirs(OUT, exist_ok=True)
 
-bank = json.load(open("data/questions.json", encoding="utf-8"))
-meta = json.load(open("data/meta.json", encoding="utf-8"))
-
-payload = {"meta": meta, "questions": bank}
-with open(os.path.join(OUT, "bank.js"), "w", encoding="utf-8") as f:
-    f.write("window.SAA_DATA=")
-    json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
-    f.write(";\n")
-
 QREF = re.compile(r"\{\{q:([0-9,\s]+)\}\}")
 
 
@@ -31,6 +22,21 @@ def qrefs(text):
         return f'<a class="qref" data-q="{",".join(ids)}" href="#">{label}</a>'
     return QREF.sub(sub, text)
 
+
+bank = json.load(open("data/questions.json", encoding="utf-8"))
+meta = json.load(open("data/meta.json", encoding="utf-8"))
+
+NOTE_FIELDS = ("fix_note", "disputed_note", "dom_why", "note", "defect")
+for q in bank:
+    for field in NOTE_FIELDS:
+        if field in q:
+            q[field] = qrefs(q[field])
+
+payload = {"meta": meta, "questions": bank}
+with open(os.path.join(OUT, "bank.js"), "w", encoding="utf-8") as f:
+    f.write("window.SAA_DATA=")
+    json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
+    f.write(";\n")
 
 expl = {}
 if os.path.exists("data/explanations.json"):

@@ -34,10 +34,12 @@ including progress saved in localStorage.
   its questions fall into, including how many were classified by hand and why.
 - **Answer walkthroughs** — for covered questions the review explains why the key is
   the key and, under every wrong option, why that option fails. Disputed questions get
-  both readings instead of a verdict. 37 of 1019 questions so far; the layer lives in
-  `data/explanations.json` and grows question by question.
+  both readings instead of a verdict. Walkthroughs cross-link sibling questions, so a
+  storage-class answer points at the near-identical question where the answer differs.
+  84 of 1019 questions so far; the layer lives in `data/explanations.json` and grows
+  chapter by chapter.
 - **Audit transparency** — the 20 corrected answer keys show the original dump answer
-  and the reason; the 17 disputed questions show the alternative and the argument.
+  and the reason; the 19 disputed questions show the alternative and the argument.
 - **Progress** — stored in localStorage, per-domain accuracy, exam history,
   export/import as JSON.
 
@@ -133,8 +135,8 @@ blueprint, not by the bank.
 
 Domain counts in `meta.json` are recomputed by the pipeline, never edited by hand.
 
-Audit: 20 corrected keys, 17 disputed, no low-confidence questions left, 3 source-PDF
-defects, 7 questions with exhibits. Written walkthroughs: 37 questions (every corrected
-key and every disputed question).
+Audit: 20 corrected keys, 19 disputed, no low-confidence questions left, 3 source-PDF
+defects, 7 questions with exhibits. Written walkthroughs: 84 questions — every corrected
+key, every disputed question, and the S3 chapter.
 
 Russian version of this document: [README.ru.md](README.ru.md).
