@@ -175,10 +175,15 @@
       nt.innerHTML = "<b>Правка данных:</b> " + q.note;
       box.appendChild(nt);
     }
-    if (q.dom_conf === "fallback") {
+    if (q.dom_conf === "manual") {
       var dc = el("div", "note");
-      dc.textContent = "Домен присвоен по умолчанию: в тексте нет явных маркеров домена.";
+      dc.innerHTML = "<b>Домен размечен вручную:</b> " + (q.dom_why || "") +
+        ". Правила разметки не нашли маркеров в тексте вопроса.";
       box.appendChild(dc);
+    } else if (q.dom_conf === "weak") {
+      var dw = el("div", "note");
+      dw.textContent = "Домен определён по слабым маркерам: формулировка допускает и другое отнесение.";
+      box.appendChild(dw);
     }
 
     var chapters = global.SAA_Theory ? global.SAA_Theory.chaptersForServices(q.svc || []) : [];
@@ -314,6 +319,7 @@
         case "flagged": return S.isFlagged(q.id);
         case "corrected": return !!q.answer_original;
         case "disputed": return !!q.disputed_alt;
+        case "manual": return q.dom_conf === "manual";
         default: return true;
       }
     });

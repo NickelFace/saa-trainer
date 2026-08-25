@@ -12,28 +12,28 @@
    "code": "SEC",
    "name": "Design Secure Architectures",
    "weight": 0.3,
-   "count": 246,
+   "count": 312,
    "exam": 20
   },
   {
    "code": "RES",
    "name": "Design Resilient Architectures",
    "weight": 0.26,
-   "count": 170,
+   "count": 209,
    "exam": 17
   },
   {
    "code": "PERF",
    "name": "Design High-Performing Architectures",
    "weight": 0.24,
-   "count": 382,
+   "count": 271,
    "exam": 15
   },
   {
    "code": "COST",
    "name": "Design Cost-Optimized Architectures",
    "weight": 0.2,
-   "count": 221,
+   "count": 227,
    "exam": 13
   }
  ],

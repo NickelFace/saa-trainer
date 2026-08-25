@@ -11,15 +11,19 @@
 - `scripts/parse.py` заточен под конкретный дамп (`data/raw.txt`, 1019 вопросов).
   Менять его под другой дамп только со сверкой на этом.
 - `answer_original` и `fix_note` не удалять: это доказательная часть аудита.
-- Разметка доменов (`dom`) отражает банк, а не blueprint. Не подгонять её под
-  проценты экзамена — выборка экзамена и так строится по весам из `meta.json`.
+- Разметка доменов (`dom`) отражает содержание вопросов, а не blueprint. Не подгонять
+  её под проценты экзамена — выборка экзамена и так строится по весам из `meta.json`.
+- Домены, которые правила `classify.py` не смогли определить, размечены вручную в
+  `data/dom-overrides.json`: `{"id": {"dom": "SEC", "why": "короткое обоснование"}}`.
+  Обоснование обязательно — `validate.py` это проверяет и показывает его в разборе
+  вопроса. Новые вопросы без маркеров добавлять туда же, а не менять правила ради
+  одного случая.
+- Счётчики `count` в `data/meta.json` пересчитывает `apply-audit.py`; руками не трогать.
 
 ## Порядок пересборки
 
 ```bash
-python3 scripts/parse.py && python3 scripts/classify.py && python3 scripts/apply-audit.py
-python3 scripts/build-theory.py && python3 scripts/build-web-data.py
-python3 scripts/validate.py    # обязательный шаг: критерии готовности
+bash scripts/build.sh    # parse -> classify -> apply-audit -> theory -> web -> validate
 ```
 
 `web/data/bank.js` и `web/data/theory.js` — генерируются, вручную не редактировать.

@@ -38,6 +38,8 @@ data/
   build/                  intermediate pipeline artefacts (git-ignored)
   questions.json          curated bank, 1019 questions
   overlay.json            audit overlay: corrected keys, disputed notes, exhibits
+  dom-overrides.json      manual domain assignment with a reason, for the 208 questions
+                          the classifier rules could not place
   meta.json               domains, blueprint weights, audit index
   audit.json              per-question audit status
   audit-log.md            audit reasoning in full
@@ -84,25 +86,29 @@ pdftotext -layout SAA-C03-1019QA.pdf data/raw.txt
   "defect": "option A missing in source PDF",
   "note": "relabelled option",
   "exhibits": ["q96.png"],
-  "dom": "SEC", "dom_conf": "strong",
+  "dom": "SEC", "dom_conf": "manual", "dom_why": "why this domain was chosen",
   "svc": ["EC2", "IAM"],
   "multi": false
 }
 ```
 
-`dom`: SEC / RES / PERF / COST. `dom_conf`: strong (672), weak (139), fallback (208).
+`dom`: SEC / RES / PERF / COST. `dom_conf`: `strong` (672 — unambiguous markers in the
+stem), `weak` (139 — generic wording), `manual` (208 — assigned by hand, with the reason
+in `dom_why`). No question is left on the classifier's default domain.
 
 ## Bank statistics
 
 | Domain | Questions | Blueprint weight | Questions in a mock exam |
 |---|--:|--:|--:|
-| SEC — Design Secure Architectures | 246 | 30% | 20 |
-| RES — Design Resilient Architectures | 170 | 26% | 17 |
-| PERF — Design High-Performing Architectures | 382 | 24% | 15 |
-| COST — Design Cost-Optimized Architectures | 221 | 20% | 13 |
+| SEC — Design Secure Architectures | 312 | 30% | 20 |
+| RES — Design Resilient Architectures | 209 | 26% | 17 |
+| PERF — Design High-Performing Architectures | 271 | 24% | 15 |
+| COST — Design Cost-Optimized Architectures | 227 | 20% | 13 |
 
 Bank shares deliberately differ from blueprint weights; the exam mode samples by the
 blueprint, not by the bank.
+
+Domain counts in `meta.json` are recomputed by the pipeline, never edited by hand.
 
 Audit: 18 corrected keys, 15 disputed, 6 low-confidence, 3 source-PDF defects,
 7 questions with exhibits.

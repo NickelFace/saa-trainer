@@ -29,7 +29,8 @@
    "Snow Family"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "скорость агрегации данных в один бакет"
  },
  {
   "id": 2,
@@ -63,7 +64,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "выбор аналитического сервиса по данным в S3"
  },
  {
   "id": 3,
@@ -87,14 +89,15 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "Organizations",
    "CloudTrail"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ограничение доступа к бакету организацией"
  },
  {
   "id": 4,
@@ -191,7 +194,8 @@
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "скорость переноса при ограниченном канале"
  },
  {
   "id": 7,
@@ -315,7 +319,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "SQS",
@@ -323,7 +327,8 @@
    "API Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "гарантия порядка обработки заказов"
  },
  {
   "id": 11,
@@ -487,13 +492,14 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "VPC",
    "GuardDuty"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "инспекция и фильтрация трафика VPC"
  },
  {
   "id": 16,
@@ -527,7 +533,8 @@
    "QuickSight"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "выбор BI-платформы для витрины данных"
  },
  {
   "id": 17,
@@ -551,14 +558,15 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ EC2 к S3 через роль"
  },
  {
   "id": 18,
@@ -906,12 +914,13 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Organizations"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "единый вход и федерация с AD"
  },
  {
   "id": 29,
@@ -999,7 +1008,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "Lambda",
@@ -1010,7 +1019,8 @@
    "Cost Explorer"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "контроль соответствия ресурсов тегам"
  },
  {
   "id": 32,
@@ -1424,12 +1434,13 @@
    }
   ],
   "answer": "AB",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "защита данных от случайного удаления"
  },
  {
   "id": 45,
@@ -1613,14 +1624,15 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "Lambda",
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "срочное закрытие уязвимости патчами"
  },
  {
   "id": 51,
@@ -1648,7 +1660,7 @@
    }
   ],
   "answer": "BD",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "Lambda",
@@ -1659,7 +1671,8 @@
    "CloudWatch"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "событийная сборка и рассылка отчёта"
  },
  {
   "id": 52,
@@ -1850,7 +1863,8 @@
    "Comprehend"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "выбор управляемого ML-сервиса модерации"
  },
  {
   "id": 58,
@@ -1917,7 +1931,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "приём и обработка потока кликов"
  },
  {
   "id": 60,
@@ -1941,12 +1956,13 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "ELB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "принудительный HTTPS для всех запросов"
  },
  {
   "id": 61,
@@ -2103,7 +2119,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Lambda",
    "API Gateway",
@@ -2113,7 +2129,8 @@
    "Comprehend"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "обнаружение защищаемых медицинских данных"
  },
  {
   "id": 66,
@@ -2166,14 +2183,15 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "RDS",
    "SQS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "повторная обработка сообщений очереди"
  },
  {
   "id": 68,
@@ -2690,7 +2708,8 @@
    "Route 53"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ускорение загрузки сайта для Европы"
  },
  {
   "id": 84,
@@ -2743,13 +2762,14 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EFS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "неизменяемость документов по регуляторике"
  },
  {
   "id": 86,
@@ -2807,7 +2827,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "RDS",
@@ -2816,7 +2836,8 @@
    "API Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "не потерять данные во время апгрейда"
  },
  {
   "id": 88,
@@ -2930,14 +2951,15 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
    "VPC"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ к S3 без выхода в интернет"
  },
  {
   "id": 92,
@@ -3039,7 +3061,8 @@
    "Kinesis"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "эластичная обработка при переменной нагрузке"
  },
  {
   "id": 95,
@@ -3157,14 +3180,15 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "Lambda",
    "SQS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "дубли обработки из-за visibility timeout"
  },
  {
   "id": 99,
@@ -3196,7 +3220,8 @@
    "Storage Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "файловое хранилище с клиентами Lustre"
  },
  {
   "id": 100,
@@ -3297,7 +3322,8 @@
    "DataSync"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "автоматизация переноса данных в EFS"
  },
  {
   "id": 103,
@@ -3327,7 +3353,8 @@
    "Glue"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "исключение повторной обработки данных ETL"
  },
  {
   "id": 104,
@@ -3462,7 +3489,8 @@
    "QuickSight"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "выбор хранилища для точек геолокации"
  },
  {
   "id": 108,
@@ -3486,7 +3514,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "RDS",
@@ -3494,7 +3522,8 @@
    "SNS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "рассылка события нескольким системам"
  },
  {
   "id": 109,
@@ -3518,14 +3547,15 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "IAM",
    "CloudTrail"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "запрет изменения объектов и контроль удаления"
  },
  {
   "id": 110,
@@ -3631,7 +3661,8 @@
    "Fargate"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "эластичная платформа для роста запросов"
  },
  {
   "id": 113,
@@ -3721,7 +3752,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -3729,7 +3760,8 @@
    "Direct Connect"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "приватный маршрут для передачи файлов"
  },
  {
   "id": 116,
@@ -3800,7 +3832,8 @@
    "OpenSearch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доставка логов в OpenSearch near real-time"
  },
  {
   "id": 118,
@@ -3857,14 +3890,15 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "API Gateway",
    "WAF",
    "Shield"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "защита API от SQLi и XSS"
  },
  {
   "id": 120,
@@ -4189,7 +4223,8 @@
    "ElastiCache"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "снятие потолка масштабирования и capacity planning"
  },
  {
   "id": 130,
@@ -4245,14 +4280,15 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "CloudFront",
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "запрет прямого доступа к URL бакета"
  },
  {
   "id": 132,
@@ -4374,13 +4410,14 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "VPC",
    "PrivateLink"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "приватное подключение к сервису провайдера"
  },
  {
   "id": 136,
@@ -4408,7 +4445,7 @@
    }
   ],
   "answer": "AC",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Aurora",
    "EventBridge",
@@ -4416,7 +4453,8 @@
    "DMS"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "база остаётся online и синхронной при миграции"
  },
  {
   "id": 137,
@@ -4511,7 +4549,8 @@
    "SageMaker"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "автоматизация конвейера обработки файлов"
  },
  {
   "id": 140,
@@ -4831,14 +4870,15 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "SQS",
    "SNS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "сохранение порядка событий при обработке"
  },
  {
   "id": 150,
@@ -4995,14 +5035,15 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "Lambda",
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "права на запись и запрет удаления файлов"
  },
  {
   "id": 155,
@@ -5405,7 +5446,8 @@
    "Route 53"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "раздача статики миллионам пользователей"
  },
  {
   "id": 167,
@@ -5521,7 +5563,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "VPC",
@@ -5529,7 +5571,8 @@
    "WAF"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ только из одной страны"
  },
  {
   "id": 171,
@@ -5687,7 +5730,8 @@
    "DMS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "таймауты из-за исчерпания соединений БД"
  },
  {
   "id": 176,
@@ -5984,7 +6028,8 @@
    "Direct Connect"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "сетевой доступ функции к сети дата-центра"
  },
  {
   "id": 185,
@@ -6008,7 +6053,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -6016,7 +6061,8 @@
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "права контейнера на вызовы S3"
  },
  {
   "id": 186,
@@ -6216,7 +6262,8 @@
    "DynamoDB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "отчёты замедляют обработку заказов"
  },
  {
   "id": 192,
@@ -6457,7 +6504,8 @@
    "Fargate"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "подбор управляемых сервисов под Kubernetes и MongoDB"
  },
  {
   "id": 199,
@@ -6491,7 +6539,8 @@
    "Transcribe"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "распознавание речи и запросы к транскриптам"
  },
  {
   "id": 200,
@@ -6515,7 +6564,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Lambda",
    "DynamoDB",
@@ -6523,7 +6572,8 @@
    "Cognito"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "управление доступом к REST API"
  },
  {
   "id": 201,
@@ -6547,7 +6597,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "SQS",
@@ -6555,7 +6605,8 @@
    "Kinesis"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "двусторонний SMS-обмен и хранение ответов"
  },
  {
   "id": 202,
@@ -6619,7 +6670,8 @@
    "API Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "масштабирование обработчиков при росте нагрузки"
  },
  {
   "id": 204,
@@ -6712,7 +6764,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -6724,7 +6776,8 @@
    "CloudWatch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "аудит вызовов API и оповещение"
  },
  {
   "id": 207,
@@ -6780,7 +6833,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -6788,7 +6841,8 @@
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "запрет публичных маршрутов и доступ только с инстанса"
  },
  {
   "id": 209,
@@ -6877,7 +6931,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "COST",
   "svc": [
    "EC2",
    "Lambda",
@@ -6888,7 +6942,8 @@
    "CloudTrail"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "поиск ресурсов по тегам распределения"
  },
  {
   "id": 212,
@@ -6941,7 +6996,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -6950,7 +7005,8 @@
    "Shield"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "фильтрация атак прикладного уровня"
  },
  {
   "id": 214,
@@ -6983,7 +7039,8 @@
    "Batch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "преобразование форматов данных с минимумом кода"
  },
  {
   "id": 215,
@@ -7268,7 +7325,7 @@
    }
   ],
   "answer": "AD",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "DynamoDB",
    "VPC",
@@ -7276,7 +7333,8 @@
    "IAM"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ пода к DynamoDB без интернета"
  },
  {
   "id": 224,
@@ -7562,7 +7620,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "VPC",
@@ -7573,7 +7631,8 @@
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "оповещение о сеансах RDP и SSH"
  },
  {
   "id": 233,
@@ -7663,14 +7722,15 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Aurora",
    "DataSync",
    "DMS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "синхронность баз на время поэтапной миграции"
  },
  {
   "id": 236,
@@ -7886,12 +7946,13 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "в ответе DNS только здоровые узлы"
  },
  {
   "id": 243,
@@ -8120,7 +8181,8 @@
    "Storage Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "файловое хранилище с клиентами SMB"
  },
  {
   "id": 250,
@@ -8144,7 +8206,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "COST",
   "svc": [
    "S3",
    "VPC",
@@ -8153,7 +8215,8 @@
    "CloudTrail"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "удешевление хранения логов после 90 дней"
  },
  {
   "id": 251,
@@ -8183,7 +8246,8 @@
    "VPC"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "исходящий доступ из приватной подсети"
  },
  {
   "id": 252,
@@ -8305,7 +8369,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "SQS",
@@ -8314,7 +8378,8 @@
    "CloudTrail"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "идемпотентность оформления заказа"
  },
  {
   "id": 256,
@@ -8417,7 +8482,8 @@
    "Athena"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "конвертация CSV в Parquet с минимумом операций"
  },
  {
   "id": 259,
@@ -8607,7 +8673,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "CloudFront",
@@ -8615,7 +8681,8 @@
    "ELB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "исключение неисправных узлов из DNS"
  },
  {
   "id": 265,
@@ -9143,7 +9210,8 @@
    "QuickSight"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "анализ и визуализация логов CloudFront"
  },
  {
   "id": 281,
@@ -9198,14 +9266,15 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "VPC",
    "ELB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ к инстансам только от балансировщика"
  },
  {
   "id": 283,
@@ -9239,7 +9308,8 @@
    "ECS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "один набор данных для NFS и SMB"
  },
  {
   "id": 284,
@@ -9335,7 +9405,8 @@
    "ElastiCache"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "кэш отдаёт устаревшую версию сайта"
  },
  {
   "id": 287,
@@ -9400,7 +9471,8 @@
    "EBS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "общий файловый доступ без правок приложения"
  },
  {
   "id": 289,
@@ -9590,7 +9662,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -9598,7 +9670,8 @@
    "Route 53"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ к S3 без выхода в интернет"
  },
  {
   "id": 295,
@@ -9659,7 +9732,8 @@
    "VPC"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "планирование адресного пространства для peering"
  },
  {
   "id": 297,
@@ -9955,7 +10029,8 @@
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "управляемое хранилище с доступом по SMB"
  },
  {
   "id": 306,
@@ -10137,7 +10212,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "SQS",
@@ -10146,7 +10221,8 @@
    "OpenSearch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "разделение по типам и гарантия недоставки потерь"
  },
  {
   "id": 312,
@@ -10170,7 +10246,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "Lambda",
@@ -10178,7 +10254,8 @@
    "Backup"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ночные бэкапы и восстановление в другом регионе"
  },
  {
   "id": 313,
@@ -10240,7 +10317,8 @@
    "Redshift"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "база без выбора класса инстанса"
  },
  {
   "id": 315,
@@ -10264,7 +10342,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "Lambda",
@@ -10275,7 +10353,8 @@
    "Inspector"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "активное сканирование уязвимостей инстансов"
  },
  {
   "id": 316,
@@ -10344,7 +10423,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "приведение данных к формату для аналитики"
  },
  {
   "id": 318,
@@ -10695,7 +10775,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "EC2",
@@ -10706,7 +10786,8 @@
    "ElastiCache"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "гарантия обработки всех запросов при всплеске"
  },
  {
   "id": 329,
@@ -10730,7 +10811,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "EventBridge",
@@ -10740,7 +10821,8 @@
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "регулярные сканы и патчинг с отчётом"
  },
  {
   "id": 330,
@@ -10803,7 +10885,8 @@
    "Snow Family"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "перенос 20 ТБ при узком канале"
  },
  {
   "id": 332,
@@ -10893,7 +10976,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -10903,7 +10986,8 @@
    "DMS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ по SFTP с аутентификацией в AD"
  },
  {
   "id": 335,
@@ -11096,7 +11180,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "Aurora",
@@ -11106,7 +11190,8 @@
    "Inspector"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "защита приложения от SQL-инъекций"
  },
  {
   "id": 341,
@@ -11230,7 +11315,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "SQS",
@@ -11238,7 +11323,8 @@
    "EFS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "сообщения больше лимита очереди"
  },
  {
   "id": 345,
@@ -11449,7 +11535,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "Lambda",
@@ -11458,7 +11544,8 @@
    "Glue"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "событийная распределённая архитектура"
  },
  {
   "id": 352,
@@ -11554,7 +11641,8 @@
    "API Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "таймауты подключений на пиках"
  },
  {
   "id": 355,
@@ -11588,7 +11676,8 @@
    "Batch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "почасовая CPU-нагрузка с минимумом операций"
  },
  {
   "id": 356,
@@ -11689,7 +11778,8 @@
    "ELB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "динамическое преобразование изображений на масштабе"
  },
  {
   "id": 359,
@@ -11812,7 +11902,7 @@
    }
   ],
   "answer": "BE",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "DynamoDB",
    "SQS",
@@ -11820,7 +11910,8 @@
    "ElastiCache"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "порядок сообщений по идентификатору платежа"
  },
  {
   "id": 363,
@@ -12230,7 +12321,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "Lambda",
@@ -12240,7 +12331,8 @@
    "Glue"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "оркестрация шагов с ручным подтверждением"
  },
  {
   "id": 376,
@@ -12270,7 +12362,8 @@
    "ElastiCache"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "отказы подключений при скачках нагрузки"
  },
  {
   "id": 377,
@@ -12430,7 +12523,8 @@
    "DynamoDB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ускорение отчётов без блокировки записи"
  },
  {
   "id": 382,
@@ -12954,7 +13048,8 @@
    "Fargate"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ежедневная задача с известным профилем ресурсов"
  },
  {
   "id": 398,
@@ -13009,7 +13104,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Lambda",
    "CloudFront",
@@ -13018,7 +13113,8 @@
    "WAF"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "защита от HTTP-флуда"
  },
  {
   "id": 400,
@@ -13167,14 +13263,15 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "Lambda",
    "SQS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "часть документов осталась необработанной"
  },
  {
   "id": 405,
@@ -13238,12 +13335,13 @@
    }
   ],
   "answer": "CD",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "RDS"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "правила доступа к веб-серверам и базе"
  },
  {
   "id": 407,
@@ -13275,7 +13373,8 @@
    "DataSync"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "управляемое хранилище с клиентами Lustre"
  },
  {
   "id": 408,
@@ -13432,7 +13531,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "Lambda",
@@ -13442,7 +13541,8 @@
    "GuardDuty"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "запрет публичного доступа ко всем бакетам"
  },
  {
   "id": 413,
@@ -13473,7 +13573,8 @@
    "SNS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "задержки доставки писем при росте трафика"
  },
  {
   "id": 414,
@@ -13763,7 +13864,8 @@
    "ECS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "нерегулярная нагрузка на ML-микросервисы"
  },
  {
   "id": 423,
@@ -14093,7 +14195,8 @@
    "SageMaker"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "связка ML-моделей с BI-платформой"
  },
  {
   "id": 433,
@@ -14318,7 +14421,8 @@
    "Transit Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "нехватка адресов в VPC"
  },
  {
   "id": 440,
@@ -14518,7 +14622,8 @@
    "Direct Connect"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "перенос 700 ТБ без остановки доступа"
  },
  {
   "id": 446,
@@ -14716,14 +14821,15 @@
    }
   ],
   "answer": "BCF",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "RDS",
    "Direct Connect",
    "ECS"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "разделение ответственности между AWS и клиентом"
  },
  {
   "id": 452,
@@ -14811,13 +14917,14 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Step Functions",
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "инвентаризация ресурсов по аккаунтам"
  },
  {
   "id": 455,
@@ -14961,7 +15068,8 @@
    "EKS"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "подбор вычислений и реляционного хранилища"
  },
  {
   "id": 459,
@@ -15149,7 +15257,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "RDS",
@@ -15157,7 +15265,8 @@
    "Auto Scaling"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "устранение единой точки отказа базы"
  },
  {
   "id": 465,
@@ -15280,7 +15389,8 @@
    "ECS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ API к контейнерам в приватных подсетях"
  },
  {
   "id": 469,
@@ -15333,12 +15443,13 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "запрет входящих соединений к IPv6-инстансам"
  },
  {
   "id": 471,
@@ -15463,7 +15574,8 @@
    "PrivateLink"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "связность VPC между регионами"
  },
  {
   "id": 475,
@@ -16080,7 +16192,8 @@
    "Transcribe"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "распознавание речи, перевод и анализ тональности"
  },
  {
   "id": 494,
@@ -16307,7 +16420,8 @@
    "Snow Family"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "перенос файловых серверов с сохранением прав"
  },
  {
   "id": 501,
@@ -16442,7 +16556,8 @@
    "Transit Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "связность VPC сотен аккаунтов"
  },
  {
   "id": 505,
@@ -16798,7 +16913,8 @@
    "Redshift"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "применимость аналитического хранилища"
  },
  {
   "id": 516,
@@ -16855,7 +16971,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EventBridge",
@@ -16864,7 +16980,8 @@
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "архивирование журналов сеансов доступа"
  },
  {
   "id": 518,
@@ -16893,7 +17010,8 @@
    "RDS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "рост дискового пространства без простоя"
  },
  {
   "id": 519,
@@ -16917,14 +17035,15 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Config",
    "Systems Manager",
    "CloudFormation"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "централизованная выдача одобренных решений"
  },
  {
   "id": 520,
@@ -17219,7 +17338,8 @@
    "Batch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "обработка файлов сразу после поступления"
  },
  {
   "id": 529,
@@ -17542,12 +17662,13 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "CloudFront"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "запрет просмотра контента вне стран запуска"
  },
  {
   "id": 539,
@@ -17677,13 +17798,14 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "CloudFront"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ к контенту только премиум-клиентам"
  },
  {
   "id": 543,
@@ -17897,13 +18019,14 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "VPC"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "безопасный исходящий доступ базы к внешнему источнику"
  },
  {
   "id": 550,
@@ -18156,7 +18279,8 @@
    "Lake Formation"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "параллельная обработка и обогащение данных"
  },
  {
   "id": 558,
@@ -18246,7 +18370,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Organizations",
    "Control Tower",
@@ -18255,7 +18379,8 @@
    "CloudFormation"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "отслеживание изменений структуры организации"
  },
  {
   "id": 561,
@@ -18352,7 +18477,8 @@
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "централизованный обзор кластеров и нагрузок"
  },
  {
   "id": 564,
@@ -18477,7 +18603,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "EC2",
@@ -18489,7 +18615,8 @@
    "API Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "расширяемая слабосвязанная схема приёма данных"
  },
  {
   "id": 568,
@@ -18554,7 +18681,8 @@
    "CloudTrail"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "проверка срабатывания правила и вызова цели"
  },
  {
   "id": 570,
@@ -18958,7 +19086,8 @@
    "Route 53"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "минимизация времени загрузки сайта"
  },
  {
   "id": 583,
@@ -19013,12 +19142,13 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "узлы не должны делить одно железо"
  },
  {
   "id": 585,
@@ -19071,12 +19201,13 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Organizations"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "выделение отдельной организации для подразделения"
  },
  {
   "id": 587,
@@ -19333,7 +19464,8 @@
    "Auto Scaling"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "долгий запуск и прогрев приложения"
  },
  {
   "id": 595,
@@ -19597,7 +19729,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "Lambda",
@@ -19607,7 +19739,8 @@
    "CloudFormation"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "восстановление инстансов после аварии"
  },
  {
   "id": 603,
@@ -19670,7 +19803,8 @@
    "Snow Family"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "перенос 10 ПБ за 6 недель"
  },
  {
   "id": 605,
@@ -19787,7 +19921,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "Lambda",
@@ -19796,7 +19930,8 @@
    "WAF"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ только с зарегистрированных адресов"
  },
  {
   "id": 609,
@@ -20027,7 +20162,8 @@
    "OpenSearch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "сбор метрик и логов микросервисов"
  },
  {
   "id": 616,
@@ -20215,13 +20351,14 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "Lambda"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "копия новых объектов в другом регионе"
  },
  {
   "id": 622,
@@ -20286,7 +20423,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "CloudFront",
    "API Gateway",
@@ -20294,7 +20431,8 @@
    "Shield"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "защита REST API от инъекций и XSS"
  },
  {
   "id": 624,
@@ -20318,13 +20456,14 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "IAM",
    "Cognito"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "единая учётная запись для AWS и локальных ресурсов"
  },
  {
   "id": 625,
@@ -20356,7 +20495,8 @@
    "WAF"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "маршрутизация пользователей к нужному контенту"
  },
  {
   "id": 626,
@@ -20543,7 +20683,8 @@
    "Neptune"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "графовая модель связей и рекомендации"
  },
  {
   "id": 632,
@@ -20629,13 +20770,14 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "безопасная выдача данных внешним агентствам"
  },
  {
   "id": 635,
@@ -20742,7 +20884,8 @@
    "Fargate"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "непредсказуемый скачок запросов и рост данных"
  },
  {
   "id": 638,
@@ -21162,7 +21305,8 @@
    "DynamoDB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "управляемая СУБД с отчётностью"
  },
  {
   "id": 651,
@@ -21869,7 +22013,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "быстрый анализ кликстрима в S3"
  },
  {
   "id": 673,
@@ -21893,14 +22038,15 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "COST",
   "svc": [
    "S3",
    "FSx",
    "DataSync"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "удешевление хранения файлов после 7 дней"
  },
  {
   "id": 674,
@@ -22135,7 +22281,8 @@
    "DataSync"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "непрерывное копирование изменившихся файлов"
  },
  {
   "id": 681,
@@ -22370,7 +22517,8 @@
    "SageMaker"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "прогнозирование управляемым ML-сервисом"
  },
  {
   "id": 688,
@@ -22542,7 +22690,8 @@
    "ELB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "максимальная производительность для трёх регионов"
  },
  {
   "id": 693,
@@ -22698,7 +22847,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "VPC",
@@ -22706,7 +22855,8 @@
    "Auto Scaling"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "публикация приложения при запрете публичных инстансов"
  },
  {
   "id": 698,
@@ -22774,7 +22924,8 @@
    "Fargate"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "управляемые контейнеры с постоянным томом"
  },
  {
   "id": 700,
@@ -22969,7 +23120,7 @@
    }
   ],
   "answer": "AD",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "RDS",
    "Aurora",
@@ -22977,7 +23128,8 @@
    "DMS"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "репликация изменений во время миграции"
  },
  {
   "id": 706,
@@ -23031,7 +23183,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "EC2",
@@ -23041,7 +23193,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "видимость аномальных обращений к приложению"
  },
  {
   "id": 708,
@@ -23070,7 +23223,8 @@
    "EC2"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "исходящий доступ приватных подсетей"
  },
  {
   "id": 709,
@@ -23425,7 +23579,8 @@
    "DataSync"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ по SMB и NFS к одним данным"
  },
  {
   "id": 720,
@@ -23522,7 +23677,8 @@
    "Transit Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "централизованная маршрутизация 30 VPC и DX"
  },
  {
   "id": 723,
@@ -23672,7 +23828,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "DynamoDB",
@@ -23680,7 +23836,8 @@
    "CloudTrail"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "защита таблицы от случайного удаления"
  },
  {
   "id": 728,
@@ -23858,7 +24015,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "RDS",
@@ -23869,7 +24026,8 @@
    "GuardDuty"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "обнаружение подозрительных попыток входа в БД"
  },
  {
   "id": 734,
@@ -24054,7 +24212,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "SQS",
@@ -24063,7 +24221,8 @@
    "API Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "рассылка с фильтрацией нужным обработчикам"
  },
  {
   "id": 740,
@@ -24317,7 +24476,8 @@
    "Direct Connect"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "перенос SMB-данных без правок приложений"
  },
  {
   "id": 748,
@@ -24349,7 +24509,8 @@
    "CloudFormation"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "наблюдаемость по нескольким аккаунтам"
  },
  {
   "id": 749,
@@ -24468,7 +24629,7 @@
    }
   ],
   "answer": "AD",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "Lambda",
@@ -24477,7 +24638,8 @@
    "EKS"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "гарантия доставки ровно один раз"
  },
  {
   "id": 753,
@@ -24794,14 +24956,15 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "EC2",
    "EBS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "быстрое восстановление удалённых образов"
  },
  {
   "id": 763,
@@ -24887,14 +25050,15 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "SQS",
    "SNS",
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "кросс-аккаунтный доступ к очереди"
  },
  {
   "id": 766,
@@ -24982,7 +25146,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "EC2",
@@ -24991,7 +25155,8 @@
    "Backup"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "откат таблицы на любой момент суток"
  },
  {
   "id": 769,
@@ -25224,7 +25389,8 @@
    "EKS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "межсервисное взаимодействие и обнаружение сервисов"
  },
  {
   "id": 776,
@@ -25498,7 +25664,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "Lambda",
@@ -25508,7 +25674,8 @@
    "Athena"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "оркестрация заданий с ретраями и состоянием"
  },
  {
   "id": 785,
@@ -25730,14 +25897,15 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "Lambda",
    "KMS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "переменные окружения не должны быть видны"
  },
  {
   "id": 792,
@@ -25908,7 +26076,8 @@
    "Comprehend"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "модерация контента без обучения модели"
  },
  {
   "id": 797,
@@ -26102,7 +26271,8 @@
    "EKS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "подбор вычислений под валидацию и долгую обработку"
  },
  {
   "id": 803,
@@ -26166,7 +26336,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ежедневная загрузка в MPP-хранилище и ML в SQL"
  },
  {
   "id": 805,
@@ -26281,7 +26452,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "Lambda",
@@ -26291,7 +26462,8 @@
    "Inspector"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "сканирование образов контейнеров на CVE"
  },
  {
   "id": 809,
@@ -26359,7 +26531,8 @@
    "PrivateLink"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "связность с базой в чужом аккаунте без интернета"
  },
  {
   "id": 811,
@@ -26453,7 +26626,8 @@
    "ELB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "маршрутизация поддомена на dev-инстанс"
  },
  {
   "id": 814,
@@ -26519,7 +26693,8 @@
    "Global Accelerator"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "снижение времени отклика для мировой аудитории"
  },
  {
   "id": 816,
@@ -26551,7 +26726,8 @@
    "DMS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "приём файлов по SFTP управляемым сервисом"
  },
  {
   "id": 817,
@@ -26586,7 +26762,8 @@
    "Comprehend"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "извлечение текста и анализ тональности"
  },
  {
   "id": 818,
@@ -26651,7 +26828,8 @@
    "DynamoDB"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "элементы больше лимита DynamoDB"
  },
  {
   "id": 820,
@@ -26685,7 +26863,8 @@
    "Batch"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "перенос сотен cron-задач без рефакторинга"
  },
  {
   "id": 821,
@@ -26709,7 +26888,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "VPC",
    "Glue",
@@ -26719,7 +26898,8 @@
    "AppFlow"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "загрузка данных минуя публичный интернет"
  },
  {
   "id": 822,
@@ -26872,14 +27052,15 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "IAM",
    "Organizations"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "единый вход во все аккаунты с локальным AD"
  },
  {
   "id": 827,
@@ -26934,7 +27115,7 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "Organizations",
    "CloudTrail",
@@ -26942,7 +27123,8 @@
    "Inspector"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "подтверждение соответствия стандартам аудиторам"
  },
  {
   "id": 829,
@@ -27091,7 +27273,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "Lambda",
    "SQS",
@@ -27099,7 +27281,8 @@
    "EventBridge"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "слабая связность и выдача части события"
  },
  {
   "id": 834,
@@ -27477,7 +27660,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "Lambda",
@@ -27486,7 +27669,8 @@
    "SNS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "событийная рассылка писем по расписанию"
  },
  {
   "id": 846,
@@ -27643,7 +27827,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "RDS",
    "DynamoDB",
@@ -27651,7 +27835,8 @@
    "Neptune"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "карта инфраструктуры для поиска рисков"
  },
  {
   "id": 851,
@@ -27839,13 +28024,14 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "временный доступ внешнего консультанта к отчёту"
  },
  {
   "id": 857,
@@ -28286,12 +28472,13 @@
   "answer": "C",
   "answer_original": "D",
   "fix_note": "ключ противоречив: группа в Production указана принципалом в trust policy, ссылающейся на тот же Production; кросс-аккаунт делается ролью в Production с доверием к Development",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "IAM"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "кросс-аккаунтный доступ разработчиков"
  },
  {
   "id": 871,
@@ -28349,14 +28536,15 @@
    }
   ],
   "answer": "D",
-  "dom": "PERF",
+  "dom": "COST",
   "svc": [
    "EC2",
    "IAM",
    "Organizations"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "запрет запуска избыточно крупных инстансов"
  },
  {
   "id": 873,
@@ -28380,7 +28568,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "Config",
@@ -28390,7 +28578,8 @@
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "инвентаризация, обновления и сводка уязвимостей"
  },
  {
   "id": 874,
@@ -28846,7 +29035,8 @@
    "DMS"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "миграция СУБД с минимумом правок кода"
  },
  {
   "id": 887,
@@ -29001,7 +29191,8 @@
    "S3"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ближайший бакет и обход публичной сети"
  },
  {
   "id": 892,
@@ -29062,7 +29253,7 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "автоматические guardrails при создании аккаунтов это AWS Control Tower, Organizations сам по себе их не даёт",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "VPC",
    "Transit Gateway",
@@ -29070,7 +29261,8 @@
    "Control Tower"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "аккаунты с автоматическими guardrails"
  },
  {
   "id": 894,
@@ -29135,7 +29327,8 @@
    "Storage Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "управляемое хранилище с доступом по SMB"
  },
  {
   "id": 896,
@@ -29189,7 +29382,7 @@
    }
   ],
   "answer": "A",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "Lambda",
@@ -29200,7 +29393,8 @@
    "Fargate"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "задача не терпит прерываний"
  },
  {
   "id": 898,
@@ -29224,7 +29418,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3",
    "Lambda",
@@ -29234,7 +29428,8 @@
    "Lake Formation"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "централизованный сбор данных безопасности"
  },
  {
   "id": 899,
@@ -29265,7 +29460,8 @@
    "Transit Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "связность изолированных VPC при росте до сотен"
  },
  {
   "id": 900,
@@ -29394,12 +29590,13 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "ACL через Batch Operations не масштабируется и противоречит рекомендациям AWS; префиксный доступ с гранулярным контролем это S3 access points с политиками",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "S3"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ограничение приложений своими префиксами"
  },
  {
   "id": 904,
@@ -30781,14 +30978,15 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "VPC",
    "ELB",
    "Organizations"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "инспекция трафика между аккаунтами устройством"
  },
  {
   "id": 946,
@@ -30874,7 +31072,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "COST",
   "svc": [
    "EC2",
    "RDS",
@@ -30884,7 +31082,8 @@
    "DMS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "выделять только требуемую ёмкость репликации"
  },
  {
   "id": 949,
@@ -31076,7 +31275,8 @@
    "ECS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "нерегулярная нагрузка на ML-микросервисы"
  },
  {
   "id": 955,
@@ -31228,7 +31428,7 @@
    }
   ],
   "answer": "C",
-  "dom": "PERF",
+  "dom": "COST",
   "svc": [
    "Lambda",
    "RDS",
@@ -31237,7 +31437,8 @@
    "Systems Manager"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "базы разработки только в рабочие часы"
  },
  {
   "id": 960,
@@ -31456,7 +31657,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "EC2",
    "VPC",
@@ -31464,7 +31665,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "разграничение прав команд и запрет IMDSv2"
  },
  {
   "id": 967,
@@ -31735,7 +31937,8 @@
    "CloudFront"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "загрузка через CloudFront с собственным доменом"
  },
  {
   "id": 975,
@@ -32255,7 +32458,8 @@
    "EMR"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "приложение умеет только NFS"
  },
  {
   "id": 991,
@@ -32453,7 +32657,8 @@
    "Fargate"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "EKS без управления вычислительными узлами"
  },
  {
   "id": 997,
@@ -32770,14 +32975,15 @@
    }
   ],
   "answer": "CD",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "EC2",
    "ELB",
    "Systems Manager"
   ],
   "multi": true,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "ошибки при выводе инстансов на время патча"
  },
  {
   "id": 1007,
@@ -33033,7 +33239,7 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "RES",
   "svc": [
    "S3",
    "EC2",
@@ -33045,7 +33251,8 @@
    "EBS"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "оркестрация растущего числа заданий обработки"
  },
  {
   "id": 1015,
@@ -33197,11 +33404,12 @@
    }
   ],
   "answer": "B",
-  "dom": "PERF",
+  "dom": "SEC",
   "svc": [
    "API Gateway"
   ],
   "multi": false,
-  "dom_conf": "fallback"
+  "dom_conf": "manual",
+  "dom_why": "доступ к API только с доверенных адресов"
  }
 ]

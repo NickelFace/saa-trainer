@@ -33,6 +33,21 @@ check(sorted(q["id"] for q in bank) == list(range(1, 1020)), "id 1..1019 без 
 check(all(set(q["answer"]) <= {o["l"] for o in q["options"]} for q in bank),
       "буквы ответа существуют среди вариантов")
 
+print("разметка доменов:")
+conf = Counter(q["dom_conf"] for q in bank)
+check(set(conf) <= {"strong", "weak", "manual"}, f"допустимые значения dom_conf: {dict(conf)}")
+check(conf["fallback"] == 0, "не осталось вопросов с доменом по умолчанию")
+no_why = [q["id"] for q in bank if q["dom_conf"] == "manual" and not q.get("dom_why")]
+check(not no_why, f"у каждой ручной разметки есть обоснование ({no_why})")
+ov_dom = json.load(open("data/dom-overrides.json", encoding="utf-8"))
+manual = {q["id"] for q in bank if q["dom_conf"] == "manual"}
+check({int(k) for k in ov_dom} == manual, "оверлей доменов совпадает с банком")
+check(all(bank_q["dom"] == ov_dom[str(bank_q["id"])]["dom"]
+          for bank_q in bank if bank_q["dom_conf"] == "manual"), "домены применены из оверлея")
+check(sum(d["count"] for d in meta["domains"]) == len(bank), "счётчики доменов в meta.json сходятся")
+check(all(d["count"] == Counter(q["dom"] for q in bank)[d["code"]] for d in meta["domains"]),
+      "счётчики доменов в meta.json актуальны")
+
 print("аудит:")
 corrected = [q["id"] for q in bank if "answer_original" in q]
 disputed = [q["id"] for q in bank if "disputed_alt" in q]

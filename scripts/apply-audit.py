@@ -3,19 +3,24 @@
 
 Оверлей data/overlay.json — доказательная часть аудита: исправленные ключи
 (с сохранением answer_original), спорные вопросы, дефекты PDF, экспонаты.
+Оверлей data/dom-overrides.json — ручная разметка домена для вопросов, где правила
+classify.py не нашли маркеров (dom_conf становится manual).
 Скрипт идемпотентен: результат зависит только от входных файлов.
 """
 import json
 import sys
+from collections import Counter
 
 SRC = "data/build/questions.classified.json"
 OVERLAY = "data/overlay.json"
+DOM_OVERRIDES = "data/dom-overrides.json"
+META = "data/meta.json"
 OUT = "data/questions.json"
 
 # порядок ключей в записи вопроса
 ORDER = ["id", "question", "options", "answer", "answer_original", "fix_note",
          "disputed_alt", "disputed_note", "defect", "note", "exhibits",
-         "dom", "svc", "multi", "dom_conf"]
+         "dom", "svc", "multi", "dom_conf", "dom_why"]
 
 qs = json.load(open(SRC, encoding="utf-8"))
 ov = json.load(open(OVERLAY, encoding="utf-8"))
@@ -60,8 +65,33 @@ for key, patch in ov.items():
             q[k] = patch[k]
             applied["meta"] += 1
 
+# 5) ручная разметка домена вместо fallback-правила
+dom_ov = json.load(open(DOM_OVERRIDES, encoding="utf-8"))
+codes = {"SEC", "RES", "PERF", "COST"}
+bad = {k: v for k, v in dom_ov.items() if v.get("dom") not in codes or not v.get("why")}
+if bad:
+    sys.exit(f"dom-overrides: некорректные записи {list(bad)[:5]}")
+missing = [k for k in dom_ov if int(k) not in by_id]
+if missing:
+    sys.exit(f"dom-overrides: id нет в банке {missing}")
+for key, patch in dom_ov.items():
+    q = by_id[int(key)]
+    q["dom"] = patch["dom"]
+    q["dom_why"] = patch["why"]
+    q["dom_conf"] = "manual"
+
 out = [{k: q[k] for k in ORDER if k in q} for q in sorted(qs, key=lambda x: x["id"])]
 json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
+# счётчики доменов в meta.json пересчитываются по факту, а не правятся руками
+meta = json.load(open(META, encoding="utf-8"))
+counts = Counter(q["dom"] for q in out)
+for d in meta["domains"]:
+    d["count"] = counts[d["code"]]
+json.dump(meta, open(META, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
 print(f"банк собран: {len(out)} вопросов -> {OUT}")
 print(f"оверлей: {len(ov)} записей, применено {applied}")
+print(f"ручная разметка домена: {len(dom_ov)} вопросов")
+print("домены:", dict(counts))
+print("уверенность:", dict(Counter(q["dom_conf"] for q in out)))
