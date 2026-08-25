@@ -1,278 +1,282 @@
 {
-  "96": {
-    "exhibits": [
-      "q96.png"
-    ]
-  },
-  "110": {
-    "answer": "CD",
-    "answer_original": "BD",
-    "fix_note": "examtopics t1 q110 community consensus"
-  },
-  "113": {
-    "disputed_alt": "D",
-    "disputed_note": "вариант C переписывает кастомное приложение как job в Glue, вариант D переносит существующее приложение на EC2. «Least operational overhead» читается двояко: Glue не требует администрирования, но требует разработки заново; D сохраняет приложение как есть. Snowcone (8/14 ТБ) не вмещает 50 ТБ, DataSync требует полосы, которой нет"
-  },
-  "125": {
-    "note": "source PDF labels option E as D — relabeled",
-    "relabel": {
-      "4": "E"
-    }
-  },
-  "202": {
-    "disputed_alt": "A",
-    "disputed_note": "противоречие внутри банка: вопрос {{q:825}} формулируется так же, но ключ там A (SSE-S3). KMS с автоматической ротацией даёт документированный годовой цикл, SSE-S3 — меньше действий; оба ключа одновременно верными быть не могут"
-  },
-  "239": {
-    "answer": "B",
-    "answer_original": "A",
-    "fix_note": "examtopics t1 q239 — Lambda function URL with AWS_IAM is the single-function microservice path; API Gateway adds a service that is not required"
-  },
-  "245": {
-    "disputed_alt": "D",
-    "disputed_note": "examtopics t1 q245 — target group change does not reduce ASG instance count; strong minority argues D"
-  },
-  "253": {
-    "exhibits": [
-      "q253-1.png",
-      "q253-2.png"
-    ]
-  },
-  "268": {
-    "disputed_alt": "A",
-    "disputed_note": "examtopics t1 q268 — ключ RDS Proxy решает пул соединений, а не read performance; часть сообщества за ElastiCache"
-  },
-  "308": {
-    "answer": "BC",
-    "fix_note": "инстансы описаны как active, поэтому проверка Idle DB Instances (D) на них ничего не покажет — она ищет базы без подключений. Снижение стоимости постоянно работающих 90 дней инстансов даёт проверка RDS Reserved Instance Optimization (C), и рекомендации по RI консолидируются в аккаунте плательщика (B)"
-  },
-  "338": {
-    "disputed_alt": "B",
-    "disputed_note": "AWS документирует headless-конфигурацию Aurora Global Database: вторичный кластер без инстансов реплицирует данные на уровне хранилища и стоит дешевле. При буквальном прочтении «MOST cost-effectively» вариант B выигрывает; ключ D защищают тем, что без инстанса вторичный регион не готов принять нагрузку сразу"
-  },
-  "372": {
-    "disputed_alt": "B",
-    "disputed_note": "examtopics t1 q372 — сообщество делится: B (S3+DynamoDB) дешевле и масштабируемее, контраргумент — GIS-изображение не сводится к одному geographic code"
-  },
-  "390": {
-    "disputed_alt": "BD",
-    "disputed_note": "examtopics t1 q390 — sticky sessions не хранят данные; ElastiCache Redis durable только с persistence; часть сообщества за BD"
-  },
-  "419": {
-    "disputed_alt": "AC",
-    "disputed_note": "вариант E описывает несуществующую настройку: шифрование EBS по умолчанию включается в каждом аккаунте и в каждом регионе отдельно (настройка EC2), а не «в управляющем аккаунте организации» — рабочая пара это A и C"
-  },
-  "423": {
-    "exhibits": [
-      "q423.png"
-    ]
-  },
-  "429": {
-    "exhibits": [
-      "q429.png"
-    ]
-  },
-  "447": {
-    "answer": "A",
-    "answer_original": "B",
-    "fix_note": "examtopics t1 q447 — у CloudFront нет собственных health checks; Route 53 health checks + active-active failover это штатная схема для multi-region API Gateway/Lambda (AWS Compute Blog)"
-  },
-  "477": {
-    "exhibits": [
-      "q477.png"
-    ],
-    "option_img": {
-      "A": "q477-A.png",
-      "B": "q477-B.png",
-      "C": "q477-C.png",
-      "D": "q477-D.png"
-    }
-  },
-  "482": {
-    "disputed_alt": "A",
-    "disputed_note": "100 ГБ по каналу 100 Мбит/с уходят примерно за 2,5 часа обычным aws s3 sync поверх TLS, без единого развёрнутого компонента; DataSync требует поднять и обслуживать агента, зато сам проверяет целостность и повторяет сбойные передачи — «least operational overhead» читается двояко"
-  },
-  "494": {
-    "exhibits": [
-      "q494.png"
-    ]
-  },
-  "511": {
-    "note": "дефект дампа: вариант C напечатан как «Aurora On-Demand PostgreSQL-Compatible» и в таком виде дублирует вариант A; по смыслу задачи там должен быть Aurora Serverless — только он масштабируется вниз в простое",
-    "disputed_alt": "B",
-    "disputed_note": "если читать вариант C буквально (обычный provisioned-кластер Aurora), то дешевле окажется RDS Single-AZ с остановкой на ночь: среда используется 4 часа из 8-часового дня"
-  },
-  "523": {
-    "disputed_alt": "A",
-    "disputed_note": "pipeline resolvers в AWS AppSync существуют ровно для того, чтобы одним запросом собрать данные из нескольких источников, включая несколько таблиц DynamoDB, и не требуют собственного кода на edge. Ключ B защищают тем, что обработка на edge-локации вообще не касается существующего приложения и потому не влияет на его базовую производительность"
-  },
-  "536": {
-    "disputed_alt": "D",
-    "disputed_note": "Multi-AZ DB cluster с двумя readable standby (D) даёт и HA, и read-эндпоинты тремя инстансами против четырёх в варианте C"
-  },
-  "540": {
-    "note": "неточность вопроса: Multi-AZ DB cluster deployment в Amazon RDS поддерживается только для MySQL и PostgreSQL, для Oracle такого режима нет. Вариант C всё равно остаётся лучшим из предложенных, потому что только он даёт и высокую доступность, и отдельный инстанс для отчётности"
-  },
-  "571": {
-    "answer": "A",
-    "answer_original": "B",
-    "fix_note": "ACM не выпускает сертификаты, подписанные сторонним CA — только импортирует их; варианты B и D технически невозможны. examtopics t1 q571"
-  },
-  "574": {
-    "disputed_alt": "A",
-    "disputed_note": "2 часа работы в неделю: Aurora Serverless v2 масштабируется вниз, но не до нуля; provisioned-кластер можно останавливать максимум на 7 суток — оба варианта спорны"
-  },
-  "591": {
-    "disputed_alt": "B",
-    "disputed_note": "для маршрутизации к микросервисам в EKS штатное решение это ALB через AWS Load Balancer Controller; API Gateway обычно дороже"
-  },
-  "599": {
-    "answer": "ACF",
-    "fix_note": "в модели разделённой ответственности AWS Outposts физическое обслуживание компонентов стойки (вариант E) и доступность самой инфраструктуры Outposts выполняет AWS; на стороне заказчика — питание и связность, физическая охрана помещения и запас ёмкости на случай отказа сервера, то есть A, C и F"
-  },
-  "622": {
-    "disputed_alt": "AD",
-    "disputed_note": "при скачке с тысяч до миллионов пользователей on-demand capacity (A) масштабируется мгновенно, auto scaling провиженинга отстаёт от резких всплесков"
-  },
-  "647": {
-    "answer": "A",
-    "answer_original": "C",
-    "fix_note": "VoIP это UDP — CloudFront работает только с HTTP/HTTPS. Global Accelerator прямо назван AWS как решение для VoIP и быстрого межрегионального failover (GA FAQ, examtopics t1 q647)"
-  },
-  "664": {
-    "answer": "A",
-    "fix_note": "predictive scaling обучается на повторяющихся суточных и недельных паттернах, а всплеск дважды в месяц таким паттерном не является — прогноз его не поймает. Мгновенный рост CPU в 10 раз при низкой базовой нагрузке закрывают burstable-инстансы в режиме unlimited, а реагировать на нерегулярный всплеск нужно по факту запросов, а не по прогнозу"
-  },
-  "687": {
-    "answer": "DE",
-    "answer_original": "BD",
-    "fix_note": "ключ смешивает обучение в SageMaker (B) с предсказанием через Forecast-предиктор (D) — несовместимая пара; при отсутствии ML-опыта связка DE (обучить Forecast-предиктор + Lambda с этим предиктором) согласована"
-  },
-  "692": {
-    "disputed_alt": "A",
-    "disputed_note": "\"MOST high-performing\" это latency routing policy (A); geolocation маршрутизирует по географии пользователя, а не по фактической задержке"
-  },
-  "702": {
-    "answer": "B",
-    "fix_note": "задания импорта AWS Snow Family выгружают данные только в Amazon S3 — прямого импорта в файловую систему FSx for Lustre не существует; штатный путь это бакет S3, связанный с FSx for Lustre как data repository"
-  },
-  "721": {
-    "answer": "D",
-    "fix_note": "условие требует бессерверного решения с поддержкой Python, автомасштабированием и минимумом инфраструктуры и сопровождения; вариант C (самоуправляемые инстансы EC2 в EKS) — прямо противоположное, максимум эксплуатации. Подходит только AWS Lambda"
-  },
-  "744": {
-    "answer": "A",
-    "answer_original": "C",
-    "fix_note": "NLB поддерживает Elastic IP на AZ, ALB — нет; вариант C (A-запись на Elastic IP) не описывает работоспособную конструкцию перед ELB. examtopics t1 q744"
-  },
-  "754": {
-    "disputed_alt": "B",
-    "disputed_note": "требование static IP addresses выполняет Global Accelerator (B), у CloudFront статических IP нет; при этом WAF в варианте B на ALB работает корректно"
-  },
-  "756": {
-    "note": "source PDF labels option C as B — relabeled",
-    "relabel": {
-      "2": "C"
-    }
-  },
-  "789": {
-    "answer": "A",
-    "fix_note": "SCP оперирует вызовами API и условиями и не видит содержимого шаблона CloudFormation: запретить inline-политику со звёздочкой в Statement она не может. Это работа proactive controls в AWS Control Tower — проверок на базе CloudFormation Hooks, которые блокируют развёртывание до создания ресурсов"
-  },
-  "809": {
-    "answer": "A",
-    "answer_original": "B",
-    "fix_note": "EventBridge Scheduler запускает задачи по расписанию и не сопоставляет входящие события; матчинг события Batch SUCCEEDED делает EventBridge rule, а HTTP API с логином/паролем это штатный API destination с connection"
-  },
-  "825": {
-    "disputed_alt": "B",
-    "disputed_note": "противоречие внутри банка: вопрос {{q:202}} формулируется так же, но ключ там B (KMS CMK). SSE-S3 требует меньше действий, но годовой период ротации у него не документирован; оба ключа одновременно верными быть не могут"
-  },
-  "827": {
-    "answer": "D",
-    "answer_original": "C",
-    "fix_note": "у Aurora только два типа хранилища — Standard и I/O-Optimized; General Purpose/Provisioned IOPS к кластеру Aurora не относятся"
-  },
-  "835": {
-    "disputed_alt": "A",
-    "disputed_note": "public VIF дешевле и штатно используется для доступа к S3 через Direct Connect; interface endpoint тарифицируется почасово плюс за трафик"
-  },
-  "838": {
-    "answer": "D",
-    "fix_note": "ключ дампа C описывает SSL, то есть шифрование в канале, хотя требование — шифрование при хранении; вариант D закрывает оба хранилища: тома EBS инстанса и хранилище RDS ключами KMS"
-  },
-  "842": {
-    "answer": "D",
-    "answer_original": "A",
-    "fix_note": "\"EFS-to-EFS backup\" это устаревшее AWS Solutions-решение на CloudFormation, а не managed-сервис; репликацию EFS между регионами делает AWS Backup"
-  },
-  "851": {
-    "disputed_alt": "C",
-    "disputed_note": "Aurora Serverless масштабируется вниз в простое, что точнее отвечает \"нужны только во время работы\""
-  },
-  "868": {
-    "defect": "option A missing in source PDF"
-  },
-  "870": {
-    "answer": "C",
-    "answer_original": "D",
-    "fix_note": "ключ противоречив: группа в Production указана принципалом в trust policy, ссылающейся на тот же Production; кросс-аккаунт делается ролью в Production с доверием к Development"
-  },
-  "874": {
-    "answer": "A",
-    "answer_original": "C",
-    "fix_note": "ключ описывает pilot light (инфраструктура создаётся по факту аварии); при требовании LEAST downtime нужен warm standby с уже поднятыми ASG и ELB"
-  },
-  "878": {
-    "disputed_alt": "D",
-    "disputed_note": "вариант ключа даёт всем владельцам аккаунтов доступ к одному почтовому ящику, что противоречит требованию MOST securely"
-  },
-  "881": {
-    "disputed_alt": "AE",
-    "disputed_note": "Cache-Control private вообще запрещает кэширование в CloudFront и убивает смысл кэша; связка TTL + инвалидация при деплое логичнее"
-  },
-  "887": {
-    "answer": "A",
-    "answer_original": "B",
-    "fix_note": "AWS Config только детектирует нарушения; запрет незашифрованных томов даёт атрибут аккаунта EC2 \"always encrypt new EBS volumes\""
-  },
-  "893": {
-    "answer": "A",
-    "answer_original": "B",
-    "fix_note": "автоматические guardrails при создании аккаунтов это AWS Control Tower, Organizations сам по себе их не даёт"
-  },
-  "903": {
-    "answer": "A",
-    "answer_original": "B",
-    "fix_note": "ACL через Batch Operations не масштабируется и противоречит рекомендациям AWS; префиксный доступ с гранулярным контролем это S3 access points с политиками"
-  },
-  "931": {
-    "answer": "AC",
-    "answer_original": "AB",
-    "fix_note": "для кросс-аккаунтной подписки Lambda на SNS нужны resource policy у функции (A) и политика топика, разрешающая подписку (C); буфер SQS из варианта B меняет источник вызова и с A несовместим"
-  },
-  "936": {
-    "answer": "BC",
-    "answer_original": "CD",
-    "fix_note": "Parameter Store не умеет автоматическую ротацию — её даёт только Secrets Manager; вторым шагом идёт Lambda layer для получения секрета"
-  },
-  "961": {
-    "answer": "C",
-    "fix_note": "AWS WAF не поддерживает AWS Global Accelerator как защищаемый ресурс (поддерживаются CloudFront, ALB, API Gateway, AppSync, Cognito, App Runner, Verified Access), поэтому web ACL привязывают к ALB за акселератором"
-  },
-  "971": {
-    "disputed_alt": "D",
-    "disputed_note": "повторная раздача одних и тех же файлов на серверы в разных регионах это кэш CloudFront; Transfer Acceleration ускоряет в первую очередь загрузку в S3 и не кэширует"
-  },
-  "974": {
-    "answer": "AD",
-    "answer_original": "BD",
-    "fix_note": "сертификат для CloudFront должен быть выпущен в us-east-1 независимо от региона бакета"
-  },
-  "980": {
-    "exhibits": [
-      "q980-1.png",
-      "q980-2.png"
-    ]
+ "96": {
+  "exhibits": [
+   "q96.png"
+  ]
+ },
+ "110": {
+  "answer": "CD",
+  "answer_original": "BD",
+  "fix_note": "examtopics t1 q110 community consensus"
+ },
+ "113": {
+  "disputed_alt": "D",
+  "disputed_note": "вариант C переписывает кастомное приложение как job в Glue, вариант D переносит существующее приложение на EC2. «Least operational overhead» читается двояко: Glue не требует администрирования, но требует разработки заново; D сохраняет приложение как есть. Snowcone (8/14 ТБ) не вмещает 50 ТБ, DataSync требует полосы, которой нет"
+ },
+ "125": {
+  "note": "source PDF labels option E as D — relabeled",
+  "relabel": {
+   "4": "E"
   }
+ },
+ "202": {
+  "disputed_alt": "A",
+  "disputed_note": "противоречие внутри банка: вопрос {{q:825}} формулируется так же, но ключ там A (SSE-S3). KMS с автоматической ротацией даёт документированный годовой цикл, SSE-S3 — меньше действий; оба ключа одновременно верными быть не могут"
+ },
+ "239": {
+  "answer": "B",
+  "answer_original": "A",
+  "fix_note": "examtopics t1 q239 — Lambda function URL with AWS_IAM is the single-function microservice path; API Gateway adds a service that is not required"
+ },
+ "245": {
+  "disputed_alt": "D",
+  "disputed_note": "examtopics t1 q245 — target group change does not reduce ASG instance count; strong minority argues D"
+ },
+ "253": {
+  "exhibits": [
+   "q253-1.png",
+   "q253-2.png"
+  ]
+ },
+ "268": {
+  "disputed_alt": "A",
+  "disputed_note": "examtopics t1 q268 — ключ RDS Proxy решает пул соединений, а не read performance; часть сообщества за ElastiCache"
+ },
+ "308": {
+  "answer": "BC",
+  "fix_note": "инстансы описаны как active, поэтому проверка Idle DB Instances (D) на них ничего не покажет — она ищет базы без подключений. Снижение стоимости постоянно работающих 90 дней инстансов даёт проверка RDS Reserved Instance Optimization (C), и рекомендации по RI консолидируются в аккаунте плательщика (B)"
+ },
+ "338": {
+  "disputed_alt": "B",
+  "disputed_note": "AWS документирует headless-конфигурацию Aurora Global Database: вторичный кластер без инстансов реплицирует данные на уровне хранилища и стоит дешевле. При буквальном прочтении «MOST cost-effectively» вариант B выигрывает; ключ D защищают тем, что без инстанса вторичный регион не готов принять нагрузку сразу"
+ },
+ "372": {
+  "disputed_alt": "B",
+  "disputed_note": "examtopics t1 q372 — сообщество делится: B (S3+DynamoDB) дешевле и масштабируемее, контраргумент — GIS-изображение не сводится к одному geographic code"
+ },
+ "390": {
+  "disputed_alt": "BD",
+  "disputed_note": "examtopics t1 q390 — sticky sessions не хранят данные; ElastiCache Redis durable только с persistence; часть сообщества за BD"
+ },
+ "419": {
+  "disputed_alt": "AC",
+  "disputed_note": "вариант E описывает несуществующую настройку: шифрование EBS по умолчанию включается в каждом аккаунте и в каждом регионе отдельно (настройка EC2), а не «в управляющем аккаунте организации» — рабочая пара это A и C"
+ },
+ "423": {
+  "exhibits": [
+   "q423.png"
+  ]
+ },
+ "429": {
+  "exhibits": [
+   "q429.png"
+  ]
+ },
+ "447": {
+  "answer": "A",
+  "answer_original": "B",
+  "fix_note": "examtopics t1 q447 — у CloudFront нет собственных health checks; Route 53 health checks + active-active failover это штатная схема для multi-region API Gateway/Lambda (AWS Compute Blog)"
+ },
+ "477": {
+  "exhibits": [
+   "q477.png"
+  ],
+  "option_img": {
+   "A": "q477-A.png",
+   "B": "q477-B.png",
+   "C": "q477-C.png",
+   "D": "q477-D.png"
+  }
+ },
+ "482": {
+  "disputed_alt": "A",
+  "disputed_note": "100 ГБ по каналу 100 Мбит/с уходят примерно за 2,5 часа обычным aws s3 sync поверх TLS, без единого развёрнутого компонента; DataSync требует поднять и обслуживать агента, зато сам проверяет целостность и повторяет сбойные передачи — «least operational overhead» читается двояко"
+ },
+ "494": {
+  "exhibits": [
+   "q494.png"
+  ]
+ },
+ "511": {
+  "note": "дефект дампа: вариант C напечатан как «Aurora On-Demand PostgreSQL-Compatible» и в таком виде дублирует вариант A; по смыслу задачи там должен быть Aurora Serverless — только он масштабируется вниз в простое",
+  "disputed_alt": "B",
+  "disputed_note": "если читать вариант C буквально (обычный provisioned-кластер Aurora), то дешевле окажется RDS Single-AZ с остановкой на ночь: среда используется 4 часа из 8-часового дня"
+ },
+ "523": {
+  "disputed_alt": "A",
+  "disputed_note": "pipeline resolvers в AWS AppSync существуют ровно для того, чтобы одним запросом собрать данные из нескольких источников, включая несколько таблиц DynamoDB, и не требуют собственного кода на edge. Ключ B защищают тем, что обработка на edge-локации вообще не касается существующего приложения и потому не влияет на его базовую производительность"
+ },
+ "536": {
+  "disputed_alt": "D",
+  "disputed_note": "Multi-AZ DB cluster с двумя readable standby (D) даёт и HA, и read-эндпоинты тремя инстансами против четырёх в варианте C"
+ },
+ "540": {
+  "note": "неточность вопроса: Multi-AZ DB cluster deployment в Amazon RDS поддерживается только для MySQL и PostgreSQL, для Oracle такого режима нет. Вариант C всё равно остаётся лучшим из предложенных, потому что только он даёт и высокую доступность, и отдельный инстанс для отчётности"
+ },
+ "571": {
+  "answer": "A",
+  "answer_original": "B",
+  "fix_note": "ACM не выпускает сертификаты, подписанные сторонним CA — только импортирует их; варианты B и D технически невозможны. examtopics t1 q571"
+ },
+ "574": {
+  "disputed_alt": "A",
+  "disputed_note": "2 часа работы в неделю: Aurora Serverless v2 масштабируется вниз, но не до нуля; provisioned-кластер можно останавливать максимум на 7 суток — оба варианта спорны"
+ },
+ "591": {
+  "disputed_alt": "B",
+  "disputed_note": "для маршрутизации к микросервисам в EKS штатное решение это ALB через AWS Load Balancer Controller; API Gateway обычно дороже"
+ },
+ "599": {
+  "answer": "ACF",
+  "fix_note": "в модели разделённой ответственности AWS Outposts физическое обслуживание компонентов стойки (вариант E) и доступность самой инфраструктуры Outposts выполняет AWS; на стороне заказчика — питание и связность, физическая охрана помещения и запас ёмкости на случай отказа сервера, то есть A, C и F"
+ },
+ "622": {
+  "disputed_alt": "AD",
+  "disputed_note": "при скачке с тысяч до миллионов пользователей on-demand capacity (A) масштабируется мгновенно, auto scaling провиженинга отстаёт от резких всплесков"
+ },
+ "647": {
+  "answer": "A",
+  "answer_original": "C",
+  "fix_note": "VoIP это UDP — CloudFront работает только с HTTP/HTTPS. Global Accelerator прямо назван AWS как решение для VoIP и быстрого межрегионального failover (GA FAQ, examtopics t1 q647)"
+ },
+ "664": {
+  "answer": "A",
+  "fix_note": "predictive scaling обучается на повторяющихся суточных и недельных паттернах, а всплеск дважды в месяц таким паттерном не является — прогноз его не поймает. Мгновенный рост CPU в 10 раз при низкой базовой нагрузке закрывают burstable-инстансы в режиме unlimited, а реагировать на нерегулярный всплеск нужно по факту запросов, а не по прогнозу"
+ },
+ "687": {
+  "answer": "DE",
+  "answer_original": "BD",
+  "fix_note": "ключ смешивает обучение в SageMaker (B) с предсказанием через Forecast-предиктор (D) — несовместимая пара; при отсутствии ML-опыта связка DE (обучить Forecast-предиктор + Lambda с этим предиктором) согласована"
+ },
+ "692": {
+  "disputed_alt": "A",
+  "disputed_note": "\"MOST high-performing\" это latency routing policy (A); geolocation маршрутизирует по географии пользователя, а не по фактической задержке"
+ },
+ "702": {
+  "answer": "B",
+  "fix_note": "задания импорта AWS Snow Family выгружают данные только в Amazon S3 — прямого импорта в файловую систему FSx for Lustre не существует; штатный путь это бакет S3, связанный с FSx for Lustre как data repository"
+ },
+ "721": {
+  "answer": "D",
+  "fix_note": "условие требует бессерверного решения с поддержкой Python, автомасштабированием и минимумом инфраструктуры и сопровождения; вариант C (самоуправляемые инстансы EC2 в EKS) — прямо противоположное, максимум эксплуатации. Подходит только AWS Lambda"
+ },
+ "744": {
+  "answer": "A",
+  "answer_original": "C",
+  "fix_note": "NLB поддерживает Elastic IP на AZ, ALB — нет; вариант C (A-запись на Elastic IP) не описывает работоспособную конструкцию перед ELB. examtopics t1 q744"
+ },
+ "754": {
+  "disputed_alt": "B",
+  "disputed_note": "требование static IP addresses выполняет Global Accelerator (B), у CloudFront статических IP нет; при этом WAF в варианте B на ALB работает корректно"
+ },
+ "756": {
+  "note": "source PDF labels option C as B — relabeled",
+  "relabel": {
+   "2": "C"
+  }
+ },
+ "789": {
+  "answer": "A",
+  "fix_note": "SCP оперирует вызовами API и условиями и не видит содержимого шаблона CloudFormation: запретить inline-политику со звёздочкой в Statement она не может. Это работа proactive controls в AWS Control Tower — проверок на базе CloudFormation Hooks, которые блокируют развёртывание до создания ресурсов"
+ },
+ "809": {
+  "answer": "A",
+  "answer_original": "B",
+  "fix_note": "EventBridge Scheduler запускает задачи по расписанию и не сопоставляет входящие события; матчинг события Batch SUCCEEDED делает EventBridge rule, а HTTP API с логином/паролем это штатный API destination с connection"
+ },
+ "825": {
+  "disputed_alt": "B",
+  "disputed_note": "противоречие внутри банка: вопрос {{q:202}} формулируется так же, но ключ там B (KMS CMK). SSE-S3 требует меньше действий, но годовой период ротации у него не документирован; оба ключа одновременно верными быть не могут"
+ },
+ "827": {
+  "answer": "D",
+  "answer_original": "C",
+  "fix_note": "у Aurora только два типа хранилища — Standard и I/O-Optimized; General Purpose/Provisioned IOPS к кластеру Aurora не относятся"
+ },
+ "835": {
+  "disputed_alt": "A",
+  "disputed_note": "public VIF дешевле и штатно используется для доступа к S3 через Direct Connect; interface endpoint тарифицируется почасово плюс за трафик"
+ },
+ "838": {
+  "answer": "D",
+  "fix_note": "ключ дампа C описывает SSL, то есть шифрование в канале, хотя требование — шифрование при хранении; вариант D закрывает оба хранилища: тома EBS инстанса и хранилище RDS ключами KMS"
+ },
+ "842": {
+  "answer": "D",
+  "answer_original": "A",
+  "fix_note": "\"EFS-to-EFS backup\" это устаревшее AWS Solutions-решение на CloudFormation, а не managed-сервис; репликацию EFS между регионами делает AWS Backup"
+ },
+ "851": {
+  "disputed_alt": "C",
+  "disputed_note": "Aurora Serverless масштабируется вниз в простое, что точнее отвечает \"нужны только во время работы\""
+ },
+ "868": {
+  "defect": "option A missing in source PDF"
+ },
+ "870": {
+  "answer": "C",
+  "answer_original": "D",
+  "fix_note": "ключ противоречив: группа в Production указана принципалом в trust policy, ссылающейся на тот же Production; кросс-аккаунт делается ролью в Production с доверием к Development"
+ },
+ "874": {
+  "answer": "A",
+  "answer_original": "C",
+  "fix_note": "ключ описывает pilot light (инфраструктура создаётся по факту аварии); при требовании LEAST downtime нужен warm standby с уже поднятыми ASG и ELB"
+ },
+ "878": {
+  "disputed_alt": "D",
+  "disputed_note": "вариант ключа даёт всем владельцам аккаунтов доступ к одному почтовому ящику, что противоречит требованию MOST securely"
+ },
+ "881": {
+  "disputed_alt": "AE",
+  "disputed_note": "Cache-Control private вообще запрещает кэширование в CloudFront и убивает смысл кэша; связка TTL + инвалидация при деплое логичнее"
+ },
+ "887": {
+  "answer": "A",
+  "answer_original": "B",
+  "fix_note": "AWS Config только детектирует нарушения; запрет незашифрованных томов даёт атрибут аккаунта EC2 \"always encrypt new EBS volumes\""
+ },
+ "893": {
+  "answer": "A",
+  "answer_original": "B",
+  "fix_note": "автоматические guardrails при создании аккаунтов это AWS Control Tower, Organizations сам по себе их не даёт"
+ },
+ "903": {
+  "answer": "A",
+  "answer_original": "B",
+  "fix_note": "ACL через Batch Operations не масштабируется и противоречит рекомендациям AWS; префиксный доступ с гранулярным контролем это S3 access points с политиками"
+ },
+ "931": {
+  "answer": "AC",
+  "answer_original": "AB",
+  "fix_note": "для кросс-аккаунтной подписки Lambda на SNS нужны resource policy у функции (A) и политика топика, разрешающая подписку (C); буфер SQS из варианта B меняет источник вызова и с A несовместим"
+ },
+ "936": {
+  "answer": "BC",
+  "answer_original": "CD",
+  "fix_note": "Parameter Store не умеет автоматическую ротацию — её даёт только Secrets Manager; вторым шагом идёт Lambda layer для получения секрета"
+ },
+ "961": {
+  "answer": "C",
+  "fix_note": "AWS WAF не поддерживает AWS Global Accelerator как защищаемый ресурс (поддерживаются CloudFront, ALB, API Gateway, AppSync, Cognito, App Runner, Verified Access), поэтому web ACL привязывают к ALB за акселератором"
+ },
+ "971": {
+  "disputed_alt": "D",
+  "disputed_note": "повторная раздача одних и тех же файлов на серверы в разных регионах это кэш CloudFront; Transfer Acceleration ускоряет в первую очередь загрузку в S3 и не кэширует"
+ },
+ "974": {
+  "answer": "AD",
+  "answer_original": "BD",
+  "fix_note": "сертификат для CloudFront должен быть выпущен в us-east-1 независимо от региона бакета"
+ },
+ "980": {
+  "exhibits": [
+   "q980-1.png",
+   "q980-2.png"
+  ]
+ },
+ "515": {
+  "answer": "ABC",
+  "fix_note": "вариант E («глобальное масштабирование на петабайты и десятки миллионов запросов в минуту») описывает Amazon DynamoDB, а не Redshift: кластер Redshift региональный и не рассчитан на такой темп обращений. Формулировка варианта A взята из описания Redshift Data API, который существует именно для обращения к данным из обычных, контейнеризованных и событийных приложений, поэтому верная тройка — A, B, C"
+ }
 }

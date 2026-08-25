@@ -16991,7 +16991,9 @@
     "t": "Creating a secondary replica of the cluster by using the AWS Management Console"
    }
   ],
-  "answer": "BCE",
+  "answer": "ABC",
+  "answer_original": "BCE",
+  "fix_note": "вариант E («глобальное масштабирование на петабайты и десятки миллионов запросов в минуту») описывает Amazon DynamoDB, а не Redshift: кластер Redshift региональный и не рассчитан на такой темп обращений. Формулировка варианта A взята из описания Redshift Data API, который существует именно для обращения к данным из обычных, контейнеризованных и событийных приложений, поэтому верная тройка — A, B, C",
   "dom": "PERF",
   "svc": [
    "Redshift"
