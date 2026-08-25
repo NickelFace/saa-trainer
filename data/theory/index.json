@@ -8,7 +8,7 @@
     "S3"
    ],
    "questions": 401,
-   "lines": 173
+   "lines": 204
   },
   {
    "id": "ec2",
@@ -18,7 +18,7 @@
     "EC2"
    ],
    "questions": 479,
-   "lines": 152
+   "lines": 188
   },
   {
    "id": "scaling-elb",
@@ -29,7 +29,7 @@
     "Auto Scaling"
    ],
    "questions": 260,
-   "lines": 154
+   "lines": 185
   },
   {
    "id": "vpc",
@@ -39,7 +39,7 @@
     "VPC"
    ],
    "questions": 128,
-   "lines": 153
+   "lines": 184
   },
   {
    "id": "iam",
@@ -50,7 +50,7 @@
     "Organizations"
    ],
    "questions": 151,
-   "lines": 153
+   "lines": 184
   },
   {
    "id": "encryption-kms",
@@ -61,7 +61,7 @@
     "Secrets Manager"
    ],
    "questions": 78,
-   "lines": 154
+   "lines": 185
   },
   {
    "id": "rds",
@@ -72,7 +72,7 @@
     "DMS"
    ],
    "questions": 215,
-   "lines": 150
+   "lines": 179
   },
   {
    "id": "aurora",
@@ -103,7 +103,7 @@
     "API Gateway"
    ],
    "questions": 288,
-   "lines": 155
+   "lines": 170
   },
   {
    "id": "integration",
@@ -249,7 +249,7 @@
     "CloudFormation"
    ],
    "questions": 207,
-   "lines": 155
+   "lines": 171
   },
   {
    "id": "cost",
@@ -261,7 +261,7 @@
     "Organizations"
    ],
    "questions": 62,
-   "lines": 161
+   "lines": 179
   },
   {
    "id": "appendix-domains",
