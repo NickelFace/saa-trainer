@@ -54,6 +54,10 @@
     "disputed_alt": "BD",
     "disputed_note": "examtopics t1 q390 — sticky sessions не хранят данные; ElastiCache Redis durable только с persistence; часть сообщества за BD"
   },
+  "419": {
+    "disputed_alt": "AC",
+    "disputed_note": "вариант E описывает несуществующую настройку: шифрование EBS по умолчанию включается в каждом аккаунте и в каждом регионе отдельно (настройка EC2), а не «в управляющем аккаунте организации» — рабочая пара это A и C"
+  },
   "423": {
     "exhibits": [
       "q423.png"
