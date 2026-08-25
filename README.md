@@ -38,7 +38,7 @@ including progress saved in localStorage.
   storage-class answer points at the near-identical question where the answer differs.
   177 of 1019 questions so far; the layer lives in `data/explanations.json` and grows
   chapter by chapter.
-- **Audit transparency** — the 25 corrected answer keys show the original dump answer
+- **Audit transparency** — the 26 corrected answer keys show the original dump answer
   and the reason; the 20 disputed questions show the alternative and the argument.
 - **Progress** — stored in localStorage, per-domain accuracy, exam history,
   export/import as JSON.
@@ -135,10 +135,10 @@ blueprint, not by the bank.
 
 Domain counts in `meta.json` are recomputed by the pipeline, never edited by hand.
 
-Audit: 25 corrected keys, 23 disputed, no low-confidence questions left, 3 source-PDF
-defects, 7 questions with exhibits. Written walkthroughs: 721 of 1019 questions — every
+Audit: 26 corrected keys, 23 disputed, no low-confidence questions left, 3 source-PDF
+defects, 7 questions with exhibits. Written walkthroughs: 777 of 1019 questions — every
 corrected key, every disputed question, and the IAM, encryption/KMS, Route 53,
-perimeter-security, cost-optimization, hybrid-network, file-storage, data-transfer, EBS, Aurora, CloudFront/edge and VPC
+perimeter-security, cost-optimization, hybrid-network, file-storage, data-transfer, EBS, Aurora, CloudFront/edge, VPC and containers
 chapters in full.
 
 Russian version of this document: [README.ru.md](README.ru.md).

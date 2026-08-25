@@ -23758,7 +23758,9 @@
     "t": "Use an AWS Lambda function that runs custom developed code."
    }
   ],
-  "answer": "C",
+  "answer": "D",
+  "answer_original": "C",
+  "fix_note": "условие требует бессерверного решения с поддержкой Python, автомасштабированием и минимумом инфраструктуры и сопровождения; вариант C (самоуправляемые инстансы EC2 в EKS) — прямо противоположное, максимум эксплуатации. Подходит только AWS Lambda",
   "dom": "PERF",
   "svc": [
    "EC2",
