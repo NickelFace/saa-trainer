@@ -25953,7 +25953,9 @@
     "t": "Use a service control policy (SCP) to block actions for the EC2 instances and IAM resources if the actions lead to noncompliance."
    }
   ],
-  "answer": "D",
+  "answer": "A",
+  "answer_original": "D",
+  "fix_note": "SCP оперирует вызовами API и условиями и не видит содержимого шаблона CloudFormation: запретить inline-политику со звёздочкой в Statement она не может. Это работа proactive controls в AWS Control Tower — проверок на базе CloudFormation Hooks, которые блокируют развёртывание до создания ресурсов",
   "dom": "SEC",
   "svc": [
    "EC2",

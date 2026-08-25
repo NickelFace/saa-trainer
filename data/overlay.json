@@ -152,6 +152,10 @@
       "2": "C"
     }
   },
+  "789": {
+    "answer": "A",
+    "fix_note": "SCP оперирует вызовами API и условиями и не видит содержимого шаблона CloudFormation: запретить inline-политику со звёздочкой в Statement она не может. Это работа proactive controls в AWS Control Tower — проверок на базе CloudFormation Hooks, которые блокируют развёртывание до создания ресурсов"
+  },
   "809": {
     "answer": "A",
     "answer_original": "B",

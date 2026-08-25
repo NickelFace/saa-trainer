@@ -1,6 +1,6 @@
 # SAA-C03 audit log (1019 вопросов, 100%)
 
-## Исправленные ошибки ключа (21)
+## Исправленные ошибки ключа (22)
 
 - **#110**: BD -> **CD**. examtopics t1 q110 community consensus
 - **#239**: A -> **B**. examtopics t1 q239 — Lambda function URL with AWS_IAM is the single-function microservice path; API Gateway adds a service that is not required
@@ -24,6 +24,8 @@
 - **#664**: D -> **A**. predictive scaling не ловит всплеск дважды в месяц; нужен burstable unlimited плюс масштабирование по запросам
 
 - **#838**: C → **D**. Найдено при разборе главы encryption-kms: вариант C говорит про SSL, то есть про шифрование в канале, а требование — шифрование при хранении. D шифрует и тома EBS инстанса, и хранилище RDS ключами KMS
+
+- **#789**: D → **A**. Найдено при разборе главы iam: SCP не видит содержимого шаблона CloudFormation и не может запретить inline-политику со звёздочкой; это делают proactive controls в AWS Control Tower (CloudFormation Hooks)
 
 ## Спорные, ключ сохранён (21)
 
