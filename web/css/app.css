@@ -69,6 +69,9 @@ label.checkbox input { width: auto; }
   padding: 12px; border-radius: var(--radius); margin-bottom: 16px;
 }
 .filters label { min-width: 150px; }
+.filters-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.filters-toggle { display: none; }
+.filters-summary { color: var(--muted); font-size: 13px; }
 .chapter-filter {
   font-size: 13px; color: var(--warn); background: var(--panel-2);
   padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line);
@@ -174,6 +177,7 @@ label.checkbox input { width: auto; }
 
 /* ---------- учебник ---------- */
 .theory-layout { display: grid; grid-template-columns: 300px 1fr; gap: 18px; align-items: start; }
+.theory-layout > * { min-width: 0; }   /* иначе широкая таблица растягивает страницу вместо прокрутки */
 .theory-list {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 12px; position: sticky; top: 74px;
@@ -212,11 +216,13 @@ label.checkbox input { width: auto; }
   background: var(--panel-2); border-radius: 0 8px 8px 0; color: var(--text);
 }
 .theory-body a { color: var(--link); }
-.table-wrap { overflow-x: auto; margin: 12px 0; }
+.table-wrap { overflow-x: auto; margin: 12px 0; max-width: 100%; }
+.panel .table-wrap table { min-width: 340px; }
 .theory-body table { border-collapse: collapse; width: 100%; font-size: 14px; }
 .theory-body th, .theory-body td { border: 1px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; }
 .theory-body th { background: var(--panel-2); }
 .chapter-head { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+.chapter-head .to-list { display: none; }
 .search-hits { font-size: 12px; color: var(--muted); margin-top: 8px; }
 
 /* ---------- прогресс ---------- */
@@ -235,10 +241,43 @@ kbd {
 }
 
 @media (max-width: 820px) {
+  /* шапка: одна строка, вкладки прокручиваются по горизонтали */
+  .topbar { padding: 8px 12px; gap: 10px; flex-wrap: nowrap; }
+  .brand { flex: 0 0 auto; font-size: 14px; }
+  .tabs { flex: 1 1 auto; flex-wrap: nowrap; overflow-x: auto; gap: 4px; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { white-space: nowrap; padding: 9px 12px; }
+  .bank-info { display: none; }
+
+  /* фильтры свёрнуты, пока их не откроют */
+  .filters-toggle { display: inline-block; }
+  .filters { display: none; margin-bottom: 12px; }
+  .filters.open { display: flex; }
+  .filters label { min-width: 140px; flex: 1 1 140px; }
+
+  /* учебник: список глав и текст главы показываются по очереди */
   .theory-layout { grid-template-columns: 1fr; }
   .theory-list { position: static; max-height: none; }
+  .theory-layout.reading .theory-list { display: none; }
+  .chapter-head .to-list { display: inline-block; }
+  .theory-body { padding: 16px 14px; }
+
   .bar-row { grid-template-columns: 120px 1fr 60px; }
   main { padding: 12px; }
+
+  /* пальцем в мелкие цели не попасть */
+  .btn { padding: 10px 16px; }
+  .exam-grid button { width: 40px; height: 36px; font-size: 13px; }
+  .opt { padding: 12px 10px; }
+  .chip.flag { padding: 8px 12px; }
+  .chapter-filter button { padding: 4px 10px; font-size: 16px; }
+  select, input[type="search"] { padding: 10px; }
+}
+
+@media (max-width: 560px) {
+  .brand { display: none; }
+  .score { font-size: 34px; }
+  .qhead .dom-full { display: none; }   /* полное имя домена не влезает, код остаётся */
 }
 
 /* ---------- навигация по главам ---------- */

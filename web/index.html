@@ -25,6 +25,11 @@
 <main id="root">
   <!-- ТРЕНИРОВКА -->
   <section class="view" id="view-practice">
+    <div class="filters-bar">
+      <button class="btn ghost filters-toggle" id="f-toggle" aria-expanded="true" aria-controls="practice-filters">Фильтры</button>
+      <span class="filters-summary" id="f-summary"></span>
+      <span class="chapter-filter hidden" id="chapter-filter"></span>
+    </div>
     <div class="filters" id="practice-filters">
       <label>Домен
         <select id="f-dom"><option value="">все</option></select>
@@ -54,7 +59,6 @@
         <input type="search" id="f-find" placeholder="номер вопроса или текст">
       </label>
       <button class="btn" id="f-apply">Применить</button>
-      <span class="chapter-filter hidden" id="chapter-filter"></span>
     </div>
     <div class="practice-body">
       <div id="practice-empty" class="empty hidden">Под фильтр ничего не подходит.</div>

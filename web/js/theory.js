@@ -30,13 +30,27 @@
     });
   }
 
+  var NARROW = "(max-width: 820px)";
+  function isNarrow() { return window.matchMedia(NARROW).matches; }
+
   function View(dom, handlers) {
     this.dom = dom;              /* { list, body, search } */
     this.handlers = handlers || {};
     this.activeId = null;
+    this.layout = dom.body.parentElement;   /* .theory-layout */
     var self = this;
     dom.search.addEventListener("input", function () { self.renderList(); });
+    /* на телефоне список глав и текст главы показываются по очереди, а не друг под другом */
+    window.matchMedia(NARROW).addEventListener("change", function (e) {
+      if (!e.matches) self.layout.classList.remove("reading");
+    });
   }
+
+  /* вернуться от текста главы к списку глав (только узкий экран) */
+  View.prototype.showList = function () {
+    this.layout.classList.remove("reading");
+    this.dom.list.scrollIntoView({ block: "start" });
+  };
 
   View.prototype.renderList = function () {
     var self = this;
@@ -75,7 +89,12 @@
     var body = this.dom.body;
     body.innerHTML = "";
 
+    if (isNarrow()) this.layout.classList.add("reading");
+
     var head = el("div", "chapter-head");
+    var back = el("button", "btn ghost to-list", "← Главы");
+    back.addEventListener("click", function () { self.showList(); });
+    head.appendChild(back);
     head.appendChild(el("h1", "", c.title));
     body.appendChild(head);
 

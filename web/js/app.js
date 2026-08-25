@@ -9,6 +9,9 @@
 
   var $ = function (id) { return document.getElementById(id); };
 
+  var NARROW = "(max-width: 820px)";
+  function isNarrow() { return window.matchMedia(NARROW).matches; }
+
   var view = "practice";
   var practice = null;
   var exam = null;
@@ -53,6 +56,24 @@
     });
   }
 
+  /* на телефоне фильтры занимают весь экран, поэтому по умолчанию они свёрнуты */
+  function setFiltersOpen(open) {
+    $("practice-filters").classList.toggle("open", open);
+    $("f-toggle").setAttribute("aria-expanded", open ? "true" : "false");
+    $("f-toggle").textContent = open ? "Фильтры ▴" : "Фильтры ▾";
+  }
+
+  function filtersSummary(count) {
+    var parts = [];
+    if ($("f-dom").value) parts.push($("f-dom").value);
+    if ($("f-svc").value) parts.push($("f-svc").value);
+    var status = $("f-status");
+    if (status.value !== "all") parts.push(status.options[status.selectedIndex].textContent);
+    var find = ($("f-find").value || "").trim();
+    if (find) parts.push("«" + find + "»");
+    return count + " вопр." + (parts.length ? " · " + parts.join(" · ") : "");
+  }
+
   function applyFilters() {
     var find = ($("f-find").value || "").trim();
     var byNumber = /^#?\d+$/.test(find) ? parseInt(find.replace("#", ""), 10) : null;
@@ -66,6 +87,7 @@
     });
     $("practice-empty").classList.toggle("hidden", list.length > 0);
     $("practice-card").classList.toggle("hidden", list.length === 0);
+    $("f-summary").textContent = filtersSummary(list.length);
     practice.setList(list);
     if (byNumber && !practice.jumpToId(byNumber)) openQuestion(byNumber);
   }
@@ -77,6 +99,8 @@
     $("f-dom").value = ""; $("f-svc").value = ""; $("f-status").value = "all"; $("f-order").value = "id";
     practice.setList(Q.filter({ status: "all", order: "id" }));
     practice.jumpToId(id);
+    $("f-summary").textContent = filtersSummary(Q.bank.length);
+    if (isNarrow()) setFiltersOpen(false);
     show("practice");
     return true;
   }
@@ -92,6 +116,7 @@
       x.addEventListener("click", function () { setChapterFilter(null); applyFilters(); });
       box.appendChild(x);
       box.classList.remove("hidden");
+      if (isNarrow()) setFiltersOpen(false);
     } else {
       box.classList.add("hidden");
     }
@@ -258,7 +283,9 @@
         tb.appendChild(tr);
       });
       t.appendChild(tb);
-      weak.appendChild(t);
+      var weakWrap = el("div", "table-wrap");
+      weakWrap.appendChild(t);
+      weak.appendChild(weakWrap);
     }
     body.appendChild(weak);
 
@@ -292,7 +319,9 @@
         tb.appendChild(tr);
       });
       t.appendChild(tb);
-      hist.appendChild(t);
+      var histWrap = el("div", "table-wrap");
+      histWrap.appendChild(t);
+      hist.appendChild(histWrap);
     }
     body.appendChild(hist);
 
@@ -374,12 +403,22 @@
     document.querySelectorAll(".tab").forEach(function (t) {
       t.addEventListener("click", function () { show(t.dataset.view); });
     });
-    $("f-apply").addEventListener("click", applyFilters);
+    $("f-toggle").addEventListener("click", function () {
+      setFiltersOpen(!$("practice-filters").classList.contains("open"));
+    });
+    $("f-apply").addEventListener("click", function () {
+      applyFilters();
+      if (isNarrow()) setFiltersOpen(false);
+    });
     ["f-dom", "f-svc", "f-status", "f-order"].forEach(function (id) {
       $(id).addEventListener("change", applyFilters);
     });
     $("f-find").addEventListener("keydown", function (e) {
-      if (e.key === "Enter") { e.preventDefault(); applyFilters(); }
+      if (e.key === "Enter") {
+        e.preventDefault();
+        applyFilters();
+        if (isNarrow()) { e.target.blur(); setFiltersOpen(false); }
+      }
     });
     $("f-find").addEventListener("search", applyFilters);
 
@@ -410,6 +449,8 @@
       else if (view === "exam" && exam.state && !$("exam-run").classList.contains("hidden")) exam.key(e);
     });
 
+    setFiltersOpen(!isNarrow());
+    window.matchMedia(NARROW).addEventListener("change", function (e) { setFiltersOpen(!e.matches); });
     applyFilters();
     examScreen("start");
     var start = (location.hash || "").replace("#", "");

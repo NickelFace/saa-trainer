@@ -55,7 +55,10 @@
     /* шапка */
     var head = el("div", "qhead");
     head.appendChild(el("span", "qid", "#" + q.id));
-    head.appendChild(el("span", "chip dom-" + q.dom, q.dom + " · " + DOM_NAMES[q.dom]));
+    var domChip = el("span", "chip dom-" + q.dom, q.dom);
+    domChip.appendChild(el("span", "dom-full", " · " + DOM_NAMES[q.dom]));
+    domChip.title = q.dom + " · " + DOM_NAMES[q.dom];
+    head.appendChild(domChip);
     if (q.multi) head.appendChild(el("span", "chip", "выбрать " + q.answer.length));
     (q.svc || []).slice(0, 5).forEach(function (s) { head.appendChild(el("span", "chip weak", s)); });
 
