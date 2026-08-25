@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SAA-C03 Trainer</title>
 <link rel="stylesheet" href="css/app.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#10151c">
+<meta name="description" content="Офлайн-тренажёр и учебник для экзамена AWS Certified Solutions Architect – Associate (SAA-C03)">
 </head>
 <body>
 <header class="topbar">
@@ -33,6 +37,7 @@
           <option value="all">все</option>
           <option value="unseen">не отвеченные</option>
           <option value="wrong">ошибочные</option>
+          <option value="correct">решённые верно</option>
           <option value="flagged">отмеченные</option>
           <option value="corrected">исправленный ключ</option>
           <option value="disputed">спорные</option>
@@ -44,6 +49,9 @@
           <option value="id">по номеру</option>
           <option value="random">случайно</option>
         </select>
+      </label>
+      <label>Поиск
+        <input type="search" id="f-find" placeholder="номер вопроса или текст">
       </label>
       <button class="btn" id="f-apply">Применить</button>
       <span class="chapter-filter hidden" id="chapter-filter"></span>

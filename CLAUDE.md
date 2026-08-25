@@ -72,11 +72,20 @@ bash scripts/build.sh    # parse -> classify -> apply-audit -> theory -> web -> 
 - `web/js/quiz.js` — карточка вопроса, тренировка, экзамен;
 - `web/js/theory.js` — учебник;
 - `web/js/app.js` — роутинг и вкладки;
-- никаких ES-модулей и `fetch` локальных файлов: то и другое ломается на `file://`.
+- никаких ES-модулей и `fetch` локальных файлов: то и другое ломается на `file://`;
+- ссылки `a.qref` внутри разборов вешает `SAA_Quiz.bindQrefs` на всю карточку целиком:
+  макросы `{{q:...}}` встречаются и в опровержениях вариантов, а не только в `key`,
+  поэтому обработчик `onQuestions` надо прокидывать во все режимы карточки;
+- `web/sw.js` и `web/manifest.webmanifest` — офлайн-режим. Service worker регистрируется
+  только по `https`, то есть на сайте: локально он бы прятал правки за кешем.
 
 ## Сайт
 
-- `saa.maks.top` собирается из ветки `main` workflow-ом `.github/workflows/pages.yml`;
+- `saa.maks.top` собирается из ветки `main` workflow-ом `.github/workflows/pages.yml`,
+  который вызывает `scripts/build-site.sh` — вся раскладка сайта живёт в скрипте, а не
+  в yaml, и её можно проверить локально: `bash scripts/build-site.sh site local-check`;
+- скрипт подставляет в `sw.js` версию кеша (в CI это короткий SHA коммита). Менять имя
+  кеша обязательно при каждом деплое, иначе у пользователя останется старая сборка;
 - путь к картинкам-экспонатам берётся из `window.SAA_CONFIG.exhibits`: локально
   `web/config.js` даёт `../images/exhibits/`, сборка сайта подменяет его на
   `images/exhibits/`. Хардкодить путь в `quiz.js` обратно нельзя — сломается одна

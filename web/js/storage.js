@@ -96,6 +96,22 @@
       persist();
     },
 
+    /* точность по сервисам: показывает, какие темы проседают */
+    statsBySvc: function (questions) {
+      var by = {};
+      questions.forEach(function (q) {
+        var a = state.answered[q.id];
+        (q.svc || []).forEach(function (svc) {
+          var s = by[svc] || (by[svc] = { svc: svc, total: 0, seen: 0, right: 0 });
+          s.total++;
+          if (!a) return;
+          s.seen++;
+          if (a.correct) s.right++;
+        });
+      });
+      return Object.keys(by).map(function (k) { return by[k]; });
+    },
+
     stats: function (questions) {
       var s = { total: questions.length, seen: 0, right: 0, wrong: 0, flagged: state.flagged.length, byDom: {} };
       questions.forEach(function (q) {

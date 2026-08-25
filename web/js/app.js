@@ -54,16 +54,31 @@
   }
 
   function applyFilters() {
+    var find = ($("f-find").value || "").trim();
+    var byNumber = /^#?\d+$/.test(find) ? parseInt(find.replace("#", ""), 10) : null;
     var list = Q.filter({
       ids: chapterIds,
       dom: $("f-dom").value || null,
       svc: $("f-svc").value || null,
       status: $("f-status").value,
-      order: $("f-order").value
+      order: $("f-order").value,
+      text: byNumber ? null : (find.length >= 2 ? find.toLowerCase() : null)
     });
     $("practice-empty").classList.toggle("hidden", list.length > 0);
     $("practice-card").classList.toggle("hidden", list.length === 0);
     practice.setList(list);
+    if (byNumber && !practice.jumpToId(byNumber)) openQuestion(byNumber);
+  }
+
+  /* переход к конкретному вопросу: если под текущие фильтры он не подходит, снимаем их */
+  function openQuestion(id) {
+    if (!Q.byId[id]) return false;
+    setChapterFilter(null);
+    $("f-dom").value = ""; $("f-svc").value = ""; $("f-status").value = "all"; $("f-order").value = "id";
+    practice.setList(Q.filter({ status: "all", order: "id" }));
+    practice.jumpToId(id);
+    show("practice");
+    return true;
   }
 
   function setChapterFilter(ids, title) {
@@ -158,7 +173,13 @@
       }, {
         onPick: function () {},
         onTheory: function (id) { show("theory"); theoryView.open(id); },
-        onFlag: function () {}
+        onFlag: function () {},
+        onQuestions: function (ids, title) {
+          setChapterFilter(ids, title);
+          $("f-dom").value = ""; $("f-svc").value = ""; $("f-status").value = "all"; $("f-find").value = "";
+          applyFilters();
+          show("practice");
+        }
       });
       card.style.marginTop = "12px";
       list.appendChild(card);
@@ -207,6 +228,39 @@
     });
     doms.appendChild(bars);
     body.appendChild(doms);
+
+    var weak = el("div", "panel");
+    weak.style.marginTop = "16px";
+    weak.appendChild(el("h3", "", "Слабые темы"));
+    var svcStats = S.statsBySvc(Q.bank).filter(function (x) { return x.seen >= 5; });
+    svcStats.sort(function (a, b) { return (a.right / a.seen) - (b.right / b.seen); });
+    if (!svcStats.length) {
+      weak.appendChild(el("div", "empty", "Данных пока мало: ответьте хотя бы на пять вопросов по сервису."));
+    } else {
+      weak.appendChild(el("div", "cap", "Точность по сервисам, где отвечено не меньше пяти вопросов. Клик по строке открывает тренировку по этому сервису."));
+      var t = el("table", "history weak-svc");
+      t.innerHTML = "<thead><tr><th>сервис</th><th>точность</th><th>верно</th><th>отвечено</th><th>в банке</th></tr></thead>";
+      var tb = el("tbody");
+      svcStats.slice(0, 15).forEach(function (x) {
+        var pct = Math.round(100 * x.right / x.seen);
+        var tr = el("tr");
+        tr.className = pct >= 72 ? "" : "low";
+        [x.svc, pct + "%", String(x.right), String(x.seen), String(x.total)].forEach(function (c) {
+          tr.appendChild(el("td", "", c));
+        });
+        tr.addEventListener("click", function () {
+          setChapterFilter(null);
+          $("f-dom").value = ""; $("f-status").value = "all"; $("f-find").value = "";
+          $("f-svc").value = x.svc;
+          applyFilters();
+          show("practice");
+        });
+        tb.appendChild(tr);
+      });
+      t.appendChild(tb);
+      weak.appendChild(t);
+    }
+    body.appendChild(weak);
 
     var hist = el("div", "panel");
     hist.style.marginTop = "16px";
@@ -284,6 +338,7 @@
       onQuestions: function (ids, title) {
         setChapterFilter(ids, title);
         $("f-status").value = "all";
+        $("f-find").value = "";
         applyFilters();
         show("practice");
       },
@@ -320,6 +375,10 @@
     ["f-dom", "f-svc", "f-status", "f-order"].forEach(function (id) {
       $(id).addEventListener("change", applyFilters);
     });
+    $("f-find").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { e.preventDefault(); applyFilters(); }
+    });
+    $("f-find").addEventListener("search", applyFilters);
 
     $("exam-begin").addEventListener("click", function () {
       exam.start($("exam-exclude-seen").checked);
@@ -354,6 +413,17 @@
     show(["practice", "exam", "theory", "progress"].indexOf(start) !== -1 ? start : "practice");
   }
 
+  /* Офлайн-режим на сайте: кеш приложения и данных.
+     Локально (file:// и http://localhost) не регистрируем — иначе правки прячутся за кешем. */
+  function registerServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+    if (location.protocol !== "https:") return;
+    navigator.serviceWorker.register("sw.js").catch(function (e) {
+      console.warn("service worker не зарегистрирован:", e);
+    });
+  }
+
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
+  registerServiceWorker();
 })(window);

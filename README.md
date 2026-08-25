@@ -24,8 +24,9 @@ including progress saved in localStorage.
 
 ## Features
 
-- **Practice** — filter by domain, service, status (unseen / wrong / flagged /
-  corrected key / disputed), instant feedback and explanation, keyboard shortcuts.
+- **Practice** — filter by domain, service, status (unseen / wrong / solved / flagged /
+  corrected key / disputed), free-text search and jump-to-question-number, instant
+  feedback and explanation, keyboard shortcuts.
 - **Exam** — 65 questions sampled by blueprint weights (SEC 20, RES 17, PERF 15,
   COST 13), 130-minute timer, resumable, per-domain score, full review afterwards.
 - **Handbook** — 22 chapters in Russian plus an appendix on how question domains are
@@ -40,8 +41,13 @@ including progress saved in localStorage.
   `data/explanations.json`.
 - **Audit transparency** — the 28 corrected answer keys show the original dump answer
   and the reason; the 23 disputed questions show the alternative and the argument.
-- **Progress** — stored in localStorage, per-domain accuracy, exam history,
+- **Progress** — stored in localStorage: per-domain accuracy, a weak-topics table that
+  ranks services by your accuracy and opens practice on the one you click, exam history,
   export/import as JSON.
+- **Offline** — opens straight from the file system, and the published site installs as a
+  PWA: a service worker precaches the app, the bank and the handbook, so practice works
+  with no network. The cache name carries the deploy id, so a new deploy never serves
+  a stale build.
 
 ## Repository layout
 
@@ -62,8 +68,9 @@ data/
 docs/                     the same chapters as Markdown (readable on GitHub),
                           including appendix-domains.md on the classification method
 images/exhibits/          13 exhibit images for 7 questions
-web/                      the application (index.html, css/, js/, generated data/)
-scripts/                  the data pipeline
+web/                      the application (index.html, css/, js/, generated data/,
+                          sw.js and manifest for offline use)
+scripts/                  the data pipeline and the site build
 ```
 
 ## Data pipeline
@@ -90,10 +97,15 @@ pdftotext -layout SAA-C03-1019QA.pdf data/raw.txt
 ## Deployment
 
 The Pages workflow rebuilds the bank and the handbook from source, runs `validate.py`,
-then assembles a `site/` directory: `web/` at the root, `images/exhibits/` beside it,
-a `config.js` that points the app at the site-root asset path, `CNAME`, `.nojekyll`,
-and a `robots.txt` that asks crawlers to stay out. Nothing published is hand-copied —
-a failed check fails the deploy.
+then calls `scripts/build-site.sh`, which assembles the `site/` directory: `web/` at the
+root, `images/exhibits/` beside it, a `config.js` that points the app at the site-root
+asset path, the commit id stamped into the service worker's cache name, `CNAME`,
+`.nojekyll`, and a `robots.txt` that asks crawlers to stay out. Nothing published is
+hand-copied — a failed check fails the deploy. The same script builds the site locally:
+
+```bash
+bash scripts/build-site.sh site local-check
+```
 
 ## Question schema
 

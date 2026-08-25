@@ -159,7 +159,22 @@
 
     /* разбор */
     if (revealed) card.appendChild(buildReview(q, picked, h));
+
+    /* ссылки на родственные вопросы: они есть и в разборе, и в опровержениях вариантов */
+    bindQrefs(card, h, "разбор вопроса #" + q.id);
     return card;
+  }
+
+  function bindQrefs(root, h, title) {
+    root.querySelectorAll("a.qref").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (!h.onQuestions) return;
+        var ids = a.dataset.q.split(",").map(function (x) { return parseInt(x.trim(), 10); })
+          .filter(function (x) { return !isNaN(x); });
+        if (ids.length) h.onQuestions(ids, title);
+      });
+    });
   }
 
   function buildReview(q, picked, h) {
@@ -211,16 +226,6 @@
       dw.textContent = "Домен определён по слабым маркерам: формулировка допускает и другое отнесение.";
       box.appendChild(dw);
     }
-
-    /* ссылки на родственные вопросы внутри разборов */
-    box.querySelectorAll("a.qref").forEach(function (a) {
-      a.addEventListener("click", function (e) {
-        e.preventDefault();
-        var ids = a.dataset.q.split(",").map(function (x) { return parseInt(x.trim(), 10); })
-          .filter(function (x) { return !isNaN(x); });
-        if (h.onQuestions) h.onQuestions(ids, "разбор вопроса #" + q.id);
-      });
-    });
 
     var chapters = global.SAA_Theory ? global.SAA_Theory.chaptersForServices(q.svc || []) : [];
     if (chapters.length) {
@@ -289,6 +294,20 @@
     this.render();
   };
 
+  /* перейти к вопросу с указанным номером внутри текущей выборки */
+  Practice.prototype.jumpToId = function (id) {
+    var idx = -1;
+    for (var i = 0; i < this.list.length; i++) {
+      if (this.list[i].id === id) { idx = i; break; }
+    }
+    if (idx === -1) return false;
+    this.i = idx;
+    this.picked = [];
+    this.revealed = false;
+    this.render();
+    return true;
+  };
+
   Practice.prototype.go = function (delta) {
     if (!this.list.length) return;
     this.i = (this.i + delta + this.list.length) % this.list.length;
@@ -313,7 +332,8 @@
       onNext: function () { self.go(1); },
       onPrev: function () { self.go(-1); },
       onFlag: function () { if (self.handlers.onFlag) self.handlers.onFlag(); },
-      onTheory: function (id) { if (self.handlers.onTheory) self.handlers.onTheory(id); }
+      onTheory: function (id) { if (self.handlers.onTheory) self.handlers.onTheory(id); },
+      onQuestions: function (ids, title) { if (self.handlers.onQuestions) self.handlers.onQuestions(ids, title); }
     });
     this.mount.appendChild(card);
   };
@@ -349,8 +369,14 @@
       if (opts.ids && opts.ids.indexOf(q.id) === -1) return false;
       if (opts.dom && q.dom !== opts.dom) return false;
       if (opts.svc && (q.svc || []).indexOf(opts.svc) === -1) return false;
+      if (opts.text) {
+        var needle = opts.text;
+        var hay = (q.question + " " + q.options.map(function (o) { return o.t || ""; }).join(" ")).toLowerCase();
+        if (hay.indexOf(needle) === -1) return false;
+      }
       switch (opts.status) {
         case "unseen": return !S.isAnswered(q.id);
+        case "correct": return !!S.status(q.id) && S.status(q.id).correct;
         case "wrong": return S.isWrong(q.id);
         case "flagged": return S.isFlagged(q.id);
         case "corrected": return !!q.answer_original;
@@ -547,6 +573,7 @@
     letters: letters,
     sameSet: sameSet,
     buildCard: buildCard,
+    bindQrefs: bindQrefs,
     filter: filter,
     Practice: Practice,
     Exam: Exam,

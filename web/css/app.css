@@ -240,3 +240,16 @@ kbd {
   .bar-row { grid-template-columns: 120px 1fr 60px; }
   main { padding: 12px; }
 }
+
+/* ---------- навигация по главам ---------- */
+.chapter-nav {
+  display: flex; align-items: center; gap: 10px;
+  margin: 28px 0 6px; padding-top: 16px; border-top: 1px solid var(--line);
+}
+.chapter-nav .spacer { flex: 1; }
+.chapter-nav .btn { max-width: 46%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---------- слабые темы ---------- */
+.weak-svc tbody tr { cursor: pointer; }
+.weak-svc tbody tr:hover td { background: var(--panel-2); }
+.weak-svc tbody tr.low td:nth-child(2) { color: var(--bad); font-weight: 600; }

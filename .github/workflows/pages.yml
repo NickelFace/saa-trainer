@@ -30,16 +30,7 @@ jobs:
         run: bash scripts/build.sh
 
       - name: Собрать статику сайта
-        run: |
-          set -eu
-          mkdir -p site/images
-          cp -r web/. site/
-          cp -r images/exhibits site/images/exhibits
-          echo 'window.SAA_CONFIG = { exhibits: "images/exhibits/" };' > site/config.js
-          echo 'saa.maks.top' > site/CNAME
-          printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
-          touch site/.nojekyll
-          du -sh site
+        run: bash scripts/build-site.sh site "${GITHUB_SHA::12}"
 
       - uses: actions/upload-pages-artifact@v3
         with:

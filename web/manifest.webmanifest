@@ -1,0 +1,15 @@
+{
+  "name": "SAA-C03 Trainer",
+  "short_name": "SAA-C03",
+  "description": "Офлайн-тренажёр и учебник для экзамена AWS Certified Solutions Architect – Associate",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#10151c",
+  "theme_color": "#10151c",
+  "lang": "ru",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

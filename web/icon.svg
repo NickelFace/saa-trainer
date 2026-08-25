@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="SAA-C03 trainer">
+  <rect width="192" height="192" rx="34" fill="#10151c"/>
+  <text x="96" y="86" text-anchor="middle" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif"
+        font-size="52" font-weight="700" fill="#ff9900">SAA</text>
+  <text x="96" y="134" text-anchor="middle" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif"
+        font-size="40" font-weight="600" fill="#dfe7ef">C03</text>
+</svg>

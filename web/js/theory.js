@@ -104,6 +104,22 @@
       });
     });
 
+    /* навигация по главам внизу: предыдущая и следующая по порядку */
+    var ordered = CHAPTERS.slice().sort(function (a, b) { return a.order - b.order; });
+    var pos = ordered.map(function (x) { return x.id; }).indexOf(c.id);
+    var nav = el("div", "chapter-nav");
+    function navBtn(target, label) {
+      var b = el("button", "btn ghost", label);
+      b.addEventListener("click", function () { self.open(target.id); });
+      return b;
+    }
+    if (pos > 0) nav.appendChild(navBtn(ordered[pos - 1], "← " + ordered[pos - 1].title));
+    nav.appendChild(el("span", "spacer", ""));
+    if (pos !== -1 && pos < ordered.length - 1) {
+      nav.appendChild(navBtn(ordered[pos + 1], ordered[pos + 1].title + " →"));
+    }
+    body.appendChild(nav);
+
     body.scrollIntoView({ block: "start" });
   };
 
