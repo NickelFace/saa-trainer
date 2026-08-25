@@ -4,11 +4,14 @@
 Читает data/build/questions.parsed.json, пишет data/build/questions.classified.json.
 Курируемый банк data/questions.json не трогает — его собирает apply-audit.py."""
 import json
+import os
 import re
 from collections import Counter
 
 SRC = "data/build/questions.parsed.json"
 OUT = "data/build/questions.classified.json"
+
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 
 # --- домены blueprint SAA-C03 ---
 DOMAINS = {

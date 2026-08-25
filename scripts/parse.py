@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""SAA-C03 dump parser: raw pdftotext -> data/questions.json"""
+"""SAA-C03 dump parser: data/raw.txt -> data/build/questions.parsed.json"""
 import json
+import os
 import re
 import sys
 
 RAW = "data/raw.txt"
 OUT = "data/build/questions.parsed.json"
+
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 
 txt = open(RAW, encoding="utf-8").read()
 txt = txt.replace("\f", "\n")
