@@ -233,6 +233,10 @@
     "answer_original": "CD",
     "fix_note": "Parameter Store не умеет автоматическую ротацию — её даёт только Secrets Manager; вторым шагом идёт Lambda layer для получения секрета"
   },
+  "961": {
+    "answer": "C",
+    "fix_note": "AWS WAF не поддерживает AWS Global Accelerator как защищаемый ресурс (поддерживаются CloudFront, ALB, API Gateway, AppSync, Cognito, App Runner, Verified Access), поэтому web ACL привязывают к ALB за акселератором"
+  },
   "971": {
     "disputed_alt": "D",
     "disputed_note": "повторная раздача одних и тех же файлов на серверы в разных регионах это кэш CloudFront; Transfer Acceleration ускоряет в первую очередь загрузку в S3 и не кэширует"
