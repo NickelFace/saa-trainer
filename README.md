@@ -1,12 +1,14 @@
 # SAA-C03 Trainer
 
 Offline practice app and study notes for the AWS Certified Solutions Architect –
-Associate (SAA-C03) exam. 1019 audited questions, a 22-chapter handbook, exam
-simulation by blueprint weights. Pure HTML/CSS/JS — no build step, no CDN, no backend.
+Associate (SAA-C03) exam. 1019 audited questions, a 22-chapter handbook plus an
+appendix on domain classification, written answer walkthroughs, exam simulation by
+blueprint weights. Pure HTML/CSS/JS — no build step, no CDN, no backend.
 Opens straight from the file system or from GitHub Pages.
 
-> The question bank is derived from a third-party exam dump and is for personal study
-> only. Keep this repository private.
+> The question bank is derived from a third-party exam dump and is published for
+> personal study only. `robots.txt` asks crawlers to stay out; the content is not
+> mine to license.
 
 Live site: **https://saa.maks.top** (built and deployed by
 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) on every push to `main`).
@@ -26,10 +28,16 @@ including progress saved in localStorage.
   corrected key / disputed), instant feedback and explanation, keyboard shortcuts.
 - **Exam** — 65 questions sampled by blueprint weights (SEC 20, RES 17, PERF 15,
   COST 13), 130-minute timer, resumable, per-domain score, full review afterwards.
-- **Handbook** — 22 chapters in Russian, searchable, linked to the bank by service
-  tags: one click jumps from a chapter to its questions.
-- **Audit transparency** — the 18 corrected answer keys show the original dump answer
-  and the reason; the 15 disputed questions show the alternative and the argument.
+- **Handbook** — 22 chapters in Russian plus an appendix on how question domains are
+  decided, searchable, linked to the bank by service tags: one click jumps from a
+  chapter to its questions. Every chapter ends with a generated table of the domains
+  its questions fall into, including how many were classified by hand and why.
+- **Answer walkthroughs** — for covered questions the review explains why the key is
+  the key and, under every wrong option, why that option fails. Disputed questions get
+  both readings instead of a verdict. 37 of 1019 questions so far; the layer lives in
+  `data/explanations.json` and grows question by question.
+- **Audit transparency** — the 20 corrected answer keys show the original dump answer
+  and the reason; the 17 disputed questions show the alternative and the argument.
 - **Progress** — stored in localStorage, per-domain accuracy, exam history,
   export/import as JSON.
 
@@ -43,11 +51,14 @@ data/
   overlay.json            audit overlay: corrected keys, disputed notes, exhibits
   dom-overrides.json      manual domain assignment with a reason, for the 347 questions
                           the classifier rules could not place confidently
+  explanations.json       written walkthroughs: why the key is right, why each wrong
+                          option is wrong
   meta.json               domains, blueprint weights, audit index
   audit.json              per-question audit status
   audit-log.md            audit reasoning in full
   theory/                 chapters compiled to JSON for the app
-docs/                     the same chapters as Markdown (readable on GitHub)
+docs/                     the same chapters as Markdown (readable on GitHub),
+                          including appendix-domains.md on the classification method
 images/exhibits/          13 exhibit images for 7 questions
 web/                      the application (index.html, css/, js/, generated data/)
 scripts/                  the data pipeline
@@ -122,7 +133,8 @@ blueprint, not by the bank.
 
 Domain counts in `meta.json` are recomputed by the pipeline, never edited by hand.
 
-Audit: 18 corrected keys, 15 disputed, 6 low-confidence, 3 source-PDF defects,
-7 questions with exhibits.
+Audit: 20 corrected keys, 17 disputed, no low-confidence questions left, 3 source-PDF
+defects, 7 questions with exhibits. Written walkthroughs: 37 questions (every corrected
+key and every disputed question).
 
 Russian version of this document: [README.ru.md](README.ru.md).

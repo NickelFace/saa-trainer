@@ -79,17 +79,39 @@ print("учебник:")
 idx_path = os.path.join(THEORY, "index.json")
 if os.path.exists(idx_path):
     idx = json.load(open(idx_path, encoding="utf-8"))["chapters"]
-    check(len(idx) == 22, f"22 главы (сейчас {len(idx)})")
-    thin = [c["id"] for c in idx if c["lines"] < 150]
+    main = [c for c in idx if c["order"] <= 22]
+    check(len(main) == 22, f"22 основные главы (сейчас {len(main)})")
+    thin = [c["id"] for c in main if c["lines"] < 150]
     check(not thin, f"каждая глава от 150 строк (тонкие: {thin})")
     no_json = [c["id"] for c in idx if not os.path.exists(os.path.join(THEORY, c["id"] + ".json"))]
     check(not no_json, f"у каждой главы есть json ({no_json})")
     no_md = [c["id"] for c in idx if not os.path.exists(os.path.join(DOCS, c["id"] + ".md"))]
     check(not no_md, f"у каждой главы есть markdown ({no_md})")
-    orphan = [c["id"] for c in idx if not c["questions"]]
+    orphan = [c["id"] for c in main if not c["questions"]]
     check(not orphan, f"каждая глава связана с вопросами ({orphan})")
 else:
     check(False, "data/theory/index.json не собран — запусти scripts/build-theory.py")
+
+print("разборы вопросов:")
+expl_path = "data/explanations.json"
+if os.path.exists(expl_path):
+    expl = json.load(open(expl_path, encoding="utf-8"))
+    by_id = {q["id"]: q for q in bank}
+    bad_id = [k for k in expl if not k.isdigit() or int(k) not in by_id]
+    check(not bad_id, f"все id разборов есть в банке ({bad_id})")
+    no_key = [k for k, v in expl.items() if not v.get("key")]
+    check(not no_key, f"у каждого разбора есть объяснение ключа ({no_key})")
+    bad_letter = [f"{k}:{l}" for k, v in expl.items() if k.isdigit() and int(k) in by_id
+                  for l in v.get("opts", {})
+                  if l not in {o["l"] for o in by_id[int(k)]["options"]}]
+    check(not bad_letter, f"буквы вариантов в разборах существуют ({bad_letter[:5]})")
+    missing_wrong = [k for k, v in expl.items() if k.isdigit() and int(k) in by_id
+                     and [o["l"] for o in by_id[int(k)]["options"]
+                          if o["l"] not in by_id[int(k)]["answer"] and o["l"] not in v.get("opts", {})]]
+    check(not missing_wrong, f"у каждого неверного варианта есть объяснение ({missing_wrong[:5]})")
+    print(f"  инфо  разборов {len(expl)} из {len(bank)} ({round(100 * len(expl) / len(bank), 1)}%)")
+else:
+    print("  инфо  разборов пока нет")
 
 print()
 if fails:

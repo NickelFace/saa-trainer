@@ -129,6 +129,44 @@ def md_to_html(lines):
     return "\n".join(out)
 
 
+def domain_block(qs, dom_names, expl):
+    """Генерируемая справка в конце главы: как распределены её вопросы по доменам.
+
+    Разметка домена — не свойство дампа, а результат анализа, поэтому глава показывает
+    и распределение, и долю вопросов, размеченных вручную, и покрытие разборами.
+    """
+    if not qs:
+        return ""
+    total = len(qs)
+    rows = []
+    for code, name in dom_names.items():
+        sub = [q for q in qs if q["dom"] == code]
+        if not sub:
+            continue
+        manual = sum(1 for q in sub if q.get("dom_conf") == "manual")
+        rows.append(
+            f"<tr><td>{code}</td><td>{name}</td><td>{len(sub)}</td>"
+            f"<td>{round(100 * len(sub) / total)}%</td><td>{manual}</td></tr>")
+    covered = sum(1 for q in qs if str(q["id"]) in expl)
+    why = [q for q in qs if q.get("dom_why")]
+    reasons = ""
+    if why:
+        sample = "".join(
+            f"<li><b>#{q['id']}</b> — {q['dom']}: {q['dom_why']}</li>" for q in why[:8])
+        reasons = ("<p>Примеры ручных решений по вопросам этой главы:</p>"
+                   f"<ul>{sample}</ul>")
+    return (
+        "<h2>Домены вопросов этой главы</h2>"
+        "<p>Блок собирается автоматически при сборке учебника из размеченного банка. "
+        "Столбец «вручную» показывает, сколько вопросов главы получили домен не по правилам "
+        f"<code>classify.py</code>, а после разбора формулировки.</p>"
+        "<div class='table-wrap'><table><thead><tr><th>Код</th><th>Домен</th>"
+        "<th>Вопросов</th><th>Доля главы</th><th>Вручную</th></tr></thead>"
+        f"<tbody>{''.join(rows)}</tbody></table></div>"
+        f"<p>Всего вопросов главы: <b>{total}</b>. Написан подробный разбор: "
+        f"<b>{covered}</b>.</p>" + reasons)
+
+
 def frontmatter(text):
     if not text.startswith("---"):
         return {}, text.split("\n")
@@ -150,6 +188,10 @@ def main():
         sys.exit(f"нет каталога {DOCS}")
     os.makedirs(OUT, exist_ok=True)
     bank = json.load(open(BANK, encoding="utf-8"))
+    expl = {}
+    if os.path.exists("data/explanations.json"):
+        expl = json.load(open("data/explanations.json", encoding="utf-8"))
+    dom_names = {d["code"]: d["name"] for d in json.load(open("data/meta.json", encoding="utf-8"))["domains"]}
 
     chapters = []
     for fn in sorted(os.listdir(DOCS)):
@@ -162,13 +204,15 @@ def main():
         if isinstance(svc, str):
             svc = [s.strip() for s in svc.split(",") if s.strip()]
         qids = sorted(q["id"] for q in bank if set(q.get("svc", [])) & set(svc))
+        chapter_qs = [q for q in bank if q["id"] in set(qids)]
+        stats = domain_block(chapter_qs, dom_names, expl)
         chapter = {
             "id": cid,
             "title": meta.get("title", cid),
             "order": int(meta.get("order", 999)),
             "svc": svc,
             "questions": qids,
-            "html": md_to_html(body),
+            "html": md_to_html(body) + stats,
             "text": re.sub(r"\s+", " ", re.sub(r"[#*`>|-]", " ", "\n".join(body)))[:20000],
         }
         json.dump(chapter, open(os.path.join(OUT, f"{cid}.json"), "w", encoding="utf-8"),
@@ -179,7 +223,8 @@ def main():
     chapters.sort(key=lambda c: c["order"])
     json.dump({"chapters": chapters}, open(os.path.join(OUT, "index.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
-    print(f"глав собрано: {len(chapters)}")
+    main = [c for c in chapters if c["order"] <= 22]
+    print(f"глав собрано: {len(chapters)} (основных {len(main)}, приложений {len(chapters) - len(main)})")
     for c in chapters:
         flag = "  ПУСТАЯ" if c["lines"] < 20 else ""
         print(f"  {c['order']:2}. {c['id']:22} {c['lines']:4} строк, вопросов {c['questions']:4}{flag}")

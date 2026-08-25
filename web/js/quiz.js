@@ -12,6 +12,8 @@
   /* база для картинок-экспонатов: локально приложение лежит в web/, на сайте — в корне */
   var EXHIBITS = (global.SAA_CONFIG && global.SAA_CONFIG.exhibits) || "../images/exhibits/";
 
+  var EXPLAIN = global.SAA_EXPLAIN || {};
+
   var DOM_NAMES = {};
   META.domains.forEach(function (d) { DOM_NAMES[d.code] = d.name; });
 
@@ -108,6 +110,13 @@
         h.onPick(o.l);
       });
       opts.appendChild(row);
+
+      /* почему этот вариант неверен — показываем только после проверки */
+      var ex = EXPLAIN[q.id];
+      if (revealed && ex && ex.opts && ex.opts[o.l]) {
+        var why = el("div", "opt-why" + (correct.indexOf(o.l) !== -1 ? " ok" : ""), ex.opts[o.l]);
+        opts.appendChild(why);
+      }
     });
     card.appendChild(opts);
 
@@ -161,6 +170,16 @@
     box.appendChild(v);
     if (!right) box.appendChild(el("div", "", "Ваш ответ: " + (picked.join("") || "—")));
 
+    var ex = EXPLAIN[q.id];
+    if (ex && ex.key) {
+      var k = el("div", "note explain");
+      var title = q.disputed_alt
+        ? "<b>Разбор (вопрос спорный, ключ " + q.answer + "):</b> "
+        : "<b>Почему верный ответ " + q.answer + ":</b> ";
+      k.innerHTML = title + ex.key;
+      box.appendChild(k);
+    }
+
     if (q.answer_original) {
       var f = el("div", "note fix");
       f.innerHTML = "<b>Ключ дампа исправлен при аудите:</b> " + q.answer_original +
@@ -181,7 +200,11 @@
     if (q.dom_conf === "manual") {
       var dc = el("div", "note");
       dc.innerHTML = "<b>Домен размечен вручную:</b> " + (q.dom_why || "") +
-        ". Правила разметки не нашли маркеров в тексте вопроса.";
+        ". Сильных маркеров в тексте нет, домен определён по требованию, которое отсекает неверные варианты. ";
+      var da = el("a", "", "Как это работает");
+      da.href = "#";
+      da.addEventListener("click", function (e) { e.preventDefault(); h.onTheory("appendix-domains"); });
+      dc.appendChild(da);
       box.appendChild(dc);
     } else if (q.dom_conf === "weak") {
       var dw = el("div", "note");

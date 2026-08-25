@@ -19,6 +19,14 @@ with open(os.path.join(OUT, "bank.js"), "w", encoding="utf-8") as f:
     json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
     f.write(";\n")
 
+expl = {}
+if os.path.exists("data/explanations.json"):
+    expl = json.load(open("data/explanations.json", encoding="utf-8"))
+with open(os.path.join(OUT, "explain.js"), "w", encoding="utf-8") as f:
+    f.write("window.SAA_EXPLAIN=")
+    json.dump(expl, f, ensure_ascii=False, separators=(",", ":"))
+    f.write(";\n")
+
 chapters = []
 idx_path = "data/theory/index.json"
 if os.path.exists(idx_path):
@@ -32,3 +40,4 @@ with open(os.path.join(OUT, "theory.js"), "w", encoding="utf-8") as f:
 kb = lambda p: os.path.getsize(p) // 1024
 print(f"web/data/bank.js   {kb(os.path.join(OUT, 'bank.js'))} КБ, вопросов {len(bank)}")
 print(f"web/data/theory.js {kb(os.path.join(OUT, 'theory.js'))} КБ, глав {len(chapters)}")
+print(f"web/data/explain.js {kb(os.path.join(OUT, 'explain.js'))} КБ, разборов {len(expl)} из {len(bank)}")

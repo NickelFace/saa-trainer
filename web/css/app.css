@@ -115,6 +115,14 @@ label.checkbox input { width: auto; }
 .opt.wrong .l { color: var(--bad); }
 .opt img { max-width: 100%; border-radius: 6px; background: #fff; }
 
+.opt-why {
+  margin: -4px 0 4px 30px; padding: 7px 11px;
+  border-left: 2px solid var(--bad); background: #20181a;
+  border-radius: 0 6px 6px 0; color: var(--muted); font-size: 13.5px; line-height: 1.5;
+}
+.opt-why.ok { border-left-color: var(--ok); background: #16241c; }
+.note.explain { border-left-color: var(--link); }
+
 .qactions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; align-items: center; }
 .qactions .spacer { margin-left: auto; color: var(--muted); font-size: 13px; }
 
