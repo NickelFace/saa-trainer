@@ -59,6 +59,13 @@
     if (q.multi) head.appendChild(el("span", "chip", "выбрать " + q.answer.length));
     (q.svc || []).slice(0, 5).forEach(function (s) { head.appendChild(el("span", "chip weak", s)); });
 
+    /* уже отвечали на этот вопрос — показываем прошлый результат */
+    var prev = S.status(q.id);
+    if (prev && view.mode !== "exam") {
+      head.appendChild(el("span", "chip " + (prev.correct ? "seen-ok" : "seen-bad"),
+        (prev.correct ? "ранее верно" : "ранее неверно") + (prev.tries > 1 ? " · попыток " + prev.tries : "")));
+    }
+
     var flag = el("span", "chip flag" + (S.isFlagged(q.id) ? " on" : ""), "★ отметить");
     flag.addEventListener("click", function () {
       var on = S.toggleFlag(q.id);

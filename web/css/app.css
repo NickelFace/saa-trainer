@@ -253,3 +253,9 @@ kbd {
 .weak-svc tbody tr { cursor: pointer; }
 .weak-svc tbody tr:hover td { background: var(--panel-2); }
 .weak-svc tbody tr.low td:nth-child(2) { color: var(--bad); font-weight: 600; }
+
+/* ---------- прошлый результат и повтор экзамена ---------- */
+.chip.seen-ok { color: var(--ok); border-color: var(--ok); }
+.chip.seen-bad { color: var(--bad); border-color: var(--bad); }
+.history tr.replay { cursor: pointer; }
+.history tr.replay:hover td { background: var(--panel-2); }

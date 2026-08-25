@@ -28,7 +28,8 @@ including progress saved in localStorage.
   corrected key / disputed), free-text search and jump-to-question-number, instant
   feedback and explanation, keyboard shortcuts.
 - **Exam** — 65 questions sampled by blueprint weights (SEC 20, RES 17, PERF 15,
-  COST 13), 130-minute timer, resumable, per-domain score, full review afterwards.
+  COST 13), 130-minute timer, resumable, per-domain score, full review afterwards, and
+  any past attempt can be reopened from the history and reviewed again.
 - **Handbook** — 22 chapters in Russian plus an appendix on how question domains are
   decided, searchable, linked to the bank by service tags: one click jumps from a
   chapter to its questions. Every chapter ends with a generated table of the domains

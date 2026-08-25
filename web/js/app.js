@@ -269,12 +269,15 @@
     if (!exams.length) {
       hist.appendChild(el("div", "empty", "Попыток пока нет."));
     } else {
+      hist.appendChild(el("div", "cap", "Клик по строке открывает разбор той попытки целиком."));
       var t = el("table", "history");
       t.innerHTML = "<thead><tr><th>дата</th><th>результат</th><th>верно</th><th>время</th>" +
         "<th>SEC</th><th>RES</th><th>PERF</th><th>COST</th></tr></thead>";
       var tb = el("tbody");
       exams.forEach(function (r) {
-        var tr = el("tr");
+        var tr = el("tr", "replay");
+        tr.title = "открыть разбор этой попытки";
+        tr.addEventListener("click", function () { show("exam"); renderExamResult(r); });
         var cells = [
           new Date(r.ts).toLocaleString("ru-RU"),
           r.score + "%",
