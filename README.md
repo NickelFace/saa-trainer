@@ -8,6 +8,9 @@ Opens straight from the file system or from GitHub Pages.
 > The question bank is derived from a third-party exam dump and is for personal study
 > only. Keep this repository private.
 
+Live site: **https://saa.maks.top** (built and deployed by
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) on every push to `main`).
+
 ## Quick start
 
 ```bash
@@ -70,6 +73,14 @@ To regenerate `data/raw.txt` from the source PDF:
 ```bash
 pdftotext -layout SAA-C03-1019QA.pdf data/raw.txt
 ```
+
+## Deployment
+
+The Pages workflow rebuilds the bank and the handbook from source, runs `validate.py`,
+then assembles a `site/` directory: `web/` at the root, `images/exhibits/` beside it,
+a `config.js` that points the app at the site-root asset path, `CNAME`, `.nojekyll`,
+and a `robots.txt` that asks crawlers to stay out. Nothing published is hand-copied —
+a failed check fails the deploy.
 
 ## Question schema
 

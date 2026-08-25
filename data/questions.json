@@ -3700,6 +3700,8 @@
    }
   ],
   "answer": "C",
+  "disputed_alt": "D",
+  "disputed_note": "вариант C переписывает кастомное приложение как job в Glue, вариант D переносит существующее приложение на EC2. «Least operational overhead» читается двояко: Glue не требует администрирования, но требует разработки заново; D сохраняет приложение как есть. Snowcone (8/14 ТБ) не вмещает 50 ТБ, DataSync требует полосы, которой нет",
   "dom": "PERF",
   "svc": [
    "EC2",
@@ -10164,7 +10166,9 @@
     "t": "Review the Trusted Advisor check for Amazon Redshift Reserved Node Optimization."
    }
   ],
-  "answer": "BD",
+  "answer": "BC",
+  "answer_original": "BD",
+  "fix_note": "инстансы описаны как active, поэтому проверка Idle DB Instances (D) на них ничего не покажет — она ищет базы без подключений. Снижение стоимости постоянно работающих 90 дней инстансов даёт проверка RDS Reserved Instance Optimization (C), и рекомендации по RI консолидируются в аккаунте плательщика (B)",
   "dom": "COST",
   "svc": [
    "RDS",
@@ -16838,6 +16842,9 @@
    }
   ],
   "answer": "C",
+  "disputed_alt": "B",
+  "disputed_note": "если читать вариант C буквально (обычный provisioned-кластер Aurora), то дешевле окажется RDS Single-AZ с остановкой на ночь: среда используется 4 часа из 8-часового дня",
+  "note": "дефект дампа: вариант C напечатан как «Aurora On-Demand PostgreSQL-Compatible» и в таком виде дублирует вариант A; по смыслу задачи там должен быть Aurora Serverless — только он масштабируется вниз в простое",
   "dom": "COST",
   "svc": [
    "S3",
@@ -21840,7 +21847,9 @@
     "t": "Configure an Elastic Beanstalk environment to use burstable performance instances in unlimited mode. Configure the environment to scale on predictive metrics."
    }
   ],
-  "answer": "D",
+  "answer": "A",
+  "answer_original": "D",
+  "fix_note": "predictive scaling обучается на повторяющихся суточных и недельных паттернах, а всплеск дважды в месяц таким паттерном не является — прогноз его не поймает. Мгновенный рост CPU в 10 раз при низкой базовой нагрузке закрывают burstable-инстансы в режиме unlimited, а реагировать на нерегулярный всплеск нужно по факту запросов, а не по прогнозу",
   "dom": "PERF",
   "svc": [
    "Elastic Beanstalk"

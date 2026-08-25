@@ -9,6 +9,9 @@
   var BY_ID = {};
   BANK.forEach(function (q) { BY_ID[q.id] = q; });
 
+  /* база для картинок-экспонатов: локально приложение лежит в web/, на сайте — в корне */
+  var EXHIBITS = (global.SAA_CONFIG && global.SAA_CONFIG.exhibits) || "../images/exhibits/";
+
   var DOM_NAMES = {};
   META.domains.forEach(function (d) { DOM_NAMES[d.code] = d.name; });
 
@@ -34,7 +37,7 @@
 
   function exhibitImg(file) {
     var img = el("img", "exhibit");
-    img.src = "../images/exhibits/" + file;
+    img.src = EXHIBITS + file;
     img.alt = "экспонат " + file;
     img.loading = "lazy";
     return img;
@@ -93,7 +96,7 @@
       if (o.img) {
         var wrap = el("span");
         var im = el("img");
-        im.src = "../images/exhibits/" + o.img;
+        im.src = EXHIBITS + o.img;
         im.alt = "вариант " + o.l;
         wrap.appendChild(im);
         row.appendChild(wrap);

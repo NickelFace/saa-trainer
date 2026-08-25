@@ -52,9 +52,11 @@ check(all(d["count"] == Counter(q["dom"] for q in bank)[d["code"]] for d in meta
 print("аудит:")
 corrected = [q["id"] for q in bank if "answer_original" in q]
 disputed = [q["id"] for q in bank if "disputed_alt" in q]
-check(corrected == meta["corrected"], f"18 исправленных ключей ({len(corrected)})")
-check(disputed == meta["disputed"], f"15 спорных ({len(disputed)})")
+check(corrected == meta["corrected"], f"исправленные ключи совпадают с meta.json ({len(corrected)})")
+check(disputed == meta["disputed"], f"спорные совпадают с meta.json ({len(disputed)})")
 check(all("fix_note" in q for q in bank if "answer_original" in q), "у исправленных есть fix_note")
+check(all("disputed_note" in q for q in bank if "disputed_alt" in q), "у спорных есть аргумент")
+check(not meta["low_conf"], f"не осталось вопросов с низкой уверенностью ({meta['low_conf']})")
 check([q["id"] for q in bank if "exhibits" in q] == meta["exhibits"], "7 вопросов с экспонатами")
 missing_png = [f for q in bank for f in q.get("exhibits", []) if not os.path.exists(f"images/exhibits/{f}")]
 missing_png += [o["img"] for q in bank for o in q["options"]
