@@ -36,7 +36,7 @@ including progress saved in localStorage.
   the key and, under every wrong option, why that option fails. Disputed questions get
   both readings instead of a verdict. Walkthroughs cross-link sibling questions, so a
   storage-class answer points at the near-identical question where the answer differs.
-  904 of 1019 questions so far; the layer lives in `data/explanations.json` and grows
+  920 of 1019 questions so far; the layer lives in `data/explanations.json` and grows
   chapter by chapter.
 - **Audit transparency** — the 26 corrected answer keys show the original dump answer
   and the reason; the 20 disputed questions show the alternative and the argument.
@@ -136,7 +136,7 @@ blueprint, not by the bank.
 Domain counts in `meta.json` are recomputed by the pipeline, never edited by hand.
 
 Audit: 26 corrected keys, 23 disputed, no low-confidence questions left, 3 source-PDF
-defects, 7 questions with exhibits. Written walkthroughs: 904 of 1019 questions — every
+defects, 7 questions with exhibits. Written walkthroughs: 920 of 1019 questions — every
 corrected key, every disputed question, and the IAM, encryption/KMS, Route 53,
 perimeter-security, cost-optimization, hybrid-network, file-storage, data-transfer, EBS, Aurora, CloudFront/edge, VPC and containers
 chapters in full.
