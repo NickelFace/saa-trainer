@@ -32,12 +32,12 @@ including progress saved in localStorage.
   decided, searchable, linked to the bank by service tags: one click jumps from a
   chapter to its questions. Every chapter ends with a generated table of the domains
   its questions fall into, including how many were classified by hand and why.
-- **Answer walkthroughs** — for covered questions the review explains why the key is
-  the key and, under every wrong option, why that option fails. Disputed questions get
-  both readings instead of a verdict. Walkthroughs cross-link sibling questions, so a
-  storage-class answer points at the near-identical question where the answer differs.
-  1002 of 1019 questions so far; the layer lives in `data/explanations.json` and grows
-  chapter by chapter.
+- **Answer walkthroughs** — every question in the bank has one: the review explains why
+  the key is the key and, under every wrong option, why that option fails. Disputed
+  questions get both readings instead of a verdict. Walkthroughs cross-link sibling
+  questions, so a storage-class answer points at the near-identical question where the
+  answer differs. All 1019 of 1019 questions; the layer lives in
+  `data/explanations.json`.
 - **Audit transparency** — the 28 corrected answer keys show the original dump answer
   and the reason; the 23 disputed questions show the alternative and the argument.
 - **Progress** — stored in localStorage, per-domain accuracy, exam history,
@@ -136,9 +136,8 @@ blueprint, not by the bank.
 Domain counts in `meta.json` are recomputed by the pipeline, never edited by hand.
 
 Audit: 28 corrected keys, 23 disputed, no low-confidence questions left, 3 source-PDF
-defects, 7 questions with exhibits. Written walkthroughs: 1002 of 1019 questions — every
-corrected key, every disputed question, and the IAM, encryption/KMS, Route 53,
-perimeter-security, cost-optimization, hybrid-network, file-storage, data-transfer, EBS, Aurora, CloudFront/edge, VPC and containers
-chapters in full.
+defects, 2 questions flagged as inaccurate or outdated, 7 questions with exhibits.
+Written walkthroughs: all 1019 questions — every key argued, every wrong option
+rebutted, every correction and dispute backed by its own reasoning.
 
 Russian version of this document: [README.ru.md](README.ru.md).
