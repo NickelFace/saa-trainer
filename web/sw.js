@@ -40,16 +40,27 @@ self.addEventListener("fetch", function (e) {
   var url = new URL(req.url);
   if (url.origin !== location.origin) return;
 
+  /* сам воркер никогда не берём из кеша, иначе новая сборка не приедет */
+  if (url.pathname === "/sw.js" || url.pathname.slice(-7) === "/sw.js") return;
+
   /* навигация: сначала сеть, при её отсутствии — сохранённая страница */
   if (req.mode === "navigate") {
     e.respondWith(fetch(req).catch(function () {
-      return caches.match("index.html", { ignoreSearch: true });
+      return caches.match("index.html", { ignoreSearch: true }).then(function (hit) {
+        return hit || caches.match("./", { ignoreSearch: true });
+      });
     }));
     return;
   }
 
-  /* остальное: сначала кеш, промах — сеть и запись в кеш (так попадают картинки-экспонаты) */
-  e.respondWith(caches.match(req, { ignoreSearch: true }).then(function (hit) {
+  /* кешируем только оболочку и картинки-экспонаты: всё остальное идёт в сеть как есть */
+  var isShell = SHELL.some(function (f) {
+    return url.pathname === new URL(f, self.registration.scope).pathname;
+  });
+  var isImage = url.pathname.indexOf("/images/") !== -1;
+  if (!isShell && !isImage) return;
+
+  e.respondWith(caches.match(req).then(function (hit) {
     if (hit) return hit;
     return fetch(req).then(function (res) {
       if (res && res.ok && res.type === "basic") {
