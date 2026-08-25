@@ -1,6 +1,6 @@
 # SAA-C03 audit log (1019 вопросов, 100%)
 
-## Исправленные ошибки ключа (20)
+## Исправленные ошибки ключа (21)
 
 - **#110**: BD -> **CD**. examtopics t1 q110 community consensus
 - **#239**: A -> **B**. examtopics t1 q239 — Lambda function URL with AWS_IAM is the single-function microservice path; API Gateway adds a service that is not required
@@ -22,6 +22,8 @@
 - **#974**: BD -> **AD**. сертификат для CloudFront должен быть выпущен в us-east-1 независимо от региона бакета
 - **#308**: BD -> **BC**. активные инстансы не попадают в проверку Idle DB Instances; стоимость снижает RDS Reserved Instance Optimization, рекомендации консолидируются в аккаунте плательщика
 - **#664**: D -> **A**. predictive scaling не ловит всплеск дважды в месяц; нужен burstable unlimited плюс масштабирование по запросам
+
+- **#838**: C → **D**. Найдено при разборе главы encryption-kms: вариант C говорит про SSL, то есть про шифрование в канале, а требование — шифрование при хранении. D шифрует и тома EBS инстанса, и хранилище RDS ключами KMS
 
 ## Спорные, ключ сохранён (20)
 

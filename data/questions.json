@@ -27566,7 +27566,9 @@
     "t": "Configure Amazon Elastic Block Store (Amazon EBS) encryption and Amazon RDS encryption with AWS Key Management Service (AWS KMS) keys to encrypt instance and database volumes."
    }
   ],
-  "answer": "C",
+  "answer": "D",
+  "answer_original": "C",
+  "fix_note": "ключ дампа C описывает SSL, то есть шифрование в канале, хотя требование — шифрование при хранении; вариант D закрывает оба хранилища: тома EBS инстанса и хранилище RDS ключами KMS",
   "dom": "SEC",
   "svc": [
    "EC2",
