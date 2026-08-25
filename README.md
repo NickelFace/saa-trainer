@@ -38,8 +38,8 @@ data/
   build/                  intermediate pipeline artefacts (git-ignored)
   questions.json          curated bank, 1019 questions
   overlay.json            audit overlay: corrected keys, disputed notes, exhibits
-  dom-overrides.json      manual domain assignment with a reason, for the 208 questions
-                          the classifier rules could not place
+  dom-overrides.json      manual domain assignment with a reason, for the 347 questions
+                          the classifier rules could not place confidently
   meta.json               domains, blueprint weights, audit index
   audit.json              per-question audit status
   audit-log.md            audit reasoning in full
@@ -93,17 +93,18 @@ pdftotext -layout SAA-C03-1019QA.pdf data/raw.txt
 ```
 
 `dom`: SEC / RES / PERF / COST. `dom_conf`: `strong` (672 — unambiguous markers in the
-stem), `weak` (139 — generic wording), `manual` (208 — assigned by hand, with the reason
-in `dom_why`). No question is left on the classifier's default domain.
+stem) or `manual` (347 — reviewed by hand, with the reason in `dom_why`). Every question
+the rules could not place confidently was read and classified individually; nothing is
+left on a default or a weak-marker guess.
 
 ## Bank statistics
 
 | Domain | Questions | Blueprint weight | Questions in a mock exam |
 |---|--:|--:|--:|
-| SEC — Design Secure Architectures | 312 | 30% | 20 |
-| RES — Design Resilient Architectures | 209 | 26% | 17 |
-| PERF — Design High-Performing Architectures | 271 | 24% | 15 |
-| COST — Design Cost-Optimized Architectures | 227 | 20% | 13 |
+| SEC — Design Secure Architectures | 322 | 30% | 20 |
+| RES — Design Resilient Architectures | 210 | 26% | 17 |
+| PERF — Design High-Performing Architectures | 254 | 24% | 15 |
+| COST — Design Cost-Optimized Architectures | 233 | 20% | 13 |
 
 Bank shares deliberately differ from blueprint weights; the exam mode samples by the
 blueprint, not by the bank.

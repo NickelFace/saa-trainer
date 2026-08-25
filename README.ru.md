@@ -53,10 +53,11 @@ python3 scripts/build-web-data.py  # json -> web/data/*.js
 python3 scripts/validate.py        # проверка критериев готовности
 ```
 
-Разметка домена: 672 вопроса определены сильными маркерами в тексте, 139 — слабыми,
-оставшиеся 208 размечены вручную и лежат в `data/dom-overrides.json` вместе с коротким
+Разметка домена: 672 вопроса определены сильными маркерами в тексте, остальные 347
+прочитаны и размечены вручную — они лежат в `data/dom-overrides.json` вместе с коротким
 обоснованием (`dom_why`, видно в разборе вопроса). Вопросов с доменом «по умолчанию»
-в банке не осталось. Счётчики доменов в `meta.json` пересчитывает пайплайн.
+или по слабым маркерам в банке не осталось, `validate.py` это проверяет. Счётчики
+доменов в `meta.json` пересчитывает пайплайн.
 
 Сборка воспроизводима: на чистом клоне пайплайн собирает `data/questions.json`
 побайтово тем же самым. Результаты аудита лежат отдельно в `overlay.json`, поэтому
@@ -83,10 +84,10 @@ Route 53 · Контейнеры · Аналитика · Защита пери�
 
 | Домен | Вопросов | Вес blueprint | В экзамене |
 |---|--:|--:|--:|
-| SEC — Design Secure Architectures | 312 | 30% | 20 |
-| RES — Design Resilient Architectures | 209 | 26% | 17 |
-| PERF — Design High-Performing Architectures | 271 | 24% | 15 |
-| COST — Design Cost-Optimized Architectures | 227 | 20% | 13 |
+| SEC — Design Secure Architectures | 322 | 30% | 20 |
+| RES — Design Resilient Architectures | 210 | 26% | 17 |
+| PERF — Design High-Performing Architectures | 254 | 24% | 15 |
+| COST — Design Cost-Optimized Architectures | 233 | 20% | 13 |
 
 Доли банка не совпадают с весами экзамена намеренно: выборка режима «Экзамен» строится
 по blueprint, а не пропорционально банку.

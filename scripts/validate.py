@@ -35,8 +35,9 @@ check(all(set(q["answer"]) <= {o["l"] for o in q["options"]} for q in bank),
 
 print("разметка доменов:")
 conf = Counter(q["dom_conf"] for q in bank)
-check(set(conf) <= {"strong", "weak", "manual"}, f"допустимые значения dom_conf: {dict(conf)}")
+check(set(conf) <= {"strong", "manual"}, f"допустимые значения dom_conf: {dict(conf)}")
 check(conf["fallback"] == 0, "не осталось вопросов с доменом по умолчанию")
+check(conf["weak"] == 0, "не осталось вопросов со слабой разметкой: все проверены вручную")
 no_why = [q["id"] for q in bank if q["dom_conf"] == "manual" and not q.get("dom_why")]
 check(not no_why, f"у каждой ручной разметки есть обоснование ({no_why})")
 ov_dom = json.load(open("data/dom-overrides.json", encoding="utf-8"))
