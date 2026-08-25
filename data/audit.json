@@ -1,0 +1,5169 @@
+{
+"1": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"2": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"3": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"4": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"5": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"6": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"7": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"8": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"9": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"10": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"11": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"12": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"13": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"14": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"15": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"16": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"17": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"18": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"19": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"20": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"21": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"22": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"23": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"24": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"25": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"26": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"27": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"28": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"29": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"30": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"31": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"32": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"33": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"34": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"35": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"36": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"37": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"38": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"39": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"40": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"41": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"42": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"43": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"44": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"45": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"46": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"47": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"48": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"49": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"50": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"51": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"52": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"53": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"54": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"55": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"56": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"57": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"58": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"59": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"60": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"61": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"62": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"63": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"64": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"65": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"66": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"67": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"68": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"69": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"70": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"71": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"72": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"73": {
+"status": "ok",
+"method": "expert",
+"key": "CD"
+},
+"74": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"75": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"76": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"77": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"78": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"79": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"80": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"81": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"82": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"83": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"84": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"85": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"86": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"87": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"88": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"89": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"90": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"91": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"92": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"93": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"94": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"95": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"96": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"97": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"98": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"99": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"100": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"101": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"102": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"103": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"104": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"105": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"106": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"107": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"108": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"109": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"110": {
+"status": "error",
+"method": "online",
+"key": "BD",
+"fix": "CD",
+"src": "examtopics t1 q110 community consensus"
+},
+"111": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"112": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"113": {
+"status": "ok-low-conf",
+"method": "expert",
+"key": "C",
+"note": "Snowball Edge + Glue vs Snowball with EC2 compute \u2014 recheck online"
+},
+"114": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"115": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"116": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"117": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"118": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"119": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"120": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"121": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"122": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"123": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"124": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"125": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"126": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"127": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"128": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"129": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"130": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"131": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"132": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"133": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"134": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"135": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"136": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"137": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"138": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"139": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"140": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"141": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"142": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"143": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"144": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"145": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"146": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"147": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"148": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"149": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"150": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"151": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"152": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"153": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"154": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"155": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"156": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"157": {
+"status": "ok",
+"method": "expert",
+"key": "DE"
+},
+"158": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"159": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"160": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"161": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"162": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"163": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"164": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"165": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"166": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"167": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"168": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"169": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"170": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"171": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"172": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"173": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"174": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"175": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"176": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"177": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"178": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"179": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"180": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"181": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"182": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"183": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"184": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"185": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"186": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"187": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"188": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"189": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"190": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"191": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"192": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"193": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"194": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"195": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"196": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"197": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"198": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"199": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"200": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"201": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"202": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"203": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"204": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"205": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"206": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"207": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"208": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"209": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"210": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"211": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"212": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"213": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"214": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"215": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"216": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"217": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"218": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"219": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"220": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"221": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"222": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"223": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"224": {
+"status": "ok",
+"method": "expert",
+"key": "CE"
+},
+"225": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"226": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"227": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"228": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"229": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"230": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"231": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"232": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"233": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"234": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"235": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"236": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"237": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"238": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"239": {
+"status": "error",
+"method": "online",
+"key": "A",
+"fix": "B",
+"src": "examtopics t1 q239 \u2014 Lambda function URL with AWS_IAM is the single-function microservice path; API Gateway adds a service that is not required"
+},
+"240": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"241": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"242": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"243": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"244": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"245": {
+"status": "disputed",
+"method": "online",
+"key": "A",
+"alt": "D",
+"src": "examtopics t1 q245 \u2014 target group change does not reduce ASG instance count; strong minority argues D"
+},
+"246": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"247": {
+"status": "ok",
+"method": "expert",
+"key": "CE"
+},
+"248": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"249": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"250": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"251": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"252": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"253": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"254": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"255": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"256": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"257": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"258": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"259": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"260": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"261": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"262": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"263": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"264": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"265": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"266": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"267": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"268": {
+"status": "disputed",
+"method": "online",
+"key": "B",
+"alt": "A",
+"src": "examtopics t1 q268 \u2014 \u043a\u043b\u044e\u0447 RDS Proxy \u0440\u0435\u0448\u0430\u0435\u0442 \u043f\u0443\u043b \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439, \u0430 \u043d\u0435 read performance; \u0447\u0430\u0441\u0442\u044c \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 ElastiCache"
+},
+"269": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"270": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"271": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"272": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"273": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"274": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"275": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"276": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"277": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"278": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"279": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"280": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"281": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"282": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"283": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"284": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"285": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"286": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"287": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"288": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"289": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"290": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"291": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"292": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"293": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"294": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"295": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"296": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"297": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"298": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"299": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"300": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"301": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"302": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"303": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"304": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"305": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"306": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"307": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"308": {
+"status": "ok-low-conf",
+"method": "expert",
+"key": "BD",
+"note": "Trusted Advisor RDS Reserved Instance Optimization (C) \u0442\u043e\u0436\u0435 \u0441\u043d\u0438\u0436\u0430\u0435\u0442 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u2014 \u043f\u0435\u0440\u0435\u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c"
+},
+"309": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"310": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"311": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"312": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"313": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"314": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"315": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"316": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"317": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"318": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"319": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"320": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"321": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"322": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"323": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"324": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"325": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"326": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"327": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"328": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"329": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"330": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"331": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"332": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"333": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"334": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"335": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"336": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"337": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"338": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"339": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"340": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"341": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"342": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"343": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"344": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"345": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"346": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"347": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"348": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"349": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"350": {
+"status": "ok-low-conf",
+"method": "expert",
+"key": "AC",
+"note": "A (Multi-AZ) \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0435 HA/auto recovery, C \u2014 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043e\u0442\u0447\u0451\u0442\u043e\u0432; \u0444\u043e\u0440\u043c\u0443\u043b\u0438\u0440\u043e\u0432\u043a\u0430 \u0432\u043e\u043f\u0440\u043e\u0441\u0430 \u0441\u043c\u0435\u0448\u0438\u0432\u0430\u0435\u0442 \u0434\u0432\u0430 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u044f"
+},
+"351": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"352": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"353": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"354": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"355": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"356": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"357": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"358": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"359": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"360": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"361": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"362": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"363": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"364": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"365": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"366": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"367": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"368": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"369": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"370": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"371": {
+"status": "ok",
+"method": "expert",
+"key": "CD"
+},
+"372": {
+"status": "disputed",
+"method": "online",
+"key": "D",
+"alt": "B",
+"src": "examtopics t1 q372 \u2014 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0434\u0435\u043b\u0438\u0442\u0441\u044f: B (S3+DynamoDB) \u0434\u0435\u0448\u0435\u0432\u043b\u0435 \u0438 \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u043c\u0435\u0435, \u043a\u043e\u043d\u0442\u0440\u0430\u0440\u0433\u0443\u043c\u0435\u043d\u0442 \u2014 GIS-\u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435 \u043d\u0435 \u0441\u0432\u043e\u0434\u0438\u0442\u0441\u044f \u043a \u043e\u0434\u043d\u043e\u043c\u0443 geographic code"
+},
+"373": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"374": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"375": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"376": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"377": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"378": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"379": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"380": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"381": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"382": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"383": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"384": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"385": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"386": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"387": {
+"status": "ok",
+"method": "expert",
+"key": "DE"
+},
+"388": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"389": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"390": {
+"status": "disputed",
+"method": "online",
+"key": "AD",
+"alt": "BD",
+"src": "examtopics t1 q390 \u2014 sticky sessions \u043d\u0435 \u0445\u0440\u0430\u043d\u044f\u0442 \u0434\u0430\u043d\u043d\u044b\u0435; ElastiCache Redis durable \u0442\u043e\u043b\u044c\u043a\u043e \u0441 persistence; \u0447\u0430\u0441\u0442\u044c \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0437\u0430 BD"
+},
+"391": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"392": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"393": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"394": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"395": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"396": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"397": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"398": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"399": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"400": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"401": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"402": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"403": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"404": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"405": {
+"status": "ok",
+"method": "expert",
+"key": "DE"
+},
+"406": {
+"status": "ok",
+"method": "expert",
+"key": "CD"
+},
+"407": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"408": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"409": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"410": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"411": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"412": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"413": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"414": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"415": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"416": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"417": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"418": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"419": {
+"status": "ok",
+"method": "expert",
+"key": "CE"
+},
+"420": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"421": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"422": {
+"status": "ok-low-conf",
+"method": "expert",
+"key": "D",
+"note": "SQS+ECS Fargate \u043f\u0440\u043e\u0442\u0438\u0432 SQS+Lambda (C): \u0432\u044b\u0431\u043e\u0440 \u043a\u043b\u044e\u0447\u0430 \u043e\u043f\u0438\u0440\u0430\u0435\u0442\u0441\u044f \u043d\u0430 \u0440\u0430\u0437\u043c\u0435\u0440 ML-\u043c\u043e\u0434\u0435\u043b\u0435\u0439, \u0432 \u0442\u0435\u043a\u0441\u0442\u0435 \u043f\u0440\u044f\u043c\u043e \u043d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d"
+},
+"423": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"424": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"425": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"426": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"427": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"428": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"429": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"430": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"431": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"432": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"433": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"434": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"435": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"436": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"437": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"438": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"439": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"440": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"441": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"442": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"443": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"444": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"445": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"446": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"447": {
+"status": "error",
+"method": "online",
+"key": "B",
+"fix": "A",
+"src": "examtopics t1 q447 \u2014 \u0443 CloudFront \u043d\u0435\u0442 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 health checks; Route 53 health checks + active-active failover \u044d\u0442\u043e \u0448\u0442\u0430\u0442\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430 \u0434\u043b\u044f multi-region API Gateway/Lambda (AWS Compute Blog)"
+},
+"448": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"449": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"450": {
+"status": "ok",
+"method": "expert",
+"key": "CEF"
+},
+"451": {
+"status": "ok",
+"method": "expert",
+"key": "BCF"
+},
+"452": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"453": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"454": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"455": {
+"status": "ok",
+"method": "expert",
+"key": "BDF"
+},
+"456": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"457": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"458": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"459": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"460": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"461": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"462": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"463": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"464": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"465": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"466": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"467": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"468": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"469": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"470": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"471": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"472": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"473": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"474": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"475": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"476": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"477": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"478": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"479": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"480": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"481": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"482": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"483": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"484": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"485": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"486": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"487": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"488": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"489": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"490": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"491": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"492": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"493": {
+"status": "ok",
+"method": "expert",
+"key": "DEF"
+},
+"494": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"495": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"496": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"497": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"498": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"499": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"500": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"501": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"502": {
+"status": "ok",
+"method": "expert",
+"key": "CE"
+},
+"503": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"504": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"505": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"506": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"507": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"508": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"509": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"510": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"511": {
+"status": "ok-low-conf",
+"method": "expert",
+"key": "C",
+"note": "Aurora On-Demand \u043f\u0440\u043e\u0442\u0438\u0432 RDS Single-AZ: \u0444\u043e\u0440\u043c\u0443\u043b\u0438\u0440\u043e\u0432\u043a\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432 A \u0438 C \u043f\u043e\u0447\u0442\u0438 \u0434\u0443\u0431\u043b\u0438\u0440\u0443\u0435\u0442 \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0430"
+},
+"512": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"513": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"514": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"515": {
+"status": "ok",
+"method": "expert",
+"key": "BCE"
+},
+"516": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"517": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"518": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"519": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"520": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"521": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"522": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"523": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"524": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"525": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"526": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"527": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"528": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"529": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"530": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"531": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"532": {
+"status": "ok",
+"method": "expert",
+"key": "ADF"
+},
+"533": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"534": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"535": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"536": {
+"status": "disputed",
+"method": "expert",
+"key": "C",
+"alt": "D",
+"src": "Multi-AZ DB cluster \u0441 \u0434\u0432\u0443\u043c\u044f readable standby (D) \u0434\u0430\u0451\u0442 \u0438 HA, \u0438 read-\u044d\u043d\u0434\u043f\u043e\u0438\u043d\u0442\u044b \u0442\u0440\u0435\u043c\u044f \u0438\u043d\u0441\u0442\u0430\u043d\u0441\u0430\u043c\u0438 \u043f\u0440\u043e\u0442\u0438\u0432 \u0447\u0435\u0442\u044b\u0440\u0451\u0445 \u0432 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0435 C"
+},
+"537": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"538": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"539": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"540": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"541": {
+"status": "ok",
+"method": "expert",
+"key": "ACE"
+},
+"542": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"543": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"544": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"545": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"546": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"547": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"548": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"549": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"550": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"551": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"552": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"553": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"554": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"555": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"556": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"557": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"558": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"559": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"560": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"561": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"562": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"563": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"564": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"565": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"566": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"567": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"568": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"569": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"570": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"571": {
+"status": "error",
+"method": "online",
+"key": "B",
+"fix": "A",
+"src": "ACM \u043d\u0435 \u0432\u044b\u043f\u0443\u0441\u043a\u0430\u0435\u0442 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u044b, \u043f\u043e\u0434\u043f\u0438\u0441\u0430\u043d\u043d\u044b\u0435 \u0441\u0442\u043e\u0440\u043e\u043d\u043d\u0438\u043c CA \u2014 \u0442\u043e\u043b\u044c\u043a\u043e \u0438\u043c\u043f\u043e\u0440\u0442\u0438\u0440\u0443\u0435\u0442 \u0438\u0445; \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u044b B \u0438 D \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438 \u043d\u0435\u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b. examtopics t1 q571"
+},
+"572": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"573": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"574": {
+"status": "disputed",
+"method": "expert",
+"key": "B",
+"alt": "A",
+"src": "2 \u0447\u0430\u0441\u0430 \u0440\u0430\u0431\u043e\u0442\u044b \u0432 \u043d\u0435\u0434\u0435\u043b\u044e: Aurora Serverless v2 \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u0432\u043d\u0438\u0437, \u043d\u043e \u043d\u0435 \u0434\u043e \u043d\u0443\u043b\u044f; provisioned-\u043a\u043b\u0430\u0441\u0442\u0435\u0440 \u043c\u043e\u0436\u043d\u043e \u043e\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u0442\u044c \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c \u043d\u0430 7 \u0441\u0443\u0442\u043e\u043a \u2014 \u043e\u0431\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430 \u0441\u043f\u043e\u0440\u043d\u044b"
+},
+"575": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"576": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"577": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"578": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"579": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"580": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"581": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"582": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"583": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"584": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"585": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"586": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"587": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"588": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"589": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"590": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"591": {
+"status": "disputed",
+"method": "expert",
+"key": "D",
+"alt": "B",
+"src": "\u0434\u043b\u044f \u043c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0446\u0438\u0438 \u043a \u043c\u0438\u043a\u0440\u043e\u0441\u0435\u0440\u0432\u0438\u0441\u0430\u043c \u0432 EKS \u0448\u0442\u0430\u0442\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u044d\u0442\u043e ALB \u0447\u0435\u0440\u0435\u0437 AWS Load Balancer Controller; API Gateway \u043e\u0431\u044b\u0447\u043d\u043e \u0434\u043e\u0440\u043e\u0436\u0435"
+},
+"592": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"593": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"594": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"595": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"596": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"597": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"598": {
+"status": "ok",
+"method": "expert",
+"key": "ACF"
+},
+"599": {
+"status": "ok",
+"method": "expert",
+"key": "ACE"
+},
+"600": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"601": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"602": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"603": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"604": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"605": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"606": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"607": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"608": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"609": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"610": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"611": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"612": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"613": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"614": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"615": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"616": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"617": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"618": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"619": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"620": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"621": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"622": {
+"status": "disputed",
+"method": "expert",
+"key": "CD",
+"alt": "AD",
+"src": "\u043f\u0440\u0438 \u0441\u043a\u0430\u0447\u043a\u0435 \u0441 \u0442\u044b\u0441\u044f\u0447 \u0434\u043e \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u043e\u0432 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439 on-demand capacity (A) \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u043c\u0433\u043d\u043e\u0432\u0435\u043d\u043d\u043e, auto scaling \u043f\u0440\u043e\u0432\u0438\u0436\u0435\u043d\u0438\u043d\u0433\u0430 \u043e\u0442\u0441\u0442\u0430\u0451\u0442 \u043e\u0442 \u0440\u0435\u0437\u043a\u0438\u0445 \u0432\u0441\u043f\u043b\u0435\u0441\u043a\u043e\u0432"
+},
+"623": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"624": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"625": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"626": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"627": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"628": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"629": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"630": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"631": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"632": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"633": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"634": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"635": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"636": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"637": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"638": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"639": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"640": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"641": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"642": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"643": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"644": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"645": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"646": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"647": {
+"status": "error",
+"method": "online",
+"key": "C",
+"fix": "A",
+"src": "VoIP \u044d\u0442\u043e UDP \u2014 CloudFront \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u0441 HTTP/HTTPS. Global Accelerator \u043f\u0440\u044f\u043c\u043e \u043d\u0430\u0437\u0432\u0430\u043d AWS \u043a\u0430\u043a \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0434\u043b\u044f VoIP \u0438 \u0431\u044b\u0441\u0442\u0440\u043e\u0433\u043e \u043c\u0435\u0436\u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0433\u043e failover (GA FAQ, examtopics t1 q647)"
+},
+"648": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"649": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"650": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"651": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"652": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"653": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"654": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"655": {
+"status": "ok",
+"method": "expert",
+"key": "CE"
+},
+"656": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"657": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"658": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"659": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"660": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"661": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"662": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"663": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"664": {
+"status": "ok-low-conf",
+"method": "expert",
+"key": "D",
+"note": "\u0441\u043a\u0430\u0447\u043e\u043a CPU \u0434\u0432\u0430\u0436\u0434\u044b \u0432 \u043c\u0435\u0441\u044f\u0446: predictive scaling \u043e\u0431\u0443\u0447\u0430\u0435\u0442\u0441\u044f \u043d\u0430 \u0440\u0435\u0433\u0443\u043b\u044f\u0440\u043d\u044b\u0445 \u043f\u0430\u0442\u0442\u0435\u0440\u043d\u0430\u0445, \u0440\u0435\u0434\u043a\u0438\u0435 \u0432\u0441\u043f\u043b\u0435\u0441\u043a\u0438 \u043e\u043d \u043c\u043e\u0436\u0435\u0442 \u043d\u0435 \u043f\u043e\u0439\u043c\u0430\u0442\u044c"
+},
+"665": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"666": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"667": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"668": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"669": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"670": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"671": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"672": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"673": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"674": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"675": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"676": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"677": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"678": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"679": {
+"status": "ok",
+"method": "expert",
+"key": "ACE"
+},
+"680": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"681": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"682": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"683": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"684": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"685": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"686": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"687": {
+"status": "error",
+"method": "online",
+"key": "BD",
+"fix": "DE",
+"src": "\u043a\u043b\u044e\u0447 \u0441\u043c\u0435\u0448\u0438\u0432\u0430\u0435\u0442 \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u0435 \u0432 SageMaker (B) \u0441 \u043f\u0440\u0435\u0434\u0441\u043a\u0430\u0437\u0430\u043d\u0438\u0435\u043c \u0447\u0435\u0440\u0435\u0437 Forecast-\u043f\u0440\u0435\u0434\u0438\u043a\u0442\u043e\u0440 (D) \u2014 \u043d\u0435\u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u0430\u044f \u043f\u0430\u0440\u0430; \u043f\u0440\u0438 \u043e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0438 ML-\u043e\u043f\u044b\u0442\u0430 \u0441\u0432\u044f\u0437\u043a\u0430 DE (\u043e\u0431\u0443\u0447\u0438\u0442\u044c Forecast-\u043f\u0440\u0435\u0434\u0438\u043a\u0442\u043e\u0440 + Lambda \u0441 \u044d\u0442\u0438\u043c \u043f\u0440\u0435\u0434\u0438\u043a\u0442\u043e\u0440\u043e\u043c) \u0441\u043e\u0433\u043b\u0430\u0441\u043e\u0432\u0430\u043d\u0430"
+},
+"688": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"689": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"690": {
+"status": "ok",
+"method": "expert",
+"key": "CD"
+},
+"691": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"692": {
+"status": "disputed",
+"method": "expert",
+"key": "B",
+"alt": "A",
+"src": "\"MOST high-performing\" \u044d\u0442\u043e latency routing policy (A); geolocation \u043c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0438\u0440\u0443\u0435\u0442 \u043f\u043e \u0433\u0435\u043e\u0433\u0440\u0430\u0444\u0438\u0438 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f, \u0430 \u043d\u0435 \u043f\u043e \u0444\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0437\u0430\u0434\u0435\u0440\u0436\u043a\u0435"
+},
+"693": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"694": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"695": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"696": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"697": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"698": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"699": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"700": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"701": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"702": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"703": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"704": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"705": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"706": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"707": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"708": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"709": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"710": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"711": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"712": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"713": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"714": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"715": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"716": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"717": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"718": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"719": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"720": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"721": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"722": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"723": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"724": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"725": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"726": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"727": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"728": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"729": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"730": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"731": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"732": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"733": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"734": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"735": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"736": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"737": {
+"status": "ok",
+"method": "expert",
+"key": "CE"
+},
+"738": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"739": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"740": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"741": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"742": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"743": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"744": {
+"status": "error",
+"method": "online",
+"key": "C",
+"fix": "A",
+"src": "NLB \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 Elastic IP \u043d\u0430 AZ, ALB \u2014 \u043d\u0435\u0442; \u0432\u0430\u0440\u0438\u0430\u043d\u0442 C (A-\u0437\u0430\u043f\u0438\u0441\u044c \u043d\u0430 Elastic IP) \u043d\u0435 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442 \u0440\u0430\u0431\u043e\u0442\u043e\u0441\u043f\u043e\u0441\u043e\u0431\u043d\u0443\u044e \u043a\u043e\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u044e \u043f\u0435\u0440\u0435\u0434 ELB. examtopics t1 q744"
+},
+"745": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"746": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"747": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"748": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"749": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"750": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"751": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"752": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"753": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"754": {
+"status": "disputed",
+"method": "expert",
+"key": "D",
+"alt": "B",
+"src": "\u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0435 static IP addresses \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442 Global Accelerator (B), \u0443 CloudFront \u0441\u0442\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 IP \u043d\u0435\u0442; \u043f\u0440\u0438 \u044d\u0442\u043e\u043c WAF \u0432 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0435 B \u043d\u0430 ALB \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e"
+},
+"755": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"756": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"757": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"758": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"759": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"760": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"761": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"762": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"763": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"764": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"765": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"766": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"767": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"768": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"769": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"770": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"771": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"772": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"773": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"774": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"775": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"776": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"777": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"778": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"779": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"780": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"781": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"782": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"783": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"784": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"785": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"786": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"787": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"788": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"789": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"790": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"791": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"792": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"793": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"794": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"795": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"796": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"797": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"798": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"799": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"800": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"801": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"802": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"803": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"804": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"805": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"806": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"807": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"808": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"809": {
+"status": "error",
+"method": "expert",
+"key": "B",
+"fix": "A",
+"src": "EventBridge Scheduler \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0435\u0442 \u0437\u0430\u0434\u0430\u0447\u0438 \u043f\u043e \u0440\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u044e \u0438 \u043d\u0435 \u0441\u043e\u043f\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u0432\u0445\u043e\u0434\u044f\u0449\u0438\u0435 \u0441\u043e\u0431\u044b\u0442\u0438\u044f; \u043c\u0430\u0442\u0447\u0438\u043d\u0433 \u0441\u043e\u0431\u044b\u0442\u0438\u044f Batch SUCCEEDED \u0434\u0435\u043b\u0430\u0435\u0442 EventBridge rule, \u0430 HTTP API \u0441 \u043b\u043e\u0433\u0438\u043d\u043e\u043c/\u043f\u0430\u0440\u043e\u043b\u0435\u043c \u044d\u0442\u043e \u0448\u0442\u0430\u0442\u043d\u044b\u0439 API destination \u0441 connection"
+},
+"810": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"811": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"812": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"813": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"814": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"815": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"816": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"817": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"818": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"819": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"820": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"821": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"822": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"823": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"824": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"825": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"826": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"827": {
+"status": "error",
+"method": "expert",
+"key": "C",
+"fix": "D",
+"src": "\u0443 Aurora \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u0432\u0430 \u0442\u0438\u043f\u0430 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430 \u2014 Standard \u0438 I/O-Optimized; General Purpose/Provisioned IOPS \u043a \u043a\u043b\u0430\u0441\u0442\u0435\u0440\u0443 Aurora \u043d\u0435 \u043e\u0442\u043d\u043e\u0441\u044f\u0442\u0441\u044f"
+},
+"828": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"829": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"830": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"831": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"832": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"833": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"834": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"835": {
+"status": "disputed",
+"method": "expert",
+"key": "C",
+"alt": "A",
+"src": "public VIF \u0434\u0435\u0448\u0435\u0432\u043b\u0435 \u0438 \u0448\u0442\u0430\u0442\u043d\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u0434\u043b\u044f \u0434\u043e\u0441\u0442\u0443\u043f\u0430 \u043a S3 \u0447\u0435\u0440\u0435\u0437 Direct Connect; interface endpoint \u0442\u0430\u0440\u0438\u0444\u0438\u0446\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u043f\u043e\u0447\u0430\u0441\u043e\u0432\u043e \u043f\u043b\u044e\u0441 \u0437\u0430 \u0442\u0440\u0430\u0444\u0438\u043a"
+},
+"836": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"837": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"838": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"839": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"840": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"841": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"842": {
+"status": "error",
+"method": "expert",
+"key": "A",
+"fix": "D",
+"src": "\"EFS-to-EFS backup\" \u044d\u0442\u043e \u0443\u0441\u0442\u0430\u0440\u0435\u0432\u0448\u0435\u0435 AWS Solutions-\u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u043d\u0430 CloudFormation, \u0430 \u043d\u0435 managed-\u0441\u0435\u0440\u0432\u0438\u0441; \u0440\u0435\u043f\u043b\u0438\u043a\u0430\u0446\u0438\u044e EFS \u043c\u0435\u0436\u0434\u0443 \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043c\u0438 \u0434\u0435\u043b\u0430\u0435\u0442 AWS Backup"
+},
+"843": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"844": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"845": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"846": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"847": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"848": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"849": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"850": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"851": {
+"status": "disputed",
+"method": "expert",
+"key": "B",
+"alt": "C",
+"src": "Aurora Serverless \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u0432\u043d\u0438\u0437 \u0432 \u043f\u0440\u043e\u0441\u0442\u043e\u0435, \u0447\u0442\u043e \u0442\u043e\u0447\u043d\u0435\u0435 \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442 \"\u043d\u0443\u0436\u043d\u044b \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0440\u0430\u0431\u043e\u0442\u044b\""
+},
+"852": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"853": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"854": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"855": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"856": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"857": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"858": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"859": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"860": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"861": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"862": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"863": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"864": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"865": {
+"status": "ok",
+"method": "expert",
+"key": "AE"
+},
+"866": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"867": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"868": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"869": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"870": {
+"status": "error",
+"method": "expert",
+"key": "D",
+"fix": "C",
+"src": "\u043a\u043b\u044e\u0447 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0440\u0435\u0447\u0438\u0432: \u0433\u0440\u0443\u043f\u043f\u0430 \u0432 Production \u0443\u043a\u0430\u0437\u0430\u043d\u0430 \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u0430\u043b\u043e\u043c \u0432 trust policy, \u0441\u0441\u044b\u043b\u0430\u044e\u0449\u0435\u0439\u0441\u044f \u043d\u0430 \u0442\u043e\u0442 \u0436\u0435 Production; \u043a\u0440\u043e\u0441\u0441-\u0430\u043a\u043a\u0430\u0443\u043d\u0442 \u0434\u0435\u043b\u0430\u0435\u0442\u0441\u044f \u0440\u043e\u043b\u044c\u044e \u0432 Production \u0441 \u0434\u043e\u0432\u0435\u0440\u0438\u0435\u043c \u043a Development"
+},
+"871": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"872": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"873": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"874": {
+"status": "error",
+"method": "expert",
+"key": "C",
+"fix": "A",
+"src": "\u043a\u043b\u044e\u0447 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442 pilot light (\u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0430 \u0441\u043e\u0437\u0434\u0430\u0451\u0442\u0441\u044f \u043f\u043e \u0444\u0430\u043a\u0442\u0443 \u0430\u0432\u0430\u0440\u0438\u0438); \u043f\u0440\u0438 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0438 LEAST downtime \u043d\u0443\u0436\u0435\u043d warm standby \u0441 \u0443\u0436\u0435 \u043f\u043e\u0434\u043d\u044f\u0442\u044b\u043c\u0438 ASG \u0438 ELB"
+},
+"875": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"876": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"877": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"878": {
+"status": "disputed",
+"method": "expert",
+"key": "A",
+"alt": "D",
+"src": "\u0432\u0430\u0440\u0438\u0430\u043d\u0442 \u043a\u043b\u044e\u0447\u0430 \u0434\u0430\u0451\u0442 \u0432\u0441\u0435\u043c \u0432\u043b\u0430\u0434\u0435\u043b\u044c\u0446\u0430\u043c \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u043e\u0432 \u0434\u043e\u0441\u0442\u0443\u043f \u043a \u043e\u0434\u043d\u043e\u043c\u0443 \u043f\u043e\u0447\u0442\u043e\u0432\u043e\u043c\u0443 \u044f\u0449\u0438\u043a\u0443, \u0447\u0442\u043e \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0440\u0435\u0447\u0438\u0442 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u044e MOST securely"
+},
+"879": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"880": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"881": {
+"status": "disputed",
+"method": "expert",
+"key": "AC",
+"alt": "AE",
+"src": "Cache-Control private \u0432\u043e\u043e\u0431\u0449\u0435 \u0437\u0430\u043f\u0440\u0435\u0449\u0430\u0435\u0442 \u043a\u044d\u0448\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0432 CloudFront \u0438 \u0443\u0431\u0438\u0432\u0430\u0435\u0442 \u0441\u043c\u044b\u0441\u043b \u043a\u044d\u0448\u0430; \u0441\u0432\u044f\u0437\u043a\u0430 TTL + \u0438\u043d\u0432\u0430\u043b\u0438\u0434\u0430\u0446\u0438\u044f \u043f\u0440\u0438 \u0434\u0435\u043f\u043b\u043e\u0435 \u043b\u043e\u0433\u0438\u0447\u043d\u0435\u0435"
+},
+"882": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"883": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"884": {
+"status": "ok",
+"method": "expert",
+"key": "ACE"
+},
+"885": {
+"status": "ok",
+"method": "expert",
+"key": "CD"
+},
+"886": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"887": {
+"status": "error",
+"method": "expert",
+"key": "B",
+"fix": "A",
+"src": "AWS Config \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u0435\u0442\u0435\u043a\u0442\u0438\u0440\u0443\u0435\u0442 \u043d\u0430\u0440\u0443\u0448\u0435\u043d\u0438\u044f; \u0437\u0430\u043f\u0440\u0435\u0442 \u043d\u0435\u0437\u0430\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0442\u043e\u043c\u043e\u0432 \u0434\u0430\u0451\u0442 \u0430\u0442\u0440\u0438\u0431\u0443\u0442 \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u0430 EC2 \"always encrypt new EBS volumes\""
+},
+"888": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"889": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"890": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"891": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"892": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"893": {
+"status": "error",
+"method": "expert",
+"key": "B",
+"fix": "A",
+"src": "\u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 guardrails \u043f\u0440\u0438 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u0438 \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u043e\u0432 \u044d\u0442\u043e AWS Control Tower, Organizations \u0441\u0430\u043c \u043f\u043e \u0441\u0435\u0431\u0435 \u0438\u0445 \u043d\u0435 \u0434\u0430\u0451\u0442"
+},
+"894": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"895": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"896": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"897": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"898": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"899": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"900": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"901": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"902": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"903": {
+"status": "error",
+"method": "expert",
+"key": "B",
+"fix": "A",
+"src": "ACL \u0447\u0435\u0440\u0435\u0437 Batch Operations \u043d\u0435 \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u0438 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0440\u0435\u0447\u0438\u0442 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0430\u0446\u0438\u044f\u043c AWS; \u043f\u0440\u0435\u0444\u0438\u043a\u0441\u043d\u044b\u0439 \u0434\u043e\u0441\u0442\u0443\u043f \u0441 \u0433\u0440\u0430\u043d\u0443\u043b\u044f\u0440\u043d\u044b\u043c \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u0435\u043c \u044d\u0442\u043e S3 access points \u0441 \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0430\u043c\u0438"
+},
+"904": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"905": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"906": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"907": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"908": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"909": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"910": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"911": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"912": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"913": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"914": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"915": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"916": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"917": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"918": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"919": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"920": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"921": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"922": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"923": {
+"status": "ok",
+"method": "expert",
+"key": "BE"
+},
+"924": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"925": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"926": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"927": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"928": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"929": {
+"status": "ok",
+"method": "expert",
+"key": "ACF"
+},
+"930": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"931": {
+"status": "error",
+"method": "expert",
+"key": "AB",
+"fix": "AC",
+"src": "\u0434\u043b\u044f \u043a\u0440\u043e\u0441\u0441-\u0430\u043a\u043a\u0430\u0443\u043d\u0442\u043d\u043e\u0439 \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0438 Lambda \u043d\u0430 SNS \u043d\u0443\u0436\u043d\u044b resource policy \u0443 \u0444\u0443\u043d\u043a\u0446\u0438\u0438 (A) \u0438 \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0430 \u0442\u043e\u043f\u0438\u043a\u0430, \u0440\u0430\u0437\u0440\u0435\u0448\u0430\u044e\u0449\u0430\u044f \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0443 (C); \u0431\u0443\u0444\u0435\u0440 SQS \u0438\u0437 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430 B \u043c\u0435\u043d\u044f\u0435\u0442 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a \u0432\u044b\u0437\u043e\u0432\u0430 \u0438 \u0441 A \u043d\u0435\u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c"
+},
+"932": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"933": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"934": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"935": {
+"status": "ok",
+"method": "expert",
+"key": "BC"
+},
+"936": {
+"status": "error",
+"method": "expert",
+"key": "CD",
+"fix": "BC",
+"src": "Parameter Store \u043d\u0435 \u0443\u043c\u0435\u0435\u0442 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0443\u044e \u0440\u043e\u0442\u0430\u0446\u0438\u044e \u2014 \u0435\u0451 \u0434\u0430\u0451\u0442 \u0442\u043e\u043b\u044c\u043a\u043e Secrets Manager; \u0432\u0442\u043e\u0440\u044b\u043c \u0448\u0430\u0433\u043e\u043c \u0438\u0434\u0451\u0442 Lambda layer \u0434\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u0441\u0435\u043a\u0440\u0435\u0442\u0430"
+},
+"937": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"938": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"939": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"940": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"941": {
+"status": "ok",
+"method": "expert",
+"key": "DE"
+},
+"942": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"943": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"944": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"945": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"946": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"947": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"948": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"949": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"950": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"951": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"952": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"953": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"954": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"955": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"956": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"957": {
+"status": "ok",
+"method": "expert",
+"key": "BD"
+},
+"958": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"959": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"960": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"961": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"962": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"963": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"964": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"965": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"966": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"967": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"968": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"969": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"970": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"971": {
+"status": "disputed",
+"method": "expert",
+"key": "C",
+"alt": "D",
+"src": "\u043f\u043e\u0432\u0442\u043e\u0440\u043d\u0430\u044f \u0440\u0430\u0437\u0434\u0430\u0447\u0430 \u043e\u0434\u043d\u0438\u0445 \u0438 \u0442\u0435\u0445 \u0436\u0435 \u0444\u0430\u0439\u043b\u043e\u0432 \u043d\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u044b \u0432 \u0440\u0430\u0437\u043d\u044b\u0445 \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u0445 \u044d\u0442\u043e \u043a\u044d\u0448 CloudFront; Transfer Acceleration \u0443\u0441\u043a\u043e\u0440\u044f\u0435\u0442 \u0432 \u043f\u0435\u0440\u0432\u0443\u044e \u043e\u0447\u0435\u0440\u0435\u0434\u044c \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0443 \u0432 S3 \u0438 \u043d\u0435 \u043a\u044d\u0448\u0438\u0440\u0443\u0435\u0442"
+},
+"972": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"973": {
+"status": "ok",
+"method": "expert",
+"key": "ACE"
+},
+"974": {
+"status": "error",
+"method": "expert",
+"key": "BD",
+"fix": "AD",
+"src": "\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442 \u0434\u043b\u044f CloudFront \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0432\u044b\u043f\u0443\u0449\u0435\u043d \u0432 us-east-1 \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e \u043e\u0442 \u0440\u0435\u0433\u0438\u043e\u043d\u0430 \u0431\u0430\u043a\u0435\u0442\u0430"
+},
+"975": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"976": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"977": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"978": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"979": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"980": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"981": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"982": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"983": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"984": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"985": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"986": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"987": {
+"status": "ok",
+"method": "expert",
+"key": "AB"
+},
+"988": {
+"status": "ok",
+"method": "expert",
+"key": "AD"
+},
+"989": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"990": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"991": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"992": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"993": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"994": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"995": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"996": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"997": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"998": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"999": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"1000": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"1001": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"1002": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"1003": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"1004": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"1005": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"1006": {
+"status": "ok",
+"method": "expert",
+"key": "CD"
+},
+"1007": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"1008": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"1009": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"1010": {
+"status": "ok",
+"method": "expert",
+"key": "BCD"
+},
+"1011": {
+"status": "ok",
+"method": "expert",
+"key": "AC"
+},
+"1012": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"1013": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"1014": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"1015": {
+"status": "ok",
+"method": "expert",
+"key": "A"
+},
+"1016": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+},
+"1017": {
+"status": "ok",
+"method": "expert",
+"key": "D"
+},
+"1018": {
+"status": "ok",
+"method": "expert",
+"key": "C"
+},
+"1019": {
+"status": "ok",
+"method": "expert",
+"key": "B"
+}
+}

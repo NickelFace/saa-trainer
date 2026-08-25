@@ -1,0 +1,267 @@
+{
+ "chapters": [
+  {
+   "id": "s3",
+   "title": "S3 — объектное хранилище",
+   "order": 1,
+   "svc": [
+    "S3"
+   ],
+   "questions": 401,
+   "lines": 173
+  },
+  {
+   "id": "ec2",
+   "title": "EC2 — вычисления и модели покупки",
+   "order": 2,
+   "svc": [
+    "EC2"
+   ],
+   "questions": 479,
+   "lines": 152
+  },
+  {
+   "id": "scaling-elb",
+   "title": "Балансировщики и Auto Scaling",
+   "order": 3,
+   "svc": [
+    "ELB",
+    "Auto Scaling"
+   ],
+   "questions": 260,
+   "lines": 154
+  },
+  {
+   "id": "vpc",
+   "title": "VPC — сеть, маршрутизация, endpoints",
+   "order": 4,
+   "svc": [
+    "VPC"
+   ],
+   "questions": 128,
+   "lines": 153
+  },
+  {
+   "id": "iam",
+   "title": "IAM — идентичности, политики, доступ между аккаунтами",
+   "order": 5,
+   "svc": [
+    "IAM",
+    "Organizations"
+   ],
+   "questions": 151,
+   "lines": 153
+  },
+  {
+   "id": "encryption-kms",
+   "title": "Шифрование, KMS и секреты",
+   "order": 6,
+   "svc": [
+    "KMS",
+    "Secrets Manager"
+   ],
+   "questions": 78,
+   "lines": 154
+  },
+  {
+   "id": "rds",
+   "title": "RDS — управляемые реляционные базы",
+   "order": 7,
+   "svc": [
+    "RDS",
+    "DMS"
+   ],
+   "questions": 215,
+   "lines": 150
+  },
+  {
+   "id": "aurora",
+   "title": "Aurora — облачный движок MySQL и PostgreSQL",
+   "order": 8,
+   "svc": [
+    "Aurora"
+   ],
+   "questions": 80,
+   "lines": 165
+  },
+  {
+   "id": "dynamodb",
+   "title": "DynamoDB — управляемый NoSQL",
+   "order": 9,
+   "svc": [
+    "DynamoDB"
+   ],
+   "questions": 112,
+   "lines": 155
+  },
+  {
+   "id": "lambda",
+   "title": "Lambda и бессерверные вычисления",
+   "order": 10,
+   "svc": [
+    "Lambda",
+    "API Gateway"
+   ],
+   "questions": 288,
+   "lines": 155
+  },
+  {
+   "id": "integration",
+   "title": "Интеграция: SQS, SNS, EventBridge, Step Functions",
+   "order": 11,
+   "svc": [
+    "SQS",
+    "SNS",
+    "EventBridge",
+    "Step Functions",
+    "Amazon MQ"
+   ],
+   "questions": 148,
+   "lines": 166
+  },
+  {
+   "id": "file-storage",
+   "title": "Файловые хранилища: EFS и FSx",
+   "order": 12,
+   "svc": [
+    "EFS",
+    "FSx"
+   ],
+   "questions": 90,
+   "lines": 151
+  },
+  {
+   "id": "ebs",
+   "title": "EBS — блочные тома и снапшоты",
+   "order": 13,
+   "svc": [
+    "EBS"
+   ],
+   "questions": 85,
+   "lines": 154
+  },
+  {
+   "id": "hybrid-network",
+   "title": "Гибрид: Direct Connect, VPN, Transit Gateway, PrivateLink",
+   "order": 14,
+   "svc": [
+    "Direct Connect",
+    "Transit Gateway",
+    "PrivateLink",
+    "Outposts"
+   ],
+   "questions": 63,
+   "lines": 160
+  },
+  {
+   "id": "data-transfer",
+   "title": "Перенос данных: DataSync, Storage Gateway, Snow, Transfer Family",
+   "order": 15,
+   "svc": [
+    "DataSync",
+    "Storage Gateway",
+    "Snow Family",
+    "Transfer Family",
+    "DMS"
+   ],
+   "questions": 115,
+   "lines": 152
+  },
+  {
+   "id": "edge-cloudfront",
+   "title": "CloudFront, edge и Global Accelerator",
+   "order": 16,
+   "svc": [
+    "CloudFront",
+    "Global Accelerator"
+   ],
+   "questions": 99,
+   "lines": 155
+  },
+  {
+   "id": "route53",
+   "title": "Route 53 — DNS и маршрутизация трафика",
+   "order": 17,
+   "svc": [
+    "Route 53"
+   ],
+   "questions": 59,
+   "lines": 151
+  },
+  {
+   "id": "containers",
+   "title": "Контейнеры: ECS, EKS, Fargate",
+   "order": 18,
+   "svc": [
+    "ECS",
+    "EKS",
+    "Fargate",
+    "Elastic Beanstalk"
+   ],
+   "questions": 104,
+   "lines": 154
+  },
+  {
+   "id": "analytics",
+   "title": "Аналитика и потоки данных",
+   "order": 19,
+   "svc": [
+    "Kinesis",
+    "Glue",
+    "Athena",
+    "Redshift",
+    "EMR",
+    "OpenSearch",
+    "QuickSight",
+    "Lake Formation",
+    "ElastiCache"
+   ],
+   "questions": 173,
+   "lines": 155
+  },
+  {
+   "id": "perimeter-security",
+   "title": "Защита периметра и обнаружение угроз",
+   "order": 20,
+   "svc": [
+    "WAF",
+    "Shield",
+    "GuardDuty",
+    "Macie",
+    "Inspector",
+    "Cognito"
+   ],
+   "questions": 71,
+   "lines": 156
+  },
+  {
+   "id": "governance",
+   "title": "Управление: Organizations, Config, CloudTrail, SSM, Backup",
+   "order": 21,
+   "svc": [
+    "Organizations",
+    "Control Tower",
+    "Config",
+    "CloudTrail",
+    "CloudWatch",
+    "Systems Manager",
+    "Backup",
+    "CloudFormation"
+   ],
+   "questions": 207,
+   "lines": 155
+  },
+  {
+   "id": "cost",
+   "title": "Стоимость и оптимизация",
+   "order": 22,
+   "svc": [
+    "Cost Explorer",
+    "Budgets",
+    "Organizations"
+   ],
+   "questions": 62,
+   "lines": 161
+  }
+ ]
+}

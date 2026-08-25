@@ -1,0 +1,99 @@
+{
+ "bank": "SAA-C03 1019QA dump",
+ "version": "1.0",
+ "questions": 1019,
+ "audited": "2026-08",
+ "exam": {
+  "questions": 65,
+  "minutes": 130
+ },
+ "domains": [
+  {
+   "code": "SEC",
+   "name": "Design Secure Architectures",
+   "weight": 0.3,
+   "count": 246,
+   "exam": 20
+  },
+  {
+   "code": "RES",
+   "name": "Design Resilient Architectures",
+   "weight": 0.26,
+   "count": 170,
+   "exam": 17
+  },
+  {
+   "code": "PERF",
+   "name": "Design High-Performing Architectures",
+   "weight": 0.24,
+   "count": 382,
+   "exam": 15
+  },
+  {
+   "code": "COST",
+   "name": "Design Cost-Optimized Architectures",
+   "weight": 0.2,
+   "count": 221,
+   "exam": 13
+  }
+ ],
+ "corrected": [
+  110,
+  239,
+  447,
+  571,
+  647,
+  687,
+  744,
+  809,
+  827,
+  842,
+  870,
+  874,
+  887,
+  893,
+  903,
+  931,
+  936,
+  974
+ ],
+ "disputed": [
+  245,
+  268,
+  372,
+  390,
+  536,
+  574,
+  591,
+  622,
+  692,
+  754,
+  835,
+  851,
+  878,
+  881,
+  971
+ ],
+ "low_conf": [
+  113,
+  308,
+  350,
+  422,
+  511,
+  664
+ ],
+ "defects": {
+  "125": "label E printed as D",
+  "756": "label C printed as B",
+  "868": "option A missing in source"
+ },
+ "exhibits": [
+  96,
+  253,
+  423,
+  429,
+  477,
+  494,
+  980
+ ]
+}

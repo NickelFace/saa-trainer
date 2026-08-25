@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAA-C03 Trainer</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">SAA-C03 <span>trainer</span></div>
+  <nav class="tabs">
+    <button class="tab" data-view="practice">Тренировка</button>
+    <button class="tab" data-view="exam">Экзамен</button>
+    <button class="tab" data-view="theory">Учебник</button>
+    <button class="tab" data-view="progress">Прогресс</button>
+  </nav>
+  <div class="bank-info" id="bank-info"></div>
+</header>
+
+<main id="root">
+  <!-- ТРЕНИРОВКА -->
+  <section class="view" id="view-practice">
+    <div class="filters" id="practice-filters">
+      <label>Домен
+        <select id="f-dom"><option value="">все</option></select>
+      </label>
+      <label>Сервис
+        <select id="f-svc"><option value="">все</option></select>
+      </label>
+      <label>Статус
+        <select id="f-status">
+          <option value="all">все</option>
+          <option value="unseen">не отвеченные</option>
+          <option value="wrong">ошибочные</option>
+          <option value="flagged">отмеченные</option>
+          <option value="corrected">исправленный ключ</option>
+          <option value="disputed">спорные</option>
+        </select>
+      </label>
+      <label>Порядок
+        <select id="f-order">
+          <option value="id">по номеру</option>
+          <option value="random">случайно</option>
+        </select>
+      </label>
+      <button class="btn" id="f-apply">Применить</button>
+      <span class="chapter-filter hidden" id="chapter-filter"></span>
+    </div>
+    <div class="practice-body">
+      <div id="practice-empty" class="empty hidden">Под фильтр ничего не подходит.</div>
+      <div id="practice-card"></div>
+    </div>
+  </section>
+
+  <!-- ЭКЗАМЕН -->
+  <section class="view hidden" id="view-exam">
+    <div id="exam-start" class="panel">
+      <h2>Экзамен</h2>
+      <p>65 вопросов по весам blueprint, таймер 130 минут. Разбор — после сдачи.</p>
+      <div class="plan" id="exam-plan"></div>
+      <label class="checkbox"><input type="checkbox" id="exam-exclude-seen"> Исключить вопросы, на которые уже отвечал верно</label>
+      <button class="btn primary" id="exam-begin">Начать экзамен</button>
+      <div id="exam-resume" class="hidden">
+        <p class="warn">Есть незавершённая попытка.</p>
+        <button class="btn" id="exam-continue">Продолжить</button>
+        <button class="btn ghost" id="exam-drop">Сбросить</button>
+      </div>
+    </div>
+    <div id="exam-run" class="hidden">
+      <div class="exam-bar">
+        <span id="exam-counter"></span>
+        <span id="exam-timer" class="timer"></span>
+        <button class="btn ghost" id="exam-finish">Завершить</button>
+      </div>
+      <div id="exam-card"></div>
+      <div class="exam-grid" id="exam-grid"></div>
+    </div>
+    <div id="exam-result" class="hidden"></div>
+  </section>
+
+  <!-- УЧЕБНИК -->
+  <section class="view hidden" id="view-theory">
+    <div class="theory-layout">
+      <aside class="theory-list">
+        <input type="search" id="theory-search" placeholder="Поиск по учебнику">
+        <ul id="theory-index"></ul>
+      </aside>
+      <article class="theory-body" id="theory-body">
+        <div class="empty">Выберите главу слева.</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ПРОГРЕСС -->
+  <section class="view hidden" id="view-progress">
+    <div id="progress-body"></div>
+  </section>
+</main>
+
+<script src="data/bank.js"></script>
+<script src="data/theory.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/theory.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
