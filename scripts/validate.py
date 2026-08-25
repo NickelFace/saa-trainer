@@ -89,6 +89,15 @@ if os.path.exists(idx_path):
     check(not no_md, f"у каждой главы есть markdown ({no_md})")
     orphan = [c["id"] for c in main if not c["questions"]]
     check(not orphan, f"каждая глава связана с вопросами ({orphan})")
+    # обязательная структура главы: без этих блоков глава не готова, см. CLAUDE.md
+    required = ("что спрашивают", "числа, которые надо помнить", "практикум", "аудит банка")
+    incomplete = {}
+    for c in main:
+        text = open(os.path.join(DOCS, c["id"] + ".md"), encoding="utf-8").read().lower()
+        missing = [r for r in required if r not in text]
+        if missing:
+            incomplete[c["id"]] = missing
+    check(not incomplete, f"в каждой главе есть обязательные блоки ({incomplete})")
 else:
     check(False, "data/theory/index.json не собран — запусти scripts/build-theory.py")
 
@@ -109,6 +118,9 @@ if os.path.exists(expl_path):
                      and [o["l"] for o in by_id[int(k)]["options"]
                           if o["l"] not in by_id[int(k)]["answer"] and o["l"] not in v.get("opts", {})]]
     check(not missing_wrong, f"у каждого неверного варианта есть объяснение ({missing_wrong[:5]})")
+    # банк разобран полностью, и это состояние закрепляем: новый вопрос без разбора роняет сборку
+    unexplained = [q["id"] for q in bank if str(q["id"]) not in expl]
+    check(not unexplained, f"разобраны все вопросы банка (без разбора: {unexplained[:5]})")
     print(f"  инфо  разборов {len(expl)} из {len(bank)} ({round(100 * len(expl) / len(bank), 1)}%)")
 else:
     print("  инфо  разборов пока нет")
