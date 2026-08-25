@@ -281,6 +281,12 @@
 
     practice = new Q.Practice($("practice-card"), {
       onTheory: function (id) { show("theory"); theoryView.open(id); },
+      onQuestions: function (ids, title) {
+        setChapterFilter(ids, title);
+        $("f-status").value = "all";
+        applyFilters();
+        show("practice");
+      },
       onFlag: function () {}
     });
 

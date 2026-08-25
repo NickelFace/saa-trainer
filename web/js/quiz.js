@@ -212,6 +212,16 @@
       box.appendChild(dw);
     }
 
+    /* ссылки на родственные вопросы внутри разборов */
+    box.querySelectorAll("a.qref").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var ids = a.dataset.q.split(",").map(function (x) { return parseInt(x.trim(), 10); })
+          .filter(function (x) { return !isNaN(x); });
+        if (h.onQuestions) h.onQuestions(ids, "разбор вопроса #" + q.id);
+      });
+    });
+
     var chapters = global.SAA_Theory ? global.SAA_Theory.chaptersForServices(q.svc || []) : [];
     if (chapters.length) {
       var links = el("div", "theory-links");
