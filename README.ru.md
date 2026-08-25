@@ -84,10 +84,10 @@ Route 53 · Контейнеры · Аналитика · Защита пери�
 
 | Домен | Вопросов | Вес blueprint | В экзамене |
 |---|--:|--:|--:|
-| SEC — Design Secure Architectures | 322 | 30% | 20 |
-| RES — Design Resilient Architectures | 210 | 26% | 17 |
-| PERF — Design High-Performing Architectures | 254 | 24% | 15 |
-| COST — Design Cost-Optimized Architectures | 233 | 20% | 13 |
+| SEC — Design Secure Architectures | 324 | 30% | 20 |
+| RES — Design Resilient Architectures | 209 | 26% | 17 |
+| PERF — Design High-Performing Architectures | 259 | 24% | 15 |
+| COST — Design Cost-Optimized Architectures | 227 | 20% | 13 |
 
 Доли банка не совпадают с весами экзамена намеренно: выборка режима «Экзамен» строится
 по blueprint, а не пропорционально банку.

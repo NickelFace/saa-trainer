@@ -101,10 +101,10 @@ left on a default or a weak-marker guess.
 
 | Domain | Questions | Blueprint weight | Questions in a mock exam |
 |---|--:|--:|--:|
-| SEC — Design Secure Architectures | 322 | 30% | 20 |
-| RES — Design Resilient Architectures | 210 | 26% | 17 |
-| PERF — Design High-Performing Architectures | 254 | 24% | 15 |
-| COST — Design Cost-Optimized Architectures | 233 | 20% | 13 |
+| SEC — Design Secure Architectures | 324 | 30% | 20 |
+| RES — Design Resilient Architectures | 209 | 26% | 17 |
+| PERF — Design High-Performing Architectures | 259 | 24% | 15 |
+| COST — Design Cost-Optimized Architectures | 227 | 20% | 13 |
 
 Bank shares deliberately differ from blueprint weights; the exam mode samples by the
 blueprint, not by the bank.
