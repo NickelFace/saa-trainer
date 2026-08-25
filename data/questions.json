@@ -30637,7 +30637,9 @@
     "t": "Create an Amazon S3 bucket to host the web portal. Use Amazon API Gateway and an AWS Lambda function for the existing functionalities. Use the Lambda function to run the document extract program. Invoke the Lambda function when the API that is associated with a new document upload is called."
    }
   ],
-  "answer": "D",
+  "answer": "A",
+  "answer_original": "D",
+  "fix_note": "условие дважды ограничивает изменения: «минимальные изменения существующего портала» и «компания не хочет никаких правок кода». Вариант D предлагает перенести портал на статический хостинг S3, а существующую функциональность заново реализовать на API Gateway и Lambda — это переписывание приложения, прямо запрещённое условием. Вариант A оставляет портал как есть в группе автомасштабирования (требуемая стопроцентная доступность) и добавляет для новой, редко запускаемой программы извлечения текста функцию Lambda, которая вызывается по факту загрузки документа и оплачивается только за время работы",
   "dom": "COST",
   "svc": [
    "S3",
