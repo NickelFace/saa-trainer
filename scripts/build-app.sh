@@ -35,8 +35,10 @@ if [ -f "$CAP/core/dist/capacitor.js" ] && [ -f "$CAP/app/dist/plugin.js" ]; the
   sed -i 's|<script src="config.js"></script>|<script src="capacitor/capacitor.js"></script>\n<script src="capacitor/app.js"></script>\n<script src="config.js"></script>|' "$OUT/index.html"
   grep -q 'capacitor/app.js' "$OUT/index.html"
 else
-  echo "внимание: рантайм Capacitor не найден — выполните npm install в mobile/" >&2
-  exit 1
+  # код 3 отличает «нет зависимостей» от настоящей ошибки сборки:
+  # scripts/check.sh на этом коде проверяет копирование, но не валит проверку целиком
+  echo "рантайм Capacitor не найден — выполните npm ci в mobile/" >&2
+  exit 3
 fi
 
 du -sh "$OUT"

@@ -59,20 +59,31 @@ else
 fi
 
 # 5. Сборка веб-части приложения — ровно так, как её вызывает CI: из каталога mobile.
-#    Именно на этом отличии рабочего каталога однажды упал workflow APK.
-step "веб-часть приложения (npm run www из mobile/)"
-if [ -d mobile/node_modules/@capacitor ]; then
-  if (cd mobile && bash ../scripts/build-app.sh > "$TMP/app.log" 2>&1); then
-    grep -q 'capacitor/app.js' mobile/www/index.html \
-      && ok "www собран, рантайм Capacitor подключён" \
-      || bad "в www/index.html нет тегов рантайма Capacitor"
-  else
+#    Именно на этом отличии рабочего каталога однажды упал workflow APK,
+#    поэтому шаг выполняется и на чистом клоне, без установленных зависимостей.
+step "веб-часть приложения (сборка из каталога mobile/, как в CI)"
+(cd mobile && bash ../scripts/build-app.sh "$TMP/www-check" > "$TMP/app.log" 2>&1)
+case "$?" in
+  0)
+    if grep -q 'capacitor/app.js' "$TMP/www-check/index.html"; then
+      ok "www собран, рантайм Capacitor подключён"
+    else
+      bad "в www/index.html нет тегов рантайма Capacitor"
+    fi
+    ;;
+  3)
+    if [ -f "$TMP/www-check/index.html" ] && [ -d "$TMP/www-check/images/exhibits" ]; then
+      ok "копирование и пути в порядке; рантайм не подключён — нет mobile/node_modules (npm ci)"
+    else
+      bad "сборка не разложила файлы даже до подключения рантайма:"
+      tail -10 "$TMP/app.log" | sed 's/^/       /'
+    fi
+    ;;
+  *)
     bad "сборка веб-части упала:"
     tail -10 "$TMP/app.log" | sed 's/^/       /'
-  fi
-else
-  ok "mobile/node_modules нет, шаг пропущен (npm ci в mobile/ включит его)"
-fi
+    ;;
+esac
 
 # 6. Лок-файл приложения: в CI стоит npm ci, он падает при рассинхроне с package.json.
 step "mobile/package-lock.json в согласии с package.json"
@@ -93,6 +104,15 @@ if [ -f mobile/package-lock.json ]; then
   fi
 else
   bad "mobile/package-lock.json отсутствует, npm ci в CI не сработает"
+fi
+
+# 7. Хук ставится одной командой, но её легко забыть на свежем клоне.
+step "хук pre-push подключён"
+if [ "$(git config --get core.hooksPath 2>/dev/null)" = ".githooks" ]; then
+  ok "core.hooksPath = .githooks"
+else
+  printf '  ВНИМАНИЕ  хук не подключён: проверки перед пушем не запускаются.\n'
+  printf '            включить: bash scripts/setup.sh\n'
 fi
 
 printf '\n'

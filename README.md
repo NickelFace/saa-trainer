@@ -104,14 +104,20 @@ It runs what CI runs: the data pipeline and `validate.py`, a check that the gene
 files committed to the repo still match a fresh build, `node --check` over the app's
 JavaScript, the site build, and the app's web build **invoked from `mobile/` exactly the
 way CI invokes it** — a path assumption that differed between the two once broke the APK
-workflow. Enable the hook that runs it on every push:
+workflow. That last step also runs on a fresh clone, where `mobile/node_modules` does not
+exist yet: it then verifies the copying and the paths and says the Capacitor runtime is
+missing, instead of skipping silently.
+
+Git never clones local config, so the pre-push hook is inert until it is enabled once per
+clone:
 
 ```bash
-git config core.hooksPath .githooks
+bash scripts/setup.sh      # sets core.hooksPath = .githooks
 ```
 
-`git push --no-verify` skips it. The same script runs in CI as the **Проверки** workflow,
-so a machine without the hook is still covered.
+`check.sh` warns when the hook is not enabled. `git push --no-verify` skips it. The same
+script runs in CI as the **Проверки** workflow on every push and pull request, so a clone
+without the hook is still covered — just one round trip later.
 
 To regenerate `data/raw.txt` from the source PDF:
 
