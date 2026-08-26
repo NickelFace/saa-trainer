@@ -9,6 +9,7 @@
 
   var $ = function (id) { return document.getElementById(id); };
 
+  var VIEWS = ["practice", "exam", "theory", "progress"];
   var NARROW = "(max-width: 820px)";
   function isNarrow() { return window.matchMedia(NARROW).matches; }
 
@@ -20,9 +21,9 @@
 
   /* ---------------- навигация ---------------- */
 
-  function show(name) {
+  function show(name, fromHistory) {
     view = name;
-    ["practice", "exam", "theory", "progress"].forEach(function (v) {
+    VIEWS.forEach(function (v) {
       $("view-" + v).classList.toggle("hidden", v !== name);
     });
     document.querySelectorAll(".tab").forEach(function (t) {
@@ -32,8 +33,14 @@
     if (name === "theory") theoryView.renderList();
     if (name !== "exam" && exam) exam.stop();
     if (name === "exam" && exam && exam.state) exam.run();
-    location.hash = name;
+    if (!fromHistory) location.hash = name;
   }
+
+  /* кнопка «назад» в браузере и в приложении переключает вкладки, а не выходит молча */
+  window.addEventListener("hashchange", function () {
+    var h = (location.hash || "").replace("#", "");
+    if (VIEWS.indexOf(h) !== -1 && h !== view) show(h, true);
+  });
 
   /* ---------------- тренировка ---------------- */
 
@@ -454,18 +461,47 @@
     applyFilters();
     examScreen("start");
     var start = (location.hash || "").replace("#", "");
-    show(["practice", "exam", "theory", "progress"].indexOf(start) !== -1 ? start : "practice");
+    show(VIEWS.indexOf(start) !== -1 ? start : "practice");
   }
 
   /* Офлайн-режим на сайте: кеш приложения и данных.
      Локально (file:// и http://localhost) не регистрируем — иначе правки прячутся за кешем. */
   function registerServiceWorker() {
     if (!("serviceWorker" in navigator)) return;
+    if (window.Capacitor) return;            /* в приложении офлайн обеспечивает сам APK */
     if (location.protocol !== "https:") return;
     navigator.serviceWorker.register("sw.js").catch(function (e) {
       console.warn("service worker не зарегистрирован:", e);
     });
   }
+
+  /* Мостик для нативной оболочки: один шаг «назад» по состоянию интерфейса.
+     Возвращает false, когда отступать некуда — тогда приложение можно закрывать. */
+  global.SAA_App = {
+    view: function () { return view; },
+    show: show,
+    back: function () {
+      var layout = document.querySelector(".theory-layout");
+      if (view === "theory" && layout && layout.classList.contains("reading")) {
+        theoryView.showList();
+        return true;
+      }
+      if (view === "practice" && $("practice-filters").classList.contains("open") && isNarrow()) {
+        setFiltersOpen(false);
+        return true;
+      }
+      if (view === "practice" && chapterIds) {
+        setChapterFilter(null);
+        applyFilters();
+        return true;
+      }
+      if (view !== "practice") {
+        show("practice");
+        return true;
+      }
+      return false;
+    }
+  };
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();

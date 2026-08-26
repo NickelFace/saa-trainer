@@ -4,7 +4,7 @@ Offline practice app and study notes for the AWS Certified Solutions Architect �
 Associate (SAA-C03) exam. 1019 audited questions, a 22-chapter handbook plus an
 appendix on domain classification, written answer walkthroughs, exam simulation by
 blueprint weights. Pure HTML/CSS/JS — no build step, no CDN, no backend.
-Opens straight from the file system or from GitHub Pages.
+Opens straight from the file system, from GitHub Pages, or as an Android app.
 
 > The question bank is derived from a third-party exam dump and is published for
 > personal study only. `robots.txt` asks crawlers to stay out; the content is not
@@ -49,6 +49,10 @@ including progress saved in localStorage.
   PWA: a service worker precaches the app, the bank and the handbook, so practice works
   with no network. The cache name carries the deploy id, so a new deploy never serves
   a stale build.
+- **Android app** — the same app packaged with Capacitor: bank, handbook and
+  walkthroughs live inside the APK, the hardware Back button walks the interface back,
+  and the app asks for no permissions at all — not even `INTERNET`. See
+  [mobile/README.md](mobile/README.md).
 
 ## Repository layout
 
@@ -71,7 +75,8 @@ docs/                     the same chapters as Markdown (readable on GitHub),
 images/exhibits/          13 exhibit images for 7 questions
 web/                      the application (index.html, css/, js/, generated data/,
                           sw.js and manifest for offline use)
-scripts/                  the data pipeline and the site build
+mobile/                   Capacitor shell for Android (www/ and node_modules/ generated)
+scripts/                  the data pipeline, the site build and the app build
 ```
 
 ## Data pipeline
@@ -107,6 +112,17 @@ hand-copied — a failed check fails the deploy. The same script builds the site
 ```bash
 bash scripts/build-site.sh site local-check
 ```
+
+## Android
+
+```bash
+cd mobile && npm ci && npm run apk
+```
+
+`scripts/build-app.sh` assembles the web part for the shell, `npx cap sync android`
+copies it into the project, and Gradle produces
+`mobile/android/app/build/outputs/apk/debug/app-debug.apk` (~6 MB, no permissions).
+Details and release signing: [mobile/README.md](mobile/README.md).
 
 ## Question schema
 

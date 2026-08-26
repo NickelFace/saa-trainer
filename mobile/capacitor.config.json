@@ -1,0 +1,11 @@
+{
+  "appId": "com.nickelface.saatrainer",
+  "appName": "SAA-C03 Trainer",
+  "webDir": "www",
+  "backgroundColor": "#10151c",
+  "android": {
+    "backgroundColor": "#10151c",
+    "allowMixedContent": false,
+    "adjustMarginsForEdgeToEdge": "force"
+  }
+}

@@ -3,3 +3,18 @@ data/build/
 __pycache__/
 .DS_Store
 *.pdf
+
+# мобильное приложение: всё, что пересобирается из web/ и npm
+mobile/node_modules/
+mobile/www/
+mobile/android/build/
+mobile/android/app/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/src/main/assets/public/
+mobile/android/app/src/main/assets/capacitor.config.json
+mobile/android/app/src/main/assets/capacitor.plugins.json
+mobile/android/capacitor-cordova-android-plugins/
+mobile/android/app/release/
+*.keystore
+*.jks
