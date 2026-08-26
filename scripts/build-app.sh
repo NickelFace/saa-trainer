@@ -6,8 +6,14 @@
 #   bash scripts/build-app.sh [каталог-назначения]
 set -euo pipefail
 
+# скрипт вызывается и из корня репозитория, и из mobile/ через npm,
+# поэтому пути считаем от самого скрипта, а не от текущего каталога
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
 OUT="${1:-mobile/www}"
-CAP="mobile/node_modules/@capacitor"
+case "$OUT" in /*) ;; *) OUT="$ROOT/$OUT" ;; esac
+CAP="$ROOT/mobile/node_modules/@capacitor"
 
 rm -rf "$OUT"
 mkdir -p "$OUT/images"

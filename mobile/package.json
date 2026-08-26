@@ -4,7 +4,7 @@
   "description": "SAA-C03 Trainer — Android wrapper around the offline web app",
   "private": true,
   "scripts": {
-    "www": "bash ../scripts/build-app.sh www",
+    "www": "bash ../scripts/build-app.sh",
     "sync": "npm run www && npx cap sync android",
     "apk": "npm run sync && cd android && ./gradlew assembleDebug",
     "apk:release": "npm run sync && cd android && ./gradlew assembleRelease"
