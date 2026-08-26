@@ -29,6 +29,12 @@ jobs:
       - name: Собрать банк, учебник и данные приложения
         run: bash scripts/build.sh
 
+      # если артефакты в репозитории отстали от исходников, деплой это не ломает
+      # (сайт всё равно собран из исходников), но знать об этом надо
+      - name: Проверить, что артефакты в репозитории не отстали
+        continue-on-error: true
+        run: git diff --exit-code -- data web/data docs
+
       - name: Собрать статику сайта
         run: bash scripts/build-site.sh site "${GITHUB_SHA::12}"
 

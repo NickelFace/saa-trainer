@@ -94,6 +94,25 @@ The pipeline is reproducible: running it on a clean clone rebuilds `data/questio
 byte-for-byte. Audit findings live in `overlay.json`, never in the parser, so a new dump
 can be re-parsed without losing them.
 
+## Checks before pushing
+
+```bash
+bash scripts/check.sh      # ~4 seconds
+```
+
+It runs what CI runs: the data pipeline and `validate.py`, a check that the generated
+files committed to the repo still match a fresh build, `node --check` over the app's
+JavaScript, the site build, and the app's web build **invoked from `mobile/` exactly the
+way CI invokes it** — a path assumption that differed between the two once broke the APK
+workflow. Enable the hook that runs it on every push:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+`git push --no-verify` skips it. The same script runs in CI as the **Проверки** workflow,
+so a machine without the hook is still covered.
+
 To regenerate `data/raw.txt` from the source PDF:
 
 ```bash

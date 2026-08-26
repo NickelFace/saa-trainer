@@ -1,0 +1,36 @@
+name: Проверки
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+
+      # без node_modules шаг проверки веб-части приложения пропускается,
+      # а именно на нём однажды упала сборка APK
+      - name: Установить зависимости приложения
+        working-directory: mobile
+        run: npm ci
+
+      # тот же скрипт, что запускает хук pre-push на машине разработчика
+      - name: scripts/check.sh
+        run: bash scripts/check.sh
