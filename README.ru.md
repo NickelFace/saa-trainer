@@ -149,7 +149,11 @@ cd mobile && npm ci && npm run apk
 
 `scripts/build-app.sh` собирает веб-часть для оболочки, `npx cap sync android` кладёт её
 в проект, Gradle выдаёт `mobile/android/app/build/outputs/apk/debug/app-debug.apk`
-(около 6 МБ, без разрешений). Подписанная сборка и подробности —
+(около 6 МБ, без разрешений).
+
+На GitHub сборка тоже есть: workflow «Android APK» принимает параметр `variant`
+(`debug` или `release`) и отдаёт APK артефактом, релизная сборка подписывается прямо
+в задании ключом из секретов репозитория. Подробности —
 в [mobile/README.md](mobile/README.md).
 
 ## Домены банка

@@ -32,12 +32,30 @@ A signed release build picks the keystore up from the environment; without these
 variables `assembleRelease` produces an unsigned APK:
 
 ```bash
-SAA_KEYSTORE=/path/to/saa.keystore SAA_KEYSTORE_PASSWORD=… \
-SAA_KEY_ALIAS=… SAA_KEY_PASSWORD=… npm run apk:release
+SAA_KEYSTORE=~/saa-release.jks SAA_KEYSTORE_PASSWORD=… \
+SAA_KEY_ALIAS=saa SAA_KEY_PASSWORD=… npm run apk:release
 ```
 
-CI builds a debug APK on demand: the **Android APK** workflow (`workflow_dispatch`, or a
-`v*` tag) uploads it as an artifact.
+## Builds on GitHub
+
+The **Android APK** workflow runs on demand (`workflow_dispatch`) and takes a `variant`
+input, `debug` or `release`; the APK comes back as a run artifact. The release build is
+signed inside the job with the key stored in the repository secrets:
+
+| secret | contents |
+|---|---|
+| `ANDROID_KEYSTORE_BASE64` | the keystore file, base64 |
+| `ANDROID_KEYSTORE_PASSWORD` | store password |
+| `ANDROID_KEY_ALIAS` | key alias (`saa`) |
+| `ANDROID_KEY_PASSWORD` | key password |
+
+The keystore is written to the runner's temp directory, never to the workspace, and the
+job verifies the signature with `apksigner` before uploading. Without the secrets the
+release build still runs and produces an unsigned APK, with a warning in the run summary.
+
+The signing key is not in the repository and must not be: keep the `.jks` file and its
+password in a password manager. Losing them means the app can no longer be updated in
+place — a new key produces a different app identity.
 
 ## What the shell adds
 

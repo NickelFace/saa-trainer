@@ -147,7 +147,11 @@ cd mobile && npm ci && npm run apk
 `scripts/build-app.sh` assembles the web part for the shell, `npx cap sync android`
 copies it into the project, and Gradle produces
 `mobile/android/app/build/outputs/apk/debug/app-debug.apk` (~6 MB, no permissions).
-Details and release signing: [mobile/README.md](mobile/README.md).
+
+GitHub builds it too: the **Android APK** workflow takes a `variant` input (`debug` or
+`release`) and uploads the APK as an artifact; the release build is signed in the job
+with the key from the repository secrets. Details:
+[mobile/README.md](mobile/README.md).
 
 ## Question schema
 
