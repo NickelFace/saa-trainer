@@ -27,6 +27,11 @@ android {
                 keyAlias System.getenv("SAA_KEY_ALIAS")
                 keyPassword System.getenv("SAA_KEY_PASSWORD")
             }
+            // v1 нужен для Android 6 (minSdk 23), v3 — чтобы в будущем можно было
+            // сменить ключ без смены идентичности приложения
+            enableV1Signing true
+            enableV2Signing true
+            enableV3Signing true
         }
     }
     buildTypes {
