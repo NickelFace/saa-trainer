@@ -11,6 +11,13 @@ app works with no network at all — it does not even request the `INTERNET` per
 | target SDK | 35 (Android 15) |
 | size | ~6 MB |
 
+## Install
+
+The signed APK is attached to the
+[latest release](https://github.com/NickelFace/saa-trainer/releases/latest). Sideloading
+it over an earlier debug build fails — debug and release are signed with different keys,
+so uninstall the old one first.
+
 ## Build
 
 Requires JDK 21, the Android SDK and Node 22.

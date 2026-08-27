@@ -140,6 +140,10 @@ bash scripts/build-site.sh site local-check
 
 ## Android
 
+The signed APK is attached to the
+[latest release](https://github.com/NickelFace/saa-trainer/releases/latest); sideload it
+and it runs offline. To build it yourself:
+
 ```bash
 cd mobile && npm ci && npm run apk
 ```

@@ -143,6 +143,10 @@ bash scripts/build-site.sh site local-check
 
 ## Приложение для Android
 
+Подписанный APK лежит в
+[последнем релизе](https://github.com/NickelFace/saa-trainer/releases/latest) — скачать,
+поставить, работает без сети. Собрать самому:
+
 ```bash
 cd mobile && npm ci && npm run apk
 ```
