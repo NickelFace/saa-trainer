@@ -32,6 +32,16 @@
    "lines": 192
   },
   {
+   "id": "vpc",
+   "title": "VPC — networking, routing, endpoints",
+   "order": 4,
+   "svc": [
+    "VPC"
+   ],
+   "questions": 128,
+   "lines": 196
+  },
+  {
    "id": "iam",
    "title": "IAM — identities, policies, cross-account access",
    "order": 5,
@@ -158,6 +168,17 @@
    "lines": 166
   },
   {
+   "id": "edge-cloudfront",
+   "title": "CloudFront, edge, and Global Accelerator",
+   "order": 16,
+   "svc": [
+    "CloudFront",
+    "Global Accelerator"
+   ],
+   "questions": 99,
+   "lines": 176
+  },
+  {
    "id": "route53",
    "title": "Route 53 — DNS and traffic routing",
    "order": 17,
@@ -229,6 +250,18 @@
    ],
    "questions": 207,
    "lines": 179
+  },
+  {
+   "id": "cost",
+   "title": "Cost and optimization",
+   "order": 22,
+   "svc": [
+    "Cost Explorer",
+    "Budgets",
+    "Organizations"
+   ],
+   "questions": 62,
+   "lines": 187
   },
   {
    "id": "appendix-domains",
