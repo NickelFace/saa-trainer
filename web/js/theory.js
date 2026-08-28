@@ -137,7 +137,7 @@
         e.preventDefault();
         var ids = a.dataset.q.split(",").map(function (x) { return parseInt(x.trim(), 10); })
           .filter(function (x) { return !isNaN(x); });
-        if (self.handlers.onQuestions) self.handlers.onQuestions(ids, c.title);
+        if (self.handlers.onQuestions) self.handlers.onQuestions(ids, { chapterId: c.id });
       });
     });
 

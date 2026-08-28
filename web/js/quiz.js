@@ -192,7 +192,7 @@
     if (revealed) card.appendChild(buildReview(q, picked, h));
 
     /* ссылки на родственные вопросы: они есть и в разборе, и в опровержениях вариантов */
-    bindQrefs(card, h, t("reviewOfQuestionTitle", q.id));
+    bindQrefs(card, h, { key: "reviewOfQuestionTitle", args: [q.id] });
     return card;
   }
 

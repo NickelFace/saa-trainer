@@ -22,7 +22,8 @@
   var exam = null;
   var theoryView = null;
   var chapterIds = null;      /* активный фильтр «вопросы главы» */
-  var chapterTitleKey = null; /* i18n-ключ или буквальный заголовок для chapterIds */
+  var chapterTitleKey = null; /* {chapterId} или {key,args} — не готовая строка, а как её получить
+                                  заново на текущем языке (см. resolveChapterFilterTitle) */
 
   /* ---------------- статический текст интерфейса ---------------- */
 
@@ -173,11 +174,24 @@
     return true;
   }
 
+  /* chapterTitleKey holds a {chapterId} or {key,args} descriptor rather than a resolved
+     string, so the pill can re-translate on a language switch instead of keeping whatever
+     text was current when the filter was set (chapter titles and UI strings alike). */
+  function resolveChapterFilterTitle(desc) {
+    if (!desc) return "";
+    if (desc.chapterId != null) {
+      var c = T.byId(desc.chapterId);
+      return c ? c.title : "";
+    }
+    if (desc.key) return t.apply(null, [desc.key].concat(desc.args || []));
+    return "";
+  }
+
   function renderChapterFilterBox() {
     var box = $("chapter-filter");
     box.innerHTML = "";
     if (!chapterIds) { box.classList.add("hidden"); return; }
-    box.appendChild(document.createTextNode(t("chapterFilterLabel", chapterTitleKey, chapterIds.length)));
+    box.appendChild(document.createTextNode(t("chapterFilterLabel", resolveChapterFilterTitle(chapterTitleKey), chapterIds.length)));
     var x = el("button", "", "✕");
     x.title = t("clearChapterFilterTitle");
     x.addEventListener("click", function () { setChapterFilter(null); applyFilters(); });
@@ -185,9 +199,9 @@
     box.classList.remove("hidden");
   }
 
-  function setChapterFilter(ids, title) {
+  function setChapterFilter(ids, titleDesc) {
     chapterIds = ids && ids.length ? ids : null;
-    chapterTitleKey = title || null;
+    chapterTitleKey = titleDesc || null;
     renderChapterFilterBox();
     if (chapterIds && isNarrow()) setFiltersOpen(false);
   }
@@ -248,7 +262,7 @@
       var toWrong = el("button", "btn", t("resultReviewMistakes", wrongIds.length));
       toWrong.style.marginLeft = "10px";
       toWrong.addEventListener("click", function () {
-        setChapterFilter(wrongIds, t("resultMistakesTitle"));
+        setChapterFilter(wrongIds, { key: "resultMistakesTitle" });
         $("f-dom").value = ""; $("f-svc").value = ""; $("f-status").value = "all"; $("f-order").value = "id";
         applyFilters();
         show("practice");
@@ -471,7 +485,7 @@
 
     theoryView = new T.View({ list: $("theory-index"), body: $("theory-body"), search: $("theory-search") }, {
       onPractice: function (c) {
-        setChapterFilter(c.questions, c.title);
+        setChapterFilter(c.questions, { chapterId: c.id });
         $("f-dom").value = ""; $("f-svc").value = ""; $("f-status").value = "all";
         applyFilters();
         show("practice");
