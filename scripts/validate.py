@@ -125,6 +125,47 @@ if os.path.exists(expl_path):
 else:
     print("  инфо  разборов пока нет")
 
+print("билингва (английский слой):")
+expl_en_path = "data/explanations.en.json"
+if os.path.exists(expl_en_path):
+    expl_en = json.load(open(expl_en_path, encoding="utf-8"))
+    by_id = {q["id"]: q for q in bank}
+    bad_id_en = [k for k in expl_en if not k.isdigit() or int(k) not in by_id]
+    check(not bad_id_en, f"EN: все id разборов есть в банке ({bad_id_en[:5]})")
+    no_key_en = [k for k, v in expl_en.items() if not v.get("key")]
+    check(not no_key_en, f"EN: у каждого EN-разбора есть объяснение ключа ({no_key_en[:5]})")
+    bad_letter_en = [f"{k}:{l}" for k, v in expl_en.items() if k.isdigit() and int(k) in by_id
+                      for l in v.get("opts", {})
+                      if l not in {o["l"] for o in by_id[int(k)]["options"]}]
+    check(not bad_letter_en, f"EN: буквы вариантов в разборах существуют ({bad_letter_en[:5]})")
+    print(f"  инфо  EN-разборов {len(expl_en)} из {len(bank)} ({round(100 * len(expl_en) / len(bank), 1)}%)")
+else:
+    print("  инфо  data/explanations.en.json пока нет — EN-режим падает на RU-разборы")
+
+dom_ov = json.load(open("data/dom-overrides.json", encoding="utf-8"))
+why_en_count = sum(1 for v in dom_ov.values() if v.get("why_en"))
+print(f"  инфо  dom-overrides why_en: {why_en_count} из {len(dom_ov)}")
+
+overlay = json.load(open("data/overlay.json", encoding="utf-8"))
+overlay_en_fields = sum(1 for v in overlay.values() for k in v if k.endswith("_en"))
+print(f"  инфо  overlay.json полей *_en: {overlay_en_fields}")
+
+en_docs = "docs/en"
+if os.path.isdir(en_docs):
+    ru_ids = {os.path.splitext(f)[0] for f in os.listdir(DOCS) if f.endswith(".md")}
+    en_ids = {os.path.splitext(f)[0] for f in os.listdir(en_docs) if f.endswith(".md")}
+    missing_en = sorted(ru_ids - en_ids)
+    check(not missing_en, f"EN: у каждой RU-главы есть перевод в docs/en/ ({missing_en})")
+    extra_en = sorted(en_ids - ru_ids)
+    check(not extra_en, f"EN: в docs/en/ нет лишних файлов без RU-пары ({extra_en})")
+    idx_en_path = os.path.join(THEORY, "en", "index.json")
+    if os.path.exists(idx_en_path):
+        idx_en = json.load(open(idx_en_path, encoding="utf-8"))["chapters"]
+        main_en = [c for c in idx_en if c["order"] <= 22]
+        print(f"  инфо  EN: {len(main_en)} основных глав собрано из docs/en/")
+else:
+    print("  инфо  docs/en/ пока нет — EN-режим учебника падает на RU-главы")
+
 print()
 if fails:
     print(f"ПРОВАЛЕНО проверок: {len(fails)}")

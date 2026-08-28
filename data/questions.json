@@ -30,7 +30,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "скорость агрегации данных в один бакет"
+  "dom_why": "скорость агрегации данных в один бакет",
+  "dom_why_en": "speed of aggregating data into a single bucket"
  },
  {
   "id": 2,
@@ -65,7 +66,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "выбор аналитического сервиса по данным в S3"
+  "dom_why": "выбор аналитического сервиса по данным в S3",
+  "dom_why_en": "choosing an analytics service for data in S3"
  },
  {
   "id": 3,
@@ -97,7 +99,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ограничение доступа к бакету организацией"
+  "dom_why": "ограничение доступа к бакету организацией",
+  "dom_why_en": "restricting bucket access to the organization"
  },
  {
   "id": 4,
@@ -163,7 +166,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "общий доступ к документам с обоих инстансов"
+  "dom_why": "общий доступ к документам с обоих инстансов",
+  "dom_why_en": "shared access to documents from both instances"
  },
  {
   "id": 6,
@@ -196,7 +200,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "скорость переноса при ограниченном канале"
+  "dom_why": "скорость переноса при ограниченном канале",
+  "dom_why_en": "transfer speed with limited bandwidth"
  },
  {
   "id": 7,
@@ -329,7 +334,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "гарантия порядка обработки заказов"
+  "dom_why": "гарантия порядка обработки заказов",
+  "dom_why_en": "guaranteeing order processing sequence"
  },
  {
   "id": 11,
@@ -500,7 +506,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "инспекция и фильтрация трафика VPC"
+  "dom_why": "инспекция и фильтрация трафика VPC",
+  "dom_why_en": "VPC traffic inspection and filtering"
  },
  {
   "id": 16,
@@ -535,7 +542,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "выбор BI-платформы для витрины данных"
+  "dom_why": "выбор BI-платформы для витрины данных",
+  "dom_why_en": "choosing a BI platform for a data mart"
  },
  {
   "id": 17,
@@ -567,7 +575,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ EC2 к S3 через роль"
+  "dom_why": "доступ EC2 к S3 через роль",
+  "dom_why_en": "EC2 access to S3 via a role"
  },
  {
   "id": 18,
@@ -668,7 +677,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "быстрый клон с высоким I/O для тестов"
+  "dom_why": "быстрый клон с высоким I/O для тестов",
+  "dom_why_en": "fast clone with high I/O for testing"
  },
  {
   "id": 21,
@@ -831,7 +841,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "буфер между API и базой вместо роста квот"
+  "dom_why": "буфер между API и базой вместо роста квот",
+  "dom_why_en": "buffer between API and database instead of scaling quotas"
  },
  {
   "id": 26,
@@ -923,7 +934,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "единый вход и федерация с AD"
+  "dom_why": "единый вход и федерация с AD",
+  "dom_why_en": "single sign-on and federation with AD"
  },
  {
   "id": 29,
@@ -1023,7 +1035,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "контроль соответствия ресурсов тегам"
+  "dom_why": "контроль соответствия ресурсов тегам",
+  "dom_why_en": "enforcing resource tag compliance"
  },
  {
   "id": 32,
@@ -1277,7 +1290,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "медленные вставки из-за производительности тома"
+  "dom_why": "медленные вставки из-за производительности тома",
+  "dom_why_en": "slow inserts due to volume performance"
  },
  {
   "id": 40,
@@ -1444,7 +1458,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "защита данных от случайного удаления"
+  "dom_why": "защита данных от случайного удаления",
+  "dom_why_en": "protecting data from accidental deletion"
  },
  {
   "id": 45,
@@ -1480,7 +1495,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "повторные попытки и очередь недоставленных"
+  "dom_why": "повторные попытки и очередь недоставленных",
+  "dom_why_en": "retries and a dead-letter queue"
  },
  {
   "id": 46,
@@ -1543,7 +1559,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "гарантированная ёмкость в трёх зонах"
+  "dom_why": "гарантированная ёмкость в трёх зонах",
+  "dom_why_en": "guaranteed capacity across three zones"
  },
  {
   "id": 48,
@@ -1638,7 +1655,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "срочное закрытие уязвимости патчами"
+  "dom_why": "срочное закрытие уязвимости патчами",
+  "dom_why_en": "urgent vulnerability patching"
  },
  {
   "id": 51,
@@ -1678,7 +1696,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "событийная сборка и рассылка отчёта"
+  "dom_why": "событийная сборка и рассылка отчёта",
+  "dom_why_en": "event-driven report generation and distribution"
  },
  {
   "id": 52,
@@ -1808,7 +1827,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ к базе только из приватных подсетей"
+  "dom_why": "доступ к базе только из приватных подсетей",
+  "dom_why_en": "database access only from private subnets"
  },
  {
   "id": 56,
@@ -1871,7 +1891,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "выбор управляемого ML-сервиса модерации"
+  "dom_why": "выбор управляемого ML-сервиса модерации",
+  "dom_why_en": "choosing a managed ML moderation service"
  },
  {
   "id": 58,
@@ -1903,7 +1924,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "контейнеры без управления инфраструктурой"
+  "dom_why": "контейнеры без управления инфраструктурой",
+  "dom_why_en": "containers without infrastructure management"
  },
  {
   "id": 59,
@@ -1940,7 +1962,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "приём и обработка потока кликов"
+  "dom_why": "приём и обработка потока кликов",
+  "dom_why_en": "ingesting and processing clickstream data"
  },
  {
   "id": 60,
@@ -1970,7 +1993,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "принудительный HTTPS для всех запросов"
+  "dom_why": "принудительный HTTPS для всех запросов",
+  "dom_why_en": "enforcing HTTPS for all requests"
  },
  {
   "id": 61,
@@ -2138,7 +2162,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "обнаружение защищаемых медицинских данных"
+  "dom_why": "обнаружение защищаемых медицинских данных",
+  "dom_why_en": "detecting protected health data"
  },
  {
   "id": 66,
@@ -2199,7 +2224,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "повторная обработка сообщений очереди"
+  "dom_why": "повторная обработка сообщений очереди",
+  "dom_why_en": "reprocessing queue messages"
  },
  {
   "id": 68,
@@ -2295,7 +2321,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "замена инстансов по проверке HTTP вместо ручного рестарта"
+  "dom_why": "замена инстансов по проверке HTTP вместо ручного рестарта",
+  "dom_why_en": "replacing instances on HTTP health check failure instead of manual restart"
  },
  {
   "id": 71,
@@ -2358,7 +2385,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "плата за трафик к S3 внутри региона"
+  "dom_why": "плата за трафик к S3 внутри региона",
+  "dom_why_en": "data transfer charges to S3 within the region"
  },
  {
   "id": 73,
@@ -2461,7 +2489,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "транзакции теряются при перегрузке уровня"
+  "dom_why": "транзакции теряются при перегрузке уровня",
+  "dom_why_en": "transactions lost under tier overload"
  },
  {
   "id": 76,
@@ -2592,7 +2621,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "непредсказуемые всплески без переплаты"
+  "dom_why": "непредсказуемые всплески без переплаты",
+  "dom_why_en": "unpredictable spikes without overpaying"
  },
  {
   "id": 80,
@@ -2721,7 +2751,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ускорение загрузки сайта для Европы"
+  "dom_why": "ускорение загрузки сайта для Европы",
+  "dom_why_en": "speeding up site load times for Europe"
  },
  {
   "id": 84,
@@ -2781,7 +2812,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "неизменяемость документов по регуляторике"
+  "dom_why": "неизменяемость документов по регуляторике",
+  "dom_why_en": "document immutability for regulatory compliance"
  },
  {
   "id": 86,
@@ -2849,7 +2881,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "не потерять данные во время апгрейда"
+  "dom_why": "не потерять данные во время апгрейда",
+  "dom_why_en": "avoiding data loss during upgrade"
  },
  {
   "id": 88,
@@ -2940,7 +2973,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "скрипт мешает работе базы разработчикам"
+  "dom_why": "скрипт мешает работе базы разработчикам",
+  "dom_why_en": "script interferes with developers' database usage"
  },
  {
   "id": 91,
@@ -2972,7 +3006,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ к S3 без выхода в интернет"
+  "dom_why": "доступ к S3 без выхода в интернет",
+  "dom_why_en": "S3 access without internet egress"
  },
  {
   "id": 92,
@@ -3075,7 +3110,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "эластичная обработка при переменной нагрузке"
+  "dom_why": "эластичная обработка при переменной нагрузке",
+  "dom_why_en": "elastic processing under variable load"
  },
  {
   "id": 95,
@@ -3201,7 +3237,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "дубли обработки из-за visibility timeout"
+  "dom_why": "дубли обработки из-за visibility timeout",
+  "dom_why_en": "duplicate processing due to visibility timeout"
  },
  {
   "id": 99,
@@ -3234,7 +3271,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "файловое хранилище с клиентами Lustre"
+  "dom_why": "файловое хранилище с клиентами Lustre",
+  "dom_why_en": "file storage with Lustre clients"
  },
  {
   "id": 100,
@@ -3300,7 +3338,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "выход в интернет из приватных подсетей трёх зон"
+  "dom_why": "выход в интернет из приватных подсетей трёх зон",
+  "dom_why_en": "internet egress from private subnets in three zones"
  },
  {
   "id": 102,
@@ -3337,7 +3376,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "автоматизация переноса данных в EFS"
+  "dom_why": "автоматизация переноса данных в EFS",
+  "dom_why_en": "automating data migration to EFS"
  },
  {
   "id": 103,
@@ -3368,7 +3408,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "исключение повторной обработки данных ETL"
+  "dom_why": "исключение повторной обработки данных ETL",
+  "dom_why_en": "preventing duplicate ETL data processing"
  },
  {
   "id": 104,
@@ -3504,7 +3545,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "выбор хранилища для точек геолокации"
+  "dom_why": "выбор хранилища для точек геолокации",
+  "dom_why_en": "choosing storage for geolocation points"
  },
  {
   "id": 108,
@@ -3537,7 +3579,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "рассылка события нескольким системам"
+  "dom_why": "рассылка события нескольким системам",
+  "dom_why_en": "fanning out an event to multiple systems"
  },
  {
   "id": 109,
@@ -3569,7 +3612,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет изменения объектов и контроль удаления"
+  "dom_why": "запрет изменения объектов и контроль удаления",
+  "dom_why_en": "preventing object modification and controlling deletion"
  },
  {
   "id": 110,
@@ -3676,7 +3720,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "эластичная платформа для роста запросов"
+  "dom_why": "эластичная платформа для роста запросов",
+  "dom_why_en": "elastic platform for growing request volume"
  },
  {
   "id": 113,
@@ -3702,6 +3747,7 @@
   "answer": "C",
   "disputed_alt": "D",
   "disputed_note": "вариант C переписывает кастомное приложение как job в Glue, вариант D переносит существующее приложение на EC2. «Least operational overhead» читается двояко: Glue не требует администрирования, но требует разработки заново; D сохраняет приложение как есть. Snowcone (8/14 ТБ) не вмещает 50 ТБ, DataSync требует полосы, которой нет",
+  "disputed_note_en": "Option C rewrites the custom application as a Glue job, while option D migrates the existing application to EC2. \"Least operational overhead\" cuts both ways here: Glue requires no administration but demands a full rewrite, whereas D keeps the application as-is. Snowcone (8/14 TB) can't hold 50 TB, and DataSync needs bandwidth that isn't available",
   "dom": "PERF",
   "svc": [
    "EC2",
@@ -3711,7 +3757,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос 50 ТБ без доступной полосы"
+  "dom_why": "перенос 50 ТБ без доступной полосы",
+  "dom_why_en": "transferring 50 TB with limited bandwidth"
  },
  {
   "id": 114,
@@ -3778,7 +3825,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "приватный маршрут для передачи файлов"
+  "dom_why": "приватный маршрут для передачи файлов",
+  "dom_why_en": "private route for file transfer"
  },
  {
   "id": 116,
@@ -3818,7 +3866,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "статический сайт вместо CMS с патчами"
+  "dom_why": "статический сайт вместо CMS с патчами",
+  "dom_why_en": "static site instead of a CMS requiring patching"
  },
  {
   "id": 117,
@@ -3851,7 +3900,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доставка логов в OpenSearch near real-time"
+  "dom_why": "доставка логов в OpenSearch near real-time",
+  "dom_why_en": "near real-time log delivery to OpenSearch"
  },
  {
   "id": 118,
@@ -3916,7 +3966,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "защита API от SQLi и XSS"
+  "dom_why": "защита API от SQLi и XSS",
+  "dom_why_en": "protecting an API from SQLi and XSS"
  },
  {
   "id": 120,
@@ -3950,7 +4001,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "маршрутизация к инстансам в двух регионах"
+  "dom_why": "маршрутизация к инстансам в двух регионах",
+  "dom_why_en": "routing to instances across two regions"
  },
  {
   "id": 121,
@@ -4113,7 +4165,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "веб и база без публичного доступа при выходе наружу"
+  "dom_why": "веб и база без публичного доступа при выходе наружу",
+  "dom_why_en": "web and database without public access during outbound traffic"
  },
  {
   "id": 126,
@@ -4206,7 +4259,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "прерываемые контейнеры без потерь"
+  "dom_why": "прерываемые контейнеры без потерь",
+  "dom_why_en": "interruptible containers without data loss"
  },
  {
   "id": 129,
@@ -4245,7 +4299,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "снятие потолка масштабирования и capacity planning"
+  "dom_why": "снятие потолка масштабирования и capacity planning",
+  "dom_why_en": "removing the scaling ceiling and capacity planning"
  },
  {
   "id": 130,
@@ -4278,7 +4333,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "удержание CPU около целевого значения"
+  "dom_why": "удержание CPU около целевого значения",
+  "dom_why_en": "keeping CPU near a target value"
  },
  {
   "id": 131,
@@ -4310,7 +4366,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет прямого доступа к URL бакета"
+  "dom_why": "запрет прямого доступа к URL бакета",
+  "dom_why_en": "blocking direct access to the bucket URL"
  },
  {
   "id": 132,
@@ -4439,7 +4496,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "приватное подключение к сервису провайдера"
+  "dom_why": "приватное подключение к сервису провайдера",
+  "dom_why_en": "private connectivity to a provider's service"
  },
  {
   "id": 136,
@@ -4476,7 +4534,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "база остаётся online и синхронной при миграции"
+  "dom_why": "база остаётся online и синхронной при миграции",
+  "dom_why_en": "database stays online and in sync during migration"
  },
  {
   "id": 137,
@@ -4538,7 +4597,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "всё в одной зоне: нужна максимальная доступность"
+  "dom_why": "всё в одной зоне: нужна максимальная доступность",
+  "dom_why_en": "everything in one zone: maximum availability needed"
  },
  {
   "id": 139,
@@ -4573,7 +4633,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "автоматизация конвейера обработки файлов"
+  "dom_why": "автоматизация конвейера обработки файлов",
+  "dom_why_en": "automating a file-processing pipeline"
  },
  {
   "id": 140,
@@ -4711,7 +4772,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "распил монолита на масштабируемые части"
+  "dom_why": "распил монолита на масштабируемые части",
+  "dom_why_en": "breaking a monolith into scalable components"
  },
  {
   "id": 144,
@@ -4809,7 +4871,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "дневной пик и низкая ночная нагрузка"
+  "dom_why": "дневной пик и низкая ночная нагрузка",
+  "dom_why_en": "daytime peak and low nighttime load"
  },
  {
   "id": 147,
@@ -4872,7 +4935,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "гарантия обработки всех уведомлений"
+  "dom_why": "гарантия обработки всех уведомлений",
+  "dom_why_en": "guaranteeing all notifications are processed"
  },
  {
   "id": 149,
@@ -4904,7 +4968,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "сохранение порядка событий при обработке"
+  "dom_why": "сохранение порядка событий при обработке",
+  "dom_why_en": "preserving event order during processing"
  },
  {
   "id": 150,
@@ -5069,7 +5134,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "права на запись и запрет удаления файлов"
+  "dom_why": "права на запись и запрет удаления файлов",
+  "dom_why_en": "write permissions with deletion prevention for files"
  },
  {
   "id": 155,
@@ -5143,7 +5209,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "единый конвейер для батча и потока"
+  "dom_why": "единый конвейер для батча и потока",
+  "dom_why_en": "unified pipeline for batch and streaming"
  },
  {
   "id": 157,
@@ -5474,7 +5541,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "раздача статики миллионам пользователей"
+  "dom_why": "раздача статики миллионам пользователей",
+  "dom_why_en": "serving static content to millions of users"
  },
  {
   "id": 167,
@@ -5534,7 +5602,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ограничение сервисов во всех аккаунтах"
+  "dom_why": "ограничение сервисов во всех аккаунтах",
+  "dom_why_en": "restricting services across all accounts"
  },
  {
   "id": 169,
@@ -5600,7 +5669,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ только из одной страны"
+  "dom_why": "доступ только из одной страны",
+  "dom_why_en": "access restricted to a single country"
  },
  {
   "id": 171,
@@ -5759,7 +5829,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "таймауты из-за исчерпания соединений БД"
+  "dom_why": "таймауты из-за исчерпания соединений БД",
+  "dom_why_en": "timeouts from database connection exhaustion"
  },
  {
   "id": 176,
@@ -5821,7 +5892,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "задержки чтения без правок приложения"
+  "dom_why": "задержки чтения без правок приложения",
+  "dom_why_en": "read latency without application changes"
  },
  {
   "id": 178,
@@ -5960,7 +6032,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "обмен между микросервисами без порядка"
+  "dom_why": "обмен между микросервисами без порядка",
+  "dom_why_en": "messaging between microservices without ordering"
  },
  {
   "id": 182,
@@ -6059,7 +6132,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "сетевой доступ функции к сети дата-центра"
+  "dom_why": "сетевой доступ функции к сети дата-центра",
+  "dom_why_en": "function network access to an on-premises data center network"
  },
  {
   "id": 185,
@@ -6092,7 +6166,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "права контейнера на вызовы S3"
+  "dom_why": "права контейнера на вызовы S3",
+  "dom_why_en": "container permissions for S3 calls"
  },
  {
   "id": 186,
@@ -6126,7 +6201,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "общая файловая система Windows между зонами"
+  "dom_why": "общая файловая система Windows между зонами",
+  "dom_why_en": "shared Windows file system across zones"
  },
  {
   "id": 187,
@@ -6294,7 +6370,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "отчёты замедляют обработку заказов"
+  "dom_why": "отчёты замедляют обработку заказов",
+  "dom_why_en": "reports slowing down order processing"
  },
  {
   "id": 192,
@@ -6335,7 +6412,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "распознавание документов и SQL по данным"
+  "dom_why": "распознавание документов и SQL по данным",
+  "dom_why_en": "document recognition and SQL queries over data"
  },
  {
   "id": 193,
@@ -6466,7 +6544,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "хранить только данные за 30 дней"
+  "dom_why": "хранить только данные за 30 дней",
+  "dom_why_en": "retaining only the last 30 days of data"
  },
  {
   "id": 197,
@@ -6538,7 +6617,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "подбор управляемых сервисов под Kubernetes и MongoDB"
+  "dom_why": "подбор управляемых сервисов под Kubernetes и MongoDB",
+  "dom_why_en": "choosing managed services for Kubernetes and MongoDB"
  },
  {
   "id": 199,
@@ -6573,7 +6653,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "распознавание речи и запросы к транскриптам"
+  "dom_why": "распознавание речи и запросы к транскриптам",
+  "dom_why_en": "speech recognition and queries over transcripts"
  },
  {
   "id": 200,
@@ -6606,7 +6687,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управление доступом к REST API"
+  "dom_why": "управление доступом к REST API",
+  "dom_why_en": "controlling access to a REST API"
  },
  {
   "id": 201,
@@ -6639,7 +6721,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "двусторонний SMS-обмен и хранение ответов"
+  "dom_why": "двусторонний SMS-обмен и хранение ответов",
+  "dom_why_en": "two-way SMS messaging and storing responses"
  },
  {
   "id": 202,
@@ -6665,6 +6748,7 @@
   "answer": "B",
   "disputed_alt": "A",
   "disputed_note": "противоречие внутри банка: вопрос {{q:825}} формулируется так же, но ключ там A (SSE-S3). KMS с автоматической ротацией даёт документированный годовой цикл, SSE-S3 — меньше действий; оба ключа одновременно верными быть не могут",
+  "disputed_note_en": "Contradiction within the bank: question {{q:825}} is phrased identically, but there the key is A (SSE-S3). KMS with automatic rotation gives a documented annual cycle, while SSE-S3 requires fewer steps — both keys can't be correct at the same time",
   "dom": "SEC",
   "svc": [
    "S3",
@@ -6706,7 +6790,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "масштабирование обработчиков при росте нагрузки"
+  "dom_why": "масштабирование обработчиков при росте нагрузки",
+  "dom_why_en": "scaling handlers as load grows"
  },
  {
   "id": 204,
@@ -6742,7 +6827,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "гранулярные права на данные озера"
+  "dom_why": "гранулярные права на данные озера",
+  "dom_why_en": "granular permissions on data lake data"
  },
  {
   "id": 205,
@@ -6813,7 +6899,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "аудит вызовов API и оповещение"
+  "dom_why": "аудит вызовов API и оповещение",
+  "dom_why_en": "auditing API calls and alerting"
  },
  {
   "id": 207,
@@ -6878,7 +6965,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет публичных маршрутов и доступ только с инстанса"
+  "dom_why": "запрет публичных маршрутов и доступ только с инстанса",
+  "dom_why_en": "blocking public routes with access only from the instance"
  },
  {
   "id": 209,
@@ -6911,7 +6999,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "состояние сессий вне часто заменяемых инстансов"
+  "dom_why": "состояние сессий вне часто заменяемых инстансов",
+  "dom_why_en": "session state outside frequently replaced instances"
  },
  {
   "id": 210,
@@ -6945,7 +7034,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "не терять заказы при масштабировании"
+  "dom_why": "не терять заказы при масштабировании",
+  "dom_why_en": "not losing orders during scaling"
  },
  {
   "id": 211,
@@ -6981,7 +7071,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "инвентаризация ресурсов по тегам через Tag Editor"
+  "dom_why": "инвентаризация ресурсов по тегам через Tag Editor",
+  "dom_why_en": "inventorying resources by tag via Tag Editor"
  },
  {
   "id": 212,
@@ -7044,7 +7135,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "фильтрация атак прикладного уровня"
+  "dom_why": "фильтрация атак прикладного уровня",
+  "dom_why_en": "filtering application-layer attacks"
  },
  {
   "id": 214,
@@ -7078,7 +7170,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "преобразование форматов данных с минимумом кода"
+  "dom_why": "преобразование форматов данных с минимумом кода",
+  "dom_why_en": "converting data formats with minimal code"
  },
  {
   "id": 215,
@@ -7372,7 +7465,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "доступ пода к DynamoDB без интернета"
+  "dom_why": "доступ пода к DynamoDB без интернета",
+  "dom_why_en": "pod access to DynamoDB without internet access"
  },
  {
   "id": 224,
@@ -7480,7 +7574,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "приём данных от миллионов устройств"
+  "dom_why": "приём данных от миллионов устройств",
+  "dom_why_en": "ingesting data from millions of devices"
  },
  {
   "id": 227,
@@ -7671,7 +7766,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "оповещение о сеансах RDP и SSH"
+  "dom_why": "оповещение о сеансах RDP и SSH",
+  "dom_why_en": "alerting on RDP and SSH sessions"
  },
  {
   "id": 233,
@@ -7769,7 +7865,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "синхронность баз на время поэтапной миграции"
+  "dom_why": "синхронность баз на время поэтапной миграции",
+  "dom_why_en": "keeping databases in sync during a phased migration"
  },
  {
   "id": 236,
@@ -7962,7 +8059,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "данные онлайн в нескольких регионах постоянно"
+  "dom_why": "данные онлайн в нескольких регионах постоянно",
+  "dom_why_en": "data online across multiple regions continuously"
  },
  {
   "id": 242,
@@ -7992,7 +8090,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "в ответе DNS только здоровые узлы"
+  "dom_why": "в ответе DNS только здоровые узлы",
+  "dom_why_en": "only healthy nodes in DNS responses"
  },
  {
   "id": 243,
@@ -8059,7 +8158,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "разделение слоёв ради доступности"
+  "dom_why": "разделение слоёв ради доступности",
+  "dom_why_en": "separating tiers for availability"
  },
  {
   "id": 245,
@@ -8123,7 +8223,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "публикация приложения из приватных подсетей через ALB в публичных"
+  "dom_why": "публикация приложения из приватных подсетей через ALB в публичных",
+  "dom_why_en": "exposing an application from private subnets via an ALB in public subnets"
  },
  {
   "id": 247,
@@ -8192,7 +8293,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "масштабирование под нагрузку при 100% CPU"
+  "dom_why": "масштабирование под нагрузку при 100% CPU",
+  "dom_why_en": "scaling in response to 100% CPU load"
  },
  {
   "id": 249,
@@ -8225,7 +8327,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "файловое хранилище с клиентами SMB"
+  "dom_why": "файловое хранилище с клиентами SMB",
+  "dom_why_en": "file storage with SMB clients"
  },
  {
   "id": 250,
@@ -8259,7 +8362,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "удешевление хранения логов после 90 дней"
+  "dom_why": "удешевление хранения логов после 90 дней",
+  "dom_why_en": "reducing log storage cost after 90 days"
  },
  {
   "id": 251,
@@ -8290,7 +8394,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "исходящий доступ из приватной подсети"
+  "dom_why": "исходящий доступ из приватной подсети",
+  "dom_why_en": "outbound access from a private subnet"
  },
  {
   "id": 252,
@@ -8324,7 +8429,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "общий доступ к файлам со встроенной избыточностью"
+  "dom_why": "общий доступ к файлам со встроенной избыточностью",
+  "dom_why_en": "shared file access with built-in redundancy"
  },
  {
   "id": 253,
@@ -8423,7 +8529,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "идемпотентность оформления заказа"
+  "dom_why": "идемпотентность оформления заказа",
+  "dom_why_en": "order placement idempotency"
  },
  {
   "id": 256,
@@ -8459,7 +8566,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "защита от удаления с сохранением версий"
+  "dom_why": "защита от удаления с сохранением версий",
+  "dom_why_en": "deletion protection with version retention"
  },
  {
   "id": 257,
@@ -8528,7 +8636,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "конвертация CSV в Parquet с минимумом операций"
+  "dom_why": "конвертация CSV в Parquet с минимумом операций",
+  "dom_why_en": "converting CSV to Parquet with minimal operations"
  },
  {
   "id": 259,
@@ -8629,7 +8738,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "разные версии контента по типу устройства"
+  "dom_why": "разные версии контента по типу устройства",
+  "dom_why_en": "serving different content versions by device type"
  },
  {
   "id": 262,
@@ -8696,7 +8806,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "контейнеры без обслуживания инфраструктуры"
+  "dom_why": "контейнеры без обслуживания инфраструктуры",
+  "dom_why_en": "containers without infrastructure maintenance"
  },
  {
   "id": 264,
@@ -8729,7 +8840,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "исключение неисправных узлов из DNS"
+  "dom_why": "исключение неисправных узлов из DNS",
+  "dom_why_en": "excluding unhealthy nodes from DNS"
  },
  {
   "id": 265,
@@ -8854,6 +8966,7 @@
   "answer": "B",
   "disputed_alt": "A",
   "disputed_note": "examtopics t1 q268 — ключ RDS Proxy решает пул соединений, а не read performance; часть сообщества за ElastiCache",
+  "disputed_note_en": "examtopics t1 q268 — the key RDS Proxy addresses connection pooling, not read performance; part of the community favors ElastiCache",
   "dom": "PERF",
   "svc": [
    "EC2",
@@ -8865,7 +8978,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "задержки из-за производительности чтения"
+  "dom_why": "задержки из-за производительности чтения",
+  "dom_why_en": "latency due to read performance"
  },
  {
   "id": 269,
@@ -9120,7 +9234,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "автоматическое масштабирование при росте трафика"
+  "dom_why": "автоматическое масштабирование при росте трафика",
+  "dom_why_en": "automatic scaling as traffic grows"
  },
  {
   "id": 277,
@@ -9260,7 +9375,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "анализ и визуализация логов CloudFront"
+  "dom_why": "анализ и визуализация логов CloudFront",
+  "dom_why_en": "analyzing and visualizing CloudFront logs"
  },
  {
   "id": 281,
@@ -9323,7 +9439,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ к инстансам только от балансировщика"
+  "dom_why": "доступ к инстансам только от балансировщика",
+  "dom_why_en": "instance access only from the load balancer"
  },
  {
   "id": 283,
@@ -9358,7 +9475,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "один набор данных для NFS и SMB"
+  "dom_why": "один набор данных для NFS и SMB",
+  "dom_why_en": "single dataset for NFS and SMB"
  },
  {
   "id": 284,
@@ -9455,7 +9573,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "кэш отдаёт устаревшую версию сайта"
+  "dom_why": "кэш отдаёт устаревшую версию сайта",
+  "dom_why_en": "cache serving a stale version of the site"
  },
  {
   "id": 287,
@@ -9521,7 +9640,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "общий файловый доступ без правок приложения"
+  "dom_why": "общий файловый доступ без правок приложения",
+  "dom_why_en": "shared file access without application changes"
  },
  {
   "id": 289,
@@ -9720,7 +9840,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ к S3 без выхода в интернет"
+  "dom_why": "доступ к S3 без выхода в интернет",
+  "dom_why_en": "S3 access without internet egress"
  },
  {
   "id": 295,
@@ -9782,7 +9903,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "планирование адресного пространства для peering"
+  "dom_why": "планирование адресного пространства для peering",
+  "dom_why_en": "planning address space for peering"
  },
  {
   "id": 297,
@@ -9943,7 +10065,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "быстрый перенос с ограничением полосы"
+  "dom_why": "быстрый перенос с ограничением полосы",
+  "dom_why_en": "fast transfer with limited bandwidth"
  },
  {
   "id": 302,
@@ -10080,7 +10203,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управляемое хранилище с доступом по SMB"
+  "dom_why": "управляемое хранилище с доступом по SMB",
+  "dom_why_en": "managed storage with SMB access"
  },
  {
   "id": 306,
@@ -10141,7 +10265,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "тип шлюза под локальный кэш недавних данных"
+  "dom_why": "тип шлюза под локальный кэш недавних данных",
+  "dom_why_en": "gateway type for local caching of recent data"
  },
  {
   "id": 308,
@@ -10171,6 +10296,7 @@
   "answer": "BC",
   "answer_original": "BD",
   "fix_note": "инстансы описаны как active, поэтому проверка Idle DB Instances (D) на них ничего не покажет — она ищет базы без подключений. Снижение стоимости постоянно работающих 90 дней инстансов даёт проверка RDS Reserved Instance Optimization (C), и рекомендации по RI консолидируются в аккаунте плательщика (B)",
+  "fix_note_en": "The instances are described as active, so running the Idle DB Instances check (D) on them would show nothing — it looks for databases with no connections. Reducing the cost of instances that have been running continuously for 90 days is what the RDS Reserved Instance Optimization check (C) does, and RI recommendations are consolidated in the payer account (B)",
   "dom": "COST",
   "svc": [
    "RDS",
@@ -10275,7 +10401,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "разделение по типам и гарантия недоставки потерь"
+  "dom_why": "разделение по типам и гарантия недоставки потерь",
+  "dom_why_en": "fan-out by message type with guaranteed no-loss delivery"
  },
  {
   "id": 312,
@@ -10308,7 +10435,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ночные бэкапы и восстановление в другом регионе"
+  "dom_why": "ночные бэкапы и восстановление в другом регионе",
+  "dom_why_en": "nightly backups and recovery in another region"
  },
  {
   "id": 313,
@@ -10371,7 +10499,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "база без выбора класса инстанса"
+  "dom_why": "база без выбора класса инстанса",
+  "dom_why_en": "database without instance class selection"
  },
  {
   "id": 315,
@@ -10407,7 +10536,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "активное сканирование уязвимостей инстансов"
+  "dom_why": "активное сканирование уязвимостей инстансов",
+  "dom_why_en": "active vulnerability scanning of instances"
  },
  {
   "id": 316,
@@ -10441,7 +10571,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "снижение затрат на обработку очереди"
+  "dom_why": "снижение затрат на обработку очереди",
+  "dom_why_en": "reducing queue processing costs"
  },
  {
   "id": 317,
@@ -10478,7 +10609,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "приведение данных к формату для аналитики"
+  "dom_why": "приведение данных к формату для аналитики",
+  "dom_why_en": "transforming data into a format for analytics"
  },
  {
   "id": 318,
@@ -10841,7 +10973,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "гарантия обработки всех запросов при всплеске"
+  "dom_why": "гарантия обработки всех запросов при всплеске",
+  "dom_why_en": "guaranteeing all requests are processed during a spike"
  },
  {
   "id": 329,
@@ -10876,7 +11009,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "регулярные сканы и патчинг с отчётом"
+  "dom_why": "регулярные сканы и патчинг с отчётом",
+  "dom_why_en": "regular scanning and patching with reporting"
  },
  {
   "id": 330,
@@ -10940,7 +11074,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос 20 ТБ при узком канале"
+  "dom_why": "перенос 20 ТБ при узком канале",
+  "dom_why_en": "transferring 20 TB over a narrow link"
  },
  {
   "id": 332,
@@ -11041,7 +11176,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ по SFTP с аутентификацией в AD"
+  "dom_why": "доступ по SFTP с аутентификацией в AD",
+  "dom_why_en": "SFTP access with AD authentication"
  },
  {
   "id": 335,
@@ -11148,7 +11284,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "отставание реплик больше секунды"
+  "dom_why": "отставание реплик больше секунды",
+  "dom_why_en": "replica lag over one second"
  },
  {
   "id": 338,
@@ -11174,6 +11311,7 @@
   "answer": "D",
   "disputed_alt": "B",
   "disputed_note": "AWS документирует headless-конфигурацию Aurora Global Database: вторичный кластер без инстансов реплицирует данные на уровне хранилища и стоит дешевле. При буквальном прочтении «MOST cost-effectively» вариант B выигрывает; ключ D защищают тем, что без инстанса вторичный регион не готов принять нагрузку сразу",
+  "disputed_note_en": "AWS documents a headless configuration for Aurora Global Database: a secondary cluster with no instances replicates data at the storage level and costs less. Read literally, \"MOST cost-effectively\" favors option B; the case for key D is that without an instance, the secondary region isn't ready to take on load immediately",
   "dom": "COST",
   "svc": [
    "Aurora",
@@ -11248,7 +11386,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "защита приложения от SQL-инъекций"
+  "dom_why": "защита приложения от SQL-инъекций",
+  "dom_why_en": "protecting an application from SQL injection"
  },
  {
   "id": 341,
@@ -11317,7 +11456,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ёмкость поднимается заранее по расписанию"
+  "dom_why": "ёмкость поднимается заранее по расписанию",
+  "dom_why_en": "capacity scaled up ahead of time on a schedule"
  },
  {
   "id": 343,
@@ -11382,7 +11522,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "сообщения больше лимита очереди"
+  "dom_why": "сообщения больше лимита очереди",
+  "dom_why_en": "messages exceeding the queue size limit"
  },
  {
   "id": 345,
@@ -11448,7 +11589,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "File Gateway: клиентам нужен прежний доступ по SMB и NFS"
+  "dom_why": "File Gateway: клиентам нужен прежний доступ по SMB и NFS",
+  "dom_why_en": "File Gateway: clients need to keep existing SMB and NFS access"
  },
  {
   "id": 347,
@@ -11604,7 +11746,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "событийная распределённая архитектура"
+  "dom_why": "событийная распределённая архитектура",
+  "dom_why_en": "event-driven distributed architecture"
  },
  {
   "id": 352,
@@ -11701,7 +11844,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "таймауты подключений на пиках"
+  "dom_why": "таймауты подключений на пиках",
+  "dom_why_en": "connection timeouts during peaks"
  },
  {
   "id": 355,
@@ -11736,7 +11880,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "почасовая CPU-нагрузка с минимумом операций"
+  "dom_why": "почасовая CPU-нагрузка с минимумом операций",
+  "dom_why_en": "hourly CPU workload with minimal operational overhead"
  },
  {
   "id": 356,
@@ -11838,7 +11983,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "динамическое преобразование изображений на масштабе"
+  "dom_why": "динамическое преобразование изображений на масштабе",
+  "dom_why_en": "dynamic image transformation at scale"
  },
  {
   "id": 359,
@@ -11901,7 +12047,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "вызовы между API не должны идти через интернет"
+  "dom_why": "вызовы между API не должны идти через интернет",
+  "dom_why_en": "API-to-API calls must not traverse the internet"
  },
  {
   "id": 361,
@@ -11971,7 +12118,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "порядок сообщений по идентификатору платежа"
+  "dom_why": "порядок сообщений по идентификатору платежа",
+  "dom_why_en": "message ordering by payment identifier"
  },
  {
   "id": 363,
@@ -12198,7 +12346,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "разнородные задачи на одном инстансе"
+  "dom_why": "разнородные задачи на одном инстансе",
+  "dom_why_en": "mixed workloads on a single instance"
  },
  {
   "id": 370,
@@ -12229,7 +12378,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управляемый выход в интернет из приватных подсетей"
+  "dom_why": "управляемый выход в интернет из приватных подсетей",
+  "dom_why_en": "managed internet egress from private subnets"
  },
  {
   "id": 371,
@@ -12291,6 +12441,7 @@
   "answer": "D",
   "disputed_alt": "B",
   "disputed_note": "examtopics t1 q372 — сообщество делится: B (S3+DynamoDB) дешевле и масштабируемее, контраргумент — GIS-изображение не сводится к одному geographic code",
+  "disputed_note_en": "examtopics t1 q372 — the community is split: B (S3+DynamoDB) is cheaper and more scalable; the counterargument is that a GIS image doesn't reduce to a single geographic code",
   "dom": "COST",
   "svc": [
    "S3",
@@ -12394,7 +12545,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "оркестрация шагов с ручным подтверждением"
+  "dom_why": "оркестрация шагов с ручным подтверждением",
+  "dom_why_en": "step orchestration with manual approval"
  },
  {
   "id": 376,
@@ -12425,7 +12577,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "отказы подключений при скачках нагрузки"
+  "dom_why": "отказы подключений при скачках нагрузки",
+  "dom_why_en": "connection failures during load spikes"
  },
  {
   "id": 377,
@@ -12457,7 +12610,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "отчёт должен уходить в момент запуска и остановки инстанса"
+  "dom_why": "отчёт должен уходить в момент запуска и остановки инстанса",
+  "dom_why_en": "report must be sent on instance start and stop"
  },
  {
   "id": 378,
@@ -12587,7 +12741,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ускорение отчётов без блокировки записи"
+  "dom_why": "ускорение отчётов без блокировки записи",
+  "dom_why_en": "speeding up reports without blocking writes"
  },
  {
   "id": 382,
@@ -12622,7 +12777,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "шифрование данных в передаче между уровнями"
+  "dom_why": "шифрование данных в передаче между уровнями",
+  "dom_why_en": "encrypting data in transit between tiers"
  },
  {
   "id": 383,
@@ -12842,7 +12998,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "отчёты не должны мешать записи"
+  "dom_why": "отчёты не должны мешать записи",
+  "dom_why_en": "reports must not interfere with writes"
  },
  {
   "id": 390,
@@ -12872,6 +13029,7 @@
   "answer": "AD",
   "disputed_alt": "BD",
   "disputed_note": "examtopics t1 q390 — sticky sessions не хранят данные; ElastiCache Redis durable только с persistence; часть сообщества за BD",
+  "disputed_note_en": "examtopics t1 q390 — sticky sessions don't store data; ElastiCache Redis is only durable with persistence enabled; part of the community favors BD",
   "dom": "RES",
   "svc": [
    "EC2",
@@ -13114,7 +13272,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ежедневная задача с известным профилем ресурсов"
+  "dom_why": "ежедневная задача с известным профилем ресурсов",
+  "dom_why_en": "daily job with a predictable resource profile"
  },
  {
   "id": 398,
@@ -13179,7 +13338,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "защита от HTTP-флуда"
+  "dom_why": "защита от HTTP-флуда",
+  "dom_why_en": "protection against HTTP flood attacks"
  },
  {
   "id": 400,
@@ -13211,7 +13371,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "уведомления без влияния на текущее приложение"
+  "dom_why": "уведомления без влияния на текущее приложение",
+  "dom_why_en": "notifications without impacting the existing application"
  },
  {
   "id": 401,
@@ -13275,7 +13436,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "данные исчезают до чтения из потока"
+  "dom_why": "данные исчезают до чтения из потока",
+  "dom_why_en": "data disappearing before being read from the stream"
  },
  {
   "id": 403,
@@ -13338,7 +13500,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "часть документов осталась необработанной"
+  "dom_why": "часть документов осталась необработанной",
+  "dom_why_en": "some documents left unprocessed"
  },
  {
   "id": 405,
@@ -13375,7 +13538,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "масштабирование демо-среды под рабочие часы"
+  "dom_why": "масштабирование демо-среды под рабочие часы",
+  "dom_why_en": "scaling a demo environment to business hours"
  },
  {
   "id": 406,
@@ -13409,7 +13573,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "правила доступа к веб-серверам и базе"
+  "dom_why": "правила доступа к веб-серверам и базе",
+  "dom_why_en": "access rules for web servers and database"
  },
  {
   "id": 407,
@@ -13442,7 +13607,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управляемое хранилище с клиентами Lustre"
+  "dom_why": "управляемое хранилище с клиентами Lustre",
+  "dom_why_en": "managed storage with Lustre clients"
  },
  {
   "id": 408,
@@ -13610,7 +13776,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет публичного доступа ко всем бакетам"
+  "dom_why": "запрет публичного доступа ко всем бакетам",
+  "dom_why_en": "blocking public access across all buckets"
  },
  {
   "id": 413,
@@ -13642,7 +13809,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "задержки доставки писем при росте трафика"
+  "dom_why": "задержки доставки писем при росте трафика",
+  "dom_why_en": "email delivery delays as traffic grows"
  },
  {
   "id": 414,
@@ -13829,6 +13997,7 @@
   "answer": "CE",
   "disputed_alt": "AC",
   "disputed_note": "вариант E описывает несуществующую настройку: шифрование EBS по умолчанию включается в каждом аккаунте и в каждом регионе отдельно (настройка EC2), а не «в управляющем аккаунте организации» — рабочая пара это A и C",
+  "disputed_note_en": "Option E describes a setting that doesn't exist: default EBS encryption is enabled per account and per region individually (an EC2 setting), not \"at the organization's management account\" level — the correct pair is A and C",
   "dom": "SEC",
   "svc": [
    "EC2",
@@ -13935,7 +14104,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "нерегулярная нагрузка на ML-микросервисы"
+  "dom_why": "нерегулярная нагрузка на ML-микросервисы",
+  "dom_why_en": "irregular load on ML microservices"
  },
  {
   "id": 423,
@@ -14266,7 +14436,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "связка ML-моделей с BI-платформой"
+  "dom_why": "связка ML-моделей с BI-платформой",
+  "dom_why_en": "connecting ML models to a BI platform"
  },
  {
   "id": 433,
@@ -14299,7 +14470,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет изменения тегов через SCP"
+  "dom_why": "запрет изменения тегов через SCP",
+  "dom_why_en": "blocking tag changes via SCP"
  },
  {
   "id": 434,
@@ -14336,7 +14508,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запуск в другом регионе с минимальным простоем"
+  "dom_why": "запуск в другом регионе с минимальным простоем",
+  "dom_why_en": "failover to another region with minimal downtime"
  },
  {
   "id": 435,
@@ -14494,7 +14667,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "нехватка адресов в VPC"
+  "dom_why": "нехватка адресов в VPC",
+  "dom_why_en": "running out of IP addresses in a VPC"
  },
  {
   "id": 440,
@@ -14695,7 +14869,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос 700 ТБ без остановки доступа"
+  "dom_why": "перенос 700 ТБ без остановки доступа",
+  "dom_why_en": "transferring 700 TB without stopping access"
  },
  {
   "id": 446,
@@ -14750,6 +14925,7 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "examtopics t1 q447 — у CloudFront нет собственных health checks; Route 53 health checks + active-active failover это штатная схема для multi-region API Gateway/Lambda (AWS Compute Blog)",
+  "fix_note_en": "examtopics t1 q447 — CloudFront has no health checks of its own; Route 53 health checks with active-active failover is the standard pattern for multi-region API Gateway/Lambda setups (AWS Compute Blog)",
   "dom": "RES",
   "svc": [
    "Lambda",
@@ -14901,7 +15077,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "разделение ответственности между AWS и клиентом"
+  "dom_why": "разделение ответственности между AWS и клиентом",
+  "dom_why_en": "shared responsibility between AWS and the customer"
  },
  {
   "id": 452,
@@ -14935,7 +15112,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "редкая короткая задача вместо постоянного инстанса"
+  "dom_why": "редкая короткая задача вместо постоянного инстанса",
+  "dom_why_en": "infrequent short job instead of an always-on instance"
  },
  {
   "id": 453,
@@ -14997,7 +15175,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "инвентаризация ресурсов по аккаунтам"
+  "dom_why": "инвентаризация ресурсов по аккаунтам",
+  "dom_why_en": "inventorying resources across accounts"
  },
  {
   "id": 455,
@@ -15142,7 +15321,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "подбор вычислений и реляционного хранилища"
+  "dom_why": "подбор вычислений и реляционного хранилища",
+  "dom_why_en": "choosing compute and relational storage"
  },
  {
   "id": 459,
@@ -15339,7 +15519,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "устранение единой точки отказа базы"
+  "dom_why": "устранение единой точки отказа базы",
+  "dom_why_en": "eliminating a single point of failure for the database"
  },
  {
   "id": 465,
@@ -15370,7 +15551,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "одновременная запись на тома нескольких инстансов"
+  "dom_why": "одновременная запись на тома нескольких инстансов",
+  "dom_why_en": "concurrent writes to volumes from multiple instances"
  },
  {
   "id": 466,
@@ -15464,7 +15646,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ API к контейнерам в приватных подсетях"
+  "dom_why": "доступ API к контейнерам в приватных подсетях",
+  "dom_why_en": "API access to containers in private subnets"
  },
  {
   "id": 469,
@@ -15494,7 +15677,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "непредсказуемый профиль доступа к объектам"
+  "dom_why": "непредсказуемый профиль доступа к объектам",
+  "dom_why_en": "unpredictable object access pattern"
  },
  {
   "id": 470,
@@ -15524,7 +15708,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет входящих соединений к IPv6-инстансам"
+  "dom_why": "запрет входящих соединений к IPv6-инстансам",
+  "dom_why_en": "blocking inbound connections to IPv6 instances"
  },
  {
   "id": 471,
@@ -15618,7 +15803,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "рост расходов на раздачу статики"
+  "dom_why": "рост расходов на раздачу статики",
+  "dom_why_en": "rising cost of serving static content"
  },
  {
   "id": 474,
@@ -15651,7 +15837,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "связность VPC между регионами"
+  "dom_why": "связность VPC между регионами",
+  "dom_why_en": "VPC connectivity across regions"
  },
  {
   "id": 475,
@@ -15816,7 +16003,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "воспроизводимое развёртывание среды в двух зонах"
+  "dom_why": "воспроизводимое развёртывание среды в двух зонах",
+  "dom_why_en": "repeatable environment deployment across two AZs"
  },
  {
   "id": 480,
@@ -15904,6 +16092,7 @@
   "answer": "B",
   "disputed_alt": "A",
   "disputed_note": "100 ГБ по каналу 100 Мбит/с уходят примерно за 2,5 часа обычным aws s3 sync поверх TLS, без единого развёрнутого компонента; DataSync требует поднять и обслуживать агента, зато сам проверяет целостность и повторяет сбойные передачи — «least operational overhead» читается двояко",
+  "disputed_note_en": "100 GB over a 100 Mbps link takes roughly 2.5 hours with a plain aws s3 sync over TLS, with no deployed component at all; DataSync requires standing up and maintaining an agent, but in return it verifies integrity and retries failed transfers on its own — \"least operational overhead\" cuts both ways here",
   "dom": "SEC",
   "svc": [
    "S3",
@@ -16044,7 +16233,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "упрощение развёртывания и снижение расходов"
+  "dom_why": "упрощение развёртывания и снижение расходов",
+  "dom_why_en": "simplified deployment and lower costs"
  },
  {
   "id": 487,
@@ -16273,7 +16463,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "распознавание речи, перевод и анализ тональности"
+  "dom_why": "распознавание речи, перевод и анализ тональности",
+  "dom_why_en": "speech recognition, translation, and sentiment analysis"
  },
  {
   "id": 494,
@@ -16501,7 +16692,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "перенос файловых серверов с сохранением прав"
+  "dom_why": "перенос файловых серверов с сохранением прав",
+  "dom_why_en": "migrating file servers while preserving permissions"
  },
  {
   "id": 501,
@@ -16637,7 +16829,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "связность VPC сотен аккаунтов"
+  "dom_why": "связность VPC сотен аккаунтов",
+  "dom_why_en": "VPC connectivity across hundreds of accounts"
  },
  {
   "id": 505,
@@ -16699,7 +16892,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "пиковая нагрузка на загрузку фотографий"
+  "dom_why": "пиковая нагрузка на загрузку фотографий",
+  "dom_why_en": "peak load on photo uploads"
  },
  {
   "id": 507,
@@ -16852,7 +17046,9 @@
   "answer": "C",
   "disputed_alt": "B",
   "disputed_note": "если читать вариант C буквально (обычный provisioned-кластер Aurora), то дешевле окажется RDS Single-AZ с остановкой на ночь: среда используется 4 часа из 8-часового дня",
+  "disputed_note_en": "Read literally, option C (a regular provisioned Aurora cluster) would actually be more expensive than an RDS Single-AZ instance stopped overnight, since the environment is used only 4 hours out of an 8-hour day",
   "note": "дефект дампа: вариант C напечатан как «Aurora On-Demand PostgreSQL-Compatible» и в таком виде дублирует вариант A; по смыслу задачи там должен быть Aurora Serverless — только он масштабируется вниз в простое",
+  "note_en": "Dump defect: option C is printed as \"Aurora On-Demand PostgreSQL-Compatible,\" which duplicates option A as written; based on the intent of the question it should read Aurora Serverless — only that option scales down during idle periods",
   "dom": "COST",
   "svc": [
    "S3",
@@ -16994,13 +17190,15 @@
   "answer": "ABC",
   "answer_original": "BCE",
   "fix_note": "вариант E («глобальное масштабирование на петабайты и десятки миллионов запросов в минуту») описывает Amazon DynamoDB, а не Redshift: кластер Redshift региональный и не рассчитан на такой темп обращений. Формулировка варианта A взята из описания Redshift Data API, который существует именно для обращения к данным из обычных, контейнеризованных и событийных приложений, поэтому верная тройка — A, B, C",
+  "fix_note_en": "Option E (\"global scaling to petabytes and tens of millions of requests per minute\") describes Amazon DynamoDB, not Redshift: a Redshift cluster is regional and isn't built for that request rate. The wording of option A is taken from the description of the Redshift Data API, which exists precisely to let regular, containerized, and event-driven applications access the data — so the correct trio is A, B, C",
   "dom": "PERF",
   "svc": [
    "Redshift"
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "применимость аналитического хранилища"
+  "dom_why": "применимость аналитического хранилища",
+  "dom_why_en": "suitability of an analytics warehouse"
  },
  {
   "id": 516,
@@ -17067,7 +17265,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "архивирование журналов сеансов доступа"
+  "dom_why": "архивирование журналов сеансов доступа",
+  "dom_why_en": "archiving access session logs"
  },
  {
   "id": 518,
@@ -17097,7 +17296,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "рост дискового пространства без простоя"
+  "dom_why": "рост дискового пространства без простоя",
+  "dom_why_en": "growing disk space without downtime"
  },
  {
   "id": 519,
@@ -17129,7 +17329,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "централизованная выдача одобренных решений"
+  "dom_why": "централизованная выдача одобренных решений",
+  "dom_why_en": "centralized delivery of approved solutions"
  },
  {
   "id": 520,
@@ -17228,7 +17429,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "масштабирование кластера под неравномерную нагрузку"
+  "dom_why": "масштабирование кластера под неравномерную нагрузку",
+  "dom_why_en": "scaling a cluster for uneven load"
  },
  {
   "id": 523,
@@ -17254,6 +17456,7 @@
   "answer": "B",
   "disputed_alt": "A",
   "disputed_note": "pipeline resolvers в AWS AppSync существуют ровно для того, чтобы одним запросом собрать данные из нескольких источников, включая несколько таблиц DynamoDB, и не требуют собственного кода на edge. Ключ B защищают тем, что обработка на edge-локации вообще не касается существующего приложения и потому не влияет на его базовую производительность",
+  "disputed_note_en": "Pipeline resolvers in AWS AppSync exist precisely to assemble data from multiple sources — including several DynamoDB tables — in a single request, and they require no custom code at the edge. The case for key B is that edge-location processing doesn't touch the existing application at all and therefore has no effect on its baseline performance",
   "dom": "PERF",
   "svc": [
    "Lambda",
@@ -17264,7 +17467,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "чтение из нескольких таблиц без просадки"
+  "dom_why": "чтение из нескольких таблиц без просадки",
+  "dom_why_en": "reading from multiple tables without a performance drop"
  },
  {
   "id": 524,
@@ -17329,7 +17533,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "программный доступ к расходам и прогнозу"
+  "dom_why": "программный доступ к расходам и прогнозу",
+  "dom_why_en": "programmatic access to costs and forecasts"
  },
  {
   "id": 526,
@@ -17430,7 +17635,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "обработка файлов сразу после поступления"
+  "dom_why": "обработка файлов сразу после поступления",
+  "dom_why_en": "processing files immediately upon arrival"
  },
  {
   "id": 529,
@@ -17530,7 +17736,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "публикация функции для внешнего вызова"
+  "dom_why": "публикация функции для внешнего вызова",
+  "dom_why_en": "exposing a function for external invocation"
  },
  {
   "id": 532,
@@ -17691,6 +17898,7 @@
   "answer": "C",
   "disputed_alt": "D",
   "disputed_note": "Multi-AZ DB cluster с двумя readable standby (D) даёт и HA, и read-эндпоинты тремя инстансами против четырёх в варианте C",
+  "disputed_note_en": "A Multi-AZ DB cluster with two readable standbys (D) delivers both HA and read endpoints using three instances, versus four in option C",
   "dom": "COST",
   "svc": [
    "RDS"
@@ -17731,7 +17939,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступность в трёх зонах и вынос состояния сессий"
+  "dom_why": "доступность в трёх зонах и вынос состояния сессий",
+  "dom_why_en": "three-AZ availability with externalized session state"
  },
  {
   "id": 538,
@@ -17761,7 +17970,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет просмотра контента вне стран запуска"
+  "dom_why": "запрет просмотра контента вне стран запуска",
+  "dom_why_en": "blocking content viewing outside launch countries"
  },
  {
   "id": 539,
@@ -17817,6 +18027,7 @@
   ],
   "answer": "C",
   "note": "неточность вопроса: Multi-AZ DB cluster deployment в Amazon RDS поддерживается только для MySQL и PostgreSQL, для Oracle такого режима нет. Вариант C всё равно остаётся лучшим из предложенных, потому что только он даёт и высокую доступность, и отдельный инстанс для отчётности",
+  "note_en": "Question inaccuracy: Multi-AZ DB cluster deployment in Amazon RDS is only supported for MySQL and PostgreSQL — no such mode exists for Oracle. Option C is still the best of the choices given, since it's the only one that provides both high availability and a separate instance for reporting",
   "dom": "RES",
   "svc": [
    "RDS",
@@ -17825,7 +18036,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "повышение доступности и вынос отчётности"
+  "dom_why": "повышение доступности и вынос отчётности",
+  "dom_why_en": "improving availability and offloading reporting"
  },
  {
   "id": 541,
@@ -17900,7 +18112,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ к контенту только премиум-клиентам"
+  "dom_why": "доступ к контенту только премиум-клиентам",
+  "dom_why_en": "content access restricted to premium customers"
  },
  {
   "id": 543,
@@ -18091,7 +18304,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ограничение набора сервисов по аккаунтам"
+  "dom_why": "ограничение набора сервисов по аккаунтам",
+  "dom_why_en": "restricting the set of services per account"
  },
  {
   "id": 549,
@@ -18122,7 +18336,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "безопасный исходящий доступ базы к внешнему источнику"
+  "dom_why": "безопасный исходящий доступ базы к внешнему источнику",
+  "dom_why_en": "secure outbound database access to an external source"
  },
  {
   "id": 550,
@@ -18277,7 +18492,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "подбор типа инстанса под память SAP"
+  "dom_why": "подбор типа инстанса под память SAP",
+  "dom_why_en": "choosing an instance type for SAP memory requirements"
  },
  {
   "id": 555,
@@ -18377,7 +18593,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "параллельная обработка и обогащение данных"
+  "dom_why": "параллельная обработка и обогащение данных",
+  "dom_why_en": "parallel processing and data enrichment"
  },
  {
   "id": 558,
@@ -18477,7 +18694,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "отслеживание изменений структуры организации"
+  "dom_why": "отслеживание изменений структуры организации",
+  "dom_why_en": "tracking organizational structure changes"
  },
  {
   "id": 561,
@@ -18575,7 +18793,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "централизованный обзор кластеров и нагрузок"
+  "dom_why": "централизованный обзор кластеров и нагрузок",
+  "dom_why_en": "centralized view of clusters and workloads"
  },
  {
   "id": 564,
@@ -18644,7 +18863,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "совместимость и автоматическое масштабирование базы"
+  "dom_why": "совместимость и автоматическое масштабирование базы",
+  "dom_why_en": "database compatibility and automatic scaling"
  },
  {
   "id": 566,
@@ -18714,7 +18934,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "расширяемая слабосвязанная схема приёма данных"
+  "dom_why": "расширяемая слабосвязанная схема приёма данных",
+  "dom_why_en": "extensible loosely coupled data ingestion architecture"
  },
  {
   "id": 568,
@@ -18780,7 +19001,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "проверка срабатывания правила и вызова цели"
+  "dom_why": "проверка срабатывания правила и вызова цели",
+  "dom_why_en": "verifying rule triggering and target invocation"
  },
  {
   "id": 570,
@@ -18812,7 +19034,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "подъём ёмкости по известному расписанию"
+  "dom_why": "подъём ёмкости по известному расписанию",
+  "dom_why_en": "scaling capacity on a known schedule"
  },
  {
   "id": 571,
@@ -18838,6 +19061,7 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "ACM не выпускает сертификаты, подписанные сторонним CA — только импортирует их; варианты B и D технически невозможны. examtopics t1 q571",
+  "fix_note_en": "ACM doesn't issue certificates signed by a third-party CA — it only imports them; options B and D are technically impossible. examtopics t1 q571",
   "dom": "SEC",
   "svc": [
    "Lambda",
@@ -18878,7 +19102,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управляемая база с автоскейлингом"
+  "dom_why": "управляемая база с автоскейлингом",
+  "dom_why_en": "managed database with autoscaling"
  },
  {
   "id": 573,
@@ -18933,6 +19158,7 @@
   "answer": "B",
   "disputed_alt": "A",
   "disputed_note": "2 часа работы в неделю: Aurora Serverless v2 масштабируется вниз, но не до нуля; provisioned-кластер можно останавливать максимум на 7 суток — оба варианта спорны",
+  "disputed_note_en": "2 hours of use per week: Aurora Serverless v2 scales down but not to zero; a provisioned cluster can be stopped for at most 7 days — both options are debatable",
   "dom": "COST",
   "svc": [
    "EC2",
@@ -19187,7 +19413,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "минимизация времени загрузки сайта"
+  "dom_why": "минимизация времени загрузки сайта",
+  "dom_why_en": "minimizing site load time"
  },
  {
   "id": 583,
@@ -19248,7 +19475,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "узлы не должны делить одно железо"
+  "dom_why": "узлы не должны делить одно железо",
+  "dom_why_en": "nodes must not share the same hardware"
  },
  {
   "id": 585,
@@ -19307,7 +19535,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "выделение отдельной организации для подразделения"
+  "dom_why": "выделение отдельной организации для подразделения",
+  "dom_why_en": "carving out a separate organization for a business unit"
  },
  {
   "id": 587,
@@ -19463,6 +19692,7 @@
   "answer": "D",
   "disputed_alt": "B",
   "disputed_note": "для маршрутизации к микросервисам в EKS штатное решение это ALB через AWS Load Balancer Controller; API Gateway обычно дороже",
+  "disputed_note_en": "The standard way to route to microservices in EKS is ALB via the AWS Load Balancer Controller; API Gateway is generally more expensive",
   "dom": "COST",
   "svc": [
    "Lambda",
@@ -19565,7 +19795,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "долгий запуск и прогрев приложения"
+  "dom_why": "долгий запуск и прогрев приложения",
+  "dom_why_en": "long application startup and warm-up"
  },
  {
   "id": 595,
@@ -19736,6 +19967,7 @@
   "answer": "ACF",
   "answer_original": "ACE",
   "fix_note": "в модели разделённой ответственности AWS Outposts физическое обслуживание компонентов стойки (вариант E) и доступность самой инфраструктуры Outposts выполняет AWS; на стороне заказчика — питание и связность, физическая охрана помещения и запас ёмкости на случай отказа сервера, то есть A, C и F",
+  "fix_note_en": "Under the AWS shared responsibility model, physical maintenance of the rack's components (option E) and the availability of the Outposts infrastructure itself are AWS's responsibility; on the customer's side are power and connectivity, physical security of the site, and keeping spare capacity on hand in case a server fails — that is, A, C, and F",
   "dom": "SEC",
   "svc": [
    "RDS",
@@ -19842,7 +20074,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "восстановление инстансов после аварии"
+  "dom_why": "восстановление инстансов после аварии",
+  "dom_why_en": "recovering instances after a disaster"
  },
  {
   "id": 603,
@@ -19875,7 +20108,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "параллельная обработка тысяч объектов"
+  "dom_why": "параллельная обработка тысяч объектов",
+  "dom_why_en": "parallel processing of thousands of objects"
  },
  {
   "id": 604,
@@ -19907,7 +20141,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос 10 ПБ за 6 недель"
+  "dom_why": "перенос 10 ПБ за 6 недель",
+  "dom_why_en": "transferring 10 PB in 6 weeks"
  },
  {
   "id": 605,
@@ -20034,7 +20269,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ только с зарегистрированных адресов"
+  "dom_why": "доступ только с зарегистрированных адресов",
+  "dom_why_en": "access limited to registered addresses"
  },
  {
   "id": 609,
@@ -20266,7 +20502,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "сбор метрик и логов микросервисов"
+  "dom_why": "сбор метрик и логов микросервисов",
+  "dom_why_en": "collecting microservices metrics and logs"
  },
  {
   "id": 616,
@@ -20303,7 +20540,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "непрерывный мониторинг вредоносной активности"
+  "dom_why": "непрерывный мониторинг вредоносной активности",
+  "dom_why_en": "continuous monitoring for malicious activity"
  },
  {
   "id": 617,
@@ -20462,7 +20700,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "копия новых объектов в другом регионе"
+  "dom_why": "копия новых объектов в другом регионе",
+  "dom_why_en": "copying new objects to another region"
  },
  {
   "id": 622,
@@ -20492,6 +20731,7 @@
   "answer": "CD",
   "disputed_alt": "AD",
   "disputed_note": "при скачке с тысяч до миллионов пользователей on-demand capacity (A) масштабируется мгновенно, auto scaling провиженинга отстаёт от резких всплесков",
+  "disputed_note_en": "When jumping from thousands to millions of users, on-demand capacity (A) scales instantly, while auto scaling provisioning lags behind sharp spikes",
   "dom": "PERF",
   "svc": [
    "S3",
@@ -20504,7 +20744,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "резкий дневной пик и гибкая схема данных"
+  "dom_why": "резкий дневной пик и гибкая схема данных",
+  "dom_why_en": "sharp daily spike and flexible data schema"
  },
  {
   "id": 623,
@@ -20537,7 +20778,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "защита REST API от инъекций и XSS"
+  "dom_why": "защита REST API от инъекций и XSS",
+  "dom_why_en": "protecting a REST API from injection and XSS"
  },
  {
   "id": 624,
@@ -20568,7 +20810,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "единая учётная запись для AWS и локальных ресурсов"
+  "dom_why": "единая учётная запись для AWS и локальных ресурсов",
+  "dom_why_en": "unified account for AWS and on-premises resources"
  },
  {
   "id": 625,
@@ -20601,7 +20844,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "маршрутизация пользователей к нужному контенту"
+  "dom_why": "маршрутизация пользователей к нужному контенту",
+  "dom_why_en": "routing users to the right content"
  },
  {
   "id": 626,
@@ -20633,7 +20877,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос с автоматической проверкой целостности"
+  "dom_why": "перенос с автоматической проверкой целостности",
+  "dom_why_en": "migration with automatic integrity verification"
  },
  {
   "id": 627,
@@ -20666,7 +20911,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос DNS с максимальной доступностью"
+  "dom_why": "перенос DNS с максимальной доступностью",
+  "dom_why_en": "DNS migration with maximum availability"
  },
  {
   "id": 628,
@@ -20791,7 +21037,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "графовая модель связей и рекомендации"
+  "dom_why": "графовая модель связей и рекомендации",
+  "dom_why_en": "graph model of relationships and recommendations"
  },
  {
   "id": 632,
@@ -20824,7 +21071,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "общий растущий том для инстансов в разных зонах"
+  "dom_why": "общий растущий том для инстансов в разных зонах",
+  "dom_why_en": "shared growing volume for instances across AZs"
  },
  {
   "id": 633,
@@ -20885,7 +21133,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "безопасная выдача данных внешним агентствам"
+  "dom_why": "безопасная выдача данных внешним агентствам",
+  "dom_why_en": "secure data sharing with external agencies"
  },
  {
   "id": 635,
@@ -20954,7 +21203,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "масштабируемая обработка событий S3"
+  "dom_why": "масштабируемая обработка событий S3",
+  "dom_why_en": "scalable processing of S3 events"
  },
  {
   "id": 637,
@@ -20994,7 +21244,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "непредсказуемый скачок запросов и рост данных"
+  "dom_why": "непредсказуемый скачок запросов и рост данных",
+  "dom_why_en": "unpredictable request spikes and data growth"
  },
  {
   "id": 638,
@@ -21162,7 +21413,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "балансировка UDP с автоскейлингом"
+  "dom_why": "балансировка UDP с автоскейлингом",
+  "dom_why_en": "UDP load balancing with autoscaling"
  },
  {
   "id": 643,
@@ -21315,6 +21567,7 @@
   "answer": "A",
   "answer_original": "C",
   "fix_note": "VoIP это UDP — CloudFront работает только с HTTP/HTTPS. Global Accelerator прямо назван AWS как решение для VoIP и быстрого межрегионального failover (GA FAQ, examtopics t1 q647)",
+  "fix_note_en": "VoIP runs over UDP — CloudFront only works with HTTP/HTTPS. Global Accelerator is explicitly named by AWS as the solution for VoIP and fast cross-region failover (GA FAQ, examtopics t1 q647)",
   "dom": "RES",
   "svc": [
    "CloudFront",
@@ -21416,7 +21669,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управляемая СУБД с отчётностью"
+  "dom_why": "управляемая СУБД с отчётностью",
+  "dom_why_en": "managed database with reporting"
  },
  {
   "id": 651,
@@ -21509,7 +21763,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "теги центра затрат на все создаваемые ресурсы"
+  "dom_why": "теги центра затрат на все создаваемые ресурсы",
+  "dom_why_en": "cost center tags on all created resources"
  },
  {
   "id": 654,
@@ -21775,7 +22030,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "эффективное масштабирование базы под пики"
+  "dom_why": "эффективное масштабирование базы под пики",
+  "dom_why_en": "efficient database scaling for peaks"
  },
  {
   "id": 662,
@@ -21865,6 +22121,7 @@
   "answer": "A",
   "answer_original": "D",
   "fix_note": "predictive scaling обучается на повторяющихся суточных и недельных паттернах, а всплеск дважды в месяц таким паттерном не является — прогноз его не поймает. Мгновенный рост CPU в 10 раз при низкой базовой нагрузке закрывают burstable-инстансы в режиме unlimited, а реагировать на нерегулярный всплеск нужно по факту запросов, а не по прогнозу",
+  "fix_note_en": "Predictive scaling learns from recurring daily and weekly patterns, and a spike that occurs twice a month doesn't qualify as such a pattern — the forecast won't catch it. An instant 10x jump in CPU from a low baseline load is handled by burstable instances in unlimited mode, and an irregular spike needs to be handled reactively, based on actual requests, rather than by forecast",
   "dom": "PERF",
   "svc": [
    "Elastic Beanstalk"
@@ -22095,7 +22352,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "обнаружение аномальных расходов и уведомления"
+  "dom_why": "обнаружение аномальных расходов и уведомления",
+  "dom_why_en": "detecting anomalous spend and notifications"
  },
  {
   "id": 672,
@@ -22129,7 +22387,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "быстрый анализ кликстрима в S3"
+  "dom_why": "быстрый анализ кликстрима в S3",
+  "dom_why_en": "fast clickstream analysis in S3"
  },
  {
   "id": 673,
@@ -22161,7 +22420,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "удешевление хранения файлов после 7 дней"
+  "dom_why": "удешевление хранения файлов после 7 дней",
+  "dom_why_en": "cheaper storage for files after 7 days"
  },
  {
   "id": 674,
@@ -22397,7 +22657,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "непрерывное копирование изменившихся файлов"
+  "dom_why": "непрерывное копирование изменившихся файлов",
+  "dom_why_en": "continuous copying of changed files"
  },
  {
   "id": 681,
@@ -22564,7 +22825,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "предсказуемая работа базы при всплесках вызовов"
+  "dom_why": "предсказуемая работа базы при всплесках вызовов",
+  "dom_why_en": "predictable database performance during call bursts"
  },
  {
   "id": 686,
@@ -22597,7 +22859,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "подключение площадок к растущему числу VPC"
+  "dom_why": "подключение площадок к растущему числу VPC",
+  "dom_why_en": "connecting sites to a growing number of VPCs"
  },
  {
   "id": 687,
@@ -22627,6 +22890,7 @@
   "answer": "DE",
   "answer_original": "BD",
   "fix_note": "ключ смешивает обучение в SageMaker (B) с предсказанием через Forecast-предиктор (D) — несовместимая пара; при отсутствии ML-опыта связка DE (обучить Forecast-предиктор + Lambda с этим предиктором) согласована",
+  "fix_note_en": "The key mixes training in SageMaker (B) with prediction via a Forecast predictor (D) — an incompatible pairing; given no ML experience, the consistent combination is DE (train a Forecast predictor + a Lambda function that uses that predictor)",
   "dom": "PERF",
   "svc": [
    "S3",
@@ -22635,7 +22899,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "прогнозирование управляемым ML-сервисом"
+  "dom_why": "прогнозирование управляемым ML-сервисом",
+  "dom_why_en": "forecasting with a managed ML service"
  },
  {
   "id": 688,
@@ -22776,7 +23041,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "общий контент со строгой согласованностью"
+  "dom_why": "общий контент со строгой согласованностью",
+  "dom_why_en": "shared content with strong consistency"
  },
  {
   "id": 692,
@@ -22802,6 +23068,7 @@
   "answer": "B",
   "disputed_alt": "A",
   "disputed_note": "\"MOST high-performing\" это latency routing policy (A); geolocation маршрутизирует по географии пользователя, а не по фактической задержке",
+  "disputed_note_en": "\"MOST high-performing\" points to the latency routing policy (A); geolocation routes based on the user's geography, not actual latency",
   "dom": "PERF",
   "svc": [
    "Route 53",
@@ -22809,7 +23076,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "максимальная производительность для трёх регионов"
+  "dom_why": "максимальная производительность для трёх регионов",
+  "dom_why_en": "maximum performance across three regions"
  },
  {
   "id": 693,
@@ -22911,7 +23179,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "наблюдаемость микросервисов для поиска проблем"
+  "dom_why": "наблюдаемость микросервисов для поиска проблем",
+  "dom_why_en": "microservices observability for troubleshooting"
  },
  {
   "id": 696,
@@ -22975,7 +23244,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "публикация приложения при запрете публичных инстансов"
+  "dom_why": "публикация приложения при запрете публичных инстансов",
+  "dom_why_en": "publishing an application when public instances are prohibited"
  },
  {
   "id": 698,
@@ -23044,7 +23314,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управляемые контейнеры с постоянным томом"
+  "dom_why": "управляемые контейнеры с постоянным томом",
+  "dom_why_en": "managed containers with a persistent volume"
  },
  {
   "id": 700,
@@ -23140,6 +23411,7 @@
   "answer": "B",
   "answer_original": "D",
   "fix_note": "задания импорта AWS Snow Family выгружают данные только в Amazon S3 — прямого импорта в файловую систему FSx for Lustre не существует; штатный путь это бакет S3, связанный с FSx for Lustre как data repository",
+  "fix_note_en": "AWS Snow Family import jobs only unload data into Amazon S3 — there's no such thing as direct import into an FSx for Lustre file system; the standard path is an S3 bucket linked to FSx for Lustre as a data repository",
   "dom": "PERF",
   "svc": [
    "S3",
@@ -23250,7 +23522,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "репликация изменений во время миграции"
+  "dom_why": "репликация изменений во время миграции",
+  "dom_why_en": "replicating changes during migration"
  },
  {
   "id": 706,
@@ -23281,7 +23554,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "скрипт мешает критичному приложению"
+  "dom_why": "скрипт мешает критичному приложению",
+  "dom_why_en": "a script interferes with a critical application"
  },
  {
   "id": 707,
@@ -23316,7 +23590,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "видимость аномальных обращений к приложению"
+  "dom_why": "видимость аномальных обращений к приложению",
+  "dom_why_en": "visibility into anomalous application requests"
  },
  {
   "id": 708,
@@ -23346,7 +23621,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "исходящий доступ приватных подсетей"
+  "dom_why": "исходящий доступ приватных подсетей",
+  "dom_why_en": "outbound access for private subnets"
  },
  {
   "id": 709,
@@ -23668,7 +23944,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "масштабируемый Hadoop с обработкой на площадке"
+  "dom_why": "масштабируемый Hadoop с обработкой на площадке",
+  "dom_why_en": "scalable Hadoop with on-premises processing"
  },
  {
   "id": 719,
@@ -23703,7 +23980,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ по SMB и NFS к одним данным"
+  "dom_why": "доступ по SMB и NFS к одним данным",
+  "dom_why_en": "SMB and NFS access to the same data"
  },
  {
   "id": 720,
@@ -23737,7 +24015,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "распил монолита на масштабируемые сервисы"
+  "dom_why": "распил монолита на масштабируемые сервисы",
+  "dom_why_en": "splitting a monolith into scalable services"
  },
  {
   "id": 721,
@@ -23763,6 +24042,7 @@
   "answer": "D",
   "answer_original": "C",
   "fix_note": "условие требует бессерверного решения с поддержкой Python, автомасштабированием и минимумом инфраструктуры и сопровождения; вариант C (самоуправляемые инстансы EC2 в EKS) — прямо противоположное, максимум эксплуатации. Подходит только AWS Lambda",
+  "fix_note_en": "The requirement calls for a serverless solution with Python support, autoscaling, and minimal infrastructure and maintenance; option C (self-managed EC2 instances in EKS) is the exact opposite — maximum operational overhead. Only AWS Lambda fits",
   "dom": "PERF",
   "svc": [
    "EC2",
@@ -23773,7 +24053,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "бессерверный микросервис с автоскейлингом"
+  "dom_why": "бессерверный микросервис с автоскейлингом",
+  "dom_why_en": "serverless microservice with autoscaling"
  },
  {
   "id": 722,
@@ -23805,7 +24086,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "централизованная маршрутизация 30 VPC и DX"
+  "dom_why": "централизованная маршрутизация 30 VPC и DX",
+  "dom_why_en": "centralized routing for 30 VPCs and DX"
  },
  {
   "id": 723,
@@ -23870,7 +24152,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "узлы кластера не добавляются под нагрузку"
+  "dom_why": "узлы кластера не добавляются под нагрузку",
+  "dom_why_en": "cluster nodes not added under load"
  },
  {
   "id": 725,
@@ -23933,7 +24216,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "частые обновления и чтение координат"
+  "dom_why": "частые обновления и чтение координат",
+  "dom_why_en": "frequent updates and reads of location data"
  },
  {
   "id": 727,
@@ -23966,7 +24250,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "защита таблицы от случайного удаления"
+  "dom_why": "защита таблицы от случайного удаления",
+  "dom_why_en": "protecting a table from accidental deletion"
  },
  {
   "id": 728,
@@ -23998,7 +24283,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "замена локального хранилища при экономии на полосе"
+  "dom_why": "замена локального хранилища при экономии на полосе",
+  "dom_why_en": "replacing on-premises storage while saving on bandwidth"
  },
  {
   "id": 729,
@@ -24030,7 +24316,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "прогноз по истории плюс реакция на факт"
+  "dom_why": "прогноз по истории плюс реакция на факт",
+  "dom_why_en": "forecast from history plus reaction to actuals"
  },
  {
   "id": 730,
@@ -24158,7 +24445,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "обнаружение подозрительных попыток входа в БД"
+  "dom_why": "обнаружение подозрительных попыток входа в БД",
+  "dom_why_en": "detecting suspicious database login attempts"
  },
  {
   "id": 734,
@@ -24190,7 +24478,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "связность двух регионов и двух дата-центров"
+  "dom_why": "связность двух регионов и двух дата-центров",
+  "dom_why_en": "connectivity between two regions and two data centers"
  },
  {
   "id": 735,
@@ -24354,7 +24643,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "рассылка с фильтрацией нужным обработчикам"
+  "dom_why": "рассылка с фильтрацией нужным обработчикам",
+  "dom_why_en": "filtered fan-out to the right consumers"
  },
  {
   "id": 740,
@@ -24505,6 +24795,7 @@
   "answer": "A",
   "answer_original": "C",
   "fix_note": "NLB поддерживает Elastic IP на AZ, ALB — нет; вариант C (A-запись на Elastic IP) не описывает работоспособную конструкцию перед ELB. examtopics t1 q744",
+  "fix_note_en": "NLB supports an Elastic IP per AZ, ALB does not; option C (an A record pointing to an Elastic IP) doesn't describe a working setup in front of the ELB. examtopics t1 q744",
   "dom": "SEC",
   "svc": [
    "EC2",
@@ -24609,7 +24900,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос SMB-данных без правок приложений"
+  "dom_why": "перенос SMB-данных без правок приложений",
+  "dom_why_en": "migrating SMB data without application changes"
  },
  {
   "id": 748,
@@ -24642,7 +24934,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "наблюдаемость по нескольким аккаунтам"
+  "dom_why": "наблюдаемость по нескольким аккаунтам",
+  "dom_why_en": "observability across multiple accounts"
  },
  {
   "id": 749,
@@ -24771,7 +25064,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "гарантия доставки ровно один раз"
+  "dom_why": "гарантия доставки ровно один раз",
+  "dom_why_en": "exactly-once delivery guarantee"
  },
  {
   "id": 753,
@@ -24831,6 +25125,7 @@
   "answer": "D",
   "disputed_alt": "B",
   "disputed_note": "требование static IP addresses выполняет Global Accelerator (B), у CloudFront статических IP нет; при этом WAF в варианте B на ALB работает корректно",
+  "disputed_note_en": "The static IP addresses requirement is met by Global Accelerator (B) — CloudFront has no static IPs; meanwhile the WAF in option B, attached to the ALB, works correctly",
   "dom": "PERF",
   "svc": [
    "EC2",
@@ -24842,7 +25137,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступность и скорость глобального приложения"
+  "dom_why": "доступность и скорость глобального приложения",
+  "dom_why_en": "availability and speed of a global application"
  },
  {
   "id": 755,
@@ -25002,7 +25298,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "удешевление хранения по возрасту фильмов"
+  "dom_why": "удешевление хранения по возрасту фильмов",
+  "dom_why_en": "cheaper storage based on movie age"
  },
  {
   "id": 760,
@@ -25038,7 +25335,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "бессерверный контейнер с большим временным диском"
+  "dom_why": "бессерверный контейнер с большим временным диском",
+  "dom_why_en": "serverless container with large ephemeral storage"
  },
  {
   "id": 761,
@@ -25099,7 +25397,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "быстрое восстановление удалённых образов"
+  "dom_why": "быстрое восстановление удалённых образов",
+  "dom_why_en": "fast recovery of deleted images"
  },
  {
   "id": 763,
@@ -25193,7 +25492,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "кросс-аккаунтный доступ к очереди"
+  "dom_why": "кросс-аккаунтный доступ к очереди",
+  "dom_why_en": "cross-account access to a queue"
  },
  {
   "id": 766,
@@ -25258,7 +25558,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "cached volumes: подмножество данных доступно локально"
+  "dom_why": "cached volumes: подмножество данных доступно локально",
+  "dom_why_en": "cached volumes: subset of data available locally"
  },
  {
   "id": 768,
@@ -25292,7 +25593,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "откат таблицы на любой момент суток"
+  "dom_why": "откат таблицы на любой момент суток",
+  "dom_why_en": "point-in-time table rollback within the same day"
  },
  {
   "id": 769,
@@ -25389,7 +25691,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "захват изменений источника во время миграции"
+  "dom_why": "захват изменений источника во время миграции",
+  "dom_why_en": "capturing source changes during migration"
  },
  {
   "id": 772,
@@ -25428,7 +25731,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "управляемые контейнеры с масштабированием по сервисам"
+  "dom_why": "управляемые контейнеры с масштабированием по сервисам",
+  "dom_why_en": "managed containers with per-service scaling"
  },
  {
   "id": 773,
@@ -25528,7 +25832,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "межсервисное взаимодействие и обнаружение сервисов"
+  "dom_why": "межсервисное взаимодействие и обнаружение сервисов",
+  "dom_why_en": "inter-service communication and service discovery"
  },
  {
   "id": 776,
@@ -25813,7 +26118,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "оркестрация заданий с ретраями и состоянием"
+  "dom_why": "оркестрация заданий с ретраями и состоянием",
+  "dom_why_en": "job orchestration with retries and state"
  },
  {
   "id": 785,
@@ -25846,7 +26152,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "исключение повторной оплаты"
+  "dom_why": "исключение повторной оплаты",
+  "dom_why_en": "avoiding duplicate charges"
  },
  {
   "id": 786,
@@ -25877,7 +26184,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "сбор данных о нагрузке для планирования миграции"
+  "dom_why": "сбор данных о нагрузке для планирования миграции",
+  "dom_why_en": "collecting workload data for migration planning"
  },
  {
   "id": 787,
@@ -25969,6 +26277,7 @@
   "answer": "A",
   "answer_original": "D",
   "fix_note": "SCP оперирует вызовами API и условиями и не видит содержимого шаблона CloudFormation: запретить inline-политику со звёздочкой в Statement она не может. Это работа proactive controls в AWS Control Tower — проверок на базе CloudFormation Hooks, которые блокируют развёртывание до создания ресурсов",
+  "fix_note_en": "SCPs operate on API calls and conditions and can't see the contents of a CloudFormation template — they can't block an inline policy with a wildcard in its Statement. That's the job of proactive controls in AWS Control Tower — CloudFormation Hooks-based checks that block deployment before resources are created",
   "dom": "SEC",
   "svc": [
    "EC2",
@@ -26047,7 +26356,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "переменные окружения не должны быть видны"
+  "dom_why": "переменные окружения не должны быть видны",
+  "dom_why_en": "environment variables must not be visible"
  },
  {
   "id": 792,
@@ -26186,7 +26496,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "сеть и хранилище под тесно связанный HPC"
+  "dom_why": "сеть и хранилище под тесно связанный HPC",
+  "dom_why_en": "network and storage for tightly coupled HPC"
  },
  {
   "id": 796,
@@ -26220,7 +26531,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "модерация контента без обучения модели"
+  "dom_why": "модерация контента без обучения модели",
+  "dom_why_en": "content moderation without training a model"
  },
  {
   "id": 797,
@@ -26282,7 +26594,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "быстрое подключение новых партнёров к уведомлениям"
+  "dom_why": "быстрое подключение новых партнёров к уведомлениям",
+  "dom_why_en": "quickly onboarding new partners to notifications"
  },
  {
   "id": 799,
@@ -26416,7 +26729,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "подбор вычислений под валидацию и долгую обработку"
+  "dom_why": "подбор вычислений под валидацию и долгую обработку",
+  "dom_why_en": "choosing compute for validation and long-running processing"
  },
  {
   "id": 803,
@@ -26481,7 +26795,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ежедневная загрузка в MPP-хранилище и ML в SQL"
+  "dom_why": "ежедневная загрузка в MPP-хранилище и ML в SQL",
+  "dom_why_en": "daily load into an MPP warehouse and ML in SQL"
  },
  {
   "id": 805,
@@ -26607,7 +26922,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "сканирование образов контейнеров на CVE"
+  "dom_why": "сканирование образов контейнеров на CVE",
+  "dom_why_en": "scanning container images for CVEs"
  },
  {
   "id": 809,
@@ -26633,6 +26949,7 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "EventBridge Scheduler запускает задачи по расписанию и не сопоставляет входящие события; матчинг события Batch SUCCEEDED делает EventBridge rule, а HTTP API с логином/паролем это штатный API destination с connection",
+  "fix_note_en": "EventBridge Scheduler runs tasks on a schedule and doesn't match incoming events; matching the Batch SUCCEEDED event is done by an EventBridge rule, and the HTTP API with username/password is a standard API destination with a connection",
   "dom": "SEC",
   "svc": [
    "Lambda",
@@ -26676,7 +26993,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "связность с базой в чужом аккаунте без интернета"
+  "dom_why": "связность с базой в чужом аккаунте без интернета",
+  "dom_why_en": "connectivity to a database in another account without internet"
  },
  {
   "id": 811,
@@ -26740,7 +27058,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "преобразование данных без кода с профилированием"
+  "dom_why": "преобразование данных без кода с профилированием",
+  "dom_why_en": "no-code data transformation with profiling"
  },
  {
   "id": 813,
@@ -26772,7 +27091,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "маршрутизация поддомена на dev-инстанс"
+  "dom_why": "маршрутизация поддомена на dev-инстанс",
+  "dom_why_en": "routing a subdomain to a dev instance"
  },
  {
   "id": 814,
@@ -26807,7 +27127,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос Kubernetes и AMQP на управляемые сервисы"
+  "dom_why": "перенос Kubernetes и AMQP на управляемые сервисы",
+  "dom_why_en": "migrating Kubernetes and AMQP to managed services"
  },
  {
   "id": 815,
@@ -26840,7 +27161,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "снижение времени отклика для мировой аудитории"
+  "dom_why": "снижение времени отклика для мировой аудитории",
+  "dom_why_en": "reducing response time for a global audience"
  },
  {
   "id": 816,
@@ -26873,7 +27195,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "приём файлов по SFTP управляемым сервисом"
+  "dom_why": "приём файлов по SFTP управляемым сервисом",
+  "dom_why_en": "receiving files over SFTP via a managed service"
  },
  {
   "id": 817,
@@ -26909,7 +27232,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "извлечение текста и анализ тональности"
+  "dom_why": "извлечение текста и анализ тональности",
+  "dom_why_en": "text extraction and sentiment analysis"
  },
  {
   "id": 818,
@@ -26975,7 +27299,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "элементы больше лимита DynamoDB"
+  "dom_why": "элементы больше лимита DynamoDB",
+  "dom_why_en": "items larger than the DynamoDB limit"
  },
  {
   "id": 820,
@@ -27010,7 +27335,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "перенос сотен cron-задач без рефакторинга"
+  "dom_why": "перенос сотен cron-задач без рефакторинга",
+  "dom_why_en": "migrating hundreds of cron jobs without refactoring"
  },
  {
   "id": 821,
@@ -27045,7 +27371,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "загрузка данных минуя публичный интернет"
+  "dom_why": "загрузка данных минуя публичный интернет",
+  "dom_why_en": "uploading data bypassing the public internet"
  },
  {
   "id": 822,
@@ -27170,6 +27497,7 @@
   "answer": "A",
   "disputed_alt": "B",
   "disputed_note": "противоречие внутри банка: вопрос {{q:202}} формулируется так же, но ключ там B (KMS CMK). SSE-S3 требует меньше действий, но годовой период ротации у него не документирован; оба ключа одновременно верными быть не могут",
+  "disputed_note_en": "Contradiction within the bank: question {{q:202}} is phrased identically, but there the key is B (KMS CMK). SSE-S3 requires fewer steps, but its rotation period isn't documented as annual — both keys can't be correct at the same time",
   "dom": "SEC",
   "svc": [
    "S3",
@@ -27208,7 +27536,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "единый вход во все аккаунты с локальным AD"
+  "dom_why": "единый вход во все аккаунты с локальным AD",
+  "dom_why_en": "single sign-on across all accounts with on-premises AD"
  },
  {
   "id": 827,
@@ -27234,6 +27563,7 @@
   "answer": "D",
   "answer_original": "C",
   "fix_note": "у Aurora только два типа хранилища — Standard и I/O-Optimized; General Purpose/Provisioned IOPS к кластеру Aurora не относятся",
+  "fix_note_en": "Aurora has only two storage types — Standard and I/O-Optimized; General Purpose/Provisioned IOPS don't apply to an Aurora cluster",
   "dom": "COST",
   "svc": [
    "Aurora"
@@ -27272,7 +27602,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "подтверждение соответствия стандартам аудиторам"
+  "dom_why": "подтверждение соответствия стандартам аудиторам",
+  "dom_why_en": "proving compliance to auditors"
  },
  {
   "id": 829,
@@ -27336,7 +27667,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "обход связей до пятого уровня"
+  "dom_why": "обход связей до пятого уровня",
+  "dom_why_en": "traversing relationships up to five levels deep"
  },
  {
   "id": 831,
@@ -27431,7 +27763,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "слабая связность и выдача части события"
+  "dom_why": "слабая связность и выдача части события",
+  "dom_why_en": "loose coupling and partial event delivery"
  },
  {
   "id": 834,
@@ -27488,6 +27821,7 @@
   "answer": "C",
   "disputed_alt": "A",
   "disputed_note": "public VIF дешевле и штатно используется для доступа к S3 через Direct Connect; interface endpoint тарифицируется почасово плюс за трафик",
+  "disputed_note_en": "A public VIF is cheaper and is the standard way to access S3 over Direct Connect; an interface endpoint is billed hourly plus data transfer",
   "dom": "COST",
   "svc": [
    "S3",
@@ -27560,7 +27894,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступность файлов для многих инстансов в разных зонах"
+  "dom_why": "доступность файлов для многих инстансов в разных зонах",
+  "dom_why_en": "file availability for many instances across AZs"
  },
  {
   "id": 838,
@@ -27586,6 +27921,7 @@
   "answer": "D",
   "answer_original": "C",
   "fix_note": "ключ дампа C описывает SSL, то есть шифрование в канале, хотя требование — шифрование при хранении; вариант D закрывает оба хранилища: тома EBS инстанса и хранилище RDS ключами KMS",
+  "fix_note_en": "The dump's key, C, describes SSL, i.e., encryption in transit, even though the requirement is encryption at rest; option D covers both storage layers: the instance's EBS volumes and RDS storage, both encrypted with KMS keys",
   "dom": "SEC",
   "svc": [
    "EC2",
@@ -27715,6 +28051,7 @@
   "answer": "D",
   "answer_original": "A",
   "fix_note": "\"EFS-to-EFS backup\" это устаревшее AWS Solutions-решение на CloudFormation, а не managed-сервис; репликацию EFS между регионами делает AWS Backup",
+  "fix_note_en": "\"EFS-to-EFS backup\" is a legacy AWS Solutions offering built on CloudFormation, not a managed service; cross-region EFS replication is handled by AWS Backup",
   "dom": "COST",
   "svc": [
    "S3",
@@ -27822,7 +28159,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "событийная рассылка писем по расписанию"
+  "dom_why": "событийная рассылка писем по расписанию",
+  "dom_why_en": "event-driven scheduled email dispatch"
  },
  {
   "id": 846,
@@ -27856,7 +28194,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ёмкость поднимается до ежегодного пика"
+  "dom_why": "ёмкость поднимается до ежегодного пика",
+  "dom_why_en": "capacity scaling up for an annual peak"
  },
  {
   "id": 847,
@@ -27989,7 +28328,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "графовая база для запросов по связям ресурсов"
+  "dom_why": "графовая база для запросов по связям ресурсов",
+  "dom_why_en": "graph database for querying resource relationships"
  },
  {
   "id": 851,
@@ -28015,6 +28355,7 @@
   "answer": "B",
   "disputed_alt": "C",
   "disputed_note": "Aurora Serverless масштабируется вниз в простое, что точнее отвечает \"нужны только во время работы\"",
+  "disputed_note_en": "Aurora Serverless scales down during idle periods, which more accurately matches the requirement of \"needed only while running\"",
   "dom": "COST",
   "svc": [
    "RDS",
@@ -28056,7 +28397,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "единый контент с минимальным отставанием"
+  "dom_why": "единый контент с минимальным отставанием",
+  "dom_why_en": "unified content with minimal lag"
  },
  {
   "id": 853,
@@ -28185,7 +28527,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "временный доступ внешнего консультанта к отчёту"
+  "dom_why": "временный доступ внешнего консультанта к отчёту",
+  "dom_why_en": "temporary access for an external consultant to a report"
  },
  {
   "id": 857,
@@ -28343,7 +28686,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "высокий объём операций записи"
+  "dom_why": "высокий объём операций записи",
+  "dom_why_en": "high volume of write operations"
  },
  {
   "id": 862,
@@ -28542,7 +28886,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "анализ расходов на тома и оценка экономии"
+  "dom_why": "анализ расходов на тома и оценка экономии",
+  "dom_why_en": "analyzing volume costs and estimating savings"
  },
  {
   "id": 868,
@@ -28628,13 +28973,15 @@
   "answer": "C",
   "answer_original": "D",
   "fix_note": "ключ противоречив: группа в Production указана принципалом в trust policy, ссылающейся на тот же Production; кросс-аккаунт делается ролью в Production с доверием к Development",
+  "fix_note_en": "The key is self-contradictory: the group in Production is named as the principal in a trust policy that itself references Production; cross-account access should be done via a role in Production that trusts Development",
   "dom": "SEC",
   "svc": [
    "IAM"
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "кросс-аккаунтный доступ разработчиков"
+  "dom_why": "кросс-аккаунтный доступ разработчиков",
+  "dom_why_en": "cross-account access for developers"
  },
  {
   "id": 871,
@@ -28700,7 +29047,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "запрет типов инстансов во всех аккаунтах через SCP"
+  "dom_why": "запрет типов инстансов во всех аккаунтах через SCP",
+  "dom_why_en": "blocking instance types across all accounts via SCP"
  },
  {
   "id": 873,
@@ -28735,7 +29083,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "инвентаризация, обновления и сводка уязвимостей"
+  "dom_why": "инвентаризация, обновления и сводка уязвимостей",
+  "dom_why_en": "inventory, patching, and vulnerability summary"
  },
  {
   "id": 874,
@@ -28761,6 +29110,7 @@
   "answer": "A",
   "answer_original": "C",
   "fix_note": "ключ описывает pilot light (инфраструктура создаётся по факту аварии); при требовании LEAST downtime нужен warm standby с уже поднятыми ASG и ELB",
+  "fix_note_en": "The key describes pilot light (infrastructure is created only after the disaster occurs); given the LEAST downtime requirement, what's needed is warm standby with an ASG and ELB already running",
   "dom": "RES",
   "svc": [
    "EC2",
@@ -28902,6 +29252,7 @@
   "answer": "A",
   "disputed_alt": "D",
   "disputed_note": "вариант ключа даёт всем владельцам аккаунтов доступ к одному почтовому ящику, что противоречит требованию MOST securely",
+  "disputed_note_en": "The key's option gives every account owner access to the same mailbox, which contradicts the MOST securely requirement",
   "dom": "COST",
   "svc": [
    "Organizations"
@@ -28981,7 +29332,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "дашборд расходов на NAT по дням"
+  "dom_why": "дашборд расходов на NAT по дням",
+  "dom_why_en": "daily NAT cost dashboard"
  },
  {
   "id": 881,
@@ -29011,6 +29363,7 @@
   "answer": "AC",
   "disputed_alt": "AE",
   "disputed_note": "Cache-Control private вообще запрещает кэширование в CloudFront и убивает смысл кэша; связка TTL + инвалидация при деплое логичнее",
+  "disputed_note_en": "Cache-Control: private disables caching in CloudFront entirely, defeating the purpose of the cache; pairing a TTL with invalidation on deploy makes more sense",
   "dom": "PERF",
   "svc": [
    "S3",
@@ -29193,7 +29546,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "миграция СУБД с минимумом правок кода"
+  "dom_why": "миграция СУБД с минимумом правок кода",
+  "dom_why_en": "database migration with minimal code changes"
  },
  {
   "id": 887,
@@ -29219,6 +29573,7 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "AWS Config только детектирует нарушения; запрет незашифрованных томов даёт атрибут аккаунта EC2 \"always encrypt new EBS volumes\"",
+  "fix_note_en": "AWS Config only detects violations; blocking unencrypted volumes is done by the EC2 account attribute \"always encrypt new EBS volumes\"",
   "dom": "SEC",
   "svc": [
    "EC2",
@@ -29349,7 +29704,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ближайший бакет и обход публичной сети"
+  "dom_why": "ближайший бакет и обход публичной сети",
+  "dom_why_en": "nearest bucket and bypassing the public network"
  },
  {
   "id": 892,
@@ -29410,6 +29766,7 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "автоматические guardrails при создании аккаунтов это AWS Control Tower, Organizations сам по себе их не даёт",
+  "fix_note_en": "Automatic guardrails when creating accounts come from AWS Control Tower — Organizations alone doesn't provide them",
   "dom": "SEC",
   "svc": [
    "VPC",
@@ -29419,7 +29776,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "аккаунты с автоматическими guardrails"
+  "dom_why": "аккаунты с автоматическими guardrails",
+  "dom_why_en": "accounts with automatic guardrails"
  },
  {
   "id": 894,
@@ -29453,7 +29811,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "удешевление хостинга статического сайта"
+  "dom_why": "удешевление хостинга статического сайта",
+  "dom_why_en": "cheaper static site hosting"
  },
  {
   "id": 895,
@@ -29486,7 +29845,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "управляемое хранилище с доступом по SMB"
+  "dom_why": "управляемое хранилище с доступом по SMB",
+  "dom_why_en": "managed storage with SMB access"
  },
  {
   "id": 896,
@@ -29552,7 +29912,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "долгая непрерываемая задача: выбор вычислений"
+  "dom_why": "долгая непрерываемая задача: выбор вычислений",
+  "dom_why_en": "long uninterruptible task: choosing compute"
  },
  {
   "id": 898,
@@ -29587,7 +29948,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "централизованный сбор данных безопасности"
+  "dom_why": "централизованный сбор данных безопасности",
+  "dom_why_en": "centralized collection of security data"
  },
  {
   "id": 899,
@@ -29619,7 +29981,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "связность изолированных VPC при росте до сотен"
+  "dom_why": "связность изолированных VPC при росте до сотен",
+  "dom_why_en": "connectivity for isolated VPCs scaling to hundreds"
  },
  {
   "id": 900,
@@ -29656,7 +30019,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "единая контейнерная платформа для гибрида"
+  "dom_why": "единая контейнерная платформа для гибрида",
+  "dom_why_en": "unified container platform for hybrid environments"
  },
  {
   "id": 901,
@@ -29749,13 +30113,15 @@
   "answer": "A",
   "answer_original": "B",
   "fix_note": "ACL через Batch Operations не масштабируется и противоречит рекомендациям AWS; префиксный доступ с гранулярным контролем это S3 access points с политиками",
+  "fix_note_en": "ACLs via Batch Operations don't scale and go against AWS recommendations; prefix-level access with granular control is what S3 access points with policies provide",
   "dom": "SEC",
   "svc": [
    "S3"
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "ограничение приложений своими префиксами"
+  "dom_why": "ограничение приложений своими префиксами",
+  "dom_why_en": "restricting applications to their own prefixes"
  },
  {
   "id": 904,
@@ -29828,7 +30194,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "доступность и скорость для TCP и UDP нагрузок"
+  "dom_why": "доступность и скорость для TCP и UDP нагрузок",
+  "dom_why_en": "availability and speed for TCP and UDP workloads"
  },
  {
   "id": 906,
@@ -29990,7 +30357,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "анализ производительности с гранулярностью двух минут"
+  "dom_why": "анализ производительности с гранулярностью двух минут",
+  "dom_why_en": "performance analysis at two-minute granularity"
  },
  {
   "id": 911,
@@ -30640,6 +31008,7 @@
   "answer": "A",
   "answer_original": "D",
   "fix_note": "условие дважды ограничивает изменения: «минимальные изменения существующего портала» и «компания не хочет никаких правок кода». Вариант D предлагает перенести портал на статический хостинг S3, а существующую функциональность заново реализовать на API Gateway и Lambda — это переписывание приложения, прямо запрещённое условием. Вариант A оставляет портал как есть в группе автомасштабирования (требуемая стопроцентная доступность) и добавляет для новой, редко запускаемой программы извлечения текста функцию Lambda, которая вызывается по факту загрузки документа и оплачивается только за время работы",
+  "fix_note_en": "The requirement imposes two constraints at once: \"minimal changes to the existing portal\" and \"the company doesn't want any code changes.\" Option D proposes moving the portal to static hosting on S3 and reimplementing the existing functionality with API Gateway and Lambda — that's an application rewrite, explicitly forbidden by the requirement. Option A leaves the portal as-is in an Auto Scaling group (meeting the required 100% availability) and adds a Lambda function for the new, rarely-run text extraction task, triggered whenever a document is uploaded and billed only for its actual runtime",
   "dom": "COST",
   "svc": [
    "S3",
@@ -30679,6 +31048,7 @@
   "answer": "AC",
   "answer_original": "AB",
   "fix_note": "для кросс-аккаунтной подписки Lambda на SNS нужны resource policy у функции (A) и политика топика, разрешающая подписку (C); буфер SQS из варианта B меняет источник вызова и с A несовместим",
+  "fix_note_en": "A cross-account SNS subscription for Lambda needs a resource policy on the function (A) and a topic policy allowing the subscription (C); the SQS buffer in option B changes the invocation source and is incompatible with A",
   "dom": "SEC",
   "svc": [
    "S3",
@@ -30691,7 +31061,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "кросс-аккаунтный вызов Lambda из топика"
+  "dom_why": "кросс-аккаунтный вызов Lambda из топика",
+  "dom_why_en": "cross-account Lambda invocation from a topic"
  },
  {
   "id": 932,
@@ -30789,7 +31160,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ по NFS и SMB к одним данным"
+  "dom_why": "доступ по NFS и SMB к одним данным",
+  "dom_why_en": "NFS and SMB access to the same data"
  },
  {
   "id": 935,
@@ -30856,6 +31228,7 @@
   "answer": "BC",
   "answer_original": "CD",
   "fix_note": "Parameter Store не умеет автоматическую ротацию — её даёт только Secrets Manager; вторым шагом идёт Lambda layer для получения секрета",
+  "fix_note_en": "Parameter Store doesn't support automatic rotation — only Secrets Manager does; the second step is a Lambda layer to retrieve the secret",
   "dom": "SEC",
   "svc": [
    "Lambda",
@@ -30896,7 +31269,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "поиск экономии по инстансам, группе и томам"
+  "dom_why": "поиск экономии по инстансам, группе и томам",
+  "dom_why_en": "finding savings across instances, groups, and volumes"
  },
  {
   "id": 938,
@@ -30930,7 +31304,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "быстрый общий доступ к данным внутри VPC"
+  "dom_why": "быстрый общий доступ к данным внутри VPC",
+  "dom_why_en": "fast shared data access within a VPC"
  },
  {
   "id": 939,
@@ -30960,7 +31335,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "избыточная реплика после пикового периода"
+  "dom_why": "избыточная реплика после пикового периода",
+  "dom_why_en": "excess replica after the peak period"
  },
  {
   "id": 940,
@@ -31154,7 +31530,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "инспекция трафика между аккаунтами устройством"
+  "dom_why": "инспекция трафика между аккаунтами устройством",
+  "dom_why_en": "traffic inspection between accounts via an appliance"
  },
  {
   "id": 946,
@@ -31251,7 +31628,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "выделять только требуемую ёмкость репликации"
+  "dom_why": "выделять только требуемую ёмкость репликации",
+  "dom_why_en": "provisioning only the required replication capacity"
  },
  {
   "id": 949,
@@ -31444,7 +31822,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "нерегулярная нагрузка на ML-микросервисы"
+  "dom_why": "нерегулярная нагрузка на ML-микросервисы",
+  "dom_why_en": "irregular load on ML microservices"
  },
  {
   "id": 955,
@@ -31606,7 +31985,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "базы разработки только в рабочие часы"
+  "dom_why": "базы разработки только в рабочие часы",
+  "dom_why_en": "development databases only during business hours"
  },
  {
   "id": 960,
@@ -31661,6 +32041,7 @@
   "answer": "C",
   "answer_original": "A",
   "fix_note": "AWS WAF не поддерживает AWS Global Accelerator как защищаемый ресурс (поддерживаются CloudFront, ALB, API Gateway, AppSync, Cognito, App Runner, Verified Access), поэтому web ACL привязывают к ALB за акселератором",
+  "fix_note_en": "AWS WAF doesn't support AWS Global Accelerator as a protected resource (supported resources are CloudFront, ALB, API Gateway, AppSync, Cognito, App Runner, and Verified Access), so the web ACL is attached to the ALB behind the accelerator",
   "dom": "SEC",
   "svc": [
    "Lambda",
@@ -31774,7 +32155,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "модульная масштабируемая замена монолита"
+  "dom_why": "модульная масштабируемая замена монолита",
+  "dom_why_en": "modular scalable replacement for a monolith"
  },
  {
   "id": 965,
@@ -31837,7 +32219,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "разграничение прав команд и запрет IMDSv2"
+  "dom_why": "разграничение прав команд и запрет IMDSv2",
+  "dom_why_en": "team permission separation and disabling IMDSv2"
  },
  {
   "id": 967,
@@ -31939,7 +32322,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "контейнеры с масштабированием по метрикам"
+  "dom_why": "контейнеры с масштабированием по метрикам",
+  "dom_why_en": "containers scaling on metrics"
  },
  {
   "id": 970,
@@ -31997,6 +32381,7 @@
   "answer": "C",
   "disputed_alt": "D",
   "disputed_note": "повторная раздача одних и тех же файлов на серверы в разных регионах это кэш CloudFront; Transfer Acceleration ускоряет в первую очередь загрузку в S3 и не кэширует",
+  "disputed_note_en": "Repeatedly serving the same files from servers in different regions is what CloudFront caching does; Transfer Acceleration primarily speeds up uploads to S3 and doesn't cache",
   "dom": "PERF",
   "svc": [
    "S3",
@@ -32103,6 +32488,7 @@
   "answer": "AD",
   "answer_original": "BD",
   "fix_note": "сертификат для CloudFront должен быть выпущен в us-east-1 независимо от региона бакета",
+  "fix_note_en": "The certificate for CloudFront must be issued in us-east-1 regardless of the bucket's region",
   "dom": "PERF",
   "svc": [
    "S3",
@@ -32110,7 +32496,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "загрузка через CloudFront с собственным доменом"
+  "dom_why": "загрузка через CloudFront с собственным доменом",
+  "dom_why_en": "serving content through CloudFront with a custom domain"
  },
  {
   "id": 975,
@@ -32175,7 +32562,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "пользователи попадают на ближайшие инстансы"
+  "dom_why": "пользователи попадают на ближайшие инстансы",
+  "dom_why_en": "users routed to the nearest instances"
  },
  {
   "id": 977,
@@ -32435,7 +32823,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "дешёвая раздача динамики глобальной аудитории"
+  "dom_why": "дешёвая раздача динамики глобальной аудитории",
+  "dom_why_en": "cheap delivery of dynamic content to a global audience"
  },
  {
   "id": 985,
@@ -32633,7 +33022,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "приложение умеет только NFS"
+  "dom_why": "приложение умеет только NFS",
+  "dom_why_en": "application only supports NFS"
  },
  {
   "id": 991,
@@ -32668,7 +33058,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "потеря событий без возможности перечитать"
+  "dom_why": "потеря событий без возможности перечитать",
+  "dom_why_en": "event loss with no ability to replay"
  },
  {
   "id": 992,
@@ -32833,7 +33224,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "EKS без управления вычислительными узлами"
+  "dom_why": "EKS без управления вычислительными узлами",
+  "dom_why_en": "EKS without managing compute nodes"
  },
  {
   "id": 997,
@@ -32995,7 +33387,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "не терять заказы при масштабировании"
+  "dom_why": "не терять заказы при масштабировании",
+  "dom_why_en": "not losing orders during scaling"
  },
  {
   "id": 1002,
@@ -33124,7 +33517,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "масштабируемая автоматизация обработки опросов"
+  "dom_why": "масштабируемая автоматизация обработки опросов",
+  "dom_why_en": "scalable automation for survey processing"
  },
  {
   "id": 1006,
@@ -33160,7 +33554,8 @@
   ],
   "multi": true,
   "dom_conf": "manual",
-  "dom_why": "ошибки при выводе инстансов на время патча"
+  "dom_why": "ошибки при выводе инстансов на время патча",
+  "dom_why_en": "errors when taking instances out of service for patching"
  },
  {
   "id": 1007,
@@ -33388,6 +33783,7 @@
   ],
   "answer": "A",
   "note": "устаревшая формулировка: Scheduled Reserved Instances AWS больше не предлагает новым клиентам. В логике вопроса вариант A остаётся единственным без прерываний для повторяющегося окна времени; на практике сегодня та же задача решается графиком запуска и остановки инстансов вместе с Savings Plan или On-Demand",
+  "note_en": "Outdated wording: AWS no longer offers Scheduled Reserved Instances to new customers. Within the question's logic, option A remains the only choice with no interruptions for a recurring time window; in practice today the same task is solved by scheduling instance start/stop together with a Savings Plan or On-Demand",
   "dom": "COST",
   "svc": [
    "EC2"
@@ -33430,7 +33826,8 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "оркестрация растущего числа заданий обработки"
+  "dom_why": "оркестрация растущего числа заданий обработки",
+  "dom_why_en": "orchestrating a growing number of processing jobs"
  },
  {
   "id": 1015,
@@ -33588,6 +33985,7 @@
   ],
   "multi": false,
   "dom_conf": "manual",
-  "dom_why": "доступ к API только с доверенных адресов"
+  "dom_why": "доступ к API только с доверенных адресов",
+  "dom_why_en": "API access limited to trusted addresses"
  }
 ]

@@ -1,8 +1,14 @@
-/* Логика тренировки и экзамена + отрисовка карточки вопроса. */
+/* Логика тренировки и экзамена + отрисовка карточки вопроса.
+   Practice/exam logic + question card rendering. Question stems and options are
+   English in the bank already; only the editorial annotation fields (dom_why,
+   fix_note, disputed_note, note, defect) and the walkthroughs (SAA_EXPLAIN) carry
+   a separate English copy, picked via locale() below with RU fallback. */
 (function (global) {
   "use strict";
 
   var S = global.SAA_Storage;
+  var I = global.SAA_I18N;
+  var t = I.t;
   var DATA = global.SAA_DATA;
   var BANK = DATA.questions;
   var META = DATA.meta;
@@ -12,10 +18,25 @@
   /* база для картинок-экспонатов: локально приложение лежит в web/, на сайте — в корне */
   var EXHIBITS = (global.SAA_CONFIG && global.SAA_CONFIG.exhibits) || "../images/exhibits/";
 
-  var EXPLAIN = global.SAA_EXPLAIN || {};
-
   var DOM_NAMES = {};
   META.domains.forEach(function (d) { DOM_NAMES[d.code] = d.name; });
+
+  /* ---------------- локализация данных банка ---------------- */
+
+  /* аннотационные поля вопроса (dom_why, fix_note, disputed_note, note, defect):
+     на английском лежат в полях с суффиксом _en, если перевод есть; иначе — RU. */
+  function loc(q, field) {
+    if (I.getLocale() === "en" && q[field + "_en"]) return q[field + "_en"];
+    return q[field];
+  }
+
+  /* разборы вопросов: отдельный объект на язык, с фолбэком на RU по каждому id */
+  function explainFor(id) {
+    var ru = (global.SAA_EXPLAIN || {})[id];
+    if (I.getLocale() !== "en") return ru;
+    var en = (global.SAA_EXPLAIN_EN || {})[id];
+    return en || ru;
+  }
 
   /* ---------------- утилиты ---------------- */
 
@@ -40,7 +61,7 @@
   function exhibitImg(file) {
     var img = el("img", "exhibit");
     img.src = EXHIBITS + file;
-    img.alt = "экспонат " + file;
+    img.alt = t("exhibitAlt", file);
     img.loading = "lazy";
     return img;
   }
@@ -59,17 +80,17 @@
     domChip.appendChild(el("span", "dom-full", " · " + DOM_NAMES[q.dom]));
     domChip.title = q.dom + " · " + DOM_NAMES[q.dom];
     head.appendChild(domChip);
-    if (q.multi) head.appendChild(el("span", "chip", "выбрать " + q.answer.length));
+    if (q.multi) head.appendChild(el("span", "chip", t("selectCount", q.answer.length)));
     (q.svc || []).slice(0, 5).forEach(function (s) { head.appendChild(el("span", "chip weak", s)); });
 
     /* уже отвечали на этот вопрос — показываем прошлый результат */
     var prev = S.status(q.id);
     if (prev && view.mode !== "exam") {
       head.appendChild(el("span", "chip " + (prev.correct ? "seen-ok" : "seen-bad"),
-        (prev.correct ? "ранее верно" : "ранее неверно") + (prev.tries > 1 ? " · попыток " + prev.tries : "")));
+        (prev.correct ? t("seenCorrect") : t("seenWrong")) + (prev.tries > 1 ? t("triesSuffix", prev.tries) : "")));
     }
 
-    var flag = el("span", "chip flag" + (S.isFlagged(q.id) ? " on" : ""), "★ отметить");
+    var flag = el("span", "chip flag" + (S.isFlagged(q.id) ? " on" : ""), t("flagStar"));
     flag.addEventListener("click", function () {
       var on = S.toggleFlag(q.id);
       flag.className = "chip flag" + (on ? " on" : "");
@@ -86,7 +107,7 @@
     });
     if (q.defect) {
       var d = el("div", "note defect");
-      d.innerHTML = "<b>Дефект исходного PDF:</b> " + q.defect;
+      d.innerHTML = "<b>" + t("defectLabel") + "</b> " + loc(q, "defect");
       card.appendChild(d);
     }
 
@@ -109,7 +130,7 @@
         var wrap = el("span");
         var im = el("img");
         im.src = EXHIBITS + o.img;
-        im.alt = "вариант " + o.l;
+        im.alt = t("optionAlt", o.l);
         wrap.appendChild(im);
         row.appendChild(wrap);
       } else {
@@ -122,7 +143,7 @@
       opts.appendChild(row);
 
       /* почему этот вариант неверен — показываем только после проверки */
-      var ex = EXPLAIN[q.id];
+      var ex = explainFor(q.id);
       if (revealed && ex && ex.opts && ex.opts[o.l]) {
         var why = el("div", "opt-why" + (correct.indexOf(o.l) !== -1 ? " ok" : ""), ex.opts[o.l]);
         opts.appendChild(why);
@@ -134,26 +155,26 @@
     var actions = el("div", "qactions");
     if (view.mode === "practice") {
       if (!revealed) {
-        var check = el("button", "btn primary", "Проверить");
+        var check = el("button", "btn primary", t("checkBtn"));
         check.disabled = picked.length === 0;
         check.addEventListener("click", h.onCheck);
         actions.appendChild(check);
       } else {
-        var next = el("button", "btn primary", "Дальше →");
+        var next = el("button", "btn primary", t("nextBtn"));
         next.addEventListener("click", h.onNext);
         actions.appendChild(next);
       }
-      var prev = el("button", "btn ghost", "← Назад");
-      prev.addEventListener("click", h.onPrev);
-      actions.appendChild(prev);
-      var skip = el("button", "btn ghost", "Пропустить");
+      var prevBtn = el("button", "btn ghost", t("prevBtn"));
+      prevBtn.addEventListener("click", h.onPrev);
+      actions.appendChild(prevBtn);
+      var skip = el("button", "btn ghost", t("skipBtn"));
       skip.addEventListener("click", h.onNext);
       actions.appendChild(skip);
     } else if (view.mode === "exam") {
-      var pv = el("button", "btn ghost", "← Назад");
+      var pv = el("button", "btn ghost", t("prevBtn"));
       pv.addEventListener("click", h.onPrev);
       actions.appendChild(pv);
-      var nx = el("button", "btn primary", "Дальше →");
+      var nx = el("button", "btn primary", t("nextBtn"));
       nx.addEventListener("click", h.onNext);
       actions.appendChild(nx);
     }
@@ -163,7 +184,7 @@
 
     if (view.mode === "practice") {
       var hint = el("div", "kbd-hint");
-      hint.innerHTML = "<kbd>1</kbd>…<kbd>6</kbd> выбрать · <kbd>Enter</kbd> проверить · <kbd>→</kbd> дальше · <kbd>f</kbd> отметить";
+      hint.innerHTML = t("kbdHint");
       card.appendChild(hint);
     }
 
@@ -171,7 +192,7 @@
     if (revealed) card.appendChild(buildReview(q, picked, h));
 
     /* ссылки на родственные вопросы: они есть и в разборе, и в опровержениях вариантов */
-    bindQrefs(card, h, "разбор вопроса #" + q.id);
+    bindQrefs(card, h, t("reviewOfQuestionTitle", q.id));
     return card;
   }
 
@@ -191,56 +212,53 @@
     var box = el("div", "review");
     var right = sameSet(picked, letters(q.answer));
     var v = el("div", "verdict " + (right ? "ok" : "bad"),
-      right ? "Верно" : "Неверно. Правильный ответ: " + q.answer);
+      right ? t("verdictOk") : t("verdictBad", q.answer));
     box.appendChild(v);
-    if (!right) box.appendChild(el("div", "", "Ваш ответ: " + (picked.join("") || "—")));
+    if (!right) box.appendChild(el("div", "", t("yourAnswer", picked.join("") || "—")));
 
-    var ex = EXPLAIN[q.id];
+    var ex = explainFor(q.id);
     if (ex && ex.key) {
       var k = el("div", "note explain");
-      var title = q.disputed_alt
-        ? "<b>Разбор (вопрос спорный, ключ " + q.answer + "):</b> "
-        : "<b>Почему верный ответ " + q.answer + ":</b> ";
-      k.innerHTML = title + ex.key;
+      var title = q.disputed_alt ? t("reviewDisputedTitle", q.answer) : t("reviewWhyTitle", q.answer);
+      k.innerHTML = "<b>" + title + "</b> " + ex.key;
       box.appendChild(k);
     }
 
     if (q.answer_original) {
       var f = el("div", "note fix");
-      f.innerHTML = "<b>Ключ дампа исправлен при аудите:</b> " + q.answer_original +
-        " → <b>" + q.answer + "</b>. " + (q.fix_note || "");
+      f.innerHTML = "<b>" + t("fixNoteLabel") + "</b> " + q.answer_original +
+        t("fixNoteArrow") + "<b>" + q.answer + "</b>. " + (loc(q, "fix_note") || "");
       box.appendChild(f);
     }
     if (q.disputed_alt) {
       var dz = el("div", "note disputed");
-      dz.innerHTML = "<b>Спорный вопрос.</b> Ключ " + q.answer + ", альтернатива " + q.disputed_alt +
-        ". " + (q.disputed_note || "");
+      dz.innerHTML = "<b>" + t("disputedLabel") + "</b> " + t("disputedKeyAlt", q.answer, q.disputed_alt) +
+        (loc(q, "disputed_note") || "");
       box.appendChild(dz);
     }
     if (q.note) {
       var nt = el("div", "note");
-      nt.innerHTML = "<b>Правка данных:</b> " + q.note;
+      nt.innerHTML = "<b>" + t("dataNoteLabel") + "</b> " + loc(q, "note");
       box.appendChild(nt);
     }
     if (q.dom_conf === "manual") {
       var dc = el("div", "note");
-      dc.innerHTML = "<b>Домен размечен вручную:</b> " + (q.dom_why || "") +
-        ". Сильных маркеров в тексте нет, домен определён по требованию, которое отсекает неверные варианты. ";
-      var da = el("a", "", "Как это работает");
+      dc.innerHTML = "<b>" + t("manualDomainLabel") + "</b> " + (loc(q, "dom_why") || "") + t("manualDomainSuffix");
+      var da = el("a", "", t("manualDomainLink"));
       da.href = "#";
       da.addEventListener("click", function (e) { e.preventDefault(); h.onTheory("appendix-domains"); });
       dc.appendChild(da);
       box.appendChild(dc);
     } else if (q.dom_conf === "weak") {
       var dw = el("div", "note");
-      dw.textContent = "Домен определён по слабым маркерам: формулировка допускает и другое отнесение.";
+      dw.textContent = t("weakDomainNote");
       box.appendChild(dw);
     }
 
     var chapters = global.SAA_Theory ? global.SAA_Theory.chaptersForServices(q.svc || []) : [];
     if (chapters.length) {
       var links = el("div", "theory-links");
-      links.appendChild(el("span", "", "Учебник: "));
+      links.appendChild(el("span", "", t("theoryLinksLabel")));
       chapters.slice(0, 3).forEach(function (c) {
         var a = el("a", "", c.title);
         a.href = "#";
@@ -335,7 +353,7 @@
       mode: "practice",
       picked: this.picked,
       revealed: this.revealed,
-      position: (this.i + 1) + " из " + this.list.length
+      position: t("positionOf", this.i + 1, this.list.length)
     }, {
       onPick: function (l) { self.pick(l); },
       onCheck: function () { self.check(); },
@@ -506,7 +524,7 @@
       mode: "exam",
       picked: st.answers[q.id] || [],
       revealed: false,
-      position: "вопрос " + (st.i + 1) + " из " + st.ids.length
+      position: t("examPosition", st.i + 1, st.ids.length)
     }, {
       onPick: function (l) { self.pick(l); },
       onNext: function () { self.go(1); },
@@ -515,9 +533,9 @@
       onTheory: function () {}
     }));
 
-    this.dom.counter.textContent = "Отвечено " +
-      Object.keys(st.answers).filter(function (k) { return st.answers[k].length; }).length +
-      " из " + st.ids.length;
+    this.dom.counter.textContent = t("examCounter",
+      Object.keys(st.answers).filter(function (k) { return st.answers[k].length; }).length,
+      st.ids.length);
 
     this.dom.grid.innerHTML = "";
     st.ids.forEach(function (id, i) {

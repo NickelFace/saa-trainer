@@ -44,6 +44,16 @@ body {
 .tab:hover { color: var(--text); background: var(--panel-2); }
 .tab.active { color: var(--bg); background: var(--accent); font-weight: 600; }
 .bank-info { margin-left: auto; color: var(--muted); font-size: 13px; }
+.lang-toggle {
+  display: flex; gap: 2px; background: var(--panel-2); border: 1px solid var(--line);
+  border-radius: 999px; padding: 2px;
+}
+.lang-toggle button {
+  background: transparent; border: none; color: var(--muted);
+  padding: 4px 10px; border-radius: 999px; cursor: pointer; font-size: 12px; font-weight: 700;
+}
+.lang-toggle button:hover { color: var(--text); }
+.lang-toggle button.active { background: var(--accent); color: #1a1200; }
 
 main { max-width: 1100px; margin: 0 auto; padding: 18px; padding-bottom: calc(18px + env(safe-area-inset-bottom)); }
 
@@ -249,6 +259,7 @@ kbd {
   .tabs::-webkit-scrollbar { display: none; }
   .tab { white-space: nowrap; padding: 9px 12px; }
   .bank-info { display: none; }
+  .lang-toggle { margin-left: auto; flex: 0 0 auto; }
 
   /* фильтры свёрнуты, пока их не откроют */
   .filters-toggle { display: inline-block; }

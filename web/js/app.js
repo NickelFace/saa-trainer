@@ -1,11 +1,15 @@
-/* Состояние приложения и роутинг между режимами. */
+/* Состояние приложения и роутинг между режимами.
+   App state and routing between views. UI text comes from SAA_I18N (js/i18n.js);
+   setLocale() triggers applyStaticText() + a full re-render of whatever is on screen. */
 (function (global) {
   "use strict";
 
   var Q = global.SAA_Quiz;
   var S = global.SAA_Storage;
   var T = global.SAA_Theory;
+  var I = global.SAA_I18N;
   var el = Q.el;
+  var t = I.t;
 
   var $ = function (id) { return document.getElementById(id); };
 
@@ -18,6 +22,61 @@
   var exam = null;
   var theoryView = null;
   var chapterIds = null;      /* активный фильтр «вопросы главы» */
+  var chapterTitleKey = null; /* i18n-ключ или буквальный заголовок для chapterIds */
+
+  /* ---------------- статический текст интерфейса ---------------- */
+
+  var TAB_KEYS = { practice: "tabPractice", exam: "tabExam", theory: "tabTheory", progress: "tabProgress" };
+
+  function applyStaticText() {
+    document.getElementById("meta-description").setAttribute("content", t("metaDescription"));
+
+    document.querySelectorAll(".tab").forEach(function (btn) {
+      btn.textContent = t(TAB_KEYS[btn.dataset.view]);
+    });
+
+    $("f-toggle").textContent = $("practice-filters").classList.contains("open")
+      ? t("filtersToggleOpen") : t("filtersToggleClosed");
+    $("lbl-dom").textContent = t("filterDomain");
+    $("opt-dom-all").textContent = t("filterAll");
+    $("lbl-svc").textContent = t("filterService");
+    $("opt-svc-all").textContent = t("filterAll");
+    $("lbl-status").textContent = t("filterStatus");
+    $("opt-status-all").textContent = t("statusAll");
+    $("opt-status-unseen").textContent = t("statusUnseen");
+    $("opt-status-wrong").textContent = t("statusWrong");
+    $("opt-status-correct").textContent = t("statusCorrect");
+    $("opt-status-flagged").textContent = t("statusFlagged");
+    $("opt-status-corrected").textContent = t("statusCorrected");
+    $("opt-status-disputed").textContent = t("statusDisputed");
+    $("opt-status-manual").textContent = t("statusManual");
+    $("lbl-order").textContent = t("filterOrder");
+    $("opt-order-id").textContent = t("orderId");
+    $("opt-order-random").textContent = t("orderRandom");
+    $("lbl-search").textContent = t("filterSearch");
+    $("f-find").setAttribute("placeholder", t("searchPlaceholder"));
+    $("f-apply").textContent = t("applyBtn");
+    $("practice-empty").textContent = t("practiceEmpty");
+
+    $("exam-title").textContent = t("examTitle");
+    $("exam-intro").textContent = t("examIntro");
+    $("lbl-exam-exclude").textContent = t("examExcludeSeen");
+    $("exam-begin").textContent = t("examBegin");
+    $("exam-warn").textContent = t("examUnfinished");
+    $("exam-continue").textContent = t("examContinue");
+    $("exam-drop").textContent = t("examDrop");
+    $("exam-finish").textContent = t("examFinish");
+
+    $("theory-search").setAttribute("placeholder", t("theorySearchPlaceholder"));
+    var initialEmpty = $("theory-initial-empty");
+    if (initialEmpty) initialEmpty.textContent = t("theoryChooseChapter");
+
+    document.querySelectorAll("#lang-toggle button").forEach(function (b) {
+      b.classList.toggle("active", b.dataset.lang === I.getLocale());
+    });
+
+    if (chapterIds) renderChapterFilterBox();
+  }
 
   /* ---------------- навигация ---------------- */
 
@@ -46,6 +105,7 @@
 
   function fillFilters() {
     var domSel = $("f-dom");
+    domSel.querySelectorAll("option:not(#opt-dom-all)").forEach(function (o) { o.remove(); });
     Q.meta.domains.forEach(function (d) {
       var o = el("option", "", d.code + " — " + d.name);
       o.value = d.code;
@@ -56,6 +116,7 @@
       (q.svc || []).forEach(function (s) { counts[s] = (counts[s] || 0) + 1; });
     });
     var svcSel = $("f-svc");
+    svcSel.querySelectorAll("option:not(#opt-svc-all)").forEach(function (o) { o.remove(); });
     Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).forEach(function (s) {
       var o = el("option", "", s + " (" + counts[s] + ")");
       o.value = s;
@@ -67,7 +128,7 @@
   function setFiltersOpen(open) {
     $("practice-filters").classList.toggle("open", open);
     $("f-toggle").setAttribute("aria-expanded", open ? "true" : "false");
-    $("f-toggle").textContent = open ? "Фильтры ▴" : "Фильтры ▾";
+    $("f-toggle").textContent = open ? t("filtersToggleOpen") : t("filtersToggleClosed");
   }
 
   function filtersSummary(count) {
@@ -77,8 +138,8 @@
     var status = $("f-status");
     if (status.value !== "all") parts.push(status.options[status.selectedIndex].textContent);
     var find = ($("f-find").value || "").trim();
-    if (find) parts.push("«" + find + "»");
-    return count + " вопр." + (parts.length ? " · " + parts.join(" · ") : "");
+    if (find) parts.push(t("quoted", find));
+    return t("questionsCount", count) + (parts.length ? " · " + parts.join(" · ") : "");
   }
 
   function applyFilters() {
@@ -112,21 +173,23 @@
     return true;
   }
 
-  function setChapterFilter(ids, title) {
-    chapterIds = ids && ids.length ? ids : null;
+  function renderChapterFilterBox() {
     var box = $("chapter-filter");
     box.innerHTML = "";
-    if (chapterIds) {
-      box.appendChild(document.createTextNode("глава: " + title + " (" + chapterIds.length + ") "));
-      var x = el("button", "", "✕");
-      x.title = "снять фильтр главы";
-      x.addEventListener("click", function () { setChapterFilter(null); applyFilters(); });
-      box.appendChild(x);
-      box.classList.remove("hidden");
-      if (isNarrow()) setFiltersOpen(false);
-    } else {
-      box.classList.add("hidden");
-    }
+    if (!chapterIds) { box.classList.add("hidden"); return; }
+    box.appendChild(document.createTextNode(t("chapterFilterLabel", chapterTitleKey, chapterIds.length)));
+    var x = el("button", "", "✕");
+    x.title = t("clearChapterFilterTitle");
+    x.addEventListener("click", function () { setChapterFilter(null); applyFilters(); });
+    box.appendChild(x);
+    box.classList.remove("hidden");
+  }
+
+  function setChapterFilter(ids, title) {
+    chapterIds = ids && ids.length ? ids : null;
+    chapterTitleKey = title || null;
+    renderChapterFilterBox();
+    if (chapterIds && isNarrow()) setFiltersOpen(false);
   }
 
   /* ---------------- экзамен ---------------- */
@@ -135,8 +198,7 @@
     var plan = $("exam-plan");
     plan.innerHTML = "";
     Q.meta.domains.forEach(function (d) {
-      plan.appendChild(el("span", "chip dom-" + d.code, d.code + " — " + d.exam + " вопр. (" +
-        Math.round(d.weight * 100) + "%)"));
+      plan.appendChild(el("span", "chip dom-" + d.code, t("examPlanChip", d.code, d.exam, Math.round(d.weight * 100))));
     });
     $("exam-resume").classList.toggle("hidden", !S.currentExam());
   }
@@ -148,15 +210,18 @@
     if (which === "start") renderExamPlan();
   }
 
+  var lastExamResult = null;
+
   function renderExamResult(r) {
+    lastExamResult = r;
     var box = $("exam-result");
     box.innerHTML = "";
     var panel = el("div", "panel");
     var pass = r.score >= 72;
-    panel.appendChild(el("h2", "", "Результат"));
+    panel.appendChild(el("h2", "", t("resultTitle")));
     panel.appendChild(el("div", "score " + (pass ? "pass" : "fail"), r.score + "%"));
-    panel.appendChild(el("div", "cap", r.right + " из " + r.total + " · время " +
-      Math.floor(r.spent / 60) + " мин " + (r.spent % 60) + " с · порог сдачи примерно 72%"));
+    panel.appendChild(el("div", "cap", t("resultCap", r.right, r.total,
+      Math.floor(r.spent / 60), r.spent % 60)));
 
     var bars = el("div", "bars");
     Q.meta.domains.forEach(function (d) {
@@ -174,16 +239,16 @@
     });
     panel.appendChild(bars);
 
-    var again = el("button", "btn primary", "Новый экзамен");
+    var again = el("button", "btn primary", t("resultNewExam"));
     again.addEventListener("click", function () { examScreen("start"); });
     panel.appendChild(again);
 
     var wrongIds = r.details.filter(function (d) { return !d.ok; }).map(function (d) { return d.id; });
     if (wrongIds.length) {
-      var toWrong = el("button", "btn", "Разобрать ошибки (" + wrongIds.length + ")");
+      var toWrong = el("button", "btn", t("resultReviewMistakes", wrongIds.length));
       toWrong.style.marginLeft = "10px";
       toWrong.addEventListener("click", function () {
-        setChapterFilter(wrongIds, "ошибки экзамена");
+        setChapterFilter(wrongIds, t("resultMistakesTitle"));
         $("f-dom").value = ""; $("f-svc").value = ""; $("f-status").value = "all"; $("f-order").value = "id";
         applyFilters();
         show("practice");
@@ -194,7 +259,7 @@
 
     var list = el("div", "panel");
     list.style.marginTop = "16px";
-    list.appendChild(el("h3", "", "Разбор всех вопросов попытки"));
+    list.appendChild(el("h3", "", t("resultAllReview")));
     r.details.forEach(function (d) {
       var q = Q.byId[d.id];
       var card = Q.buildCard(q, {
@@ -235,15 +300,15 @@
       c.appendChild(el("div", "cap", cap));
       return c;
     }
-    cards.appendChild(card(st.seen + " / " + st.total, "пройдено вопросов"));
-    cards.appendChild(card(st.seen ? Math.round(100 * st.right / st.seen) + "%" : "—", "точность последних ответов"));
-    cards.appendChild(card(String(st.wrong), "с ошибкой"));
-    cards.appendChild(card(String(st.flagged), "отмечено"));
-    cards.appendChild(card(String(S.exams().length), "попыток экзамена"));
+    cards.appendChild(card(st.seen + " / " + st.total, t("progressDone")));
+    cards.appendChild(card(st.seen ? Math.round(100 * st.right / st.seen) + "%" : "—", t("progressAccuracy")));
+    cards.appendChild(card(String(st.wrong), t("progressWrong")));
+    cards.appendChild(card(String(st.flagged), t("progressFlagged")));
+    cards.appendChild(card(String(S.exams().length), t("progressAttempts")));
     body.appendChild(cards);
 
     var doms = el("div", "panel");
-    doms.appendChild(el("h3", "", "По доменам"));
+    doms.appendChild(el("h3", "", t("progressByDomain")));
     var bars = el("div", "bars");
     Q.meta.domains.forEach(function (d) {
       var s = st.byDom[d.code] || { total: 0, seen: 0, right: 0 };
@@ -263,15 +328,16 @@
 
     var weak = el("div", "panel");
     weak.style.marginTop = "16px";
-    weak.appendChild(el("h3", "", "Слабые темы"));
+    weak.appendChild(el("h3", "", t("progressWeakTopics")));
     var svcStats = S.statsBySvc(Q.bank).filter(function (x) { return x.seen >= 5; });
     svcStats.sort(function (a, b) { return (a.right / a.seen) - (b.right / b.seen); });
     if (!svcStats.length) {
-      weak.appendChild(el("div", "empty", "Данных пока мало: ответьте хотя бы на пять вопросов по сервису."));
+      weak.appendChild(el("div", "empty", t("progressWeakEmpty")));
     } else {
-      weak.appendChild(el("div", "cap", "Точность по сервисам, где отвечено не меньше пяти вопросов. Клик по строке открывает тренировку по этому сервису."));
-      var t = el("table", "history weak-svc");
-      t.innerHTML = "<thead><tr><th>сервис</th><th>точность</th><th>верно</th><th>отвечено</th><th>в банке</th></tr></thead>";
+      weak.appendChild(el("div", "cap", t("progressWeakCap")));
+      var t1 = el("table", "history weak-svc");
+      t1.innerHTML = "<thead><tr><th>" + t("thService") + "</th><th>" + t("thAccuracy") +
+        "</th><th>" + t("thCorrect") + "</th><th>" + t("thAnswered") + "</th><th>" + t("thInBank") + "</th></tr></thead>";
       var tb = el("tbody");
       svcStats.slice(0, 15).forEach(function (x) {
         var pct = Math.round(100 * x.right / x.seen);
@@ -289,71 +355,72 @@
         });
         tb.appendChild(tr);
       });
-      t.appendChild(tb);
+      t1.appendChild(tb);
       var weakWrap = el("div", "table-wrap");
-      weakWrap.appendChild(t);
+      weakWrap.appendChild(t1);
       weak.appendChild(weakWrap);
     }
     body.appendChild(weak);
 
     var hist = el("div", "panel");
     hist.style.marginTop = "16px";
-    hist.appendChild(el("h3", "", "История экзаменов"));
+    hist.appendChild(el("h3", "", t("progressExamHistory")));
     var exams = S.exams();
     if (!exams.length) {
-      hist.appendChild(el("div", "empty", "Попыток пока нет."));
+      hist.appendChild(el("div", "empty", t("progressNoAttempts")));
     } else {
-      hist.appendChild(el("div", "cap", "Клик по строке открывает разбор той попытки целиком."));
-      var t = el("table", "history");
-      t.innerHTML = "<thead><tr><th>дата</th><th>результат</th><th>верно</th><th>время</th>" +
+      hist.appendChild(el("div", "cap", t("progressHistoryCap")));
+      var t2 = el("table", "history");
+      t2.innerHTML = "<thead><tr><th>" + t("thDate") + "</th><th>" + t("thResult") + "</th><th>" +
+        t("thCorrect") + "</th><th>" + t("thTime") + "</th>" +
         "<th>SEC</th><th>RES</th><th>PERF</th><th>COST</th></tr></thead>";
-      var tb = el("tbody");
+      var tb2 = el("tbody");
       exams.forEach(function (r) {
         var tr = el("tr", "replay");
-        tr.title = "открыть разбор этой попытки";
+        tr.title = t("replayTitle");
         tr.addEventListener("click", function () { show("exam"); renderExamResult(r); });
         var cells = [
-          new Date(r.ts).toLocaleString("ru-RU"),
+          new Date(r.ts).toLocaleString(I.getLocale() === "en" ? "en-US" : "ru-RU"),
           r.score + "%",
           r.right + "/" + r.total,
-          Math.floor(r.spent / 60) + " мин"
+          t("minutesShort", Math.floor(r.spent / 60))
         ];
         ["SEC", "RES", "PERF", "COST"].forEach(function (d) {
           var s = r.byDom[d] || { total: 0, right: 0 };
           cells.push(s.right + "/" + s.total);
         });
         cells.forEach(function (c) { tr.appendChild(el("td", "", c)); });
-        tb.appendChild(tr);
+        tb2.appendChild(tr);
       });
-      t.appendChild(tb);
+      t2.appendChild(tb2);
       var histWrap = el("div", "table-wrap");
-      histWrap.appendChild(t);
+      histWrap.appendChild(t2);
       hist.appendChild(histWrap);
     }
     body.appendChild(hist);
 
     var tools = el("div", "panel");
     tools.style.marginTop = "16px";
-    tools.appendChild(el("h3", "", "Данные"));
-    var exportBtn = el("button", "btn", "Скопировать прогресс в буфер");
+    tools.appendChild(el("h3", "", t("progressData")));
+    var exportBtn = el("button", "btn", t("exportBtn"));
     exportBtn.addEventListener("click", function () {
       var text = S.export();
       if (navigator.clipboard) navigator.clipboard.writeText(text);
-      else window.prompt("Скопируйте JSON прогресса", text);
-      exportBtn.textContent = "Скопировано";
-      setTimeout(function () { exportBtn.textContent = "Скопировать прогресс в буфер"; }, 1500);
+      else window.prompt(t("exportPrompt"), text);
+      exportBtn.textContent = t("exportCopied");
+      setTimeout(function () { exportBtn.textContent = t("exportBtn"); }, 1500);
     });
-    var importBtn = el("button", "btn", "Вставить прогресс");
+    var importBtn = el("button", "btn", t("importBtn"));
     importBtn.style.marginLeft = "10px";
     importBtn.addEventListener("click", function () {
-      var text = window.prompt("Вставьте ранее сохранённый JSON прогресса");
+      var text = window.prompt(t("importPrompt"));
       if (!text) return;
-      try { S.import(text); renderProgress(); } catch (e) { alert("Не разобрал JSON: " + e.message); }
+      try { S.import(text); renderProgress(); } catch (e) { alert(t("importError", e.message)); }
     });
-    var resetBtn = el("button", "btn ghost", "Сбросить прогресс");
+    var resetBtn = el("button", "btn ghost", t("resetBtn"));
     resetBtn.style.marginLeft = "10px";
     resetBtn.addEventListener("click", function () {
-      if (!confirm("Удалить весь прогресс: ответы, отметки, историю экзаменов?")) return;
+      if (!confirm(t("resetConfirm"))) return;
       S.reset();
       renderProgress();
       applyFilters();
@@ -364,12 +431,30 @@
     body.appendChild(tools);
   }
 
+  /* ---------------- смена языка: перерисовать всё, что сейчас видно ---------------- */
+
+  function rerenderCurrentView() {
+    $("bank-info").textContent = t("bankInfo", Q.bank.length, Q.meta.audited, T.chapters.length);
+    applyStaticText();
+    fillFilters();
+    $("f-summary").textContent = filtersSummary(practice ? practice.list.length : 0);
+    if (practice) practice.render();
+    renderExamPlan();
+    if (exam && exam.state && !$("exam-run").classList.contains("hidden")) exam.render();
+    if (!$("exam-result").classList.contains("hidden") && lastExamResult) renderExamResult(lastExamResult);
+    theoryView.renderList();
+    if (theoryView.activeId) theoryView.open(theoryView.activeId);
+    if (view === "progress") renderProgress();
+  }
+
   /* ---------------- запуск ---------------- */
 
   function init() {
-    $("bank-info").textContent = "банк " + Q.bank.length + " вопросов · аудит " + Q.meta.audited +
-      " · глав учебника " + T.chapters.length;
+    document.documentElement.lang = I.getLocale();
 
+    $("bank-info").textContent = t("bankInfo", Q.bank.length, Q.meta.audited, T.chapters.length);
+
+    applyStaticText();
     fillFilters();
 
     practice = new Q.Practice($("practice-card"), {
@@ -445,9 +530,14 @@
       var unanswered = exam.state.ids.filter(function (id) {
         return !(exam.state.answers[id] || []).length;
       }).length;
-      if (unanswered && !confirm("Без ответа осталось " + unanswered + ". Завершить?")) return;
+      if (unanswered && !confirm(t("examFinishConfirm", unanswered))) return;
       exam.finish();
     });
+
+    document.querySelectorAll("#lang-toggle button").forEach(function (b) {
+      b.addEventListener("click", function () { I.setLocale(b.dataset.lang); });
+    });
+    I.onChange(function () { rerenderCurrentView(); });
 
     document.addEventListener("keydown", function (e) {
       if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;

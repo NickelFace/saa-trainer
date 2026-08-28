@@ -1,10 +1,27 @@
-/* Учебник: список глав, поиск, чтение, переход к вопросам по теме. */
+/* Учебник: список глав, поиск, чтение, переход к вопросам по теме.
+   Handbook: chapter list, search, reading, jump to related questions.
+   Chapters come from SAA_THEORY (RU) or SAA_THEORY_EN (EN) depending on the active
+   locale — chapters() below always reads the live SAA_I18N locale, so a language
+   switch just needs the view to be re-rendered, no extra plumbing. */
 (function (global) {
   "use strict";
 
-  var CHAPTERS = (global.SAA_THEORY && global.SAA_THEORY.chapters) || [];
-  var BY_ID = {};
-  CHAPTERS.forEach(function (c) { BY_ID[c.id] = c; });
+  var I = global.SAA_I18N;
+  var t = I.t;
+
+  function chapters() {
+    if (I.getLocale() === "en" && global.SAA_THEORY_EN && global.SAA_THEORY_EN.chapters &&
+        global.SAA_THEORY_EN.chapters.length) {
+      return global.SAA_THEORY_EN.chapters;
+    }
+    return (global.SAA_THEORY && global.SAA_THEORY.chapters) || [];
+  }
+
+  function byId(id) {
+    var list = chapters();
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
+    return null;
+  }
 
   function el(tag, cls, text) {
     var n = document.createElement(tag);
@@ -15,15 +32,16 @@
 
   function chaptersForServices(svc) {
     if (!svc || !svc.length) return [];
-    return CHAPTERS.filter(function (c) {
+    return chapters().filter(function (c) {
       return c.svc.some(function (s) { return svc.indexOf(s) !== -1; });
     });
   }
 
   function search(query) {
     var q = query.trim().toLowerCase();
-    if (q.length < 2) return CHAPTERS.slice();
-    return CHAPTERS.filter(function (c) {
+    var list = chapters();
+    if (q.length < 2) return list.slice();
+    return list.filter(function (c) {
       return c.title.toLowerCase().indexOf(q) !== -1 ||
         c.svc.join(" ").toLowerCase().indexOf(q) !== -1 ||
         (c.text || "").toLowerCase().indexOf(q) !== -1;
@@ -56,9 +74,9 @@
     var self = this;
     var found = search(this.dom.search.value || "");
     this.dom.list.innerHTML = "";
-    if (!CHAPTERS.length) {
+    if (!chapters().length) {
       var li = el("li");
-      li.appendChild(el("div", "empty", "Главы ещё не собраны: scripts/build-theory.py"));
+      li.appendChild(el("div", "empty", t("theoryNotBuilt")));
       this.dom.list.appendChild(li);
       return;
     }
@@ -74,14 +92,14 @@
     });
     if (!found.length) {
       var none = el("li");
-      none.appendChild(el("div", "empty", "Ничего не найдено"));
+      none.appendChild(el("div", "empty", t("theoryNothingFound")));
       this.dom.list.appendChild(none);
     }
   };
 
   View.prototype.open = function (id) {
     var self = this;
-    var c = BY_ID[id];
+    var c = byId(id);
     if (!c) return;
     this.activeId = id;
     this.renderList();
@@ -92,7 +110,7 @@
     if (isNarrow()) this.layout.classList.add("reading");
 
     var head = el("div", "chapter-head");
-    var back = el("button", "btn ghost to-list", "← Главы");
+    var back = el("button", "btn ghost to-list", t("theoryBackToChapters"));
     back.addEventListener("click", function () { self.showList(); });
     head.appendChild(back);
     head.appendChild(el("h1", "", c.title));
@@ -101,7 +119,7 @@
     var meta = el("div", "chapter-head");
     c.svc.forEach(function (s) { meta.appendChild(el("span", "chip", s)); });
     if (c.questions.length) {
-      var btn = el("button", "btn primary", "Порешать вопросы главы (" + c.questions.length + ")");
+      var btn = el("button", "btn primary", t("theoryPracticeChapter", c.questions.length));
       btn.addEventListener("click", function () {
         if (self.handlers.onPractice) self.handlers.onPractice(c);
       });
@@ -124,7 +142,7 @@
     });
 
     /* навигация по главам внизу: предыдущая и следующая по порядку */
-    var ordered = CHAPTERS.slice().sort(function (a, b) { return a.order - b.order; });
+    var ordered = chapters().slice().sort(function (a, b) { return a.order - b.order; });
     var pos = ordered.map(function (x) { return x.id; }).indexOf(c.id);
     var nav = el("div", "chapter-nav");
     function navBtn(target, label) {
@@ -143,8 +161,8 @@
   };
 
   global.SAA_Theory = {
-    chapters: CHAPTERS,
-    byId: BY_ID,
+    get chapters() { return chapters(); },
+    byId: byId,
     chaptersForServices: chaptersForServices,
     search: search,
     View: View
