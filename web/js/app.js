@@ -434,10 +434,12 @@
   /* ---------------- смена языка: перерисовать всё, что сейчас видно ---------------- */
 
   function rerenderCurrentView() {
+    $("bank-info").textContent = t("bankInfo", Q.bank.length, Q.meta.audited, T.chapters.length);
     applyStaticText();
     fillFilters();
     $("f-summary").textContent = filtersSummary(practice ? practice.list.length : 0);
     if (practice) practice.render();
+    renderExamPlan();
     if (exam && exam.state && !$("exam-run").classList.contains("hidden")) exam.render();
     if (!$("exam-result").classList.contains("hidden") && lastExamResult) renderExamResult(lastExamResult);
     theoryView.renderList();
