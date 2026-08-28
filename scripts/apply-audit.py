@@ -18,9 +18,13 @@ META = "data/meta.json"
 OUT = "data/questions.json"
 
 # порядок ключей в записи вопроса
-ORDER = ["id", "question", "options", "answer", "answer_original", "fix_note",
-         "disputed_alt", "disputed_note", "defect", "note", "exhibits",
-         "dom", "svc", "multi", "dom_conf", "dom_why"]
+# поля *_en — английский перевод соответствующего аннотационного поля (см. glossary
+# в scratch и data/overlay.json / data/dom-overrides.json); необязательны, RU остаётся
+# каноническим источником, web/js/quiz.js падает на RU, если _en отсутствует.
+ORDER = ["id", "question", "options", "answer", "answer_original", "fix_note", "fix_note_en",
+         "disputed_alt", "disputed_note", "disputed_note_en", "defect", "defect_en",
+         "note", "note_en", "exhibits",
+         "dom", "svc", "multi", "dom_conf", "dom_why", "dom_why_en"]
 
 qs = json.load(open(SRC, encoding="utf-8"))
 ov = json.load(open(OVERLAY, encoding="utf-8"))
@@ -58,9 +62,10 @@ for key, patch in ov.items():
             q["multi"] = len(q["answer"]) > 1
             applied["answer"] += 1
 
-    # 4) остальные поля аудита
-    for k in ("answer_original", "fix_note", "disputed_alt", "disputed_note",
-              "defect", "note", "exhibits"):
+    # 4) остальные поля аудита (включая английские переводы *_en, если есть)
+    for k in ("answer_original", "fix_note", "fix_note_en", "disputed_alt",
+              "disputed_note", "disputed_note_en", "defect", "defect_en",
+              "note", "note_en", "exhibits"):
         if k in patch:
             q[k] = patch[k]
             applied["meta"] += 1
@@ -78,6 +83,8 @@ for key, patch in dom_ov.items():
     q = by_id[int(key)]
     q["dom"] = patch["dom"]
     q["dom_why"] = patch["why"]
+    if "why_en" in patch:
+        q["dom_why_en"] = patch["why_en"]
     q["dom_conf"] = "manual"
 
 out = [{k: q[k] for k in ORDER if k in q} for q in sorted(qs, key=lambda x: x["id"])]

@@ -1,1390 +1,1737 @@
 {
  "1": {
   "dom": "PERF",
-  "why": "скорость агрегации данных в один бакет"
+  "why": "скорость агрегации данных в один бакет",
+  "why_en": "speed of aggregating data into a single bucket"
  },
  "2": {
   "dom": "PERF",
-  "why": "выбор аналитического сервиса по данным в S3"
+  "why": "выбор аналитического сервиса по данным в S3",
+  "why_en": "choosing an analytics service for data in S3"
  },
  "3": {
   "dom": "SEC",
-  "why": "ограничение доступа к бакету организацией"
+  "why": "ограничение доступа к бакету организацией",
+  "why_en": "restricting bucket access to the organization"
  },
  "5": {
   "dom": "RES",
-  "why": "общий доступ к документам с обоих инстансов"
+  "why": "общий доступ к документам с обоих инстансов",
+  "why_en": "shared access to documents from both instances"
  },
  "6": {
   "dom": "PERF",
-  "why": "скорость переноса при ограниченном канале"
+  "why": "скорость переноса при ограниченном канале",
+  "why_en": "transfer speed with limited bandwidth"
  },
  "10": {
   "dom": "RES",
-  "why": "гарантия порядка обработки заказов"
+  "why": "гарантия порядка обработки заказов",
+  "why_en": "guaranteeing order processing sequence"
  },
  "15": {
   "dom": "SEC",
-  "why": "инспекция и фильтрация трафика VPC"
+  "why": "инспекция и фильтрация трафика VPC",
+  "why_en": "VPC traffic inspection and filtering"
  },
  "16": {
   "dom": "PERF",
-  "why": "выбор BI-платформы для витрины данных"
+  "why": "выбор BI-платформы для витрины данных",
+  "why_en": "choosing a BI platform for a data mart"
  },
  "17": {
   "dom": "SEC",
-  "why": "доступ EC2 к S3 через роль"
+  "why": "доступ EC2 к S3 через роль",
+  "why_en": "EC2 access to S3 via a role"
  },
  "20": {
   "dom": "PERF",
-  "why": "быстрый клон с высоким I/O для тестов"
+  "why": "быстрый клон с высоким I/O для тестов",
+  "why_en": "fast clone with high I/O for testing"
  },
  "25": {
   "dom": "RES",
-  "why": "буфер между API и базой вместо роста квот"
+  "why": "буфер между API и базой вместо роста квот",
+  "why_en": "buffer between API and database instead of scaling quotas"
  },
  "28": {
   "dom": "SEC",
-  "why": "единый вход и федерация с AD"
+  "why": "единый вход и федерация с AD",
+  "why_en": "single sign-on and federation with AD"
  },
  "31": {
   "dom": "SEC",
-  "why": "контроль соответствия ресурсов тегам"
+  "why": "контроль соответствия ресурсов тегам",
+  "why_en": "enforcing resource tag compliance"
  },
  "39": {
   "dom": "PERF",
-  "why": "медленные вставки из-за производительности тома"
+  "why": "медленные вставки из-за производительности тома",
+  "why_en": "slow inserts due to volume performance"
  },
  "44": {
   "dom": "RES",
-  "why": "защита данных от случайного удаления"
+  "why": "защита данных от случайного удаления",
+  "why_en": "protecting data from accidental deletion"
  },
  "45": {
   "dom": "RES",
-  "why": "повторные попытки и очередь недоставленных"
+  "why": "повторные попытки и очередь недоставленных",
+  "why_en": "retries and a dead-letter queue"
  },
  "47": {
   "dom": "RES",
-  "why": "гарантированная ёмкость в трёх зонах"
+  "why": "гарантированная ёмкость в трёх зонах",
+  "why_en": "guaranteed capacity across three zones"
  },
  "50": {
   "dom": "SEC",
-  "why": "срочное закрытие уязвимости патчами"
+  "why": "срочное закрытие уязвимости патчами",
+  "why_en": "urgent vulnerability patching"
  },
  "51": {
   "dom": "RES",
-  "why": "событийная сборка и рассылка отчёта"
+  "why": "событийная сборка и рассылка отчёта",
+  "why_en": "event-driven report generation and distribution"
  },
  "55": {
   "dom": "SEC",
-  "why": "доступ к базе только из приватных подсетей"
+  "why": "доступ к базе только из приватных подсетей",
+  "why_en": "database access only from private subnets"
  },
  "57": {
   "dom": "PERF",
-  "why": "выбор управляемого ML-сервиса модерации"
+  "why": "выбор управляемого ML-сервиса модерации",
+  "why_en": "choosing a managed ML moderation service"
  },
  "58": {
   "dom": "PERF",
-  "why": "контейнеры без управления инфраструктурой"
+  "why": "контейнеры без управления инфраструктурой",
+  "why_en": "containers without infrastructure management"
  },
  "59": {
   "dom": "PERF",
-  "why": "приём и обработка потока кликов"
+  "why": "приём и обработка потока кликов",
+  "why_en": "ingesting and processing clickstream data"
  },
  "60": {
   "dom": "SEC",
-  "why": "принудительный HTTPS для всех запросов"
+  "why": "принудительный HTTPS для всех запросов",
+  "why_en": "enforcing HTTPS for all requests"
  },
  "65": {
   "dom": "SEC",
-  "why": "обнаружение защищаемых медицинских данных"
+  "why": "обнаружение защищаемых медицинских данных",
+  "why_en": "detecting protected health data"
  },
  "67": {
   "dom": "RES",
-  "why": "повторная обработка сообщений очереди"
+  "why": "повторная обработка сообщений очереди",
+  "why_en": "reprocessing queue messages"
  },
  "70": {
   "dom": "RES",
-  "why": "замена инстансов по проверке HTTP вместо ручного рестарта"
+  "why": "замена инстансов по проверке HTTP вместо ручного рестарта",
+  "why_en": "replacing instances on HTTP health check failure instead of manual restart"
  },
  "72": {
   "dom": "COST",
-  "why": "плата за трафик к S3 внутри региона"
+  "why": "плата за трафик к S3 внутри региона",
+  "why_en": "data transfer charges to S3 within the region"
  },
  "75": {
   "dom": "RES",
-  "why": "транзакции теряются при перегрузке уровня"
+  "why": "транзакции теряются при перегрузке уровня",
+  "why_en": "transactions lost under tier overload"
  },
  "79": {
   "dom": "COST",
-  "why": "непредсказуемые всплески без переплаты"
+  "why": "непредсказуемые всплески без переплаты",
+  "why_en": "unpredictable spikes without overpaying"
  },
  "83": {
   "dom": "PERF",
-  "why": "ускорение загрузки сайта для Европы"
+  "why": "ускорение загрузки сайта для Европы",
+  "why_en": "speeding up site load times for Europe"
  },
  "85": {
   "dom": "SEC",
-  "why": "неизменяемость документов по регуляторике"
+  "why": "неизменяемость документов по регуляторике",
+  "why_en": "document immutability for regulatory compliance"
  },
  "87": {
   "dom": "RES",
-  "why": "не потерять данные во время апгрейда"
+  "why": "не потерять данные во время апгрейда",
+  "why_en": "avoiding data loss during upgrade"
  },
  "90": {
   "dom": "PERF",
-  "why": "скрипт мешает работе базы разработчикам"
+  "why": "скрипт мешает работе базы разработчикам",
+  "why_en": "script interferes with developers' database usage"
  },
  "91": {
   "dom": "SEC",
-  "why": "доступ к S3 без выхода в интернет"
+  "why": "доступ к S3 без выхода в интернет",
+  "why_en": "S3 access without internet egress"
  },
  "94": {
   "dom": "PERF",
-  "why": "эластичная обработка при переменной нагрузке"
+  "why": "эластичная обработка при переменной нагрузке",
+  "why_en": "elastic processing under variable load"
  },
  "98": {
   "dom": "RES",
-  "why": "дубли обработки из-за visibility timeout"
+  "why": "дубли обработки из-за visibility timeout",
+  "why_en": "duplicate processing due to visibility timeout"
  },
  "99": {
   "dom": "PERF",
-  "why": "файловое хранилище с клиентами Lustre"
+  "why": "файловое хранилище с клиентами Lustre",
+  "why_en": "file storage with Lustre clients"
  },
  "101": {
   "dom": "RES",
-  "why": "выход в интернет из приватных подсетей трёх зон"
+  "why": "выход в интернет из приватных подсетей трёх зон",
+  "why_en": "internet egress from private subnets in three zones"
  },
  "102": {
   "dom": "PERF",
-  "why": "автоматизация переноса данных в EFS"
+  "why": "автоматизация переноса данных в EFS",
+  "why_en": "automating data migration to EFS"
  },
  "103": {
   "dom": "PERF",
-  "why": "исключение повторной обработки данных ETL"
+  "why": "исключение повторной обработки данных ETL",
+  "why_en": "preventing duplicate ETL data processing"
  },
  "107": {
   "dom": "PERF",
-  "why": "выбор хранилища для точек геолокации"
+  "why": "выбор хранилища для точек геолокации",
+  "why_en": "choosing storage for geolocation points"
  },
  "108": {
   "dom": "RES",
-  "why": "рассылка события нескольким системам"
+  "why": "рассылка события нескольким системам",
+  "why_en": "fanning out an event to multiple systems"
  },
  "109": {
   "dom": "SEC",
-  "why": "запрет изменения объектов и контроль удаления"
+  "why": "запрет изменения объектов и контроль удаления",
+  "why_en": "preventing object modification and controlling deletion"
  },
  "112": {
   "dom": "PERF",
-  "why": "эластичная платформа для роста запросов"
+  "why": "эластичная платформа для роста запросов",
+  "why_en": "elastic platform for growing request volume"
  },
  "113": {
   "dom": "PERF",
-  "why": "перенос 50 ТБ без доступной полосы"
+  "why": "перенос 50 ТБ без доступной полосы",
+  "why_en": "transferring 50 TB with limited bandwidth"
  },
  "115": {
   "dom": "SEC",
-  "why": "приватный маршрут для передачи файлов"
+  "why": "приватный маршрут для передачи файлов",
+  "why_en": "private route for file transfer"
  },
  "116": {
   "dom": "PERF",
-  "why": "статический сайт вместо CMS с патчами"
+  "why": "статический сайт вместо CMS с патчами",
+  "why_en": "static site instead of a CMS requiring patching"
  },
  "117": {
   "dom": "PERF",
-  "why": "доставка логов в OpenSearch near real-time"
+  "why": "доставка логов в OpenSearch near real-time",
+  "why_en": "near real-time log delivery to OpenSearch"
  },
  "119": {
   "dom": "SEC",
-  "why": "защита API от SQLi и XSS"
+  "why": "защита API от SQLi и XSS",
+  "why_en": "protecting an API from SQLi and XSS"
  },
  "120": {
   "dom": "PERF",
-  "why": "маршрутизация к инстансам в двух регионах"
+  "why": "маршрутизация к инстансам в двух регионах",
+  "why_en": "routing to instances across two regions"
  },
  "125": {
   "dom": "SEC",
-  "why": "веб и база без публичного доступа при выходе наружу"
+  "why": "веб и база без публичного доступа при выходе наружу",
+  "why_en": "web and database without public access during outbound traffic"
  },
  "128": {
   "dom": "COST",
-  "why": "прерываемые контейнеры без потерь"
+  "why": "прерываемые контейнеры без потерь",
+  "why_en": "interruptible containers without data loss"
  },
  "129": {
   "dom": "PERF",
-  "why": "снятие потолка масштабирования и capacity planning"
+  "why": "снятие потолка масштабирования и capacity planning",
+  "why_en": "removing the scaling ceiling and capacity planning"
  },
  "130": {
   "dom": "PERF",
-  "why": "удержание CPU около целевого значения"
+  "why": "удержание CPU около целевого значения",
+  "why_en": "keeping CPU near a target value"
  },
  "131": {
   "dom": "SEC",
-  "why": "запрет прямого доступа к URL бакета"
+  "why": "запрет прямого доступа к URL бакета",
+  "why_en": "blocking direct access to the bucket URL"
  },
  "135": {
   "dom": "SEC",
-  "why": "приватное подключение к сервису провайдера"
+  "why": "приватное подключение к сервису провайдера",
+  "why_en": "private connectivity to a provider's service"
  },
  "136": {
   "dom": "RES",
-  "why": "база остаётся online и синхронной при миграции"
+  "why": "база остаётся online и синхронной при миграции",
+  "why_en": "database stays online and in sync during migration"
  },
  "138": {
   "dom": "RES",
-  "why": "всё в одной зоне: нужна максимальная доступность"
+  "why": "всё в одной зоне: нужна максимальная доступность",
+  "why_en": "everything in one zone: maximum availability needed"
  },
  "139": {
   "dom": "PERF",
-  "why": "автоматизация конвейера обработки файлов"
+  "why": "автоматизация конвейера обработки файлов",
+  "why_en": "automating a file-processing pipeline"
  },
  "143": {
   "dom": "PERF",
-  "why": "распил монолита на масштабируемые части"
+  "why": "распил монолита на масштабируемые части",
+  "why_en": "breaking a monolith into scalable components"
  },
  "146": {
   "dom": "COST",
-  "why": "дневной пик и низкая ночная нагрузка"
+  "why": "дневной пик и низкая ночная нагрузка",
+  "why_en": "daytime peak and low nighttime load"
  },
  "148": {
   "dom": "RES",
-  "why": "гарантия обработки всех уведомлений"
+  "why": "гарантия обработки всех уведомлений",
+  "why_en": "guaranteeing all notifications are processed"
  },
  "149": {
   "dom": "RES",
-  "why": "сохранение порядка событий при обработке"
+  "why": "сохранение порядка событий при обработке",
+  "why_en": "preserving event order during processing"
  },
  "154": {
   "dom": "SEC",
-  "why": "права на запись и запрет удаления файлов"
+  "why": "права на запись и запрет удаления файлов",
+  "why_en": "write permissions with deletion prevention for files"
  },
  "156": {
   "dom": "PERF",
-  "why": "единый конвейер для батча и потока"
+  "why": "единый конвейер для батча и потока",
+  "why_en": "unified pipeline for batch and streaming"
  },
  "166": {
   "dom": "PERF",
-  "why": "раздача статики миллионам пользователей"
+  "why": "раздача статики миллионам пользователей",
+  "why_en": "serving static content to millions of users"
  },
  "168": {
   "dom": "SEC",
-  "why": "ограничение сервисов во всех аккаунтах"
+  "why": "ограничение сервисов во всех аккаунтах",
+  "why_en": "restricting services across all accounts"
  },
  "170": {
   "dom": "SEC",
-  "why": "доступ только из одной страны"
+  "why": "доступ только из одной страны",
+  "why_en": "access restricted to a single country"
  },
  "175": {
   "dom": "PERF",
-  "why": "таймауты из-за исчерпания соединений БД"
+  "why": "таймауты из-за исчерпания соединений БД",
+  "why_en": "timeouts from database connection exhaustion"
  },
  "177": {
   "dom": "PERF",
-  "why": "задержки чтения без правок приложения"
+  "why": "задержки чтения без правок приложения",
+  "why_en": "read latency without application changes"
  },
  "181": {
   "dom": "RES",
-  "why": "обмен между микросервисами без порядка"
+  "why": "обмен между микросервисами без порядка",
+  "why_en": "messaging between microservices without ordering"
  },
  "184": {
   "dom": "PERF",
-  "why": "сетевой доступ функции к сети дата-центра"
+  "why": "сетевой доступ функции к сети дата-центра",
+  "why_en": "function network access to an on-premises data center network"
  },
  "185": {
   "dom": "SEC",
-  "why": "права контейнера на вызовы S3"
+  "why": "права контейнера на вызовы S3",
+  "why_en": "container permissions for S3 calls"
  },
  "186": {
   "dom": "PERF",
-  "why": "общая файловая система Windows между зонами"
+  "why": "общая файловая система Windows между зонами",
+  "why_en": "shared Windows file system across zones"
  },
  "191": {
   "dom": "PERF",
-  "why": "отчёты замедляют обработку заказов"
+  "why": "отчёты замедляют обработку заказов",
+  "why_en": "reports slowing down order processing"
  },
  "192": {
   "dom": "PERF",
-  "why": "распознавание документов и SQL по данным"
+  "why": "распознавание документов и SQL по данным",
+  "why_en": "document recognition and SQL queries over data"
  },
  "196": {
   "dom": "COST",
-  "why": "хранить только данные за 30 дней"
+  "why": "хранить только данные за 30 дней",
+  "why_en": "retaining only the last 30 days of data"
  },
  "198": {
   "dom": "PERF",
-  "why": "подбор управляемых сервисов под Kubernetes и MongoDB"
+  "why": "подбор управляемых сервисов под Kubernetes и MongoDB",
+  "why_en": "choosing managed services for Kubernetes and MongoDB"
  },
  "199": {
   "dom": "PERF",
-  "why": "распознавание речи и запросы к транскриптам"
+  "why": "распознавание речи и запросы к транскриптам",
+  "why_en": "speech recognition and queries over transcripts"
  },
  "200": {
   "dom": "SEC",
-  "why": "управление доступом к REST API"
+  "why": "управление доступом к REST API",
+  "why_en": "controlling access to a REST API"
  },
  "201": {
   "dom": "RES",
-  "why": "двусторонний SMS-обмен и хранение ответов"
+  "why": "двусторонний SMS-обмен и хранение ответов",
+  "why_en": "two-way SMS messaging and storing responses"
  },
  "203": {
   "dom": "PERF",
-  "why": "масштабирование обработчиков при росте нагрузки"
+  "why": "масштабирование обработчиков при росте нагрузки",
+  "why_en": "scaling handlers as load grows"
  },
  "204": {
   "dom": "SEC",
-  "why": "гранулярные права на данные озера"
+  "why": "гранулярные права на данные озера",
+  "why_en": "granular permissions on data lake data"
  },
  "206": {
   "dom": "SEC",
-  "why": "аудит вызовов API и оповещение"
+  "why": "аудит вызовов API и оповещение",
+  "why_en": "auditing API calls and alerting"
  },
  "208": {
   "dom": "SEC",
-  "why": "запрет публичных маршрутов и доступ только с инстанса"
+  "why": "запрет публичных маршрутов и доступ только с инстанса",
+  "why_en": "blocking public routes with access only from the instance"
  },
  "209": {
   "dom": "RES",
-  "why": "состояние сессий вне часто заменяемых инстансов"
+  "why": "состояние сессий вне часто заменяемых инстансов",
+  "why_en": "session state outside frequently replaced instances"
  },
  "210": {
   "dom": "RES",
-  "why": "не терять заказы при масштабировании"
+  "why": "не терять заказы при масштабировании",
+  "why_en": "not losing orders during scaling"
  },
  "211": {
   "dom": "SEC",
-  "why": "инвентаризация ресурсов по тегам через Tag Editor"
+  "why": "инвентаризация ресурсов по тегам через Tag Editor",
+  "why_en": "inventorying resources by tag via Tag Editor"
  },
  "213": {
   "dom": "SEC",
-  "why": "фильтрация атак прикладного уровня"
+  "why": "фильтрация атак прикладного уровня",
+  "why_en": "filtering application-layer attacks"
  },
  "214": {
   "dom": "PERF",
-  "why": "преобразование форматов данных с минимумом кода"
+  "why": "преобразование форматов данных с минимумом кода",
+  "why_en": "converting data formats with minimal code"
  },
  "223": {
   "dom": "SEC",
-  "why": "доступ пода к DynamoDB без интернета"
+  "why": "доступ пода к DynamoDB без интернета",
+  "why_en": "pod access to DynamoDB without internet access"
  },
  "226": {
   "dom": "PERF",
-  "why": "приём данных от миллионов устройств"
+  "why": "приём данных от миллионов устройств",
+  "why_en": "ingesting data from millions of devices"
  },
  "232": {
   "dom": "SEC",
-  "why": "оповещение о сеансах RDP и SSH"
+  "why": "оповещение о сеансах RDP и SSH",
+  "why_en": "alerting on RDP and SSH sessions"
  },
  "235": {
   "dom": "RES",
-  "why": "синхронность баз на время поэтапной миграции"
+  "why": "синхронность баз на время поэтапной миграции",
+  "why_en": "keeping databases in sync during a phased migration"
  },
  "241": {
   "dom": "RES",
-  "why": "данные онлайн в нескольких регионах постоянно"
+  "why": "данные онлайн в нескольких регионах постоянно",
+  "why_en": "data online across multiple regions continuously"
  },
  "242": {
   "dom": "RES",
-  "why": "в ответе DNS только здоровые узлы"
+  "why": "в ответе DNS только здоровые узлы",
+  "why_en": "only healthy nodes in DNS responses"
  },
  "244": {
   "dom": "RES",
-  "why": "разделение слоёв ради доступности"
+  "why": "разделение слоёв ради доступности",
+  "why_en": "separating tiers for availability"
  },
  "246": {
   "dom": "SEC",
-  "why": "публикация приложения из приватных подсетей через ALB в публичных"
+  "why": "публикация приложения из приватных подсетей через ALB в публичных",
+  "why_en": "exposing an application from private subnets via an ALB in public subnets"
  },
  "248": {
   "dom": "PERF",
-  "why": "масштабирование под нагрузку при 100% CPU"
+  "why": "масштабирование под нагрузку при 100% CPU",
+  "why_en": "scaling in response to 100% CPU load"
  },
  "249": {
   "dom": "PERF",
-  "why": "файловое хранилище с клиентами SMB"
+  "why": "файловое хранилище с клиентами SMB",
+  "why_en": "file storage with SMB clients"
  },
  "250": {
   "dom": "COST",
-  "why": "удешевление хранения логов после 90 дней"
+  "why": "удешевление хранения логов после 90 дней",
+  "why_en": "reducing log storage cost after 90 days"
  },
  "251": {
   "dom": "PERF",
-  "why": "исходящий доступ из приватной подсети"
+  "why": "исходящий доступ из приватной подсети",
+  "why_en": "outbound access from a private subnet"
  },
  "252": {
   "dom": "RES",
-  "why": "общий доступ к файлам со встроенной избыточностью"
+  "why": "общий доступ к файлам со встроенной избыточностью",
+  "why_en": "shared file access with built-in redundancy"
  },
  "255": {
   "dom": "RES",
-  "why": "идемпотентность оформления заказа"
+  "why": "идемпотентность оформления заказа",
+  "why_en": "order placement idempotency"
  },
  "256": {
   "dom": "RES",
-  "why": "защита от удаления с сохранением версий"
+  "why": "защита от удаления с сохранением версий",
+  "why_en": "deletion protection with version retention"
  },
  "258": {
   "dom": "PERF",
-  "why": "конвертация CSV в Parquet с минимумом операций"
+  "why": "конвертация CSV в Parquet с минимумом операций",
+  "why_en": "converting CSV to Parquet with minimal operations"
  },
  "261": {
   "dom": "PERF",
-  "why": "разные версии контента по типу устройства"
+  "why": "разные версии контента по типу устройства",
+  "why_en": "serving different content versions by device type"
  },
  "263": {
   "dom": "PERF",
-  "why": "контейнеры без обслуживания инфраструктуры"
+  "why": "контейнеры без обслуживания инфраструктуры",
+  "why_en": "containers without infrastructure maintenance"
  },
  "264": {
   "dom": "RES",
-  "why": "исключение неисправных узлов из DNS"
+  "why": "исключение неисправных узлов из DNS",
+  "why_en": "excluding unhealthy nodes from DNS"
  },
  "268": {
   "dom": "PERF",
-  "why": "задержки из-за производительности чтения"
+  "why": "задержки из-за производительности чтения",
+  "why_en": "latency due to read performance"
  },
  "276": {
   "dom": "PERF",
-  "why": "автоматическое масштабирование при росте трафика"
+  "why": "автоматическое масштабирование при росте трафика",
+  "why_en": "automatic scaling as traffic grows"
  },
  "280": {
   "dom": "PERF",
-  "why": "анализ и визуализация логов CloudFront"
+  "why": "анализ и визуализация логов CloudFront",
+  "why_en": "analyzing and visualizing CloudFront logs"
  },
  "282": {
   "dom": "SEC",
-  "why": "доступ к инстансам только от балансировщика"
+  "why": "доступ к инстансам только от балансировщика",
+  "why_en": "instance access only from the load balancer"
  },
  "283": {
   "dom": "PERF",
-  "why": "один набор данных для NFS и SMB"
+  "why": "один набор данных для NFS и SMB",
+  "why_en": "single dataset for NFS and SMB"
  },
  "286": {
   "dom": "PERF",
-  "why": "кэш отдаёт устаревшую версию сайта"
+  "why": "кэш отдаёт устаревшую версию сайта",
+  "why_en": "cache serving a stale version of the site"
  },
  "288": {
   "dom": "PERF",
-  "why": "общий файловый доступ без правок приложения"
+  "why": "общий файловый доступ без правок приложения",
+  "why_en": "shared file access without application changes"
  },
  "294": {
   "dom": "SEC",
-  "why": "доступ к S3 без выхода в интернет"
+  "why": "доступ к S3 без выхода в интернет",
+  "why_en": "S3 access without internet egress"
  },
  "296": {
   "dom": "PERF",
-  "why": "планирование адресного пространства для peering"
+  "why": "планирование адресного пространства для peering",
+  "why_en": "planning address space for peering"
  },
  "301": {
   "dom": "PERF",
-  "why": "быстрый перенос с ограничением полосы"
+  "why": "быстрый перенос с ограничением полосы",
+  "why_en": "fast transfer with limited bandwidth"
  },
  "305": {
   "dom": "PERF",
-  "why": "управляемое хранилище с доступом по SMB"
+  "why": "управляемое хранилище с доступом по SMB",
+  "why_en": "managed storage with SMB access"
  },
  "307": {
   "dom": "PERF",
-  "why": "тип шлюза под локальный кэш недавних данных"
+  "why": "тип шлюза под локальный кэш недавних данных",
+  "why_en": "gateway type for local caching of recent data"
  },
  "311": {
   "dom": "RES",
-  "why": "разделение по типам и гарантия недоставки потерь"
+  "why": "разделение по типам и гарантия недоставки потерь",
+  "why_en": "fan-out by message type with guaranteed no-loss delivery"
  },
  "312": {
   "dom": "RES",
-  "why": "ночные бэкапы и восстановление в другом регионе"
+  "why": "ночные бэкапы и восстановление в другом регионе",
+  "why_en": "nightly backups and recovery in another region"
  },
  "314": {
   "dom": "PERF",
-  "why": "база без выбора класса инстанса"
+  "why": "база без выбора класса инстанса",
+  "why_en": "database without instance class selection"
  },
  "315": {
   "dom": "SEC",
-  "why": "активное сканирование уязвимостей инстансов"
+  "why": "активное сканирование уязвимостей инстансов",
+  "why_en": "active vulnerability scanning of instances"
  },
  "316": {
   "dom": "COST",
-  "why": "снижение затрат на обработку очереди"
+  "why": "снижение затрат на обработку очереди",
+  "why_en": "reducing queue processing costs"
  },
  "317": {
   "dom": "PERF",
-  "why": "приведение данных к формату для аналитики"
+  "why": "приведение данных к формату для аналитики",
+  "why_en": "transforming data into a format for analytics"
  },
  "328": {
   "dom": "RES",
-  "why": "гарантия обработки всех запросов при всплеске"
+  "why": "гарантия обработки всех запросов при всплеске",
+  "why_en": "guaranteeing all requests are processed during a spike"
  },
  "329": {
   "dom": "SEC",
-  "why": "регулярные сканы и патчинг с отчётом"
+  "why": "регулярные сканы и патчинг с отчётом",
+  "why_en": "regular scanning and patching with reporting"
  },
  "331": {
   "dom": "PERF",
-  "why": "перенос 20 ТБ при узком канале"
+  "why": "перенос 20 ТБ при узком канале",
+  "why_en": "transferring 20 TB over a narrow link"
  },
  "334": {
   "dom": "SEC",
-  "why": "доступ по SFTP с аутентификацией в AD"
+  "why": "доступ по SFTP с аутентификацией в AD",
+  "why_en": "SFTP access with AD authentication"
  },
  "337": {
   "dom": "PERF",
-  "why": "отставание реплик больше секунды"
+  "why": "отставание реплик больше секунды",
+  "why_en": "replica lag over one second"
  },
  "340": {
   "dom": "SEC",
-  "why": "защита приложения от SQL-инъекций"
+  "why": "защита приложения от SQL-инъекций",
+  "why_en": "protecting an application from SQL injection"
  },
  "342": {
   "dom": "PERF",
-  "why": "ёмкость поднимается заранее по расписанию"
+  "why": "ёмкость поднимается заранее по расписанию",
+  "why_en": "capacity scaled up ahead of time on a schedule"
  },
  "344": {
   "dom": "RES",
-  "why": "сообщения больше лимита очереди"
+  "why": "сообщения больше лимита очереди",
+  "why_en": "messages exceeding the queue size limit"
  },
  "346": {
   "dom": "PERF",
-  "why": "File Gateway: клиентам нужен прежний доступ по SMB и NFS"
+  "why": "File Gateway: клиентам нужен прежний доступ по SMB и NFS",
+  "why_en": "File Gateway: clients need to keep existing SMB and NFS access"
  },
  "351": {
   "dom": "RES",
-  "why": "событийная распределённая архитектура"
+  "why": "событийная распределённая архитектура",
+  "why_en": "event-driven distributed architecture"
  },
  "354": {
   "dom": "PERF",
-  "why": "таймауты подключений на пиках"
+  "why": "таймауты подключений на пиках",
+  "why_en": "connection timeouts during peaks"
  },
  "355": {
   "dom": "PERF",
-  "why": "почасовая CPU-нагрузка с минимумом операций"
+  "why": "почасовая CPU-нагрузка с минимумом операций",
+  "why_en": "hourly CPU workload with minimal operational overhead"
  },
  "358": {
   "dom": "PERF",
-  "why": "динамическое преобразование изображений на масштабе"
+  "why": "динамическое преобразование изображений на масштабе",
+  "why_en": "dynamic image transformation at scale"
  },
  "360": {
   "dom": "SEC",
-  "why": "вызовы между API не должны идти через интернет"
+  "why": "вызовы между API не должны идти через интернет",
+  "why_en": "API-to-API calls must not traverse the internet"
  },
  "362": {
   "dom": "RES",
-  "why": "порядок сообщений по идентификатору платежа"
+  "why": "порядок сообщений по идентификатору платежа",
+  "why_en": "message ordering by payment identifier"
  },
  "369": {
   "dom": "PERF",
-  "why": "разнородные задачи на одном инстансе"
+  "why": "разнородные задачи на одном инстансе",
+  "why_en": "mixed workloads on a single instance"
  },
  "370": {
   "dom": "PERF",
-  "why": "управляемый выход в интернет из приватных подсетей"
+  "why": "управляемый выход в интернет из приватных подсетей",
+  "why_en": "managed internet egress from private subnets"
  },
  "375": {
   "dom": "RES",
-  "why": "оркестрация шагов с ручным подтверждением"
+  "why": "оркестрация шагов с ручным подтверждением",
+  "why_en": "step orchestration with manual approval"
  },
  "376": {
   "dom": "PERF",
-  "why": "отказы подключений при скачках нагрузки"
+  "why": "отказы подключений при скачках нагрузки",
+  "why_en": "connection failures during load spikes"
  },
  "377": {
   "dom": "RES",
-  "why": "отчёт должен уходить в момент запуска и остановки инстанса"
+  "why": "отчёт должен уходить в момент запуска и остановки инстанса",
+  "why_en": "report must be sent on instance start and stop"
  },
  "381": {
   "dom": "PERF",
-  "why": "ускорение отчётов без блокировки записи"
+  "why": "ускорение отчётов без блокировки записи",
+  "why_en": "speeding up reports without blocking writes"
  },
  "382": {
   "dom": "SEC",
-  "why": "шифрование данных в передаче между уровнями"
+  "why": "шифрование данных в передаче между уровнями",
+  "why_en": "encrypting data in transit between tiers"
  },
  "389": {
   "dom": "PERF",
-  "why": "отчёты не должны мешать записи"
+  "why": "отчёты не должны мешать записи",
+  "why_en": "reports must not interfere with writes"
  },
  "397": {
   "dom": "PERF",
-  "why": "ежедневная задача с известным профилем ресурсов"
+  "why": "ежедневная задача с известным профилем ресурсов",
+  "why_en": "daily job with a predictable resource profile"
  },
  "399": {
   "dom": "SEC",
-  "why": "защита от HTTP-флуда"
+  "why": "защита от HTTP-флуда",
+  "why_en": "protection against HTTP flood attacks"
  },
  "400": {
   "dom": "RES",
-  "why": "уведомления без влияния на текущее приложение"
+  "why": "уведомления без влияния на текущее приложение",
+  "why_en": "notifications without impacting the existing application"
  },
  "402": {
   "dom": "RES",
-  "why": "данные исчезают до чтения из потока"
+  "why": "данные исчезают до чтения из потока",
+  "why_en": "data disappearing before being read from the stream"
  },
  "404": {
   "dom": "RES",
-  "why": "часть документов осталась необработанной"
+  "why": "часть документов осталась необработанной",
+  "why_en": "some documents left unprocessed"
  },
  "405": {
   "dom": "PERF",
-  "why": "масштабирование демо-среды под рабочие часы"
+  "why": "масштабирование демо-среды под рабочие часы",
+  "why_en": "scaling a demo environment to business hours"
  },
  "406": {
   "dom": "SEC",
-  "why": "правила доступа к веб-серверам и базе"
+  "why": "правила доступа к веб-серверам и базе",
+  "why_en": "access rules for web servers and database"
  },
  "407": {
   "dom": "PERF",
-  "why": "управляемое хранилище с клиентами Lustre"
+  "why": "управляемое хранилище с клиентами Lustre",
+  "why_en": "managed storage with Lustre clients"
  },
  "412": {
   "dom": "SEC",
-  "why": "запрет публичного доступа ко всем бакетам"
+  "why": "запрет публичного доступа ко всем бакетам",
+  "why_en": "blocking public access across all buckets"
  },
  "413": {
   "dom": "PERF",
-  "why": "задержки доставки писем при росте трафика"
+  "why": "задержки доставки писем при росте трафика",
+  "why_en": "email delivery delays as traffic grows"
  },
  "422": {
   "dom": "PERF",
-  "why": "нерегулярная нагрузка на ML-микросервисы"
+  "why": "нерегулярная нагрузка на ML-микросервисы",
+  "why_en": "irregular load on ML microservices"
  },
  "432": {
   "dom": "PERF",
-  "why": "связка ML-моделей с BI-платформой"
+  "why": "связка ML-моделей с BI-платформой",
+  "why_en": "connecting ML models to a BI platform"
  },
  "433": {
   "dom": "SEC",
-  "why": "запрет изменения тегов через SCP"
+  "why": "запрет изменения тегов через SCP",
+  "why_en": "blocking tag changes via SCP"
  },
  "434": {
   "dom": "RES",
-  "why": "запуск в другом регионе с минимальным простоем"
+  "why": "запуск в другом регионе с минимальным простоем",
+  "why_en": "failover to another region with minimal downtime"
  },
  "439": {
   "dom": "PERF",
-  "why": "нехватка адресов в VPC"
+  "why": "нехватка адресов в VPC",
+  "why_en": "running out of IP addresses in a VPC"
  },
  "445": {
   "dom": "PERF",
-  "why": "перенос 700 ТБ без остановки доступа"
+  "why": "перенос 700 ТБ без остановки доступа",
+  "why_en": "transferring 700 TB without stopping access"
  },
  "451": {
   "dom": "SEC",
-  "why": "разделение ответственности между AWS и клиентом"
+  "why": "разделение ответственности между AWS и клиентом",
+  "why_en": "shared responsibility between AWS and the customer"
  },
  "452": {
   "dom": "COST",
-  "why": "редкая короткая задача вместо постоянного инстанса"
+  "why": "редкая короткая задача вместо постоянного инстанса",
+  "why_en": "infrequent short job instead of an always-on instance"
  },
  "454": {
   "dom": "SEC",
-  "why": "инвентаризация ресурсов по аккаунтам"
+  "why": "инвентаризация ресурсов по аккаунтам",
+  "why_en": "inventorying resources across accounts"
  },
  "458": {
   "dom": "PERF",
-  "why": "подбор вычислений и реляционного хранилища"
+  "why": "подбор вычислений и реляционного хранилища",
+  "why_en": "choosing compute and relational storage"
  },
  "464": {
   "dom": "RES",
-  "why": "устранение единой точки отказа базы"
+  "why": "устранение единой точки отказа базы",
+  "why_en": "eliminating a single point of failure for the database"
  },
  "465": {
   "dom": "RES",
-  "why": "одновременная запись на тома нескольких инстансов"
+  "why": "одновременная запись на тома нескольких инстансов",
+  "why_en": "concurrent writes to volumes from multiple instances"
  },
  "468": {
   "dom": "PERF",
-  "why": "доступ API к контейнерам в приватных подсетях"
+  "why": "доступ API к контейнерам в приватных подсетях",
+  "why_en": "API access to containers in private subnets"
  },
  "469": {
   "dom": "COST",
-  "why": "непредсказуемый профиль доступа к объектам"
+  "why": "непредсказуемый профиль доступа к объектам",
+  "why_en": "unpredictable object access pattern"
  },
  "470": {
   "dom": "SEC",
-  "why": "запрет входящих соединений к IPv6-инстансам"
+  "why": "запрет входящих соединений к IPv6-инстансам",
+  "why_en": "blocking inbound connections to IPv6 instances"
  },
  "473": {
   "dom": "COST",
-  "why": "рост расходов на раздачу статики"
+  "why": "рост расходов на раздачу статики",
+  "why_en": "rising cost of serving static content"
  },
  "474": {
   "dom": "PERF",
-  "why": "связность VPC между регионами"
+  "why": "связность VPC между регионами",
+  "why_en": "VPC connectivity across regions"
  },
  "479": {
   "dom": "RES",
-  "why": "воспроизводимое развёртывание среды в двух зонах"
+  "why": "воспроизводимое развёртывание среды в двух зонах",
+  "why_en": "repeatable environment deployment across two AZs"
  },
  "486": {
   "dom": "COST",
-  "why": "упрощение развёртывания и снижение расходов"
+  "why": "упрощение развёртывания и снижение расходов",
+  "why_en": "simplified deployment and lower costs"
  },
  "493": {
   "dom": "PERF",
-  "why": "распознавание речи, перевод и анализ тональности"
+  "why": "распознавание речи, перевод и анализ тональности",
+  "why_en": "speech recognition, translation, and sentiment analysis"
  },
  "500": {
   "dom": "PERF",
-  "why": "перенос файловых серверов с сохранением прав"
+  "why": "перенос файловых серверов с сохранением прав",
+  "why_en": "migrating file servers while preserving permissions"
  },
  "504": {
   "dom": "PERF",
-  "why": "связность VPC сотен аккаунтов"
+  "why": "связность VPC сотен аккаунтов",
+  "why_en": "VPC connectivity across hundreds of accounts"
  },
  "506": {
   "dom": "PERF",
-  "why": "пиковая нагрузка на загрузку фотографий"
+  "why": "пиковая нагрузка на загрузку фотографий",
+  "why_en": "peak load on photo uploads"
  },
  "515": {
   "dom": "PERF",
-  "why": "применимость аналитического хранилища"
+  "why": "применимость аналитического хранилища",
+  "why_en": "suitability of an analytics warehouse"
  },
  "517": {
   "dom": "SEC",
-  "why": "архивирование журналов сеансов доступа"
+  "why": "архивирование журналов сеансов доступа",
+  "why_en": "archiving access session logs"
  },
  "518": {
   "dom": "PERF",
-  "why": "рост дискового пространства без простоя"
+  "why": "рост дискового пространства без простоя",
+  "why_en": "growing disk space without downtime"
  },
  "519": {
   "dom": "SEC",
-  "why": "централизованная выдача одобренных решений"
+  "why": "централизованная выдача одобренных решений",
+  "why_en": "centralized delivery of approved solutions"
  },
  "522": {
   "dom": "PERF",
-  "why": "масштабирование кластера под неравномерную нагрузку"
+  "why": "масштабирование кластера под неравномерную нагрузку",
+  "why_en": "scaling a cluster for uneven load"
  },
  "523": {
   "dom": "PERF",
-  "why": "чтение из нескольких таблиц без просадки"
+  "why": "чтение из нескольких таблиц без просадки",
+  "why_en": "reading from multiple tables without a performance drop"
  },
  "525": {
   "dom": "COST",
-  "why": "программный доступ к расходам и прогнозу"
+  "why": "программный доступ к расходам и прогнозу",
+  "why_en": "programmatic access to costs and forecasts"
  },
  "528": {
   "dom": "PERF",
-  "why": "обработка файлов сразу после поступления"
+  "why": "обработка файлов сразу после поступления",
+  "why_en": "processing files immediately upon arrival"
  },
  "531": {
   "dom": "PERF",
-  "why": "публикация функции для внешнего вызова"
+  "why": "публикация функции для внешнего вызова",
+  "why_en": "exposing a function for external invocation"
  },
  "537": {
   "dom": "RES",
-  "why": "доступность в трёх зонах и вынос состояния сессий"
+  "why": "доступность в трёх зонах и вынос состояния сессий",
+  "why_en": "three-AZ availability with externalized session state"
  },
  "538": {
   "dom": "SEC",
-  "why": "запрет просмотра контента вне стран запуска"
+  "why": "запрет просмотра контента вне стран запуска",
+  "why_en": "blocking content viewing outside launch countries"
  },
  "540": {
   "dom": "RES",
-  "why": "повышение доступности и вынос отчётности"
+  "why": "повышение доступности и вынос отчётности",
+  "why_en": "improving availability and offloading reporting"
  },
  "542": {
   "dom": "SEC",
-  "why": "доступ к контенту только премиум-клиентам"
+  "why": "доступ к контенту только премиум-клиентам",
+  "why_en": "content access restricted to premium customers"
  },
  "548": {
   "dom": "SEC",
-  "why": "ограничение набора сервисов по аккаунтам"
+  "why": "ограничение набора сервисов по аккаунтам",
+  "why_en": "restricting the set of services per account"
  },
  "549": {
   "dom": "SEC",
-  "why": "безопасный исходящий доступ базы к внешнему источнику"
+  "why": "безопасный исходящий доступ базы к внешнему источнику",
+  "why_en": "secure outbound database access to an external source"
  },
  "554": {
   "dom": "PERF",
-  "why": "подбор типа инстанса под память SAP"
+  "why": "подбор типа инстанса под память SAP",
+  "why_en": "choosing an instance type for SAP memory requirements"
  },
  "557": {
   "dom": "PERF",
-  "why": "параллельная обработка и обогащение данных"
+  "why": "параллельная обработка и обогащение данных",
+  "why_en": "parallel processing and data enrichment"
  },
  "560": {
   "dom": "SEC",
-  "why": "отслеживание изменений структуры организации"
+  "why": "отслеживание изменений структуры организации",
+  "why_en": "tracking organizational structure changes"
  },
  "563": {
   "dom": "PERF",
-  "why": "централизованный обзор кластеров и нагрузок"
+  "why": "централизованный обзор кластеров и нагрузок",
+  "why_en": "centralized view of clusters and workloads"
  },
  "565": {
   "dom": "PERF",
-  "why": "совместимость и автоматическое масштабирование базы"
+  "why": "совместимость и автоматическое масштабирование базы",
+  "why_en": "database compatibility and automatic scaling"
  },
  "567": {
   "dom": "RES",
-  "why": "расширяемая слабосвязанная схема приёма данных"
+  "why": "расширяемая слабосвязанная схема приёма данных",
+  "why_en": "extensible loosely coupled data ingestion architecture"
  },
  "569": {
   "dom": "PERF",
-  "why": "проверка срабатывания правила и вызова цели"
+  "why": "проверка срабатывания правила и вызова цели",
+  "why_en": "verifying rule triggering and target invocation"
  },
  "570": {
   "dom": "PERF",
-  "why": "подъём ёмкости по известному расписанию"
+  "why": "подъём ёмкости по известному расписанию",
+  "why_en": "scaling capacity on a known schedule"
  },
  "572": {
   "dom": "PERF",
-  "why": "управляемая база с автоскейлингом"
+  "why": "управляемая база с автоскейлингом",
+  "why_en": "managed database with autoscaling"
  },
  "582": {
   "dom": "PERF",
-  "why": "минимизация времени загрузки сайта"
+  "why": "минимизация времени загрузки сайта",
+  "why_en": "minimizing site load time"
  },
  "584": {
   "dom": "RES",
-  "why": "узлы не должны делить одно железо"
+  "why": "узлы не должны делить одно железо",
+  "why_en": "nodes must not share the same hardware"
  },
  "586": {
   "dom": "SEC",
-  "why": "выделение отдельной организации для подразделения"
+  "why": "выделение отдельной организации для подразделения",
+  "why_en": "carving out a separate organization for a business unit"
  },
  "594": {
   "dom": "PERF",
-  "why": "долгий запуск и прогрев приложения"
+  "why": "долгий запуск и прогрев приложения",
+  "why_en": "long application startup and warm-up"
  },
  "602": {
   "dom": "RES",
-  "why": "восстановление инстансов после аварии"
+  "why": "восстановление инстансов после аварии",
+  "why_en": "recovering instances after a disaster"
  },
  "603": {
   "dom": "PERF",
-  "why": "параллельная обработка тысяч объектов"
+  "why": "параллельная обработка тысяч объектов",
+  "why_en": "parallel processing of thousands of objects"
  },
  "604": {
   "dom": "PERF",
-  "why": "перенос 10 ПБ за 6 недель"
+  "why": "перенос 10 ПБ за 6 недель",
+  "why_en": "transferring 10 PB in 6 weeks"
  },
  "608": {
   "dom": "SEC",
-  "why": "доступ только с зарегистрированных адресов"
+  "why": "доступ только с зарегистрированных адресов",
+  "why_en": "access limited to registered addresses"
  },
  "615": {
   "dom": "PERF",
-  "why": "сбор метрик и логов микросервисов"
+  "why": "сбор метрик и логов микросервисов",
+  "why_en": "collecting microservices metrics and logs"
  },
  "616": {
   "dom": "SEC",
-  "why": "непрерывный мониторинг вредоносной активности"
+  "why": "непрерывный мониторинг вредоносной активности",
+  "why_en": "continuous monitoring for malicious activity"
  },
  "621": {
   "dom": "RES",
-  "why": "копия новых объектов в другом регионе"
+  "why": "копия новых объектов в другом регионе",
+  "why_en": "copying new objects to another region"
  },
  "622": {
   "dom": "PERF",
-  "why": "резкий дневной пик и гибкая схема данных"
+  "why": "резкий дневной пик и гибкая схема данных",
+  "why_en": "sharp daily spike and flexible data schema"
  },
  "623": {
   "dom": "SEC",
-  "why": "защита REST API от инъекций и XSS"
+  "why": "защита REST API от инъекций и XSS",
+  "why_en": "protecting a REST API from injection and XSS"
  },
  "624": {
   "dom": "SEC",
-  "why": "единая учётная запись для AWS и локальных ресурсов"
+  "why": "единая учётная запись для AWS и локальных ресурсов",
+  "why_en": "unified account for AWS and on-premises resources"
  },
  "625": {
   "dom": "PERF",
-  "why": "маршрутизация пользователей к нужному контенту"
+  "why": "маршрутизация пользователей к нужному контенту",
+  "why_en": "routing users to the right content"
  },
  "626": {
   "dom": "PERF",
-  "why": "перенос с автоматической проверкой целостности"
+  "why": "перенос с автоматической проверкой целостности",
+  "why_en": "migration with automatic integrity verification"
  },
  "627": {
   "dom": "RES",
-  "why": "перенос DNS с максимальной доступностью"
+  "why": "перенос DNS с максимальной доступностью",
+  "why_en": "DNS migration with maximum availability"
  },
  "631": {
   "dom": "PERF",
-  "why": "графовая модель связей и рекомендации"
+  "why": "графовая модель связей и рекомендации",
+  "why_en": "graph model of relationships and recommendations"
  },
  "632": {
   "dom": "PERF",
-  "why": "общий растущий том для инстансов в разных зонах"
+  "why": "общий растущий том для инстансов в разных зонах",
+  "why_en": "shared growing volume for instances across AZs"
  },
  "634": {
   "dom": "SEC",
-  "why": "безопасная выдача данных внешним агентствам"
+  "why": "безопасная выдача данных внешним агентствам",
+  "why_en": "secure data sharing with external agencies"
  },
  "636": {
   "dom": "RES",
-  "why": "масштабируемая обработка событий S3"
+  "why": "масштабируемая обработка событий S3",
+  "why_en": "scalable processing of S3 events"
  },
  "637": {
   "dom": "PERF",
-  "why": "непредсказуемый скачок запросов и рост данных"
+  "why": "непредсказуемый скачок запросов и рост данных",
+  "why_en": "unpredictable request spikes and data growth"
  },
  "642": {
   "dom": "PERF",
-  "why": "балансировка UDP с автоскейлингом"
+  "why": "балансировка UDP с автоскейлингом",
+  "why_en": "UDP load balancing with autoscaling"
  },
  "650": {
   "dom": "PERF",
-  "why": "управляемая СУБД с отчётностью"
+  "why": "управляемая СУБД с отчётностью",
+  "why_en": "managed database with reporting"
  },
  "653": {
   "dom": "COST",
-  "why": "теги центра затрат на все создаваемые ресурсы"
+  "why": "теги центра затрат на все создаваемые ресурсы",
+  "why_en": "cost center tags on all created resources"
  },
  "661": {
   "dom": "PERF",
-  "why": "эффективное масштабирование базы под пики"
+  "why": "эффективное масштабирование базы под пики",
+  "why_en": "efficient database scaling for peaks"
  },
  "671": {
   "dom": "COST",
-  "why": "обнаружение аномальных расходов и уведомления"
+  "why": "обнаружение аномальных расходов и уведомления",
+  "why_en": "detecting anomalous spend and notifications"
  },
  "672": {
   "dom": "PERF",
-  "why": "быстрый анализ кликстрима в S3"
+  "why": "быстрый анализ кликстрима в S3",
+  "why_en": "fast clickstream analysis in S3"
  },
  "673": {
   "dom": "COST",
-  "why": "удешевление хранения файлов после 7 дней"
+  "why": "удешевление хранения файлов после 7 дней",
+  "why_en": "cheaper storage for files after 7 days"
  },
  "680": {
   "dom": "PERF",
-  "why": "непрерывное копирование изменившихся файлов"
+  "why": "непрерывное копирование изменившихся файлов",
+  "why_en": "continuous copying of changed files"
  },
  "685": {
   "dom": "PERF",
-  "why": "предсказуемая работа базы при всплесках вызовов"
+  "why": "предсказуемая работа базы при всплесках вызовов",
+  "why_en": "predictable database performance during call bursts"
  },
  "686": {
   "dom": "PERF",
-  "why": "подключение площадок к растущему числу VPC"
+  "why": "подключение площадок к растущему числу VPC",
+  "why_en": "connecting sites to a growing number of VPCs"
  },
  "687": {
   "dom": "PERF",
-  "why": "прогнозирование управляемым ML-сервисом"
+  "why": "прогнозирование управляемым ML-сервисом",
+  "why_en": "forecasting with a managed ML service"
  },
  "691": {
   "dom": "PERF",
-  "why": "общий контент со строгой согласованностью"
+  "why": "общий контент со строгой согласованностью",
+  "why_en": "shared content with strong consistency"
  },
  "692": {
   "dom": "PERF",
-  "why": "максимальная производительность для трёх регионов"
+  "why": "максимальная производительность для трёх регионов",
+  "why_en": "maximum performance across three regions"
  },
  "695": {
   "dom": "PERF",
-  "why": "наблюдаемость микросервисов для поиска проблем"
+  "why": "наблюдаемость микросервисов для поиска проблем",
+  "why_en": "microservices observability for troubleshooting"
  },
  "697": {
   "dom": "SEC",
-  "why": "публикация приложения при запрете публичных инстансов"
+  "why": "публикация приложения при запрете публичных инстансов",
+  "why_en": "publishing an application when public instances are prohibited"
  },
  "699": {
   "dom": "PERF",
-  "why": "управляемые контейнеры с постоянным томом"
+  "why": "управляемые контейнеры с постоянным томом",
+  "why_en": "managed containers with a persistent volume"
  },
  "705": {
   "dom": "RES",
-  "why": "репликация изменений во время миграции"
+  "why": "репликация изменений во время миграции",
+  "why_en": "replicating changes during migration"
  },
  "706": {
   "dom": "PERF",
-  "why": "скрипт мешает критичному приложению"
+  "why": "скрипт мешает критичному приложению",
+  "why_en": "a script interferes with a critical application"
  },
  "707": {
   "dom": "SEC",
-  "why": "видимость аномальных обращений к приложению"
+  "why": "видимость аномальных обращений к приложению",
+  "why_en": "visibility into anomalous application requests"
  },
  "708": {
   "dom": "PERF",
-  "why": "исходящий доступ приватных подсетей"
+  "why": "исходящий доступ приватных подсетей",
+  "why_en": "outbound access for private subnets"
  },
  "718": {
   "dom": "PERF",
-  "why": "масштабируемый Hadoop с обработкой на площадке"
+  "why": "масштабируемый Hadoop с обработкой на площадке",
+  "why_en": "scalable Hadoop with on-premises processing"
  },
  "719": {
   "dom": "PERF",
-  "why": "доступ по SMB и NFS к одним данным"
+  "why": "доступ по SMB и NFS к одним данным",
+  "why_en": "SMB and NFS access to the same data"
  },
  "720": {
   "dom": "PERF",
-  "why": "распил монолита на масштабируемые сервисы"
+  "why": "распил монолита на масштабируемые сервисы",
+  "why_en": "splitting a monolith into scalable services"
  },
  "721": {
   "dom": "PERF",
-  "why": "бессерверный микросервис с автоскейлингом"
+  "why": "бессерверный микросервис с автоскейлингом",
+  "why_en": "serverless microservice with autoscaling"
  },
  "722": {
   "dom": "PERF",
-  "why": "централизованная маршрутизация 30 VPC и DX"
+  "why": "централизованная маршрутизация 30 VPC и DX",
+  "why_en": "centralized routing for 30 VPCs and DX"
  },
  "724": {
   "dom": "PERF",
-  "why": "узлы кластера не добавляются под нагрузку"
+  "why": "узлы кластера не добавляются под нагрузку",
+  "why_en": "cluster nodes not added under load"
  },
  "726": {
   "dom": "PERF",
-  "why": "частые обновления и чтение координат"
+  "why": "частые обновления и чтение координат",
+  "why_en": "frequent updates and reads of location data"
  },
  "727": {
   "dom": "RES",
-  "why": "защита таблицы от случайного удаления"
+  "why": "защита таблицы от случайного удаления",
+  "why_en": "protecting a table from accidental deletion"
  },
  "728": {
   "dom": "COST",
-  "why": "замена локального хранилища при экономии на полосе"
+  "why": "замена локального хранилища при экономии на полосе",
+  "why_en": "replacing on-premises storage while saving on bandwidth"
  },
  "729": {
   "dom": "PERF",
-  "why": "прогноз по истории плюс реакция на факт"
+  "why": "прогноз по истории плюс реакция на факт",
+  "why_en": "forecast from history plus reaction to actuals"
  },
  "733": {
   "dom": "SEC",
-  "why": "обнаружение подозрительных попыток входа в БД"
+  "why": "обнаружение подозрительных попыток входа в БД",
+  "why_en": "detecting suspicious database login attempts"
  },
  "734": {
   "dom": "PERF",
-  "why": "связность двух регионов и двух дата-центров"
+  "why": "связность двух регионов и двух дата-центров",
+  "why_en": "connectivity between two regions and two data centers"
  },
  "739": {
   "dom": "RES",
-  "why": "рассылка с фильтрацией нужным обработчикам"
+  "why": "рассылка с фильтрацией нужным обработчикам",
+  "why_en": "filtered fan-out to the right consumers"
  },
  "747": {
   "dom": "PERF",
-  "why": "перенос SMB-данных без правок приложений"
+  "why": "перенос SMB-данных без правок приложений",
+  "why_en": "migrating SMB data without application changes"
  },
  "748": {
   "dom": "PERF",
-  "why": "наблюдаемость по нескольким аккаунтам"
+  "why": "наблюдаемость по нескольким аккаунтам",
+  "why_en": "observability across multiple accounts"
  },
  "752": {
   "dom": "RES",
-  "why": "гарантия доставки ровно один раз"
+  "why": "гарантия доставки ровно один раз",
+  "why_en": "exactly-once delivery guarantee"
  },
  "754": {
   "dom": "PERF",
-  "why": "доступность и скорость глобального приложения"
+  "why": "доступность и скорость глобального приложения",
+  "why_en": "availability and speed of a global application"
  },
  "759": {
   "dom": "COST",
-  "why": "удешевление хранения по возрасту фильмов"
+  "why": "удешевление хранения по возрасту фильмов",
+  "why_en": "cheaper storage based on movie age"
  },
  "760": {
   "dom": "PERF",
-  "why": "бессерверный контейнер с большим временным диском"
+  "why": "бессерверный контейнер с большим временным диском",
+  "why_en": "serverless container with large ephemeral storage"
  },
  "762": {
   "dom": "RES",
-  "why": "быстрое восстановление удалённых образов"
+  "why": "быстрое восстановление удалённых образов",
+  "why_en": "fast recovery of deleted images"
  },
  "765": {
   "dom": "SEC",
-  "why": "кросс-аккаунтный доступ к очереди"
+  "why": "кросс-аккаунтный доступ к очереди",
+  "why_en": "cross-account access to a queue"
  },
  "767": {
   "dom": "PERF",
-  "why": "cached volumes: подмножество данных доступно локально"
+  "why": "cached volumes: подмножество данных доступно локально",
+  "why_en": "cached volumes: subset of data available locally"
  },
  "768": {
   "dom": "RES",
-  "why": "откат таблицы на любой момент суток"
+  "why": "откат таблицы на любой момент суток",
+  "why_en": "point-in-time table rollback within the same day"
  },
  "771": {
   "dom": "RES",
-  "why": "захват изменений источника во время миграции"
+  "why": "захват изменений источника во время миграции",
+  "why_en": "capturing source changes during migration"
  },
  "772": {
   "dom": "PERF",
-  "why": "управляемые контейнеры с масштабированием по сервисам"
+  "why": "управляемые контейнеры с масштабированием по сервисам",
+  "why_en": "managed containers with per-service scaling"
  },
  "775": {
   "dom": "PERF",
-  "why": "межсервисное взаимодействие и обнаружение сервисов"
+  "why": "межсервисное взаимодействие и обнаружение сервисов",
+  "why_en": "inter-service communication and service discovery"
  },
  "784": {
   "dom": "RES",
-  "why": "оркестрация заданий с ретраями и состоянием"
+  "why": "оркестрация заданий с ретраями и состоянием",
+  "why_en": "job orchestration with retries and state"
  },
  "785": {
   "dom": "RES",
-  "why": "исключение повторной оплаты"
+  "why": "исключение повторной оплаты",
+  "why_en": "avoiding duplicate charges"
  },
  "786": {
   "dom": "PERF",
-  "why": "сбор данных о нагрузке для планирования миграции"
+  "why": "сбор данных о нагрузке для планирования миграции",
+  "why_en": "collecting workload data for migration planning"
  },
  "791": {
   "dom": "SEC",
-  "why": "переменные окружения не должны быть видны"
+  "why": "переменные окружения не должны быть видны",
+  "why_en": "environment variables must not be visible"
  },
  "795": {
   "dom": "PERF",
-  "why": "сеть и хранилище под тесно связанный HPC"
+  "why": "сеть и хранилище под тесно связанный HPC",
+  "why_en": "network and storage for tightly coupled HPC"
  },
  "796": {
   "dom": "PERF",
-  "why": "модерация контента без обучения модели"
+  "why": "модерация контента без обучения модели",
+  "why_en": "content moderation without training a model"
  },
  "798": {
   "dom": "RES",
-  "why": "быстрое подключение новых партнёров к уведомлениям"
+  "why": "быстрое подключение новых партнёров к уведомлениям",
+  "why_en": "quickly onboarding new partners to notifications"
  },
  "802": {
   "dom": "PERF",
-  "why": "подбор вычислений под валидацию и долгую обработку"
+  "why": "подбор вычислений под валидацию и долгую обработку",
+  "why_en": "choosing compute for validation and long-running processing"
  },
  "804": {
   "dom": "PERF",
-  "why": "ежедневная загрузка в MPP-хранилище и ML в SQL"
+  "why": "ежедневная загрузка в MPP-хранилище и ML в SQL",
+  "why_en": "daily load into an MPP warehouse and ML in SQL"
  },
  "808": {
   "dom": "SEC",
-  "why": "сканирование образов контейнеров на CVE"
+  "why": "сканирование образов контейнеров на CVE",
+  "why_en": "scanning container images for CVEs"
  },
  "810": {
   "dom": "PERF",
-  "why": "связность с базой в чужом аккаунте без интернета"
+  "why": "связность с базой в чужом аккаунте без интернета",
+  "why_en": "connectivity to a database in another account without internet"
  },
  "812": {
   "dom": "PERF",
-  "why": "преобразование данных без кода с профилированием"
+  "why": "преобразование данных без кода с профилированием",
+  "why_en": "no-code data transformation with profiling"
  },
  "813": {
   "dom": "PERF",
-  "why": "маршрутизация поддомена на dev-инстанс"
+  "why": "маршрутизация поддомена на dev-инстанс",
+  "why_en": "routing a subdomain to a dev instance"
  },
  "814": {
   "dom": "PERF",
-  "why": "перенос Kubernetes и AMQP на управляемые сервисы"
+  "why": "перенос Kubernetes и AMQP на управляемые сервисы",
+  "why_en": "migrating Kubernetes and AMQP to managed services"
  },
  "815": {
   "dom": "PERF",
-  "why": "снижение времени отклика для мировой аудитории"
+  "why": "снижение времени отклика для мировой аудитории",
+  "why_en": "reducing response time for a global audience"
  },
  "816": {
   "dom": "PERF",
-  "why": "приём файлов по SFTP управляемым сервисом"
+  "why": "приём файлов по SFTP управляемым сервисом",
+  "why_en": "receiving files over SFTP via a managed service"
  },
  "817": {
   "dom": "PERF",
-  "why": "извлечение текста и анализ тональности"
+  "why": "извлечение текста и анализ тональности",
+  "why_en": "text extraction and sentiment analysis"
  },
  "819": {
   "dom": "PERF",
-  "why": "элементы больше лимита DynamoDB"
+  "why": "элементы больше лимита DynamoDB",
+  "why_en": "items larger than the DynamoDB limit"
  },
  "820": {
   "dom": "PERF",
-  "why": "перенос сотен cron-задач без рефакторинга"
+  "why": "перенос сотен cron-задач без рефакторинга",
+  "why_en": "migrating hundreds of cron jobs without refactoring"
  },
  "821": {
   "dom": "SEC",
-  "why": "загрузка данных минуя публичный интернет"
+  "why": "загрузка данных минуя публичный интернет",
+  "why_en": "uploading data bypassing the public internet"
  },
  "826": {
   "dom": "SEC",
-  "why": "единый вход во все аккаунты с локальным AD"
+  "why": "единый вход во все аккаунты с локальным AD",
+  "why_en": "single sign-on across all accounts with on-premises AD"
  },
  "828": {
   "dom": "SEC",
-  "why": "подтверждение соответствия стандартам аудиторам"
+  "why": "подтверждение соответствия стандартам аудиторам",
+  "why_en": "proving compliance to auditors"
  },
  "830": {
   "dom": "PERF",
-  "why": "обход связей до пятого уровня"
+  "why": "обход связей до пятого уровня",
+  "why_en": "traversing relationships up to five levels deep"
  },
  "833": {
   "dom": "RES",
-  "why": "слабая связность и выдача части события"
+  "why": "слабая связность и выдача части события",
+  "why_en": "loose coupling and partial event delivery"
  },
  "837": {
   "dom": "RES",
-  "why": "доступность файлов для многих инстансов в разных зонах"
+  "why": "доступность файлов для многих инстансов в разных зонах",
+  "why_en": "file availability for many instances across AZs"
  },
  "845": {
   "dom": "RES",
-  "why": "событийная рассылка писем по расписанию"
+  "why": "событийная рассылка писем по расписанию",
+  "why_en": "event-driven scheduled email dispatch"
  },
  "846": {
   "dom": "PERF",
-  "why": "ёмкость поднимается до ежегодного пика"
+  "why": "ёмкость поднимается до ежегодного пика",
+  "why_en": "capacity scaling up for an annual peak"
  },
  "850": {
   "dom": "PERF",
-  "why": "графовая база для запросов по связям ресурсов"
+  "why": "графовая база для запросов по связям ресурсов",
+  "why_en": "graph database for querying resource relationships"
  },
  "852": {
   "dom": "PERF",
-  "why": "единый контент с минимальным отставанием"
+  "why": "единый контент с минимальным отставанием",
+  "why_en": "unified content with minimal lag"
  },
  "856": {
   "dom": "SEC",
-  "why": "временный доступ внешнего консультанта к отчёту"
+  "why": "временный доступ внешнего консультанта к отчёту",
+  "why_en": "temporary access for an external consultant to a report"
  },
  "861": {
   "dom": "PERF",
-  "why": "высокий объём операций записи"
+  "why": "высокий объём операций записи",
+  "why_en": "high volume of write operations"
  },
  "867": {
   "dom": "COST",
-  "why": "анализ расходов на тома и оценка экономии"
+  "why": "анализ расходов на тома и оценка экономии",
+  "why_en": "analyzing volume costs and estimating savings"
  },
  "870": {
   "dom": "SEC",
-  "why": "кросс-аккаунтный доступ разработчиков"
+  "why": "кросс-аккаунтный доступ разработчиков",
+  "why_en": "cross-account access for developers"
  },
  "872": {
   "dom": "SEC",
-  "why": "запрет типов инстансов во всех аккаунтах через SCP"
+  "why": "запрет типов инстансов во всех аккаунтах через SCP",
+  "why_en": "blocking instance types across all accounts via SCP"
  },
  "873": {
   "dom": "SEC",
-  "why": "инвентаризация, обновления и сводка уязвимостей"
+  "why": "инвентаризация, обновления и сводка уязвимостей",
+  "why_en": "inventory, patching, and vulnerability summary"
  },
  "880": {
   "dom": "COST",
-  "why": "дашборд расходов на NAT по дням"
+  "why": "дашборд расходов на NAT по дням",
+  "why_en": "daily NAT cost dashboard"
  },
  "886": {
   "dom": "PERF",
-  "why": "миграция СУБД с минимумом правок кода"
+  "why": "миграция СУБД с минимумом правок кода",
+  "why_en": "database migration with minimal code changes"
  },
  "891": {
   "dom": "PERF",
-  "why": "ближайший бакет и обход публичной сети"
+  "why": "ближайший бакет и обход публичной сети",
+  "why_en": "nearest bucket and bypassing the public network"
  },
  "893": {
   "dom": "SEC",
-  "why": "аккаунты с автоматическими guardrails"
+  "why": "аккаунты с автоматическими guardrails",
+  "why_en": "accounts with automatic guardrails"
  },
  "894": {
   "dom": "COST",
-  "why": "удешевление хостинга статического сайта"
+  "why": "удешевление хостинга статического сайта",
+  "why_en": "cheaper static site hosting"
  },
  "895": {
   "dom": "PERF",
-  "why": "управляемое хранилище с доступом по SMB"
+  "why": "управляемое хранилище с доступом по SMB",
+  "why_en": "managed storage with SMB access"
  },
  "897": {
   "dom": "PERF",
-  "why": "долгая непрерываемая задача: выбор вычислений"
+  "why": "долгая непрерываемая задача: выбор вычислений",
+  "why_en": "long uninterruptible task: choosing compute"
  },
  "898": {
   "dom": "SEC",
-  "why": "централизованный сбор данных безопасности"
+  "why": "централизованный сбор данных безопасности",
+  "why_en": "centralized collection of security data"
  },
  "899": {
   "dom": "PERF",
-  "why": "связность изолированных VPC при росте до сотен"
+  "why": "связность изолированных VPC при росте до сотен",
+  "why_en": "connectivity for isolated VPCs scaling to hundreds"
  },
  "900": {
   "dom": "PERF",
-  "why": "единая контейнерная платформа для гибрида"
+  "why": "единая контейнерная платформа для гибрида",
+  "why_en": "unified container platform for hybrid environments"
  },
  "903": {
   "dom": "SEC",
-  "why": "ограничение приложений своими префиксами"
+  "why": "ограничение приложений своими префиксами",
+  "why_en": "restricting applications to their own prefixes"
  },
  "905": {
   "dom": "PERF",
-  "why": "доступность и скорость для TCP и UDP нагрузок"
+  "why": "доступность и скорость для TCP и UDP нагрузок",
+  "why_en": "availability and speed for TCP and UDP workloads"
  },
  "910": {
   "dom": "PERF",
-  "why": "анализ производительности с гранулярностью двух минут"
+  "why": "анализ производительности с гранулярностью двух минут",
+  "why_en": "performance analysis at two-minute granularity"
  },
  "931": {
   "dom": "SEC",
-  "why": "кросс-аккаунтный вызов Lambda из топика"
+  "why": "кросс-аккаунтный вызов Lambda из топика",
+  "why_en": "cross-account Lambda invocation from a topic"
  },
  "934": {
   "dom": "PERF",
-  "why": "доступ по NFS и SMB к одним данным"
+  "why": "доступ по NFS и SMB к одним данным",
+  "why_en": "NFS and SMB access to the same data"
  },
  "937": {
   "dom": "COST",
-  "why": "поиск экономии по инстансам, группе и томам"
+  "why": "поиск экономии по инстансам, группе и томам",
+  "why_en": "finding savings across instances, groups, and volumes"
  },
  "938": {
   "dom": "PERF",
-  "why": "быстрый общий доступ к данным внутри VPC"
+  "why": "быстрый общий доступ к данным внутри VPC",
+  "why_en": "fast shared data access within a VPC"
  },
  "939": {
   "dom": "COST",
-  "why": "избыточная реплика после пикового периода"
+  "why": "избыточная реплика после пикового периода",
+  "why_en": "excess replica after the peak period"
  },
  "945": {
   "dom": "SEC",
-  "why": "инспекция трафика между аккаунтами устройством"
+  "why": "инспекция трафика между аккаунтами устройством",
+  "why_en": "traffic inspection between accounts via an appliance"
  },
  "948": {
   "dom": "COST",
-  "why": "выделять только требуемую ёмкость репликации"
+  "why": "выделять только требуемую ёмкость репликации",
+  "why_en": "provisioning only the required replication capacity"
  },
  "954": {
   "dom": "PERF",
-  "why": "нерегулярная нагрузка на ML-микросервисы"
+  "why": "нерегулярная нагрузка на ML-микросервисы",
+  "why_en": "irregular load on ML microservices"
  },
  "959": {
   "dom": "COST",
-  "why": "базы разработки только в рабочие часы"
+  "why": "базы разработки только в рабочие часы",
+  "why_en": "development databases only during business hours"
  },
  "964": {
   "dom": "PERF",
-  "why": "модульная масштабируемая замена монолита"
+  "why": "модульная масштабируемая замена монолита",
+  "why_en": "modular scalable replacement for a monolith"
  },
  "966": {
   "dom": "SEC",
-  "why": "разграничение прав команд и запрет IMDSv2"
+  "why": "разграничение прав команд и запрет IMDSv2",
+  "why_en": "team permission separation and disabling IMDSv2"
  },
  "969": {
   "dom": "PERF",
-  "why": "контейнеры с масштабированием по метрикам"
+  "why": "контейнеры с масштабированием по метрикам",
+  "why_en": "containers scaling on metrics"
  },
  "974": {
   "dom": "PERF",
-  "why": "загрузка через CloudFront с собственным доменом"
+  "why": "загрузка через CloudFront с собственным доменом",
+  "why_en": "serving content through CloudFront with a custom domain"
  },
  "976": {
   "dom": "PERF",
-  "why": "пользователи попадают на ближайшие инстансы"
+  "why": "пользователи попадают на ближайшие инстансы",
+  "why_en": "users routed to the nearest instances"
  },
  "984": {
   "dom": "COST",
-  "why": "дешёвая раздача динамики глобальной аудитории"
+  "why": "дешёвая раздача динамики глобальной аудитории",
+  "why_en": "cheap delivery of dynamic content to a global audience"
  },
  "990": {
   "dom": "PERF",
-  "why": "приложение умеет только NFS"
+  "why": "приложение умеет только NFS",
+  "why_en": "application only supports NFS"
  },
  "991": {
   "dom": "RES",
-  "why": "потеря событий без возможности перечитать"
+  "why": "потеря событий без возможности перечитать",
+  "why_en": "event loss with no ability to replay"
  },
  "996": {
   "dom": "PERF",
-  "why": "EKS без управления вычислительными узлами"
+  "why": "EKS без управления вычислительными узлами",
+  "why_en": "EKS without managing compute nodes"
  },
  "1001": {
   "dom": "RES",
-  "why": "не терять заказы при масштабировании"
+  "why": "не терять заказы при масштабировании",
+  "why_en": "not losing orders during scaling"
  },
  "1005": {
   "dom": "PERF",
-  "why": "масштабируемая автоматизация обработки опросов"
+  "why": "масштабируемая автоматизация обработки опросов",
+  "why_en": "scalable automation for survey processing"
  },
  "1006": {
   "dom": "RES",
-  "why": "ошибки при выводе инстансов на время патча"
+  "why": "ошибки при выводе инстансов на время патча",
+  "why_en": "errors when taking instances out of service for patching"
  },
  "1014": {
   "dom": "RES",
-  "why": "оркестрация растущего числа заданий обработки"
+  "why": "оркестрация растущего числа заданий обработки",
+  "why_en": "orchestrating a growing number of processing jobs"
  },
  "1019": {
   "dom": "SEC",
-  "why": "доступ к API только с доверенных адресов"
+  "why": "доступ к API только с доверенных адресов",
+  "why_en": "API access limited to trusted addresses"
  }
 }

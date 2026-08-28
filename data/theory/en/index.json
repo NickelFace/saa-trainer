@@ -1,0 +1,242 @@
+{
+ "chapters": [
+  {
+   "id": "s3",
+   "title": "S3 — object storage",
+   "order": 1,
+   "svc": [
+    "S3"
+   ],
+   "questions": 401,
+   "lines": 224
+  },
+  {
+   "id": "ec2",
+   "title": "EC2 — compute and purchasing models",
+   "order": 2,
+   "svc": [
+    "EC2"
+   ],
+   "questions": 479,
+   "lines": 216
+  },
+  {
+   "id": "scaling-elb",
+   "title": "Load Balancers and Auto Scaling",
+   "order": 3,
+   "svc": [
+    "ELB",
+    "Auto Scaling"
+   ],
+   "questions": 260,
+   "lines": 192
+  },
+  {
+   "id": "iam",
+   "title": "IAM — identities, policies, cross-account access",
+   "order": 5,
+   "svc": [
+    "IAM",
+    "Organizations"
+   ],
+   "questions": 151,
+   "lines": 196
+  },
+  {
+   "id": "encryption-kms",
+   "title": "Encryption, KMS, and secrets",
+   "order": 6,
+   "svc": [
+    "KMS",
+    "Secrets Manager"
+   ],
+   "questions": 78,
+   "lines": 190
+  },
+  {
+   "id": "rds",
+   "title": "RDS — managed relational databases",
+   "order": 7,
+   "svc": [
+    "RDS",
+    "DMS"
+   ],
+   "questions": 215,
+   "lines": 185
+  },
+  {
+   "id": "aurora",
+   "title": "Aurora — cloud-native MySQL and PostgreSQL engine",
+   "order": 8,
+   "svc": [
+    "Aurora"
+   ],
+   "questions": 80,
+   "lines": 170
+  },
+  {
+   "id": "dynamodb",
+   "title": "DynamoDB — managed NoSQL",
+   "order": 9,
+   "svc": [
+    "DynamoDB"
+   ],
+   "questions": 112,
+   "lines": 175
+  },
+  {
+   "id": "lambda",
+   "title": "Lambda and serverless computing",
+   "order": 10,
+   "svc": [
+    "Lambda",
+    "API Gateway"
+   ],
+   "questions": 288,
+   "lines": 175
+  },
+  {
+   "id": "integration",
+   "title": "Integration — SQS, SNS, EventBridge, Step Functions",
+   "order": 11,
+   "svc": [
+    "SQS",
+    "SNS",
+    "EventBridge",
+    "Step Functions",
+    "Amazon MQ"
+   ],
+   "questions": 148,
+   "lines": 165
+  },
+  {
+   "id": "file-storage",
+   "title": "File storage: EFS and FSx",
+   "order": 12,
+   "svc": [
+    "EFS",
+    "FSx"
+   ],
+   "questions": 90,
+   "lines": 156
+  },
+  {
+   "id": "ebs",
+   "title": "EBS — block volumes and snapshots",
+   "order": 13,
+   "svc": [
+    "EBS"
+   ],
+   "questions": 85,
+   "lines": 173
+  },
+  {
+   "id": "hybrid-network",
+   "title": "Hybrid networking: Direct Connect, VPN, Transit Gateway, PrivateLink",
+   "order": 14,
+   "svc": [
+    "Direct Connect",
+    "Transit Gateway",
+    "PrivateLink",
+    "Outposts"
+   ],
+   "questions": 63,
+   "lines": 166
+  },
+  {
+   "id": "data-transfer",
+   "title": "Data transfer — DataSync, Storage Gateway, Snow, Transfer Family",
+   "order": 15,
+   "svc": [
+    "DataSync",
+    "Storage Gateway",
+    "Snow Family",
+    "Transfer Family",
+    "DMS"
+   ],
+   "questions": 115,
+   "lines": 166
+  },
+  {
+   "id": "route53",
+   "title": "Route 53 — DNS and traffic routing",
+   "order": 17,
+   "svc": [
+    "Route 53"
+   ],
+   "questions": 59,
+   "lines": 155
+  },
+  {
+   "id": "containers",
+   "title": "Containers — ECS, EKS, Fargate",
+   "order": 18,
+   "svc": [
+    "ECS",
+    "EKS",
+    "Fargate",
+    "Elastic Beanstalk"
+   ],
+   "questions": 104,
+   "lines": 157
+  },
+  {
+   "id": "analytics",
+   "title": "Analytics and data flows",
+   "order": 19,
+   "svc": [
+    "Kinesis",
+    "Glue",
+    "Athena",
+    "Redshift",
+    "EMR",
+    "OpenSearch",
+    "QuickSight",
+    "Lake Formation",
+    "ElastiCache"
+   ],
+   "questions": 173,
+   "lines": 156
+  },
+  {
+   "id": "perimeter-security",
+   "title": "Perimeter security and threat detection",
+   "order": 20,
+   "svc": [
+    "WAF",
+    "Shield",
+    "GuardDuty",
+    "Macie",
+    "Inspector",
+    "Cognito"
+   ],
+   "questions": 71,
+   "lines": 157
+  },
+  {
+   "id": "governance",
+   "title": "Governance: Organizations, Config, CloudTrail, SSM, Backup",
+   "order": 21,
+   "svc": [
+    "Organizations",
+    "Control Tower",
+    "Config",
+    "CloudTrail",
+    "CloudWatch",
+    "Systems Manager",
+    "Backup",
+    "CloudFormation"
+   ],
+   "questions": 207,
+   "lines": 179
+  },
+  {
+   "id": "appendix-domains",
+   "title": "Appendix — how a question's domain is determined",
+   "order": 23,
+   "svc": [],
+   "questions": 0,
+   "lines": 121
+  }
+ ]
+}
